@@ -1,0 +1,3 @@
+# Typo space added on the "evaulation_job" resource type for AWS DeepRacer:
+# https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdeepracer.html#awsdeepracer-resources-for-iam-policies
+"arn:${Partition}:deepracer:${Region}:${Account}: evaluation_job/${ResourceId}": arn:${Partition}:deepracer:${Region}:${Account}:evaluation_job/${ResourceId}

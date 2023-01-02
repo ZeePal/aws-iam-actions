@@ -1,0 +1,3 @@
+# https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2autoscaling.html#amazonec2autoscaling-resources-for-iam-policies
+autoscaling: !!set
+  ? autoscaling:TrafficSourceIdentifiers # mentioned in action CreateAutoScalingGroup but not in Conditions Key Table

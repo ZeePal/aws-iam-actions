@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZeePal/aws-iam-actions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "prefix",
+    "url",
+    "actions",
+    "resourceTypes",
+    "conditionKeys"
+  ],
+  "properties": {
+    "name": {
+      "description": "The Name of the AWS Service",
+      "type": "string",
+      "examples": [
+        "Identity And Access Management",
+        "AWS Security Token Service",
+        "Amazon GuardDuty",
+        "Amazon S3"
+      ]
+    },
+    "prefix": {
+      "description": "The service's prefix for all its actions",
+      "type": "string",
+      "pattern": "^[a-z0-9-]{2,40}$",
+      "examples": [
+        "iam",
+        "sts",
+        "guardduty",
+        "s3"
+      ]
+    },
+    "url": {
+      "$ref": "#/$defs/documentUrl"
+    },
+    "actions": {
+      "description": "The Actions table lists all the actions that you can use in an IAM policy statement's Action element.",
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[A-Za-z0-9]{3,80}$": {
+          "description": "An Action.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "description",
+            "accessLevel",
+            "permissionOnly",
+            "resourceTypes",
+            "conditionKeys",
+            "dependentActions",
+            "url"
+          ],
+          "properties": {
+            "description": {
+              "description": "Yo Dawg, Heard you like descriptions. So we put a description in your description.",
+              "type": "string",
+              "examples": [
+                "Grants permission to create a new role",
+                "Grants permission to obtain a set of temporary security credentials that you can use to access AWS resources that you might not normally have access to",
+                "Grants permission to retrieve GuardDuty findings",
+                "Grants permission to create a new bucket"
+              ]
+            },
+            "accessLevel": {
+              "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.html",
+              "enum": [
+                "List",
+                "Read",
+                "Tagging",
+                "Write",
+                "Permissions management"
+              ]
+            },
+            "permissionOnly": {
+              "description": "Some services include permission-only actions that don't directly correspond to an API operation.",
+              "type": "boolean"
+            },
+            "resourceTypes": {
+              "description": "The Resource types column indicates whether the action supports resource-level permissions.",
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "^[A-Za-z0-9-_/ ]{2,80}$": {
+                  "type": "object",
+                  "description": "A Resource Type.",
+                  "additionalProperties": false,
+                  "required": [
+                    "required",
+                    "conditionKeys"
+                  ],
+                  "properties": {
+                    "required": {
+                      "description": "Required resources are indicated in the table with an asterisk (*).",
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "conditionKeys": {
+                      "$ref": "#/$defs/listOfConditionKeys"
+                    }
+                  }
+                }
+              }
+            },
+            "conditionKeys": {
+              "$ref": "#/$defs/listOfConditionKeys"
+            },
+            "dependentActions": {
+              "description": "The Dependent actions column includes any additional permissions that you must have,",
+              "type": "array",
+              "uniqueItems": true,
+              "items": [
+                {
+                  "description": "A Dependent action.",
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]{2,40}:[A-Za-z0-9]{3,50}$",
+                  "examples": [
+                    "iam:PassRole",
+                    "s3:GetObject"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "$ref": "#/$defs/documentUrl"
+            }
+          }
+        }
+      }
+    },
+    "resourceTypes": {
+      "description": "The Resource types table lists all the resource types that you can specify as an ARN in the Resource policy element.",
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[A-Za-z0-9-_/ ]{2,80}$": {
+          "description": "A Resource type.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "arn",
+            "conditionKeys",
+            "url"
+          ],
+          "properties": {
+            "arn": {
+              "description": "The ARN column specifies the Amazon Resource Name (ARN) format that you must use to reference resources of this type.",
+              "type": "string",
+              "pattern": "^arn:[A-Za-z0-9-${}]+:[A-Za-z0-9-${}*]+:[A-Za-z0-9-${}*]*:[A-Za-z0-9-${}*]*:[A-Za-z0-9-${}/:]+",
+              "examples": [
+                "arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}",
+                "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}",
+                "arn:${Partition}:s3:::${BucketName}/${ObjectName}"
+              ]
+            },
+            "conditionKeys": {
+              "$ref": "#/$defs/listOfConditionKeys"
+            },
+            "url": {
+              "$ref": "#/$defs/documentUrl"
+            }
+          }
+        }
+      }
+    },
+    "conditionKeys": {
+      "description": "The condition keys table lists all of the condition context keys that you can use in an IAM policy statement's Condition element.",
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z0-9-.]{2,40}:[A-Za-z0-9-/${}_.<>:]{2,50}$": {
+          "description": "A Condition key.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "description",
+            "type",
+            "url"
+          ],
+          "properties": {
+            "description": {
+              "description": "Yo Dawg, Heard you like descriptions. So we put a description in your description.",
+              "type": "string",
+              "examples": [
+                "Filters access if the specified policy is set as the permissions boundary on the IAM entity (user or role)",
+                "Filters access by the unique identifier required when you assume a role in another account",
+                "Filters access by tag key-value pairs attached to the resource",
+                "Filters access by canned ACL in the request's x-amz-acl header"
+              ]
+            },
+            "type": {
+              "description": "The Type column specifies the data type of the condition key.",
+              "enum": [
+                "ARN",
+                "Bool",
+                "Date",
+                "Numeric",
+                "String",
+                "ArrayOfARN",
+                "ArrayOfBool",
+                "ArrayOfString"
+              ]
+            },
+            "url": {
+              "$ref": "#/$defs/documentUrl"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "documentUrl": {
+      "description": "The url to the hyperlinked documentation.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^https://(docs\\.)?aws\\.amazon\\.com/",
+      "examples": [
+        "https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html",
+        "https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html",
+        "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html",
+        "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_PassedToService"
+      ]
+    },
+    "listOfConditionKeys": {
+      "description": "The Condition keys column includes keys that you can specify in a policy statement's Condition element.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": [
+        {
+          "description": "A Condition key.",
+          "type": "string",
+          "pattern": "^[a-z0-9-.]{2,40}:[A-Za-z0-9-/${}_.<>:]{2,50}$",
+          "examples": [
+            "iam:PermissionsBoundary",
+            "sts:ExternalId",
+            "aws:ResourceTag/${TagKey}",
+            "s3:x-amz-acl"
+          ]
+        }
+      ]
+    }
+  }
+}

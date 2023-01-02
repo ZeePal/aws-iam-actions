@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+import json
+from pathlib import Path
+import re
+
+from aws_service import find_all_aws_services
+import validate
+
+OUTPUT_FOLDER = Path(__file__).resolve().parent / ".." / "data"
+RE_UNSAFE_CHARS = re.compile(r"[^a-zA-Z0-9-.]+")
+
+
+def main():
+    print("Finding all AWS Services...")
+    services = find_all_aws_services()
+
+    all_actions = set()
+    for i, service in enumerate(services):
+        print(f"Processing ({i+1}/{len(services)}):", service.name)
+        service.fetch()
+        validate.check_all_self_references(service)
+
+        output = service.to_json_dict()
+        validate.check_json_schema(output)
+
+        all_actions.update(f"{service.prefix}:{action}" for action in service.actions.keys())
+
+        file_name = RE_UNSAFE_CHARS.sub("_", service.name).lower() + ".json"
+        folder = OUTPUT_FOLDER / service.prefix
+        if not folder.exists():
+            folder.mkdir()
+
+        with open(folder / file_name, "w") as file:
+            json.dump(output, file, indent=2)
+
+    print("Checking all dependent actions exist...")
+    for service in services:
+        validate.check_all_dependent_actions_exist(all_actions, service)
+
+    print("Done.")
+
+
+if __name__ == "__main__":
+    main()
