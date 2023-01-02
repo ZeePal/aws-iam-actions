@@ -1,0 +1,315 @@
+{
+  "name": "AWS BugBust",
+  "prefix": "bugbust",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbugbust.html",
+  "actions": {
+    "CreateEvent": {
+      "description": "Grants permission to create a BugBust event",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "EvaluateProfilingGroups": {
+      "description": "Grants permission to evaluate checked-in profiling groups",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "GetEvent": {
+      "description": "Grants permission to view customer details about an event",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "GetJoinEventStatus": {
+      "description": "Grants permission to view the status of a BugBust player's attempt to join a BugBust event",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "JoinEvent": {
+      "description": "Grants permission to join an event",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListBugs": {
+      "description": "Grants permission to view the bugs that were imported into an event for players to work on",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "codeguru-reviewer:DescribeCodeReview",
+        "codeguru-reviewer:ListRecommendations"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListEventParticipants": {
+      "description": "Grants permission to view the participants of an event",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListEventScores": {
+      "description": "Grants permission to view the scores of an event's players",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListEvents": {
+      "description": "Grants permission to List BugBust events",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListProfilingGroups": {
+      "description": "Grants permission to view the profiling groups that were imported into an event for players to work on",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListPullRequests": {
+      "description": "Grants permission to view the pull requests used by players to submit fixes to their claimed bugs in an event",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to lists tag for a Bugbust resource",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a Bugbust resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a Bugbust resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "UpdateEvent": {
+      "description": "Grants permission to update a BugBust event",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "codeguru-profiler:DescribeProfilingGroup",
+        "codeguru-profiler:ListProfilingGroups",
+        "codeguru-reviewer:DescribeCodeReview",
+        "codeguru-reviewer:ListCodeReviews",
+        "codeguru-reviewer:ListRecommendations",
+        "codeguru-reviewer:TagResource",
+        "codeguru-reviewer:UnTagResource"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "UpdateWorkItem": {
+      "description": "Grants permission to update a work item as claimed or unclaimed (bug or profiling group)",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "codeguru-reviewer:ListRecommendations"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    },
+    "UpdateWorkItemAdmin": {
+      "description": "Grants permission to update an event's work item (bug or profiling group)",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "Event": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "codeguru-reviewer:ListRecommendations"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html"
+    }
+  },
+  "resourceTypes": {
+    "Event": {
+      "arn": "arn:${Partition}:bugbust:${Region}:${Account}:events/${EventId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/event-managing.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access based on the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

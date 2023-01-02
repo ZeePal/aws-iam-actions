@@ -1,0 +1,479 @@
+{
+  "name": "Amazon Neptune",
+  "prefix": "neptune-db",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptune.html",
+  "actions": {
+    "CancelLoaderJob": {
+      "description": "Grants permission to cancel a loader job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#cancelloaderjob"
+    },
+    "CancelMLDataProcessingJob": {
+      "description": "Grants permission to cancel an ML data processing job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#cancelmldataprocessingjob"
+    },
+    "CancelMLModelTrainingJob": {
+      "description": "Grants permission to cancel an ML model training job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#cancelmlmodeltrainingjob"
+    },
+    "CancelMLModelTransformJob": {
+      "description": "Grants permission to cancel an ML model transform job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#cancelmlmodeltransformjob"
+    },
+    "CancelQuery": {
+      "description": "Grants permission to cancel a query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#cancelquery"
+    },
+    "CreateMLEndpoint": {
+      "description": "Grants permission to create an ML endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#createmlendpoint"
+    },
+    "DeleteDataViaQuery": {
+      "description": "Grants permission to run delete data via query APIs on database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#deletedataviaquery"
+    },
+    "DeleteMLEndpoint": {
+      "description": "Grants permission to delete an ML endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#deletemlendpoint"
+    },
+    "DeleteStatistics": {
+      "description": "Grants permission to delete all the statistics in the database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#deletestatistics"
+    },
+    "GetEngineStatus": {
+      "description": "Grants permission to check the status of the Neptune engine",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getenginestatus"
+    },
+    "GetLoaderJobStatus": {
+      "description": "Grants permission to check the status of a loader job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getloaderjobstatus"
+    },
+    "GetMLDataProcessingJobStatus": {
+      "description": "Grants permission to check the status of an ML data processing job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getmldataprocessingjobstatus"
+    },
+    "GetMLEndpointStatus": {
+      "description": "Grants permission to check the status of an ML endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getmlendpointstatus"
+    },
+    "GetMLModelTrainingJobStatus": {
+      "description": "Grants permission to check the status of an ML model training job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getmlmodeltrainingjobstatus"
+    },
+    "GetMLModelTransformJobStatus": {
+      "description": "Grants permission to check the status of an ML model transform job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getmlmodeltransformjobstatus"
+    },
+    "GetQueryStatus": {
+      "description": "Grants permission to check the status of all active queries",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getquerystatus"
+    },
+    "GetStatisticsStatus": {
+      "description": "Grants permission to check the status of statistics of the database",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getstatisticsstatus"
+    },
+    "GetStreamRecords": {
+      "description": "Grants permission to fetch stream records from Neptune",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#getstreamrecords"
+    },
+    "ListLoaderJobs": {
+      "description": "Grants permission to list all the loader jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listloaderjobs"
+    },
+    "ListMLDataProcessingJobs": {
+      "description": "Grants permission to list all the ML data processing jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmldataprocessingjobs"
+    },
+    "ListMLEndpoints": {
+      "description": "Grants permission to list all the ML endpoints",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmlendpoints"
+    },
+    "ListMLModelTrainingJobs": {
+      "description": "Grants permission to list all the ML model training jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmlmodeltrainingjobs"
+    },
+    "ListMLModelTransformJobs": {
+      "description": "Grants permission to list all the ML model transform jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#listmlmodeltransformjobs"
+    },
+    "ManageStatistics": {
+      "description": "Grants permission to manage statistics in the database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#managestatistics"
+    },
+    "ReadDataViaQuery": {
+      "description": "Grants permission to run read data via query APIs on database",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#readdataviaquery"
+    },
+    "ResetDatabase": {
+      "description": "Grants permission to get the token needed for reset and resets the Neptune database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#resetdatabase"
+    },
+    "StartLoaderJob": {
+      "description": "Grants permission to start a loader job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#startloaderjob"
+    },
+    "StartMLDataProcessingJob": {
+      "description": "Grants permission to start an ML data processing job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#startmldataprocessingjob"
+    },
+    "StartMLModelTrainingJob": {
+      "description": "Grants permission to start an ML model training job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#startmlmodeltrainingjob"
+    },
+    "StartMLModelTransformJob": {
+      "description": "Grants permission to start an ML model transform job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#startmlmodeltransformjob"
+    },
+    "WriteDataViaQuery": {
+      "description": "Grants permission to run write data via query APIs on database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html#writedataviaquery"
+    },
+    "connect": {
+      "description": "Grants permission to all data-access actions in engine versions prior to 1.2.0.0",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "database": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.html"
+    }
+  },
+  "resourceTypes": {
+    "database": {
+      "arn": "arn:${Partition}:neptune-db:${Region}:${Account}:${RelativeId}/database",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-resources.html"
+    }
+  },
+  "conditionKeys": {
+    "neptune-db:QueryLanguage": {
+      "description": "Filters access by graph model",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-context-keys.html#querylanguage"
+    }
+  }
+}

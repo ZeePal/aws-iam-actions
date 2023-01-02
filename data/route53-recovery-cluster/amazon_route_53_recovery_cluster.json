@@ -1,0 +1,76 @@
+{
+  "name": "Amazon Route 53 Recovery Cluster",
+  "prefix": "route53-recovery-cluster",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoverycluster.html",
+  "actions": {
+    "GetRoutingControlState": {
+      "description": "Grants permission to get a routing control state",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/routing-control/latest/APIReference/API_GetRoutingControlState.html"
+    },
+    "ListRoutingControls": {
+      "description": "Grants permission to list routing controls",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/routing-control/latest/APIReference/API_ListRoutingControls.html"
+    },
+    "UpdateRoutingControlState": {
+      "description": "Grants permission to update a routing control state",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "route53-recovery-cluster:AllowSafetyRulesOverrides"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/routing-control/latest/APIReference/API_UpdateRoutingControlState.html"
+    },
+    "UpdateRoutingControlStates": {
+      "description": "Grants permission to update a batch of routing control states",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "route53-recovery-cluster:AllowSafetyRulesOverrides"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/routing-control/latest/APIReference/API_UpdateRoutingControlStates.html"
+    }
+  },
+  "resourceTypes": {
+    "routingcontrol": {
+      "arn": "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol.html"
+    }
+  },
+  "conditionKeys": {
+    "route53-recovery-cluster:AllowSafetyRulesOverrides": {
+      "description": "Override safety rules to allow routing control state updates",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/routing-control/latest/APIReference/API_UpdateRoutingControlState.html"
+    }
+  }
+}

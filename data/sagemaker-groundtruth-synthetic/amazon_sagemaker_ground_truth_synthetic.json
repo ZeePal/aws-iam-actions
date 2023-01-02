@@ -1,0 +1,117 @@
+{
+  "name": "Amazon SageMaker Ground Truth Synthetic",
+  "prefix": "sagemaker-groundtruth-synthetic",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakergroundtruthsynthetic.html",
+  "actions": {
+    "CreateProject": {
+      "description": "Grants permission to create a project",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "DeleteProject": {
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "GetAccountDetails": {
+      "description": "Grants permission to get account details",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "GetBatch": {
+      "description": "Grants permission to get a batch",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "GetProject": {
+      "description": "Grants permission to get a project",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "ListBatchDataTransfers": {
+      "description": "Grants permission to list batch data transfers",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "ListBatchSummaries": {
+      "description": "Grants permission to list batch summaries",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "ListProjectDataTransfers": {
+      "description": "Grants permission to list project data transfers",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "ListProjectSummaries": {
+      "description": "Grants permission to list project summaries",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "StartBatchDataTransfer": {
+      "description": "Grants permission to start a batch data transfer",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "StartProjectDataTransfer": {
+      "description": "Grants permission to start a project data transfer",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    },
+    "UpdateBatch": {
+      "description": "Grants permission to update a batch",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${APIReferenceDocPage}"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "AWS Elemental Support Cases",
+  "prefix": "elemental-support-cases",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalsupportcases.html",
+  "actions": {
+    "CheckCasePermission": {
+      "description": "Grants permission to verify whether the caller has the permissions to perform support case operations",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "CreateCase": {
+      "description": "Grants permission to create a support case",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetCase": {
+      "description": "Grants permission to describe a support case in your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetCases": {
+      "description": "Grants permission to list the support cases in your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "UpdateCase": {
+      "description": "Grants permission to update a support case",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

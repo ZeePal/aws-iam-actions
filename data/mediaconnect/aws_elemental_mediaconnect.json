@@ -1,0 +1,300 @@
+{
+  "name": "AWS Elemental MediaConnect",
+  "prefix": "mediaconnect",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediaconnect.html",
+  "actions": {
+    "AddFlowMediaStreams": {
+      "description": "Grants permission to add media streams to any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-mediastreams.html"
+    },
+    "AddFlowOutputs": {
+      "description": "Grants permission to add outputs to any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-outputs.html"
+    },
+    "AddFlowSources": {
+      "description": "Grants permission to add sources to any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source.html"
+    },
+    "AddFlowVpcInterfaces": {
+      "description": "Grants permission to add VPC interfaces to any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-vpcinterfaces.html"
+    },
+    "CreateFlow": {
+      "description": "Grants permission to create flows",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows.html"
+    },
+    "DeleteFlow": {
+      "description": "Grants permission to delete flows",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn.html"
+    },
+    "DescribeFlow": {
+      "description": "Grants permission to display the details of a flow including the flow ARN, name, and Availability Zone, as well as details about the source, outputs, and entitlements",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn.html"
+    },
+    "DescribeOffering": {
+      "description": "Grants permission to display the details of an offering",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-offerings-offeringarn.html"
+    },
+    "DescribeReservation": {
+      "description": "Grants permission to display the details of a reservation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-reservations-reservationarn.html"
+    },
+    "GrantFlowEntitlements": {
+      "description": "Grants permission to grant entitlements on any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-entitlements.html"
+    },
+    "ListEntitlements": {
+      "description": "Grants permission to display a list of all entitlements that have been granted to the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-entitlements.html"
+    },
+    "ListFlows": {
+      "description": "Grants permission to display a list of flows that are associated with this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows.html"
+    },
+    "ListOfferings": {
+      "description": "Grants permission to display a list of all offerings that are available to the account in the current AWS Region",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-offerings.html"
+    },
+    "ListReservations": {
+      "description": "Grants permission to display a list of all reservations that have been purchased by the account in the current AWS Region",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-reservations.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to display a list of all tags associated with a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html"
+    },
+    "PurchaseOffering": {
+      "description": "Grants permission to purchase an offering",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-offerings-offeringarn.html"
+    },
+    "RemoveFlowMediaStream": {
+      "description": "Grants permission to remove media streams from any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-mediastreams-mediastreamname.html"
+    },
+    "RemoveFlowOutput": {
+      "description": "Grants permission to remove outputs from any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-outputs-outputarn.html"
+    },
+    "RemoveFlowSource": {
+      "description": "Grants permission to remove sources from any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-sourcearn.html"
+    },
+    "RemoveFlowVpcInterface": {
+      "description": "Grants permission to remove VPC interfaces from any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-vpcinterfaces-vpcinterfacename.html"
+    },
+    "RevokeFlowEntitlement": {
+      "description": "Grants permission to revoke entitlements on any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-entitlements-entitlementarn.html"
+    },
+    "StartFlow": {
+      "description": "Grants permission to start flows",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-start-flowarn.html"
+    },
+    "StopFlow": {
+      "description": "Grants permission to stop flows",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-stop-flowarn.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to associate tags with resources",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from resources",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html"
+    },
+    "UpdateFlow": {
+      "description": "Grants permission to update flows",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn.html"
+    },
+    "UpdateFlowEntitlement": {
+      "description": "Grants permission to update entitlements on any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-entitlements-entitlementarn.html"
+    },
+    "UpdateFlowMediaStream": {
+      "description": "Grants permission to update media streams on any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-mediastreams-mediastreamname.html"
+    },
+    "UpdateFlowOutput": {
+      "description": "Grants permission to update outputs on any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-outputs-outputarn.html"
+    },
+    "UpdateFlowSource": {
+      "description": "Grants permission to update the source of any flow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/api/v1-flows-flowarn-source-sourcearn.html"
+    }
+  },
+  "resourceTypes": {
+    "Entitlement": {
+      "arn": "arn:${Partition}:mediaconnect:${Region}:${Account}:entitlement:${FlowId}:${EntitlementName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements.html"
+    },
+    "Flow": {
+      "arn": "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/ug/flows.html"
+    },
+    "Output": {
+      "arn": "arn:${Partition}:mediaconnect:${Region}:${Account}:output:${OutputId}:${OutputName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/ug/outputs.html"
+    },
+    "Source": {
+      "arn": "arn:${Partition}:mediaconnect:${Region}:${Account}:source:${SourceId}:${SourceName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/mediaconnect/latest/ug/sources.html"
+    }
+  },
+  "conditionKeys": {}
+}

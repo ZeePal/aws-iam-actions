@@ -1,0 +1,135 @@
+{
+  "name": "Amazon RDS Data API",
+  "prefix": "rds-data",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrdsdataapi.html",
+  "actions": {
+    "BatchExecuteStatement": {
+      "description": "Grants permission to run a batch SQL statement over an array of data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BatchExecuteStatement.html"
+    },
+    "BeginTransaction": {
+      "description": "Grants permission to start a SQL transaction",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BeginTransaction.html"
+    },
+    "CommitTransaction": {
+      "description": "Grants permission to end a SQL transaction started with the BeginTransaction operation and commits the changes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "rds-data:BeginTransaction"
+      ],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_CommitTransaction.html"
+    },
+    "ExecuteSql": {
+      "description": "Grants permission to run one or more SQL statements. This operation is deprecated. Use the BatchExecuteStatement or ExecuteStatement operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteSql.html"
+    },
+    "ExecuteStatement": {
+      "description": "Grants permission to run a SQL statement against a database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html"
+    },
+    "RollbackTransaction": {
+      "description": "Grants permission to perform a rollback of a transaction. Rolling back a transaction cancels its changes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "rds-data:BeginTransaction"
+      ],
+      "url": "https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_RollbackTransaction.html"
+    }
+  },
+  "resourceTypes": {
+    "cluster": {
+      "arn": "arn:${Partition}:rds:${Region}:${Account}:cluster:${DbClusterInstanceName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Managing.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys associated with the resource",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

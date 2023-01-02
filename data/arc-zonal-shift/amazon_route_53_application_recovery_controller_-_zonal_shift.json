@@ -1,0 +1,110 @@
+{
+  "name": "Amazon Route 53 Application Recovery Controller - Zonal Shift",
+  "prefix": "arc-zonal-shift",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html",
+  "actions": {
+    "CancelZonalShift": {
+      "description": "Grants permission to cancel an active zonal shift",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ALB": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "NLB": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_CancelZonalShift.html"
+    },
+    "GetManagedResource": {
+      "description": "Grants permission to get information about a managed resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ALB": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "NLB": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_GetManagedResource.html"
+    },
+    "ListManagedResources": {
+      "description": "Grants permission to list managed resources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListManagedResources.html"
+    },
+    "ListZonalShifts": {
+      "description": "Grants permission to list zonal shifts",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListZonalShifts.html"
+    },
+    "StartZonalShift": {
+      "description": "Grants permission to start a zonal shift",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ALB": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "NLB": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_StartZonalShift.html"
+    },
+    "UpdateZonalShift": {
+      "description": "Grants permission to update an existing zonal shift",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ALB": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "NLB": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_UpdateZonalShift.html"
+    }
+  },
+  "resourceTypes": {
+    "ALB": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html"
+    },
+    "NLB": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html"
+    }
+  },
+  "conditionKeys": {}
+}

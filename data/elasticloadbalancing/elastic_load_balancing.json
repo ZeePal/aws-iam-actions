@@ -1,0 +1,415 @@
+{
+  "name": "Elastic Load Balancing",
+  "prefix": "elasticloadbalancing",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html",
+  "actions": {
+    "AddTags": {
+      "description": "Grants permission to add the specified tags to the specified load balancer. Each load balancer can have a maximum of 10 tags",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_AddTags.html"
+    },
+    "ApplySecurityGroupsToLoadBalancer": {
+      "description": "Grants permission to associate one or more security groups with your load balancer in a virtual private cloud (VPC)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ApplySecurityGroupsToLoadBalancer.html"
+    },
+    "AttachLoadBalancerToSubnets": {
+      "description": "Grants permission to add one or more subnets to the set of configured subnets for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_AttachLoadBalancerToSubnets.html"
+    },
+    "ConfigureHealthCheck": {
+      "description": "Grants permission to specify the health check settings to use when evaluating the health state of your back-end instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ConfigureHealthCheck.html"
+    },
+    "CreateAppCookieStickinessPolicy": {
+      "description": "Grants permission to generate a stickiness policy with sticky session lifetimes that follow that of an application-generated cookie",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateAppCookieStickinessPolicy.html"
+    },
+    "CreateLBCookieStickinessPolicy": {
+      "description": "Grants permission to generate a stickiness policy with sticky session lifetimes controlled by the lifetime of the browser (user-agent) or a specified expiration period",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateLBCookieStickinessPolicy.html"
+    },
+    "CreateLoadBalancer": {
+      "description": "Grants permission to create a load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateLoadBalancer.html"
+    },
+    "CreateLoadBalancerListeners": {
+      "description": "Grants permission to create one or more listeners for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateLoadBalancerListeners.html"
+    },
+    "CreateLoadBalancerPolicy": {
+      "description": "Grants permission to create a policy with the specified attributes for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_CreateLoadBalancerPolicy.html"
+    },
+    "DeleteLoadBalancer": {
+      "description": "Grants permission to delete the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DeleteLoadBalancer.html"
+    },
+    "DeleteLoadBalancerListeners": {
+      "description": "Grants permission to delete the specified listeners from the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DeleteLoadBalancerListeners.html"
+    },
+    "DeleteLoadBalancerPolicy": {
+      "description": "Grants permission to delete the specified policy from the specified load balancer. This policy must not be enabled for any listeners",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DeleteLoadBalancerPolicy.html"
+    },
+    "DeregisterInstancesFromLoadBalancer": {
+      "description": "Grants permission to deregister the specified instances from the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DeregisterInstancesFromLoadBalancer.html"
+    },
+    "DescribeInstanceHealth": {
+      "description": "Grants permission to describe the state of the specified instances with respect to the specified load balancer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeInstanceHealth.html"
+    },
+    "DescribeLoadBalancerAttributes": {
+      "description": "Grants permission to describe the attributes for the specified load balancer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancerAttributes.html"
+    },
+    "DescribeLoadBalancerPolicies": {
+      "description": "Grants permission to describe the specified policies",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancerPolicies.html"
+    },
+    "DescribeLoadBalancerPolicyTypes": {
+      "description": "Grants permission to describe the specified load balancer policy types",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancerPolicyTypes.html"
+    },
+    "DescribeLoadBalancers": {
+      "description": "Grants permission to describe the specified the load balancers. If no load balancers are specified, the call describes all of your load balancers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancers.html"
+    },
+    "DescribeTags": {
+      "description": "Grants permission to describe the tags associated with the specified load balancers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeTags.html"
+    },
+    "DetachLoadBalancerFromSubnets": {
+      "description": "Grants permission to remove the specified subnets from the set of configured subnets for the load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DetachLoadBalancerFromSubnets.html"
+    },
+    "DisableAvailabilityZonesForLoadBalancer": {
+      "description": "Grants permission to remove the specified Availability Zones from the set of Availability Zones for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DisableAvailabilityZonesForLoadBalancer.html"
+    },
+    "EnableAvailabilityZonesForLoadBalancer": {
+      "description": "Grants permission to add the specified Availability Zones to the set of Availability Zones for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_EnableAvailabilityZonesForLoadBalancer.html"
+    },
+    "ModifyLoadBalancerAttributes": {
+      "description": "Grants permission to modify the attributes of the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ModifyLoadBalancerAttributes.html"
+    },
+    "RegisterInstancesWithLoadBalancer": {
+      "description": "Grants permission to add the specified instances to the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_RegisterInstancesWithLoadBalancer.html"
+    },
+    "RemoveTags": {
+      "description": "Grants permission to remove one or more tags from the specified load balancer",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_RemoveTags.html"
+    },
+    "SetLoadBalancerListenerSSLCertificate": {
+      "description": "Grants permission to set the certificate that terminates the specified listener's SSL connections",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_SetLoadBalancerListenerSSLCertificate.html"
+    },
+    "SetLoadBalancerPoliciesForBackendServer": {
+      "description": "Grants permission to replace the set of policies associated with the specified port on which the back-end server is listening with a new set of policies",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_SetLoadBalancerPoliciesForBackendServer.html"
+    },
+    "SetLoadBalancerPoliciesOfListener": {
+      "description": "Grants permission to replace the current set of policies for the specified load balancer port with the specified set of policies",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_SetLoadBalancerPoliciesOfListener.html"
+    }
+  },
+  "resourceTypes": {
+    "loadbalancer": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/${LoadBalancerName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "A key that is present in the request the user makes to the ELB service",
+      "type": "String",
+      "url": null
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Global tag key and value pair",
+      "type": "String",
+      "url": null
+    },
+    "aws:TagKeys": {
+      "description": "The list of all the tag key names associated with the resource in the request",
+      "type": "ArrayOfString",
+      "url": null
+    },
+    "elasticloadbalancing:ResourceTag/": {
+      "description": "The preface string for a tag key and value pair attached to a resource",
+      "type": "String",
+      "url": null
+    },
+    "elasticloadbalancing:ResourceTag/${TagKey}": {
+      "description": "A tag key and value pair",
+      "type": "String",
+      "url": null
+    }
+  }
+}

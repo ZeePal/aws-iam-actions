@@ -1,0 +1,38 @@
+{
+  "name": "Amazon Sumerian",
+  "prefix": "sumerian",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsumerian.html",
+  "actions": {
+    "Login": {
+      "description": "Grants permission to log into the Sumerian console",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sumerian/latest/userguide/sumerian-permissions.html"
+    },
+    "ViewRelease": {
+      "description": "Grants permission to view a project release",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sumerian/latest/userguide/sumerian-permissions.html"
+    }
+  },
+  "resourceTypes": {
+    "project": {
+      "arn": "arn:${Partition}:sumerian:${Region}:${Account}:project:${ProjectName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/sumerian/latest/userguide/sumerian-concepts.html"
+    }
+  },
+  "conditionKeys": {}
+}

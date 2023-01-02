@@ -1,0 +1,591 @@
+{
+  "name": "AWS IoT Events",
+  "prefix": "iotevents",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotevents.html",
+  "actions": {
+    "BatchAcknowledgeAlarm": {
+      "description": "Grants permission to send one or more acknowledge action requests to AWS IoT Events",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchAcknowledgeAlarm.html"
+    },
+    "BatchDeleteDetector": {
+      "description": "Grants permission to delete a detector instance within the AWS IoT Events system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchDeleteDetector.html"
+    },
+    "BatchDisableAlarm": {
+      "description": "Grants permission to disable one or more alarm instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchDisableAlarm.html"
+    },
+    "BatchEnableAlarm": {
+      "description": "Grants permission to enable one or more alarm instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchEnableAlarm.html"
+    },
+    "BatchPutMessage": {
+      "description": "Grants permission to send a set of messages to the AWS IoT Events system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchPutMessage.html"
+    },
+    "BatchResetAlarm": {
+      "description": "Grants permission to reset one or more alarm instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchResetAlarm.html"
+    },
+    "BatchSnoozeAlarm": {
+      "description": "Grants permission to change one or more alarm instances to the snooze mode",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchSnoozeAlarm.html"
+    },
+    "BatchUpdateDetector": {
+      "description": "Grants permission to update a detector instance within the AWS IoT Events system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_BatchUpdateDetector.html"
+    },
+    "CreateAlarmModel": {
+      "description": "Grants permission to create an alarm model to monitor an AWS IoT Events input attribute or an AWS IoT SiteWise asset property",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_CreateAlarmModel.html"
+    },
+    "CreateDetectorModel": {
+      "description": "Grants permission to create a detector model to monitor an AWS IoT Events input attribute",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_CreateDetectorModel.html"
+    },
+    "CreateInput": {
+      "description": "Grants permission to create an Input in IotEvents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_CreateInput.html"
+    },
+    "DeleteAlarmModel": {
+      "description": "Grants permission to delete an alarm model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DeleteAlarmModel.html"
+    },
+    "DeleteDetectorModel": {
+      "description": "Grants permission to delete a detector model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DeleteDetectorModel.html"
+    },
+    "DeleteInput": {
+      "description": "Grants permission to delete an input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DeleteInput.html"
+    },
+    "DescribeAlarm": {
+      "description": "Grants permission to retrieve information about an alarm instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_DescribeAlarm.html"
+    },
+    "DescribeAlarmModel": {
+      "description": "Grants permission to retrieve information about an alarm model",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DescribeAlarmModel.html"
+    },
+    "DescribeDetector": {
+      "description": "Grants permission to retriev information about a detector instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_DescribeDetector.html"
+    },
+    "DescribeDetectorModel": {
+      "description": "Grants permission to retrieve information about a detector model",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DescribeDetectorModel.html"
+    },
+    "DescribeDetectorModelAnalysis": {
+      "description": "Grants permission to retrieve the detector model analysis information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DescribeDetectorModelAnalysis.html"
+    },
+    "DescribeInput": {
+      "description": "Grants permission to retrieve an information about Input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DescribeInput.html"
+    },
+    "DescribeLoggingOptions": {
+      "description": "Grants permission to retrieve the current settings of the AWS IoT Events logging options",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_DescribeLoggingOptions.html"
+    },
+    "GetDetectorModelAnalysisResults": {
+      "description": "Grants permission to retrieve the detector model analysis results",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_GetDetectorModelAnalysisResults.html"
+    },
+    "ListAlarmModelVersions": {
+      "description": "Grants permission to list all the versions of an alarm model",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListAlarmModelVersions.html"
+    },
+    "ListAlarmModels": {
+      "description": "Grants permission to list the alarm models that you created",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListAlarmModels.html"
+    },
+    "ListAlarms": {
+      "description": "Grants permission to retrieve information about all alarm instances per alarmModel",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_ListAlarms.html"
+    },
+    "ListDetectorModelVersions": {
+      "description": "Grants permission to list all the versions of a detector model",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListDetectorModelVersions.html"
+    },
+    "ListDetectorModels": {
+      "description": "Grants permission to list the detector models that you created",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListDetectorModels.html"
+    },
+    "ListDetectors": {
+      "description": "Grants permission to retrieve information about all detector instances per detectormodel",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_iotevents-data_ListDetectors.html"
+    },
+    "ListInputRoutings": {
+      "description": "Grants permission to list one or more input routings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListInputRoutings.html"
+    },
+    "ListInputs": {
+      "description": "Grants permission to lists the inputs you have created",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListInputs.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags (metadata) which you have assigned to the resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "detectorModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_ListTagsForResource.html"
+    },
+    "PutLoggingOptions": {
+      "description": "Grants permission to set or update the AWS IoT Events logging options",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_PutLoggingOptions.html"
+    },
+    "StartDetectorModelAnalysis": {
+      "description": "Grants permission to start the detector model analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_StartDetectorModelAnalysis.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to adds to or modifies the tags of the given resource.Tags are metadata which can be used to manage a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "detectorModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove the given tags (metadata) from the resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "detectorModel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_UntagResource.html"
+    },
+    "UpdateAlarmModel": {
+      "description": "Grants permission to update an alarm model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "alarmModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_UpdateAlarmModel.html"
+    },
+    "UpdateDetectorModel": {
+      "description": "Grants permission to update a detector model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detectorModel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_UpdateDetectorModel.html"
+    },
+    "UpdateInput": {
+      "description": "Grants permission to update an input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_UpdateInput.html"
+    },
+    "UpdateInputRouting": {
+      "description": "Grants permission to update input routing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/apireference/API_UpdateInputRouting.html"
+    }
+  },
+  "resourceTypes": {
+    "alarmModel": {
+      "arn": "arn:${Partition}:iotevents:${Region}:${Account}:alarmModel/${AlarmModelName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-getting-started.html"
+    },
+    "detectorModel": {
+      "arn": "arn:${Partition}:iotevents:${Region}:${Account}:detectorModel/${DetectorModelName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-getting-started.html"
+    },
+    "input": {
+      "arn": "arn:${Partition}:iotevents:${Region}:${Account}:input/${InputName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-getting-started.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions by the tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "iotevents:keyValue": {
+      "description": "Filters access by the instanceId (key-value) of the message",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotevents/latest/developerguide/security_iam_id-based-policy-examples.htmlsecurity_iam_service-with-iam-id-based-policies-conditionkeys"
+    }
+  }
+}

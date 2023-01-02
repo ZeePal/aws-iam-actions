@@ -1,0 +1,1232 @@
+{
+  "name": "AWS Elastic Disaster Recovery",
+  "prefix": "drs",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticdisasterrecovery.html",
+  "actions": {
+    "AssociateFailbackClientToRecoveryInstanceForDrs": {
+      "description": "Grants permission to get associate failback client to recovery instance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "BatchCreateVolumeSnapshotGroupForDrs": {
+      "description": "Grants permission to batch create volume snapshot group",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "BatchDeleteSnapshotRequestForDrs": {
+      "description": "Grants permission to batch delete snapshot request",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "CreateConvertedSnapshotForDrs": {
+      "description": "Grants permission to create converted snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "CreateExtendedSourceServer": {
+      "description": "Grants permission to extend a source server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "drs:DescribeSourceServers",
+        "drs:GetReplicationConfiguration"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateExtendedSourceServer.html"
+    },
+    "CreateRecoveryInstanceForDrs": {
+      "description": "Grants permission to create recovery instance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "CreateReplicationConfigurationTemplate": {
+      "description": "Grants permission to create replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:CreateSecurityGroup",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "ec2:GetEbsEncryptionByDefault",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateReplicationConfigurationTemplate.html"
+    },
+    "CreateSourceServerForDrs": {
+      "description": "Grants permission to create a source server",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "DeleteJob": {
+      "description": "Grants permission to delete a job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteJob.html"
+    },
+    "DeleteRecoveryInstance": {
+      "description": "Grants permission to delete recovery instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecoveryInstance.html"
+    },
+    "DeleteReplicationConfigurationTemplate": {
+      "description": "Grants permission to delete replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ReplicationConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteReplicationConfigurationTemplate.html"
+    },
+    "DeleteSourceServer": {
+      "description": "Grants permission to delete source server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteSourceServer.html"
+    },
+    "DescribeJobLogItems": {
+      "description": "Grants permission to describe job log items",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeJobLogItems.html"
+    },
+    "DescribeJobs": {
+      "description": "Grants permission to describe jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeJobs.html"
+    },
+    "DescribeRecoveryInstances": {
+      "description": "Grants permission to describe recovery instances",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "drs:DescribeSourceServers",
+        "ec2:DescribeInstances"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeRecoveryInstances.html"
+    },
+    "DescribeRecoverySnapshots": {
+      "description": "Grants permission to describe recovery snapshots",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeRecoverySnapshots.html"
+    },
+    "DescribeReplicationConfigurationTemplates": {
+      "description": "Grants permission to describe replication configuration template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeReplicationConfigurationTemplates.html"
+    },
+    "DescribeReplicationServerAssociationsForDrs": {
+      "description": "Grants permission to describe replication server associations",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "DescribeSnapshotRequestsForDrs": {
+      "description": "Grants permission to describe snapshot requests",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "DescribeSourceServers": {
+      "description": "Grants permission to describe source servers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeSourceServers.html"
+    },
+    "DisconnectRecoveryInstance": {
+      "description": "Grants permission to disconnect recovery instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DisconnectRecoveryInstance.html"
+    },
+    "DisconnectSourceServer": {
+      "description": "Grants permission to disconnect source server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_DisconnectSourceServer.html"
+    },
+    "GetAgentCommandForDrs": {
+      "description": "Grants permission to get agent command",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetAgentConfirmedResumeInfoForDrs": {
+      "description": "Grants permission to get agent confirmed resume info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetAgentInstallationAssetsForDrs": {
+      "description": "Grants permission to get agent installation assets",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetAgentReplicationInfoForDrs": {
+      "description": "Grants permission to get agent replication info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetAgentRuntimeConfigurationForDrs": {
+      "description": "Grants permission to get agent runtime configuration",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetAgentSnapshotCreditsForDrs": {
+      "description": "Grants permission to get agent snapshot credits",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetChannelCommandsForDrs": {
+      "description": "Grants permission to get channel commands",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetFailbackCommandForDrs": {
+      "description": "Grants permission to get failback command",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetFailbackLaunchRequestedForDrs": {
+      "description": "Grants permission to get failback launch requested",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "GetFailbackReplicationConfiguration": {
+      "description": "Grants permission to get failback replication configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_GetFailbackReplicationConfiguration.html"
+    },
+    "GetLaunchConfiguration": {
+      "description": "Grants permission to get launch configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_GetLaunchConfiguration.html"
+    },
+    "GetReplicationConfiguration": {
+      "description": "Grants permission to get replication configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_GetReplicationConfiguration.html"
+    },
+    "GetSuggestedFailbackClientDeviceMappingForDrs": {
+      "description": "Grants permission to get suggested failback client device mapping",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "InitializeService": {
+      "description": "Grants permission to initialize service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:AddRoleToInstanceProfile",
+        "iam:CreateInstanceProfile",
+        "iam:CreateServiceLinkedRole",
+        "iam:GetInstanceProfile"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_InitializeService.html"
+    },
+    "IssueAgentCertificateForDrs": {
+      "description": "Grants permission to issue an agent certificate",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "ListExtensibleSourceServers": {
+      "description": "Grants permission to list extensible source servers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "drs:DescribeSourceServers"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_ListExtensibleSourceServers.html"
+    },
+    "ListStagingAccounts": {
+      "description": "Grants permission to list staging accounts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_ListStagingAccounts.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "NotifyAgentAuthenticationForDrs": {
+      "description": "Grants permission to notify agent authentication",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyAgentConnectedForDrs": {
+      "description": "Grants permission to notify agent is connected",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyAgentDisconnectedForDrs": {
+      "description": "Grants permission to notify agent is disconnected",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyAgentReplicationProgressForDrs": {
+      "description": "Grants permission to notify agent replication progress",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyConsistencyAttainedForDrs": {
+      "description": "Grants permission to notify consistency attained",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyReplicationServerAuthenticationForDrs": {
+      "description": "Grants permission to notify replication server authentication",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "NotifyVolumeEventForDrs": {
+      "description": "Grants permission to notify replicator volume events",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "RetryDataReplication": {
+      "description": "Grants permission to retry data replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_RetryDataReplication.html"
+    },
+    "ReverseReplication": {
+      "description": "Grants permission to reverse replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "drs:DescribeReplicationConfigurationTemplates",
+        "drs:DescribeSourceServers",
+        "ec2:DescribeInstances"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_ReverseReplication.html"
+    },
+    "SendAgentLogsForDrs": {
+      "description": "Grants permission to send agent logs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "SendAgentMetricsForDrs": {
+      "description": "Grants permission to send agent metrics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "SendChannelCommandResultForDrs": {
+      "description": "Grants permission to send channel command result",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "SendClientLogsForDrs": {
+      "description": "Grants permission to send client logs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "SendClientMetricsForDrs": {
+      "description": "Grants permission to send client metrics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "SendVolumeStatsForDrs": {
+      "description": "Grants permission to send volume throughput statistics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "StartFailbackLaunch": {
+      "description": "Grants permission to start failback launch",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_StartFailbackLaunch.html"
+    },
+    "StartRecovery": {
+      "description": "Grants permission to start recovery",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "drs:CreateRecoveryInstanceForDrs",
+        "drs:ListTagsForResource",
+        "ec2:AttachVolume",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CreateLaunchTemplate",
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:CreateSnapshot",
+        "ec2:CreateTags",
+        "ec2:CreateVolume",
+        "ec2:DeleteLaunchTemplateVersions",
+        "ec2:DeleteSnapshot",
+        "ec2:DeleteVolume",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeImages",
+        "ec2:DescribeInstanceAttribute",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstances",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVolumes",
+        "ec2:DetachVolume",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:ModifyLaunchTemplate",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RunInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:TerminateInstances",
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_StartRecovery.html"
+    },
+    "StartReplication": {
+      "description": "Grants permission to start replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_StartReplication.html"
+    },
+    "StopFailback": {
+      "description": "Grants permission to stop failback",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_StopFailback.html"
+    },
+    "StopReplication": {
+      "description": "Grants permission to stop replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_StopReplication.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RecoveryInstanceResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ReplicationConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "drs:CreateAction"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_TagResource.html"
+    },
+    "TerminateRecoveryInstances": {
+      "description": "Grants permission to terminate recovery instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "drs:DescribeSourceServers",
+        "ec2:DeleteVolume",
+        "ec2:DescribeInstances",
+        "ec2:DescribeVolumes",
+        "ec2:TerminateInstances"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_TerminateRecoveryInstances.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RecoveryInstanceResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ReplicationConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAgentBacklogForDrs": {
+      "description": "Grants permission to update agent backlog",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateAgentConversionInfoForDrs": {
+      "description": "Grants permission to update agent conversion info",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateAgentReplicationInfoForDrs": {
+      "description": "Grants permission to update agent replication info",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateAgentReplicationProcessStateForDrs": {
+      "description": "Grants permission to update agent replication process state",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateAgentSourcePropertiesForDrs": {
+      "description": "Grants permission to update agent source properties",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateFailbackClientDeviceMappingForDrs": {
+      "description": "Grants permission to update failback client device mapping",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateFailbackClientLastSeenForDrs": {
+      "description": "Grants permission to update failback client last seen",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateFailbackReplicationConfiguration": {
+      "description": "Grants permission to update failback replication configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateFailbackReplicationConfiguration.html"
+    },
+    "UpdateLaunchConfiguration": {
+      "description": "Grants permission to update launch configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateLaunchConfiguration.html"
+    },
+    "UpdateReplicationCertificateForDrs": {
+      "description": "Grants permission to update a replication certificate",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "RecoveryInstanceResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html"
+    },
+    "UpdateReplicationConfiguration": {
+      "description": "Grants permission to update replication configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ec2:CreateSecurityGroup",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "ec2:GetEbsEncryptionByDefault",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateReplicationConfiguration.html"
+    },
+    "UpdateReplicationConfigurationTemplate": {
+      "description": "Grants permission to update replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ReplicationConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ec2:CreateSecurityGroup",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ec2:GetEbsDefaultKmsKeyId",
+        "ec2:GetEbsEncryptionByDefault",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateReplicationConfigurationTemplate.html"
+    }
+  },
+  "resourceTypes": {
+    "JobResource": {
+      "arn": "arn:${Partition}:drs:${Region}:${Account}:job/${JobID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/failback-overview.html"
+    },
+    "RecoveryInstanceResource": {
+      "arn": "arn:${Partition}:drs:${Region}:${Account}:recovery-instance/${RecoveryInstanceID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "drs:EC2InstanceARN"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/recovery-instances.html"
+    },
+    "ReplicationConfigurationTemplateResource": {
+      "arn": "arn:${Partition}:drs:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/replication-settings-template.html"
+    },
+    "SourceServerResource": {
+      "arn": "arn:${Partition}:drs:${Region}:${Account}:source-server/${SourceServerID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/source-servers.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "drs:CreateAction": {
+      "description": "Filters access by the name of a resource-creating API action",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/supported-iam-actions-tagging.html"
+    },
+    "drs:EC2InstanceARN": {
+      "description": "Filters access by the EC2 instance the request originated from",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/drs/latest/userguide/security_iam_authentication.html"
+    }
+  }
+}

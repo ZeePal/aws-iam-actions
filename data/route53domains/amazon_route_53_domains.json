@@ -1,0 +1,315 @@
+{
+  "name": "Amazon Route 53 Domains",
+  "prefix": "route53domains",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53domains.html",
+  "actions": {
+    "AcceptDomainTransferFromAnotherAwsAccount": {
+      "description": "Grants permission to accept the transfer of a domain from another AWS account to the current AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AcceptDomainTransferFromAnotherAwsAccount.html"
+    },
+    "AssociateDelegationSignerToDomain": {
+      "description": "Grants permission to associate a new delegation signer to a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AssociateDelegationSignerToDomain.html"
+    },
+    "CancelDomainTransferToAnotherAwsAccount": {
+      "description": "Grants permission to cancel the transfer of a domain from the current AWS account to another AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CancelDomainTransferToAnotherAwsAccount.html"
+    },
+    "CheckDomainAvailability": {
+      "description": "Grants permission to check the availability of one domain name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CheckDomainAvailability.html"
+    },
+    "CheckDomainTransferability": {
+      "description": "Grants permission to check whether a domain name can be transferred to Amazon Route 53",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CheckDomainTransferability.html"
+    },
+    "DeleteDomain": {
+      "description": "Grants permission to delete domains",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DeleteDomain.html"
+    },
+    "DeleteTagsForDomain": {
+      "description": "Grants permission to delete the specified tags for a domain",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DeleteTagsForDomain.html"
+    },
+    "DisableDomainAutoRenew": {
+      "description": "Grants permission to configure Amazon Route 53 to automatically renew the specified domain before the domain registration expires",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisableDomainAutoRenew.html"
+    },
+    "DisableDomainTransferLock": {
+      "description": "Grants permission to remove the transfer lock on the domain (specifically the clientTransferProhibited status) to allow domain transfers",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisableDomainTransferLock.html"
+    },
+    "DisassociateDelegationSignerFromDomain": {
+      "description": "Grants permission to disassociate an existing delegation signer from a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisassociateDelegationSignerFromDomain.html"
+    },
+    "EnableDomainAutoRenew": {
+      "description": "Grants permission to configure Amazon Route 53 to automatically renew the specified domain before the domain registration expires",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisableDomainAutoRenew.html"
+    },
+    "EnableDomainTransferLock": {
+      "description": "Grants permission to set the transfer lock on the domain (specifically the clientTransferProhibited status) to prevent domain transfers",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_EnableDomainTransferLock.html"
+    },
+    "GetContactReachabilityStatus": {
+      "description": "Grants permission to get information about whether the registrant contact has responded for operations that require confirmation that the email address for the registrant contact is valid, such as registering a new domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetContactReachabilityStatus.html"
+    },
+    "GetDomainDetail": {
+      "description": "Grants permission to get detailed information about a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetDomainDetail.html"
+    },
+    "GetDomainSuggestions": {
+      "description": "Grants permission to get a list of suggested domain names given a string, which can either be a domain name or simply a word or phrase (without spaces)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetDomainSuggestions.html"
+    },
+    "GetOperationDetail": {
+      "description": "Grants permission to get the current status of an operation that is not completed",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetOperationDetail.html"
+    },
+    "ListDomains": {
+      "description": "Grants permission to list all the domain names registered with Amazon Route 53 for the current AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListDomains.html"
+    },
+    "ListOperations": {
+      "description": "Grants permission to list the operation IDs of operations that are not yet complete",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListOperations.html"
+    },
+    "ListPrices": {
+      "description": "Grants permission to list the prices of operations for TLDs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListPrices.html"
+    },
+    "ListTagsForDomain": {
+      "description": "Grants permission to list all the tags that are associated with the specified domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListTagsForDomain.html"
+    },
+    "PushDomain": {
+      "description": "Grants permission to change the IPS tag of .uk domain to initiate a transfer process from Route 53 to another registrar",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_PushDomain.html"
+    },
+    "RegisterDomain": {
+      "description": "Grants permission to register domains",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RegisterDomain.html"
+    },
+    "RejectDomainTransferFromAnotherAwsAccount": {
+      "description": "Grants permission to reject the transfer of a domain from another AWS account to the current AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RejectDomainTransferFromAnotherAwsAccount.html"
+    },
+    "RenewDomain": {
+      "description": "Grants permission to renew domains for the specified number of years",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RenewDomain.html"
+    },
+    "ResendContactReachabilityEmail": {
+      "description": "Grants permission to resend the confirmation email to the current email address for the registrant contact for operations that require confirmation that the email address for the registrant contact is valid, such as registering a new domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ResendContactReachabilityEmail.html"
+    },
+    "ResendOperationAuthorization": {
+      "description": "Grants permission to resend the operation authorization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ResendOperationAuthorization.html"
+    },
+    "RetrieveDomainAuthCode": {
+      "description": "Grants permission to get the AuthCode for the domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RetrieveDomainAuthCode.html"
+    },
+    "TransferDomain": {
+      "description": "Grants permission to transfer a domain from another registrar to Amazon Route 53",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomain.html"
+    },
+    "TransferDomainToAnotherAwsAccount": {
+      "description": "Grants permission to transfer a domain from the current AWS account to another AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html"
+    },
+    "UpdateDomainContact": {
+      "description": "Grants permission to update the contact information for domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainContact.html"
+    },
+    "UpdateDomainContactPrivacy": {
+      "description": "Grants permission to update the domain contact privacy setting",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainContactPrivacy.html"
+    },
+    "UpdateDomainNameservers": {
+      "description": "Grants permission to replace the current set of name servers for a domain with the specified set of name servers",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainNameservers.html"
+    },
+    "UpdateTagsForDomain": {
+      "description": "Grants permission to add or update tags for a specified domain",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateTagsForDomain.html"
+    },
+    "ViewBilling": {
+      "description": "Grants permission to get all the domain-related billing records for the current AWS account for a specified period",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ViewBilling.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

@@ -1,0 +1,155 @@
+{
+  "name": "Amazon FreeRTOS",
+  "prefix": "freertos",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfreertos.html",
+  "actions": {
+    "CreateSoftwareConfiguration": {
+      "description": "Creates a software configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "DeleteSoftwareConfiguration": {
+      "description": "Deletes the software configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "DescribeHardwarePlatform": {
+      "description": "Describes the hardware platform",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "DescribeSoftwareConfiguration": {
+      "description": "Describes the software configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "GetSoftwareURL": {
+      "description": "Get the URL for Amazon FreeRTOS software download",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "GetSoftwareURLForConfiguration": {
+      "description": "Get the URL for Amazon FreeRTOS software download based on the configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "ListFreeRTOSVersions": {
+      "description": "Lists versions of AmazonFreeRTOS",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "ListHardwarePlatforms": {
+      "description": "Lists the hardware platforms",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "ListHardwareVendors": {
+      "description": "Lists the hardware vendors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "ListSoftwareConfigurations": {
+      "description": "Lists the software configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    },
+    "UpdateSoftwareConfiguration": {
+      "description": "Updates the software configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    }
+  },
+  "resourceTypes": {
+    "configuration": {
+      "arn": "arn:${Partition}:freertos:${Region}:${Account}:configuration/${ConfigurationName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "A tag key that is present in the request that the user makes to Amazon FreeRTOS",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/console-tagging-iam.html/"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "The tag key component of a tag attached to an Amazon FreeRTOS resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/console-tagging-iam.html/"
+    },
+    "aws:TagKeys": {
+      "description": "The list of all the tag key names associated with the resource in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/console-tagging-iam.html/"
+    }
+  }
+}

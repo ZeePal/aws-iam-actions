@@ -1,0 +1,456 @@
+{
+  "name": "AWS Ground Station",
+  "prefix": "groundstation",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsgroundstation.html",
+  "actions": {
+    "CancelContact": {
+      "description": "Grants permission to cancel a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CancelContact.html"
+    },
+    "CreateConfig": {
+      "description": "Grants permission to create a configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateConfig.html"
+    },
+    "CreateDataflowEndpointGroup": {
+      "description": "Grants permission to create a data flow endpoint group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateDataflowEndpointGroup.html"
+    },
+    "CreateMissionProfile": {
+      "description": "Grants permission to create a mission profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateMissionProfile.html"
+    },
+    "DeleteConfig": {
+      "description": "Grants permission to delete a config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DeleteConfig.html"
+    },
+    "DeleteDataflowEndpointGroup": {
+      "description": "Grants permission to delete a data flow endpoint group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DataflowEndpointGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DeleteDataflowEndpointGroup.html"
+    },
+    "DeleteMissionProfile": {
+      "description": "Grants permission to delete a mission profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "MissionProfile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DeleteMissionProfile.html"
+    },
+    "DescribeContact": {
+      "description": "Grants permission to describe a contact",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DescribeContact.html"
+    },
+    "GetConfig": {
+      "description": "Grants permission to return a configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetConfig.html"
+    },
+    "GetDataflowEndpointGroup": {
+      "description": "Grants permission to return a data flow endpoint group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DataflowEndpointGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetDataflowEndpointGroup.html"
+    },
+    "GetMinuteUsage": {
+      "description": "Grants permission to return minutes usage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetMinuteUsage.html"
+    },
+    "GetMissionProfile": {
+      "description": "Grants permission to retrieve a mission profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "MissionProfile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetMissionProfile.html"
+    },
+    "GetSatellite": {
+      "description": "Grants permission to return information about a satellite",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Satellite": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetSatellite.html"
+    },
+    "ListConfigs": {
+      "description": "Grants permission to return a list of past configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListConfigs.html"
+    },
+    "ListContacts": {
+      "description": "Grants permission to return a list of contacts",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListContacts.html"
+    },
+    "ListDataflowEndpointGroups": {
+      "description": "Grants permission to list data flow endpoint groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListDataflowEndpointGroups.html"
+    },
+    "ListGroundStations": {
+      "description": "Grants permission to list ground stations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListGroundStations.html"
+    },
+    "ListMissionProfiles": {
+      "description": "Grants permission to return a list of mission profiles",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListMissionProfiles.html"
+    },
+    "ListSatellites": {
+      "description": "Grants permission to list satellites",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListSatellites.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Contact": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DataflowEndpointGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MissionProfile": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ReserveContact": {
+      "description": "Grants permission to reserve a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ReserveContact.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Contact": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DataflowEndpointGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MissionProfile": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to deassign a resource tag",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Contact": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DataflowEndpointGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MissionProfile": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateConfig": {
+      "description": "Grants permission to update a configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_UpdateConfig.html"
+    },
+    "UpdateMissionProfile": {
+      "description": "Grants permission to update a mission profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "MissionProfile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_UpdateMissionProfile.html"
+    }
+  },
+  "resourceTypes": {
+    "Config": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:config/${ConfigType}/${ConfigId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:ConfigId",
+        "groundstation:ConfigType"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ConfigListItem.html"
+    },
+    "Contact": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:contact/${ContactId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:ContactId"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ContactData.html"
+    },
+    "DataflowEndpointGroup": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:dataflow-endpoint-group/${DataflowEndpointGroupId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:DataflowEndpointGroupId"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DataflowEndpoint.html"
+    },
+    "GroundStationResource": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:groundstation:${GroundStationId}",
+      "conditionKeys": [
+        "groundstation:GroundStationId"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GroundStationData.html"
+    },
+    "MissionProfile": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:mission-profile/${MissionProfileId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:MissionProfileId"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_MissionProfileListItem.html"
+    },
+    "Satellite": {
+      "arn": "arn:${Partition}:groundstation:${Region}:${Account}:satellite/${SatelliteId}",
+      "conditionKeys": [
+        "groundstation:SatelliteId"
+      ],
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_SatelliteListItem.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access based on the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "groundstation:ConfigId": {
+      "description": "Filters access by the ID of a config",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateConfig.html#groundstation-CreateConfig-response-configId"
+    },
+    "groundstation:ConfigType": {
+      "description": "Filters access by the type of a config",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateConfig.html#groundstation-CreateConfig-response-configType"
+    },
+    "groundstation:ContactId": {
+      "description": "Filters access by the ID of a contact",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ReserveContact.html#groundstation-ReserveContact-response-contactId"
+    },
+    "groundstation:DataflowEndpointGroupId": {
+      "description": "Filters access by the ID of a dataflow endpoint group",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateDataflowEndpointGroup.html#groundstation-CreateDataflowEndpointGroup-response-dataflowEndpointGroupId"
+    },
+    "groundstation:GroundStationId": {
+      "description": "Filters access by the ID of a ground station",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GroundStationData.html#groundstation-Type-GroundStationData-groundStationId"
+    },
+    "groundstation:MissionProfileId": {
+      "description": "Filters access by the ID of a mission profile",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_CreateMissionProfile.html#groundstation-CreateMissionProfile-response-missionProfileId"
+    },
+    "groundstation:SatelliteId": {
+      "description": "Filters access by the ID of a satellite",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ground-station/latest/APIReference/API_SatelliteListItem.html#groundstation-Type-SatelliteListItem-satelliteId"
+    }
+  }
+}

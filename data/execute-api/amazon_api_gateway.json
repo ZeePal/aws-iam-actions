@@ -1,0 +1,57 @@
+{
+  "name": "Amazon API Gateway",
+  "prefix": "execute-api",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigateway.html",
+  "actions": {
+    "InvalidateCache": {
+      "description": "Used to invalidate API cache upon a client request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execute-api-general": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/api-gateway-caching.html"
+    },
+    "Invoke": {
+      "description": "Used to invoke an API upon a client request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execute-api-general": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/how-to-call-api.html"
+    },
+    "ManageConnections": {
+      "description": "ManageConnections controls access to the @connections API",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execute-api-general": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/apigateway-websocket-control-access-iam.html"
+    }
+  },
+  "resourceTypes": {
+    "execute-api-general": {
+      "arn": "arn:${Partition}:execute-api:${Region}:${Account}:${ApiId}/${Stage}/${Method}/${ApiSpecificResourcePath}",
+      "conditionKeys": [],
+      "url": null
+    }
+  },
+  "conditionKeys": {}
+}

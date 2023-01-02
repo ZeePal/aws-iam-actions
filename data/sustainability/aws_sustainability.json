@@ -1,0 +1,18 @@
+{
+  "name": "AWS Sustainability",
+  "prefix": "sustainability",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssustainability.html",
+  "actions": {
+    "GetCarbonFootprintSummary": {
+      "description": "Grants permission to view the carbon footprint tool",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

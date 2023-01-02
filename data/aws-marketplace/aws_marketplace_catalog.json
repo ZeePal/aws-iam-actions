@@ -1,0 +1,220 @@
+{
+  "name": "AWS Marketplace Catalog",
+  "prefix": "aws-marketplace",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacecatalog.html",
+  "actions": {
+    "CancelChangeSet": {
+      "description": "Grants permission to cancel a running change set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChangeSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_CancelChangeSet.html"
+    },
+    "CompleteTask": {
+      "description": "Grants permission to complete an existing task and submit the content to the associated change",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/"
+    },
+    "DescribeChangeSet": {
+      "description": "Grants permission to return the details of an existing change set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChangeSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeChangeSet.html"
+    },
+    "DescribeEntity": {
+      "description": "Grants permission to return the details of an existing entity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Entity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html"
+    },
+    "DescribeTask": {
+      "description": "Grants permission to return the details of an existing task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/"
+    },
+    "ListChangeSets": {
+      "description": "Grants permission to list existing change sets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListChangeSets.html"
+    },
+    "ListEntities": {
+      "description": "Grants permission to list existing entities",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListEntities.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags on an existing entity or a change set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChangeSet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Entity": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_ListTagsForResource.html"
+    },
+    "ListTasks": {
+      "description": "Grants permission to list existing tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/"
+    },
+    "StartChangeSet": {
+      "description": "Grants permission to request a new change set (Note: resource-level permissions for this action and condition context keys for this action are only supported when used with Catalog API and are not supported when used with AWS Marketplace Management Portal)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Entity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "catalog:ChangeType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an existing entity or a change set",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChangeSet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Entity": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an existing entity or a change set",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChangeSet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Entity": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_UntagResource.html"
+    },
+    "UpdateTask": {
+      "description": "Grants permission to update the contents of an existing task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/"
+    }
+  },
+  "resourceTypes": {
+    "ChangeSet": {
+      "arn": "arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/ChangeSet/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "catalog:ChangeType"
+      ],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_ResponseSyntax"
+    },
+    "Entity": {
+      "arn": "arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/${EntityType}/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "catalog:ChangeType"
+      ],
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html#API_DescribeEntity_ResponseSyntax"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access based on the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "catalog:ChangeType": {
+      "description": "Filters access by the change type in the StartChangeSet request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/api-access-control.html"
+    }
+  }
+}

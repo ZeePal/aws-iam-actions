@@ -1,0 +1,54 @@
+{
+  "name": "AWS Marketplace Management Portal",
+  "prefix": "aws-marketplace-management",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacemanagementportal.html",
+  "actions": {
+    "uploadFiles": {
+      "description": "Allows access to the File Upload page inside the AWS Marketplace Management Portal.",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions"
+    },
+    "viewMarketing": {
+      "description": "Allows access to the Marketing page inside the AWS Marketplace Management Portal.",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions"
+    },
+    "viewReports": {
+      "description": "Allows access to the Reports page inside the AWS Marketplace Management Portal.",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions"
+    },
+    "viewSettings": {
+      "description": "Allows access to the Settings page inside the AWS Marketplace Management Portal.",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions"
+    },
+    "viewSupport": {
+      "description": "Allows access to the Customer Support Eligibility page inside the AWS Marketplace Management Portal.",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

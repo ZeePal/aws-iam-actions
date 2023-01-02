@@ -1,0 +1,199 @@
+{
+  "name": "AWS Identity Sync",
+  "prefix": "identity-sync",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitysync.html",
+  "actions": {
+    "CreateSyncFilter": {
+      "description": "Grants permission to create a sync filter on the sync profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "CreateSyncProfile": {
+      "description": "Grants permission to create a sync profile for the identity source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:AuthorizeApplication"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "CreateSyncTarget": {
+      "description": "Grants permission to create a sync target for the identity source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "DeleteSyncFilter": {
+      "description": "Grants permission to delete a sync filter from the sync profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "DeleteSyncProfile": {
+      "description": "Grants permission to delete a sync profile from the source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:UnauthorizeApplication"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "DeleteSyncTarget": {
+      "description": "Grants permission to delete a sync target from the source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SyncTargetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "GetSyncProfile": {
+      "description": "Grants permission to retrieve a sync profile by using a sync profile name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "GetSyncTarget": {
+      "description": "Grants permission to retrieve a sync target from the sync profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SyncTargetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "ListSyncFilters": {
+      "description": "Grants permission to list the sync filters from the sync profile",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "StartSync": {
+      "description": "Grants permission to start a sync process or to resume a sync process that was previously paused",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "StopSync": {
+      "description": "Grants permission to stop any planned sync process in the sync schedule from starting",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "UpdateSyncTarget": {
+      "description": "Grants permission to update a sync target on the sync profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SyncProfileResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SyncTargetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    }
+  },
+  "resourceTypes": {
+    "SyncProfileResource": {
+      "arn": "arn:${Partition}:identity-sync:${Region}:${Account}:profile/${SyncProfileName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    },
+    "SyncTargetResource": {
+      "arn": "arn:${Partition}:identity-sync:${Region}:${Account}:target/${SyncProfileName}/${SyncTargetName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/security-iam-awsmanpol.html"
+    }
+  },
+  "conditionKeys": {}
+}

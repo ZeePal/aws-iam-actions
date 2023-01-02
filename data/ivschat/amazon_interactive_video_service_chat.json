@@ -1,0 +1,295 @@
+{
+  "name": "Amazon Interactive Video Service Chat",
+  "prefix": "ivschat",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninteractivevideoservicechat.html",
+  "actions": {
+    "CreateChatToken": {
+      "description": "Grants permission to create an encrypted token that is used to establish an individual WebSocket connection to a room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateChatToken.html"
+    },
+    "CreateLoggingConfiguration": {
+      "description": "Grants permission to create a logging configuration that allows clients to record room messages",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Logging-Configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateLoggingConfiguration.html"
+    },
+    "CreateRoom": {
+      "description": "Grants permission to create a room that allows clients to connect and pass messages",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRoom.html"
+    },
+    "DeleteLoggingConfiguration": {
+      "description": "Grants permission to delete the logging configuration for a specified logging configuration ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Logging-Configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DeleteLoggingConfiguration.html"
+    },
+    "DeleteMessage": {
+      "description": "Grants permission to send an event to a specific room which directs clients to delete a specific message",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DeleteMessage.html"
+    },
+    "DeleteRoom": {
+      "description": "Grants permission to delete the room for a specified room ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DeleteRoom.html"
+    },
+    "DisconnectUser": {
+      "description": "Grants permission to disconnect all connections using a specified user ID from a room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DisconnectUser.html"
+    },
+    "GetLoggingConfiguration": {
+      "description": "Grants permission to get the logging configuration for a specified logging configuration ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Logging-Configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_GetLoggingConfiguration.html"
+    },
+    "GetRoom": {
+      "description": "Grants permission to get the room configuration for a specified room ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_GetRoom.html"
+    },
+    "ListLoggingConfigurations": {
+      "description": "Grants permission to get summary information about logging configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Logging-Configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_ListLoggingConfigurations.html"
+    },
+    "ListRooms": {
+      "description": "Grants permission to get summary information about rooms",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_ListRooms.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to get information about the tags for a specified ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_ListTagsForResource.html"
+    },
+    "SendEvent": {
+      "description": "Grants permission to send an event to a room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_SendEvent.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add or update tags for a resource with a specified ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags for a resource with a specified ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UntagResource.html"
+    },
+    "UpdateLoggingConfiguration": {
+      "description": "Grants permission to update the logging configuration for a specified logging configuration ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Logging-Configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateLoggingConfiguration.html"
+    },
+    "UpdateRoom": {
+      "description": "Grants permission to update the room configuration for a specified room ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateRoom.html"
+    }
+  },
+  "resourceTypes": {
+    "Logging-Configuration": {
+      "arn": "arn:${Partition}:ivschat::${Account}:logging-configuration/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_LoggingConfiguration.html"
+    },
+    "Room": {
+      "arn": "arn:${Partition}:ivschat::${Account}:room/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_Room.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

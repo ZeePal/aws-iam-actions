@@ -1,0 +1,36 @@
+{
+  "name": "AWS Identity Store Auth",
+  "prefix": "identitystore-auth",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitystoreauth.html",
+  "actions": {
+    "BatchDeleteSession": {
+      "description": "Grants permission to delete a batch of specified sessions",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-app-session.html"
+    },
+    "BatchGetSession": {
+      "description": "Grants permission to return session attributes for a batch of specified sessions",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-app-session.html"
+    },
+    "ListSessions": {
+      "description": "Grants permission to retrieve a list of active sessions for the specified user",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-app-session.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

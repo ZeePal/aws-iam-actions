@@ -1,0 +1,1224 @@
+{
+  "name": "AWS IoT SiteWise",
+  "prefix": "iotsitewise",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotsitewise.html",
+  "actions": {
+    "AssociateAssets": {
+      "description": "Grants permission to associate a child asset with a parent asset through a hierarchy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssociateAssets.html"
+    },
+    "AssociateTimeSeriesToAssetProperty": {
+      "description": "Grants permission to associate a time series with an asset property",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssociateTimeSeriesToAssetProperty.html"
+    },
+    "BatchAssociateProjectAssets": {
+      "description": "Grants permission to associate assets to a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchAssociateProjectAssets.html"
+    },
+    "BatchDisassociateProjectAssets": {
+      "description": "Grants permission to disassociate assets from a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchDisassociateProjectAssets.html"
+    },
+    "BatchGetAssetPropertyAggregates": {
+      "description": "Grants permission to retrieve computed aggregates for multiple asset properties",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyAggregates.html"
+    },
+    "BatchGetAssetPropertyValue": {
+      "description": "Grants permission to retrieve the latest value for multiple asset properties",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyValue.html"
+    },
+    "BatchGetAssetPropertyValueHistory": {
+      "description": "Grants permission to retrieve the value history for multiple asset properties",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyValueHistory.html"
+    },
+    "BatchPutAssetPropertyValue": {
+      "description": "Grants permission to put property values for asset properties",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchPutAssetPropertyValue.html"
+    },
+    "CreateAccessPolicy": {
+      "description": "Grants permission to create an access policy for a portal or a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "project": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAccessPolicy.html"
+    },
+    "CreateAsset": {
+      "description": "Grants permission to create an asset from an asset model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset-model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAsset.html"
+    },
+    "CreateAssetModel": {
+      "description": "Grants permission to create an asset model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html"
+    },
+    "CreateBulkImportJob": {
+      "description": "Grants permission to create bulk import job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateBulkImportJob.html"
+    },
+    "CreateDashboard": {
+      "description": "Grants permission to create a dashboard in a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateDashboard.html"
+    },
+    "CreateGateway": {
+      "description": "Grants permission to create a gateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateGateway.html"
+    },
+    "CreatePortal": {
+      "description": "Grants permission to create a portal",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "sso:CreateManagedApplicationInstance",
+        "sso:DescribeRegisteredRegions"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreatePortal.html"
+    },
+    "CreateProject": {
+      "description": "Grants permission to create a project in a portal",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateProject.html"
+    },
+    "DeleteAccessPolicy": {
+      "description": "Grants permission to delete an access policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteAccessPolicy.html"
+    },
+    "DeleteAsset": {
+      "description": "Grants permission to delete an asset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteAsset.html"
+    },
+    "DeleteAssetModel": {
+      "description": "Grants permission to delete an asset model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset-model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteAssetModel.html"
+    },
+    "DeleteDashboard": {
+      "description": "Grants permission to delete a dashboard",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteDashboard.html"
+    },
+    "DeleteGateway": {
+      "description": "Grants permission to delete a gateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteGateway.html"
+    },
+    "DeletePortal": {
+      "description": "Grants permission to delete a portal",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:DeleteManagedApplicationInstance"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeletePortal.html"
+    },
+    "DeleteProject": {
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteProject.html"
+    },
+    "DeleteTimeSeries": {
+      "description": "Grants permission to delete a time series",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DeleteTimeSeries.html"
+    },
+    "DescribeAccessPolicy": {
+      "description": "Grants permission to describe an access policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAccessPolicy.html"
+    },
+    "DescribeAsset": {
+      "description": "Grants permission to describe an asset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAsset.html"
+    },
+    "DescribeAssetModel": {
+      "description": "Grants permission to describe an asset model",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset-model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModel.html"
+    },
+    "DescribeAssetProperty": {
+      "description": "Grants permission to describe an asset property",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetProperty.html"
+    },
+    "DescribeBulkImportJob": {
+      "description": "Grants permission to describe bulk import job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeBulkImportJob.html"
+    },
+    "DescribeDashboard": {
+      "description": "Grants permission to describe a dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeDashboard.html"
+    },
+    "DescribeDefaultEncryptionConfiguration": {
+      "description": "Grants permission to describe the default encryption configuration for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeDefaultEncryptionConfiguration.html"
+    },
+    "DescribeGateway": {
+      "description": "Grants permission to describe a gateway",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeGateway.html"
+    },
+    "DescribeGatewayCapabilityConfiguration": {
+      "description": "Grants permission to describe a capability configuration for a gateway",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeGatewayCapabilityConfiguration.html"
+    },
+    "DescribeLoggingOptions": {
+      "description": "Grants permission to describe logging options for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeLoggingOptions.html"
+    },
+    "DescribePortal": {
+      "description": "Grants permission to describe a portal",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribePortal.html"
+    },
+    "DescribeProject": {
+      "description": "Grants permission to describe a project",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeProject.html"
+    },
+    "DescribeStorageConfiguration": {
+      "description": "Grants permission to describe the storage configuration for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeStorageConfiguration.html"
+    },
+    "DescribeTimeSeries": {
+      "description": "Grants permission to describe a time series",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeTimeSeries.html"
+    },
+    "DisassociateAssets": {
+      "description": "Grants permission to disassociate a child asset from a parent asset by a hierarchy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DisassociateAssets.html"
+    },
+    "DisassociateTimeSeriesFromAssetProperty": {
+      "description": "Grants permission to disassociate a time series from an asset property",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DisassociateTimeSeriesFromAssetProperty.html"
+    },
+    "GetAssetPropertyAggregates": {
+      "description": "Grants permission to retrieve computed aggregates for an asset property",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyAggregates.html"
+    },
+    "GetAssetPropertyValue": {
+      "description": "Grants permission to retrieve the latest value for an asset property",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValue.html"
+    },
+    "GetAssetPropertyValueHistory": {
+      "description": "Grants permission to retrieve the value history for an asset property",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValueHistory.html"
+    },
+    "GetInterpolatedAssetPropertyValues": {
+      "description": "Grants permission to retrieve interpolated values for an asset property",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "time-series": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetInterpolatedAssetPropertyValues.html"
+    },
+    "ListAccessPolicies": {
+      "description": "Grants permission to list all access policies for an identity or a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "project": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAccessPolicies.html"
+    },
+    "ListAssetModels": {
+      "description": "Grants permission to list all asset models",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAssetModels.html"
+    },
+    "ListAssetRelationships": {
+      "description": "Grants permission to list the asset relationship graph for an asset",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAssetRelationships.html"
+    },
+    "ListAssets": {
+      "description": "Grants permission to list all assets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset-model": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAssets.html"
+    },
+    "ListAssociatedAssets": {
+      "description": "Grants permission to list all assets associated with an asset through a hierarchy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListAssociatedAssets.html"
+    },
+    "ListBulkImportJobs": {
+      "description": "Grants permission to list bulk import jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListBulkImportJobs.html"
+    },
+    "ListDashboards": {
+      "description": "Grants permission to list all dashboards in a project",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListDashboards.html"
+    },
+    "ListGateways": {
+      "description": "Grants permission to list all gateways",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListGateways.html"
+    },
+    "ListPortals": {
+      "description": "Grants permission to list all portals",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListPortals.html"
+    },
+    "ListProjectAssets": {
+      "description": "Grants permission to list all assets associated with a project",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListProjectAssets.html"
+    },
+    "ListProjects": {
+      "description": "Grants permission to list all projects in a portal",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListProjects.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list all tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset-model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "portal": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "project": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTimeSeries": {
+      "description": "Grants permission to list time series",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListTimeSeries.html"
+    },
+    "PutDefaultEncryptionConfiguration": {
+      "description": "Grants permission to set the default encryption configuration for the AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_PutDefaultEncryptionConfiguration.html"
+    },
+    "PutLoggingOptions": {
+      "description": "Grants permission to set logging options for the AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_PutLoggingOptions.html"
+    },
+    "PutStorageConfiguration": {
+      "description": "Grants permission to configure storage settings for the AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_PutStorageConfiguration.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset-model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "portal": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "project": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "asset-model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "portal": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "project": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAccessPolicy": {
+      "description": "Grants permission to update an access policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "access-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAccessPolicy.html"
+    },
+    "UpdateAsset": {
+      "description": "Grants permission to update an asset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAsset.html"
+    },
+    "UpdateAssetModel": {
+      "description": "Grants permission to update an asset model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset-model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetModel.html"
+    },
+    "UpdateAssetModelPropertyRouting": {
+      "description": "Grants permission to update an AssetModel property routing",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "asset-model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/${UserGuideDocPage}alarms-iam-permissions.html"
+    },
+    "UpdateAssetProperty": {
+      "description": "Grants permission to update an asset property",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "asset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetProperty.html"
+    },
+    "UpdateDashboard": {
+      "description": "Grants permission to update a dashboard",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateDashboard.html"
+    },
+    "UpdateGateway": {
+      "description": "Grants permission to update a gateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateGateway.html"
+    },
+    "UpdateGatewayCapabilityConfiguration": {
+      "description": "Grants permission to update a capability configuration for a gateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateGatewayCapabilityConfiguration.html"
+    },
+    "UpdatePortal": {
+      "description": "Grants permission to update a portal",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "portal": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdatePortal.html"
+    },
+    "UpdateProject": {
+      "description": "Grants permission to update a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateProject.html"
+    }
+  },
+  "resourceTypes": {
+    "access-policy": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAccessPolicy.html"
+    },
+    "asset": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAsset.html"
+    },
+    "asset-model": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAssetModel.html"
+    },
+    "dashboard": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateDashboard.html"
+    },
+    "gateway": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateGateway.html"
+    },
+    "portal": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreatePortal.html"
+    },
+    "project": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateProject.html"
+    },
+    "time-series": {
+      "arn": "arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeTimeSeries.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "iotsitewise:assetHierarchyPath": {
+      "description": "Filters access by an asset hierarchy path, which is the string of asset IDs in the asset's hierarchy, each separated by a forward slash",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:childAssetId": {
+      "description": "Filters access by the ID of a child asset being associated whith a parent asset",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:group": {
+      "description": "Filters access by the ID of an AWS Single Sign-On group",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:iam": {
+      "description": "Filters access by the ID of an AWS IAM identity",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:isAssociatedWithAssetProperty": {
+      "description": "Filters access by data streams associated with or not associated with asset properties",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:portal": {
+      "description": "Filters access by the ID of a portal",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:project": {
+      "description": "Filters access by the ID of a project",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:propertyAlias": {
+      "description": "Filters access by the property alias",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:propertyId": {
+      "description": "Filters access by the ID of an asset property",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "iotsitewise:user": {
+      "description": "Filters access by the ID of an AWS Single Sign-On user",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    }
+  }
+}

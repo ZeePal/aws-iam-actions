@@ -1,0 +1,235 @@
+{
+  "name": "AWS Certificate Manager",
+  "prefix": "acm",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscertificatemanager.html",
+  "actions": {
+    "AddTagsToCertificate": {
+      "description": "Grants permission to add one or more tags to a certificate",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_AddTagsToCertificate.html"
+    },
+    "DeleteCertificate": {
+      "description": "Grants permission to delete a certificate and its associated private key",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteCertificate.html"
+    },
+    "DescribeCertificate": {
+      "description": "Grants permission to retreive a certificates and its metadata",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCertificate.html"
+    },
+    "ExportCertificate": {
+      "description": "Grants permission to export a private certificate issued by a private certificate authority (CA) for use anywhere",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_ExportCertificate.html"
+    },
+    "GetAccountConfiguration": {
+      "description": "Grants permission to retrieve account level configuration from AWS Certificate Manager",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_GetAccountConfiguration.html"
+    },
+    "GetCertificate": {
+      "description": "Grants permission to retrieve a certificate and certificate chain for a certificate ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_GetCertificate.html"
+    },
+    "ImportCertificate": {
+      "description": "Grants permission to import a 3rd party certificate into AWS Certificate Manager (ACM)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_ImportCertificate.html"
+    },
+    "ListCertificates": {
+      "description": "Grants permission to retrieve a list of the certificate ARNs and the domain name for each ARN",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html"
+    },
+    "ListTagsForCertificate": {
+      "description": "Grants permission to lists the tags that have been associated with a certificate",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_ListTagsForCertificate.html"
+    },
+    "PutAccountConfiguration": {
+      "description": "Grants permission to update account level configuration in AWS Certificate Manager",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_PutAccountConfiguration.html"
+    },
+    "RemoveTagsFromCertificate": {
+      "description": "Grants permission to remove one or more tags from a certificate",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_RemoveTagsFromCertificate.html"
+    },
+    "RenewCertificate": {
+      "description": "Grants permission to renew an eligible private certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html"
+    },
+    "RequestCertificate": {
+      "description": "Grants permission to requests a public or private certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_RequestCertificate.html"
+    },
+    "ResendValidationEmail": {
+      "description": "Grants permission to resend an email to request domain ownership validation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_ResendValidationEmail.html"
+    },
+    "UpdateCertificateOptions": {
+      "description": "Grants permission to update a certificate configuration. Use this to specify whether to opt in to or out of certificate transparency logging",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateCertificateOptions.html"
+    }
+  },
+  "resourceTypes": {
+    "certificate": {
+      "arn": "arn:${Partition}:acm:${Region}:${Account}:certificate/${CertificateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/acm/latest/userguide/authen-overview.html#acm-resources-operations"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filter access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filter access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

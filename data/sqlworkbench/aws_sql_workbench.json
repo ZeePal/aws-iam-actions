@@ -1,0 +1,923 @@
+{
+  "name": "AWS SQL Workbench",
+  "prefix": "sqlworkbench",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssqlworkbench.html",
+  "actions": {
+    "AssociateConnectionWithChart": {
+      "description": "Grants permission to associate connection to a chart",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "AssociateConnectionWithTab": {
+      "description": "Grants permission to associate connection to a tab",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "AssociateQueryWithTab": {
+      "description": "Grants permission to associate query to a tab",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "BatchDeleteFolder": {
+      "description": "Grants permission to delete folders on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "BatchGetNotebookCell": {
+      "description": "Grants permission to get notebook cells content on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateAccount": {
+      "description": "Grants permission to create SQLWorkbench account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateChart": {
+      "description": "Grants permission to create new saved chart on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateConnection": {
+      "description": "Grants permission to create a new connection on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateFolder": {
+      "description": "Grants permission to create folder on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateNotebook": {
+      "description": "Grants permission to create a new notebook on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateNotebookCell": {
+      "description": "Grants permission to create a notebook cell on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateNotebookFromVersion": {
+      "description": "Grants permission to create a new notebook from a notebook version on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateNotebookVersion": {
+      "description": "Grants permission to create a notebook version on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "CreateSavedQuery": {
+      "description": "Grants permission to create a new saved query on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteChart": {
+      "description": "Grants permission to remove charts on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteConnection": {
+      "description": "Grants permission to remove connections on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteNotebook": {
+      "description": "Grants permission to remove notebooks on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteNotebookCell": {
+      "description": "Grants permission to remove notebooks cells on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteNotebookVersion": {
+      "description": "Grants permission to remove notebooks cells on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteSavedQuery": {
+      "description": "Grants permission to remove saved queries on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DeleteTab": {
+      "description": "Grants permission to remove a tab on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DriverExecute": {
+      "description": "Grants permission to execute a query in your redshift cluster",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "DuplicateNotebook": {
+      "description": "Grants permission to create a new notebook by duplicating an existing one on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ExportNotebook": {
+      "description": "Grants permission to export a notebook on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GenerateSession": {
+      "description": "Grants permission to generate a new session on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetAccountInfo": {
+      "description": "Grants permission to get account info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetAccountSettings": {
+      "description": "Grants permission to get account settings",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetChart": {
+      "description": "Grants permission to get charts on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetConnection": {
+      "description": "Grants permission to get connections on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetNotebook": {
+      "description": "Grants permission to get notebook metadata on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetNotebookVersion": {
+      "description": "Grants permission to get the content of a notebook version on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetQueryExecutionHistory": {
+      "description": "Grants permission to get the query execution history on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetSavedQuery": {
+      "description": "Grants permission to get saved query on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetUserInfo": {
+      "description": "Grants permission to get user info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "GetUserWorkspaceSettings": {
+      "description": "Grants permission to get workspace settings on your account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ImportNotebook": {
+      "description": "Grants permission to import a notebook on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListConnections": {
+      "description": "Grants permission to list the connections on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListDatabases": {
+      "description": "Grants permission to list databases of your redshift cluster",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListFiles": {
+      "description": "Grants permission to list files and folders",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListNotebookVersions": {
+      "description": "Grants permission to get notebook versions metadata on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListNotebooks": {
+      "description": "Grants permission to list the notebooks on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListQueryExecutionHistory": {
+      "description": "Grants permission to list the query execution history on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListRedshiftClusters": {
+      "description": "Grants permission to list redshift clusters on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListSampleDatabases": {
+      "description": "Grants permission to list sample databases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListSavedQueryVersions": {
+      "description": "Grants permission to list versions of saved query on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListTabs": {
+      "description": "Grants permission to list tabs on your account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListTaggedResources": {
+      "description": "Grants permission to list tagged resources",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags of an sqlworkbench resource",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "notebook": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "query": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "PutTab": {
+      "description": "Grants permission to create or update a tab on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "PutUserWorkspaceSettings": {
+      "description": "Grants permission to update workspace settings on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "RestoreNotebookVersion": {
+      "description": "Grants permission to restore a notebook on your account to a version",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an sqlworkbench resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "notebook": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "query": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an sqlworkbench resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "notebook": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "query": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateAccountConnectionSettings": {
+      "description": "Grants permission to update account-wide connection settings",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateAccountExportSettings": {
+      "description": "Grants permission to update account-wide export settings",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateAccountGeneralSettings": {
+      "description": "Grants permission to update account-wide general settings",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateChart": {
+      "description": "Grants permission to update a chart on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateConnection": {
+      "description": "Grants permission to update a connection on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "connection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateFileFolder": {
+      "description": "Grants permission to move files on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "chart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "query": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateFolder": {
+      "description": "Grants permission to update a folder's name and details on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateNotebook": {
+      "description": "Grants permission to update a notebook metadata on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateNotebookCellContent": {
+      "description": "Grants permission to update a notebook cell content on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateNotebookCellLayout": {
+      "description": "Grants permission to update a notebook cell layout on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "notebook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "UpdateSavedQuery": {
+      "description": "Grants permission to update a saved query on your account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "query": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    }
+  },
+  "resourceTypes": {
+    "chart": {
+      "arn": "arn:${Partition}:sqlworkbench:${Region}:${Account}:chart/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html"
+    },
+    "connection": {
+      "arn": "arn:${Partition}:sqlworkbench:${Region}:${Account}:connection/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html"
+    },
+    "notebook": {
+      "arn": "arn:${Partition}:sqlworkbench:${Region}:${Account}:notebook/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html"
+    },
+    "query": {
+      "arn": "arn:${Partition}:sqlworkbench:${Region}:${Account}:query/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags that are associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

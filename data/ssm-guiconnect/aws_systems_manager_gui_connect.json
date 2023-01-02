@@ -1,0 +1,36 @@
+{
+  "name": "AWS Systems Manager GUI Connect",
+  "prefix": "ssm-guiconnect",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerguiconnect.html",
+  "actions": {
+    "CancelConnection": {
+      "description": "Grants permission to terminate a GUI Connect session",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-rdp.html"
+    },
+    "GetConnection": {
+      "description": "Grants permission to get the metadata for a GUI Connect session",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-rdp.html"
+    },
+    "StartConnection": {
+      "description": "Grants permission to start a GUI Connect session",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-rdp.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

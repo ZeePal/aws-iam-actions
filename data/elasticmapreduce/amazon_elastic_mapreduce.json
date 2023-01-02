@@ -1,0 +1,1096 @@
+{
+  "name": "Amazon Elastic MapReduce",
+  "prefix": "elasticmapreduce",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticmapreduce.html",
+  "actions": {
+    "AddInstanceFleet": {
+      "description": "Grants permission to add an instance fleet to a running cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_AddInstanceFleet.html"
+    },
+    "AddInstanceGroups": {
+      "description": "Grants permission to add instance groups to a running cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_AddInstanceGroups.html"
+    },
+    "AddJobFlowSteps": {
+      "description": "Grants permission to add new steps to a running cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "elasticmapreduce:ExecutionRoleArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_AddJobFlowSteps.html"
+    },
+    "AddTags": {
+      "description": "Grants permission to add tags to an Amazon EMR resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "editor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "notebook-execution": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "studio": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_AddTags.html"
+    },
+    "AttachEditor": {
+      "description": "Grants permission to attach an EMR notebook to a compute engine",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "CancelSteps": {
+      "description": "Grants permission to cancel a pending step or steps in a running cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_CancelSteps.html"
+    },
+    "CreateEditor": {
+      "description": "Grants permission to create an EMR notebook",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-create.html"
+    },
+    "CreatePersistentAppUI": {
+      "description": "Grants permission to create a persistent application history server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html"
+    },
+    "CreateRepository": {
+      "description": "Grants permission to create an EMR notebook repository",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "CreateSecurityConfiguration": {
+      "description": "Grants permission to create a security configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_CreateSecurityConfiguration.html"
+    },
+    "CreateStudio": {
+      "description": "Grants permission to create an EMR Studio",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "CreateStudioPresignedUrl": {
+      "description": "Grants permission to launch an EMR Studio using IAM authentication mode",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "CreateStudioSessionMapping": {
+      "description": "Grants permission to create an EMR Studio session mapping",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "DeleteEditor": {
+      "description": "Grants permission to delete an EMR notebook",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-deleting"
+    },
+    "DeleteRepository": {
+      "description": "Grants permission to delete an EMR notebook repository",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "DeleteSecurityConfiguration": {
+      "description": "Grants permission to delete a security configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DeleteSecurityConfiguration.html"
+    },
+    "DeleteStudio": {
+      "description": "Grants permission to delete an EMR Studio",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "DeleteStudioSessionMapping": {
+      "description": "Grants permission to delete an EMR Studio session mapping",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "DeleteWorkspaceAccess": {
+      "description": "Grants permission to block an identity from opening a collaborative workspace",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "DescribeCluster": {
+      "description": "Grants permission to get details about a cluster, including status, hardware and software configuration, VPC settings, and so on",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeCluster.html"
+    },
+    "DescribeEditor": {
+      "description": "Grants permission to view information about a notebook, including status, user, role, tags, location, and more",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "DescribeJobFlows": {
+      "description": "Grants permission to describe details of clusters (job flows). This API is deprecated and will eventually be removed. We recommend you use ListClusters, DescribeCluster, ListSteps, ListInstanceGroups and ListBootstrapActions instead",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeJobFlows.html"
+    },
+    "DescribeNotebookExecution": {
+      "description": "Grants permission to view information about a notebook execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "notebook-execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html"
+    },
+    "DescribePersistentAppUI": {
+      "description": "Grants permission to describe a persistent application history server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html"
+    },
+    "DescribeReleaseLabel": {
+      "description": "Grants permission to view information about an EMR release, such as which applications are supported",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeReleaseLabel.html"
+    },
+    "DescribeRepository": {
+      "description": "Grants permission to describe an EMR notebook repository",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "DescribeSecurityConfiguration": {
+      "description": "Grants permission to get details of a security configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeSecurityConfiguration.html"
+    },
+    "DescribeStep": {
+      "description": "Grants permission to get details about a cluster step",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeStep.html"
+    },
+    "DescribeStudio": {
+      "description": "Grants permission to view information about an EMR Studio",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "DetachEditor": {
+      "description": "Grants permission to detach an EMR notebook from a compute engine",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "GetAutoTerminationPolicy": {
+      "description": "Grants permission to retrieve the auto-termination policy associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_GetAutoTerminationPolicy.html"
+    },
+    "GetBlockPublicAccessConfiguration": {
+      "description": "Grants permission to retrieve the EMR block public access configuration for the AWS account in the Region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_GetBlockPublicAccessConfiguration.html"
+    },
+    "GetManagedScalingPolicy": {
+      "description": "Grants permission to retrieve the managed scaling policy associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_GetManagedScalingPolicy.html"
+    },
+    "GetOnClusterAppUIPresignedURL": {
+      "description": "Grants permission to get a presigned URL for an application history server running on the cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html"
+    },
+    "GetPersistentAppUIPresignedURL": {
+      "description": "Grants permission to get a presigned URL for a persistent application history server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html"
+    },
+    "GetStudioSessionMapping": {
+      "description": "Grants permission to view information about an EMR Studio session mapping",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "LinkRepository": {
+      "description": "Grants permission to link an EMR notebook repository to EMR notebooks",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "ListBootstrapActions": {
+      "description": "Grants permission to get details about the bootstrap actions associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListBootstrapActions.html"
+    },
+    "ListClusters": {
+      "description": "Grants permission to get the status of accessible clusters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListClusters.html"
+    },
+    "ListEditors": {
+      "description": "Grants permission to list summary information for accessible EMR notebooks",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "ListInstanceFleets": {
+      "description": "Grants permission to get details of instance fleets in a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstanceFleets.html"
+    },
+    "ListInstanceGroups": {
+      "description": "Grants permission to get details of instance groups in a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstanceGroups.html"
+    },
+    "ListInstances": {
+      "description": "Grants permission to get details about the Amazon EC2 instances in a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstances.html"
+    },
+    "ListNotebookExecutions": {
+      "description": "Grants permission to list summary information for notebook executions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html"
+    },
+    "ListReleaseLabels": {
+      "description": "Grants permission to list and filter the available EMR releases in the current region",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListReleaseLabels.html"
+    },
+    "ListRepositories": {
+      "description": "Grants permission to list existing EMR notebook repositories",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "ListSecurityConfigurations": {
+      "description": "Grants permission to list available security configurations in this account by name, along with creation dates and times",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSecurityConfigurations.html"
+    },
+    "ListSteps": {
+      "description": "Grants permission to list steps associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSteps.html"
+    },
+    "ListStudioSessionMappings": {
+      "description": "Grants permission to list summary information about EMR Studio session mappings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "ListStudios": {
+      "description": "Grants permission to list summary information about EMR Studios",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "ListWorkspaceAccessIdentities": {
+      "description": "Grants permission to list identities that are granted access to a workspace",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "ModifyCluster": {
+      "description": "Grants permission to change cluster settings such as number of steps that can be executed concurrently for a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyCluster.html"
+    },
+    "ModifyInstanceFleet": {
+      "description": "Grants permission to change the target On-Demand and target Spot capacities for a instance fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyInstanceFleet.html"
+    },
+    "ModifyInstanceGroups": {
+      "description": "Grants permission to change the number and configuration of EC2 instances for an instance group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyInstanceGroups.html"
+    },
+    "OpenEditorInConsole": {
+      "description": "Grants permission to launch the Jupyter notebook editor for an EMR notebook from within the console",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "PutAutoScalingPolicy": {
+      "description": "Grants permission to create or update an automatic scaling policy for a core instance group or task instance group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_PutAutoScalingPolicy.html"
+    },
+    "PutAutoTerminationPolicy": {
+      "description": "Grants permission to create or update the auto-termination policy associated with a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_PutAutoTerminationPolicy.html"
+    },
+    "PutBlockPublicAccessConfiguration": {
+      "description": "Grants permission to create or update the EMR block public access configuration for the AWS account in the Region",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_PutBlockPublicAccessConfiguration.html"
+    },
+    "PutManagedScalingPolicy": {
+      "description": "Grants permission to create or update the managed scaling policy associated with a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_PutManagedScalingPolicy.html"
+    },
+    "PutWorkspaceAccess": {
+      "description": "Grants permission to allow an identity to open a collaborative workspace",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "RemoveAutoScalingPolicy": {
+      "description": "Grants permission to remove an automatic scaling policy from an instance group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveAutoScalingPolicy.html"
+    },
+    "RemoveAutoTerminationPolicy": {
+      "description": "Grants permission to remove the auto-termination policy associated with a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveAutoTerminationPolicy.html"
+    },
+    "RemoveManagedScalingPolicy": {
+      "description": "Grants permission to remove the managed scaling policy associated with a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveManagedScalingPolicy.html"
+    },
+    "RemoveTags": {
+      "description": "Grants permission to remove tags from an Amazon EMR resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "editor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "notebook-execution": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "studio": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_RemoveTags.html"
+    },
+    "RunJobFlow": {
+      "description": "Grants permission to create and launch a cluster (job flow)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_RunJobFlow.html"
+    },
+    "SetTerminationProtection": {
+      "description": "Grants permission to add and remove termination protection for a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_SetTerminationProtection.html"
+    },
+    "StartEditor": {
+      "description": "Grants permission to start an EMR notebook",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "StartNotebookExecution": {
+      "description": "Grants permission to start an EMR notebook execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html"
+    },
+    "StopEditor": {
+      "description": "Grants permission to shut down an EMR notebook",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html"
+    },
+    "StopNotebookExecution": {
+      "description": "Grants permission to stop notebook execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "notebook-execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html"
+    },
+    "TerminateJobFlows": {
+      "description": "Grants permission to terminate a cluster (job flow)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/APIReference/API_TerminateJobFlows.html"
+    },
+    "UnlinkRepository": {
+      "description": "Grants permission to unlink an EMR notebook repository from EMR notebooks",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "UpdateEditor": {
+      "description": "Grants permission to update an EMR notebook",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "editor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html"
+    },
+    "UpdateRepository": {
+      "description": "Grants permission to update an EMR notebook repository",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html#emr-managed-notebooks-editor"
+    },
+    "UpdateStudio": {
+      "description": "Grants permission to update information about an EMR Studio",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "UpdateStudioSessionMapping": {
+      "description": "Grants permission to update an EMR Studio session mapping",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "studio": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    },
+    "ViewEventsFromAllClustersInConsole": {
+      "description": "Grants permission to use the EMR console to view events from all clusters",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {
+    "cluster": {
+      "arn": "arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview.html"
+    },
+    "editor": {
+      "arn": "arn:${Partition}:elasticmapreduce:${Region}:${Account}:editor/${EditorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks.html"
+    },
+    "notebook-execution": {
+      "arn": "arn:${Partition}:elasticmapreduce:${Region}:${Account}:notebook-execution/${NotebookExecutionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-headless.html"
+    },
+    "studio": {
+      "arn": "arn:${Partition}:elasticmapreduce:${Region}:${Account}:studio/${StudioId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by whether the tag and value pair is provided with the action",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag and value pair associated with an Amazon EMR resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by whether the tag keys are provided with the action regardless of tag value",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access"
+    },
+    "elasticmapreduce:ExecutionRoleArn": {
+      "description": "Filters access by whether the execution role ARN is provided with the action",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-security"
+    },
+    "elasticmapreduce:RequestTag/${TagKey}": {
+      "description": "Filters access by whether the tag and value pair is provided with the action",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access"
+    },
+    "elasticmapreduce:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag and value pair associated with an Amazon EMR resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access"
+    }
+  }
+}

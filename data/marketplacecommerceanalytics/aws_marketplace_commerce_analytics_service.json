@@ -1,0 +1,27 @@
+{
+  "name": "AWS Marketplace Commerce Analytics Service",
+  "prefix": "marketplacecommerceanalytics",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacecommerceanalyticsservice.html",
+  "actions": {
+    "GenerateDataSet": {
+      "description": "Request a data set to be published to your Amazon S3 bucket.",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "StartSupportDataExport": {
+      "description": "Request a support data set to be published to your Amazon S3 bucket.",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

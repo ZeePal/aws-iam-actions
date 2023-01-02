@@ -1,0 +1,36 @@
+{
+  "name": "AWS Support Plans",
+  "prefix": "supportplans",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportplans.html",
+  "actions": {
+    "GetSupportPlan": {
+      "description": "Grants permission to view details about the current support plan for this AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html"
+    },
+    "GetSupportPlanUpdateStatus": {
+      "description": "Grants permission to view details about the status for a request to update a support plan",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html"
+    },
+    "StartSupportPlanUpdate": {
+      "description": "Grants permission to update the support plan for this AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

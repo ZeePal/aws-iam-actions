@@ -1,0 +1,45 @@
+{
+  "name": "AWS App2Container",
+  "prefix": "a2c",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapp2container.html",
+  "actions": {
+    "GetContainerizationJobDetails": {
+      "description": "Grants permission to get the details of all Containerization jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html"
+    },
+    "GetDeploymentJobDetails": {
+      "description": "Grants permission to get the details of all Deployment jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html"
+    },
+    "StartContainerizationJob": {
+      "description": "Grants permission to start a Containerization job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html"
+    },
+    "StartDeploymentJob": {
+      "description": "Grants permission to start a Deploymnet job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

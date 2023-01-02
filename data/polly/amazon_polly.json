@@ -1,0 +1,123 @@
+{
+  "name": "Amazon Polly",
+  "prefix": "polly",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpolly.html",
+  "actions": {
+    "DeleteLexicon": {
+      "description": "Grants permissions to delete the specified pronunciation lexicon stored in an AWS Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "lexicon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_DeleteLexicon.html"
+    },
+    "DescribeVoices": {
+      "description": "Grants permissions to describe the list of voices that are available for use when requesting speech synthesis",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html"
+    },
+    "GetLexicon": {
+      "description": "Grants permissions to retrieve the content of the specified pronunciation lexicon stored in an AWS Region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "lexicon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_GetLexicon.html"
+    },
+    "GetSpeechSynthesisTask": {
+      "description": "Grants permissions to get information about specific speech synthesis task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_GetSpeechSynthesisTask.html"
+    },
+    "ListLexicons": {
+      "description": "Grants permisions to list the pronunciation lexicons stored in an AWS Region",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html"
+    },
+    "ListSpeechSynthesisTasks": {
+      "description": "Grants permissions to list requested speech synthesis tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_ListSpeechSynthesisTasks.html"
+    },
+    "PutLexicon": {
+      "description": "Grants permissions to store a pronunciation lexicon in an AWS Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "lexicon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html"
+    },
+    "StartSpeechSynthesisTask": {
+      "description": "Grants permissions to synthesize long inputs to the provided S3 location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "lexicon": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_StartSpeechSynthesisTask.html"
+    },
+    "SynthesizeSpeech": {
+      "description": "Grants permissions to synthesize speech",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "lexicon": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html"
+    }
+  },
+  "resourceTypes": {
+    "lexicon": {
+      "arn": "arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html"
+    }
+  },
+  "conditionKeys": {}
+}

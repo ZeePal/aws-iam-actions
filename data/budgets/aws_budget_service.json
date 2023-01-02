@@ -1,0 +1,159 @@
+{
+  "name": "AWS Budget Service",
+  "prefix": "budgets",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbudgetservice.html",
+  "actions": {
+    "CreateBudgetAction": {
+      "description": "Grants permission to create and define a response that you can configure to execute once your budget has exceeded a specific budget threshold",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "DeleteBudgetAction": {
+      "description": "Grants permission to delete an action that is associated with a specific budget",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "DescribeBudgetAction": {
+      "description": "Grants permission to retrieve the details of a specific budget action associated with a budget",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "DescribeBudgetActionHistories": {
+      "description": "Grants permission to retrieve a historical view of the budget actions statuses associated with a particular budget action. These status include statues such as 'Standby', 'Pending' and 'Executed'",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "DescribeBudgetActionsForAccount": {
+      "description": "Grants permission to retrieve the details of all of the budget actions associated with your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "DescribeBudgetActionsForBudget": {
+      "description": "Grants permission to retrieve the details of all of the budget actions associated with a budget",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budget": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ExecuteBudgetAction": {
+      "description": "Grants permission to initiate a pending budget action as well as reverse a previously executed budget action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ModifyBudget": {
+      "description": "Grants permission to modify budgets and budget details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budget": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "UpdateBudgetAction": {
+      "description": "Grants permission to update the details of a specific budget action associated with a budget",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budgetAction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewBudget": {
+      "description": "Grants permission to view budgets and budget details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "budget": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    }
+  },
+  "resourceTypes": {
+    "budget": {
+      "arn": "arn:${Partition}:budgets::${Account}:budget/${BudgetName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html"
+    },
+    "budgetAction": {
+      "arn": "arn:${Partition}:budgets::${Account}:budget/${BudgetName}/action/${ActionId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html"
+    }
+  },
+  "conditionKeys": {}
+}

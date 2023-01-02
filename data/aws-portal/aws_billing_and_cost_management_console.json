@@ -1,0 +1,72 @@
+{
+  "name": "AWS Billing and Cost Management Console",
+  "prefix": "aws-portal",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbillingconsole.html",
+  "actions": {
+    "ModifyAccount": {
+      "description": "Allow or deny IAM users permission to modify Account Settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ModifyBilling": {
+      "description": "Allow or deny IAM users permission to modify billing settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ModifyPaymentMethods": {
+      "description": "Allow or deny IAM users permission to modify payment methods",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewAccount": {
+      "description": "Allow or deny IAM users permission to view account settings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewBilling": {
+      "description": "Allow or deny IAM users permission to view billing pages in the console",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewPaymentMethods": {
+      "description": "Allow or deny IAM users permission to view payment methods",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewUsage": {
+      "description": "Allow or deny IAM users permission to view AWS usage reports",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

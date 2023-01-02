@@ -1,0 +1,239 @@
+{
+  "name": "AWS IoT Core Device Advisor",
+  "prefix": "iotdeviceadvisor",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotcoredeviceadvisor.html",
+  "actions": {
+    "CreateSuiteDefinition": {
+      "description": "Grants permission to create a suite definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_CreateSuiteDefinition.html"
+    },
+    "DeleteSuiteDefinition": {
+      "description": "Grants permission to delete a suite definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_DeleteSuiteDefinition.html"
+    },
+    "GetEndpoint": {
+      "description": "Grants permission to get a Device Advisor endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_GetEndpoint.html"
+    },
+    "GetSuiteDefinition": {
+      "description": "Grants permission to get a suite definition",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_GetSuiteDefinition.html"
+    },
+    "GetSuiteRun": {
+      "description": "Grants permission to get a suite run",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suiterun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_GetSuiteRun.html"
+    },
+    "GetSuiteRunReport": {
+      "description": "Grants permission to get the qualification report for a suite run",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suiterun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_GetSuiteRunReport.html"
+    },
+    "ListSuiteDefinitions": {
+      "description": "Grants permission to list suite definitions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListSuiteDefinitions.html"
+    },
+    "ListSuiteRuns": {
+      "description": "Grants permission to list suite runs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListSuiteRuns.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags (metadata) assigned to a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Suiterun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListTagsForResource.html"
+    },
+    "StartSuiteRun": {
+      "description": "Grants permission to start a suite run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_StartSuiteRun.html"
+    },
+    "StopSuiteRun": {
+      "description": "Grants permission to stop a suite run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suiterun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_StopSuiteRun.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add to or modify the tags of the given resource. Tags are metadata which can be used to manage a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Suiterun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove the given tags (metadata) from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Suiterun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_UntagResource.html"
+    },
+    "UpdateSuiteDefinition": {
+      "description": "Grants permission to update a suite definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Suitedefinition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_UpdateSuiteDefinition.html"
+    }
+  },
+  "resourceTypes": {
+    "Suitedefinition": {
+      "arn": "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suitedefinition/${SuiteDefinitionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html#device-advisor-workflow-create-suite-definition"
+    },
+    "Suiterun": {
+      "arn": "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suiterun/${SuiteDefinitionId}/${SuiteRunId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html#device-advisor-workflow-start-suite-run"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

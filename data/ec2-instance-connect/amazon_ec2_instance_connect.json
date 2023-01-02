@@ -1,0 +1,64 @@
+{
+  "name": "Amazon EC2 Instance Connect",
+  "prefix": "ec2-instance-connect",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2instanceconnect.html",
+  "actions": {
+    "SendSSHPublicKey": {
+      "description": "Grants access to push an SSH public key to the specified EC2 instance to be used for standard SSH",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ec2:osuser"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html"
+    },
+    "SendSerialConsoleSSHPublicKey": {
+      "description": "Grants access to push an SSH public key to the specified EC2 instance to be used for serial console SSH",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSerialConsoleSSHPublicKey.html"
+    }
+  },
+  "resourceTypes": {
+    "instance": {
+      "arn": "arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ec2:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#EC2_ARN_Format"
+    }
+  },
+  "conditionKeys": {
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "ec2:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "ec2:osuser": {
+      "description": "Filters access by specifying the default user name for the AMI that you used to launch your instance",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html"
+    }
+  }
+}

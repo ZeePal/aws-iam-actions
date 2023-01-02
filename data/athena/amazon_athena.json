@@ -1,0 +1,892 @@
+{
+  "name": "Amazon Athena",
+  "prefix": "athena",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonathena.html",
+  "actions": {
+    "BatchGetNamedQuery": {
+      "description": "Grants permission to get information about one or more named queries",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQuery.html"
+    },
+    "BatchGetPreparedStatement": {
+      "description": "Grants permission to get information about one or more prepared statements",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetPreparedStatement.html"
+    },
+    "BatchGetQueryExecution": {
+      "description": "Grants permission to get information about one or more query executions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQueryExecution.html"
+    },
+    "CreateDataCatalog": {
+      "description": "Grants permission to create a datacatalog",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateDataCatalog.html"
+    },
+    "CreateNamedQuery": {
+      "description": "Grants permission to create a named query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNamedQuery.html"
+    },
+    "CreateNotebook": {
+      "description": "Grants permission to create a notebook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNotebook.html"
+    },
+    "CreatePreparedStatement": {
+      "description": "Grants permission to create a prepared statement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePreparedStatement.html"
+    },
+    "CreatePresignedNotebookUrl": {
+      "description": "Grants permission to create a presigned notebook url",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePresignedNotebookUrl.html"
+    },
+    "CreateWorkGroup": {
+      "description": "Grants permission to create a workgroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateWorkGroup.html"
+    },
+    "DeleteDataCatalog": {
+      "description": "Grants permission to delete a datacatalog",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteDataCatalog.html"
+    },
+    "DeleteNamedQuery": {
+      "description": "Grants permission to delete a named query specified",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNamedQuery.html"
+    },
+    "DeleteNotebook": {
+      "description": "Grants permission to delete a notebook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNotebook.html"
+    },
+    "DeletePreparedStatement": {
+      "description": "Grants permission to delete a prepared statement specified",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_DeletePreparedStatement.html"
+    },
+    "DeleteWorkGroup": {
+      "description": "Grants permission to delete a workgroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteWorkGroup.html"
+    },
+    "ExportNotebook": {
+      "description": "Grants permission to export a notebook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ExportNotebook.html"
+    },
+    "GetCalculationExecution": {
+      "description": "Grants permission to get a calculation execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecution.html"
+    },
+    "GetCalculationExecutionCode": {
+      "description": "Grants permission to get a calculation execution code",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecutionCode.html"
+    },
+    "GetCalculationExecutionStatus": {
+      "description": "Grants permission to get a calculation execution status",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalculationExecutionStatus.html"
+    },
+    "GetDataCatalog": {
+      "description": "Grants permission to get a datacatalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDataCatalog.html"
+    },
+    "GetDatabase": {
+      "description": "Grants permission to get a database for a given datacatalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDatabase.html"
+    },
+    "GetNamedQuery": {
+      "description": "Grants permission to get information about the specified named query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNamedQuery.html"
+    },
+    "GetNotebookMetadata": {
+      "description": "Grants permission to get notebook metadata",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNotebookMetadata.html"
+    },
+    "GetPreparedStatement": {
+      "description": "Grants permission to get information about the specified prepared statement",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetPreparedStatement.html"
+    },
+    "GetQueryExecution": {
+      "description": "Grants permission to get information about the specified query execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryExecution.html"
+    },
+    "GetQueryResults": {
+      "description": "Grants permission to get the query results",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryResults.html"
+    },
+    "GetQueryResultsStream": {
+      "description": "Grants permission to get the query results stream",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/ug/connect-with-previous-jdbc.html#jdbc-prev-version-policies"
+    },
+    "GetQueryRuntimeStatistics": {
+      "description": "Grants permission to get runtime statistics for the specified query execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryRuntimeStatistics.html"
+    },
+    "GetSession": {
+      "description": "Grants permission to get a session",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSession.html"
+    },
+    "GetSessionStatus": {
+      "description": "Grants permission to get a session status",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessionStatus.html"
+    },
+    "GetTableMetadata": {
+      "description": "Grants permission to get a metadata about a table for a given datacatalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetTableMetadata.html"
+    },
+    "GetWorkGroup": {
+      "description": "Grants permission to get a workgroup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGroup.html"
+    },
+    "ImportNotebook": {
+      "description": "Grants permission to import a notebook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ImportNotebook.html"
+    },
+    "ListApplicationDPUSizes": {
+      "description": "Grants permission to return a list of ApplicationRuntimeIds",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListApplicationDPUSizes.html"
+    },
+    "ListCalculationExecutions": {
+      "description": "Grants permission to return a list of calculation executions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCalculationExecutions.html"
+    },
+    "ListDataCatalogs": {
+      "description": "Grants permission to return a list of datacatalogs for the specified AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDataCatalogs.html"
+    },
+    "ListDatabases": {
+      "description": "Grants permission to return a list of databases for a given datacatalog",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDatabases.html"
+    },
+    "ListEngineVersions": {
+      "description": "Grants permission to return a list of athena engine versions for the specified AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListEngineVersions.html"
+    },
+    "ListExecutors": {
+      "description": "Grants permission to return a list of executors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListExecutors.html"
+    },
+    "ListNamedQueries": {
+      "description": "Grants permission to return a list of named queries in Amazon Athena for the specified AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNamedQueries.html"
+    },
+    "ListNotebookMetadata": {
+      "description": "Grants permission to return a list of notebooks for a given workgroup",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNotebookMetadata.html"
+    },
+    "ListNotebookSessions": {
+      "description": "Grants permission to return a list of sessions for a given notebook",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNotebookSessions.html"
+    },
+    "ListPreparedStatements": {
+      "description": "Grants permission to return a list of prepared statements for the specified workgroup",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListPreparedStatements.html"
+    },
+    "ListQueryExecutions": {
+      "description": "Grants permission to return a list of query executions for the specified AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListQueryExecutions.html"
+    },
+    "ListSessions": {
+      "description": "Grants permission to return a list of sessions for a given workgroup",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListSessions.html"
+    },
+    "ListTableMetadata": {
+      "description": "Grants permission to return a list of table metadata in a database for a given datacatalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTableMetadata.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to return a list of tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListWorkGroups": {
+      "description": "Grants permission to return a list of workgroups for the specified AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_ListWorkGroups.html"
+    },
+    "StartCalculationExecution": {
+      "description": "Grants permission to start a calculation execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_StartCalculationExecution.html"
+    },
+    "StartQueryExecution": {
+      "description": "Grants permission to start a query execution using an SQL query provided as a string",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html"
+    },
+    "StartSession": {
+      "description": "Grants permission to start a session",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_StartSession.html"
+    },
+    "StopCalculationExecution": {
+      "description": "Grants permission to stop a calculation execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_StopCalculationExecution.html"
+    },
+    "StopQueryExecution": {
+      "description": "Grants permission to stop the specified query execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQueryExecution.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add a tag to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_TagResource.html"
+    },
+    "TerminateSession": {
+      "description": "Grants permission to terminate a session",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_TerminateSession.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDataCatalog": {
+      "description": "Grants permission to update a datacatalog",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datacatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateDataCatalog.html"
+    },
+    "UpdateNamedQuery": {
+      "description": "Grants permission to update a named query specified",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNamedQuery.html"
+    },
+    "UpdateNotebook": {
+      "description": "Grants permission to update a notebook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNotebook.html"
+    },
+    "UpdateNotebookMetadata": {
+      "description": "Grants permission to update notebook metadata",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNotebookMetadata.html"
+    },
+    "UpdatePreparedStatement": {
+      "description": "Grants permission to update a prepared statement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdatePreparedStatement.html"
+    },
+    "UpdateWorkGroup": {
+      "description": "Grants permission to update a workgroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateWorkGroup.html"
+    }
+  },
+  "resourceTypes": {
+    "datacatalog": {
+      "arn": "arn:${Partition}:athena:${Region}:${Account}:datacatalog/${DataCatalogName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/athena/latest/ug/datacatalogs-example-policies.html"
+    },
+    "workgroup": {
+      "arn": "arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/athena/latest/ug/example-policies-workgroup.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

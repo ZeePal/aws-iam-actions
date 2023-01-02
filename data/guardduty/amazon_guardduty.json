@@ -1,0 +1,771 @@
+{
+  "name": "Amazon GuardDuty",
+  "prefix": "guardduty",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonguardduty.html",
+  "actions": {
+    "AcceptInvitation": {
+      "description": "Grants permission to accept invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AcceptInvitation.html"
+    },
+    "ArchiveFindings": {
+      "description": "Grants permission to archive GuardDuty findings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ArchiveFindings.html"
+    },
+    "CreateDetector": {
+      "description": "Grants permission to create a detector",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateDetector.html"
+    },
+    "CreateFilter": {
+      "description": "Grants permission to create GuardDuty filters. A filters defines finding attributes and conditions used to filter findings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateFilter.html"
+    },
+    "CreateIPSet": {
+      "description": "Grants permission to create an IPSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:DeleteRolePolicy",
+        "iam:PutRolePolicy"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateIPSet.html"
+    },
+    "CreateMembers": {
+      "description": "Grants permission to create GuardDuty member accounts, where the account used to create a member becomes the GuardDuty administrator account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateMembers.html"
+    },
+    "CreatePublishingDestination": {
+      "description": "Grants permission to create a publishing destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreatePublishingDestination.html"
+    },
+    "CreateSampleFindings": {
+      "description": "Grants permission to create sample findings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateSampleFindings.html"
+    },
+    "CreateThreatIntelSet": {
+      "description": "Grants permission to create GuardDuty ThreatIntelSets, where a ThreatIntelSet consists of known malicious IP addresses used by GuardDuty to generate findings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreateThreatIntelSet.html"
+    },
+    "DeclineInvitations": {
+      "description": "Grants permission to decline invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeclineInvitations.html"
+    },
+    "DeleteDetector": {
+      "description": "Grants permission to delete GuardDuty detectors",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteDetector.html"
+    },
+    "DeleteFilter": {
+      "description": "Grants permission to delete GuardDuty filters",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteFilter.html"
+    },
+    "DeleteIPSet": {
+      "description": "Grants permission to delete GuardDuty IPSets",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteIPSet.html"
+    },
+    "DeleteInvitations": {
+      "description": "Grants permission to delete invitations to become a GuardDuty member account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteInvitations.html"
+    },
+    "DeleteMembers": {
+      "description": "Grants permission to delete GuardDuty member accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteMembers.html"
+    },
+    "DeletePublishingDestination": {
+      "description": "Grants permission to delete a publishing destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "publishingDestination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeletePublishingDestination.html"
+    },
+    "DeleteThreatIntelSet": {
+      "description": "Grants permission to delete GuardDuty ThreatIntelSets",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "threatintelset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DeleteThreatIntelSet.html"
+    },
+    "DescribeMalwareScans": {
+      "description": "Grants permission to retrieve details about malware scans",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeMalwareScans.html"
+    },
+    "DescribeOrganizationConfiguration": {
+      "description": "Grants permission to retrieve details about the delegated administrator associated with a GuardDuty detector",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html"
+    },
+    "DescribePublishingDestination": {
+      "description": "Grants permission to retrieve details about a publishing destination",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "publishingDestination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribePublishingDestination.html"
+    },
+    "DisableOrganizationAdminAccount": {
+      "description": "Grants permission to disable the organization delegated administrator for GuardDuty",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisableOrganizationAdminAccount.html"
+    },
+    "DisassociateFromMasterAccount": {
+      "description": "Grants permission to disassociate a GuardDuty member account from its GuardDuty administrator account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateFromMasterAccount.html"
+    },
+    "DisassociateMembers": {
+      "description": "Grants permission to disassociate GuardDuty member accounts from their administrator GuardDuty account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateMembers.html"
+    },
+    "EnableOrganizationAdminAccount": {
+      "description": "Grants permission to enable an organization delegated administrator for GuardDuty",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EnableOrganizationAdminAccount.html"
+    },
+    "GetDetector": {
+      "description": "Grants permission to retrieve GuardDuty detectors",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html"
+    },
+    "GetFilter": {
+      "description": "Grants permission to retrieve GuardDuty filters",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFilter.html"
+    },
+    "GetFindings": {
+      "description": "Grants permission to retrieve GuardDuty findings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindings.html"
+    },
+    "GetFindingsStatistics": {
+      "description": "Grants permission to retrieve a list of GuardDuty finding statistics",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFindingsStatistics.html"
+    },
+    "GetIPSet": {
+      "description": "Grants permission to retrieve GuardDuty IPSets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetIPSet.html"
+    },
+    "GetInvitationsCount": {
+      "description": "Grants permission to retrieve the count of all GuardDuty invitations sent to a specified account, which does not include the accepted invitation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetInvitationsCount.html"
+    },
+    "GetMalwareScanSettings": {
+      "description": "Grants permission to retrieve the malware scan settings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMalwareScanSettings.html"
+    },
+    "GetMasterAccount": {
+      "description": "Grants permission to retrieve details of the GuardDuty administrator account associated with a member account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMasterAccount.html"
+    },
+    "GetMemberDetectors": {
+      "description": "Grants permission to describe which data sources are enabled for member accounts detectors",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMemberDetectors.html"
+    },
+    "GetMembers": {
+      "description": "Grants permission to retrieve the member accounts associated with an administrator account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMembers.html"
+    },
+    "GetThreatIntelSet": {
+      "description": "Grants permission to retrieve GuardDuty ThreatIntelSets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "threatintelset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetThreatIntelSet.html"
+    },
+    "GetUsageStatistics": {
+      "description": "Grants permission to list Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html"
+    },
+    "InviteMembers": {
+      "description": "Grants permission to invite other AWS accounts to enable GuardDuty and become GuardDuty member accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_InviteMembers.html"
+    },
+    "ListDetectors": {
+      "description": "Grants permission to retrieve a list of GuardDuty detectors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html"
+    },
+    "ListFilters": {
+      "description": "Grants permission to retrieve a list of GuardDuty filters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFilters.html"
+    },
+    "ListFindings": {
+      "description": "Grants permission to retrieve a list of GuardDuty findings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFindings.html"
+    },
+    "ListIPSets": {
+      "description": "Grants permission to retrieve a list of GuardDuty IPSets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListIPSets.html"
+    },
+    "ListInvitations": {
+      "description": "Grants permission to retrieve a list of all of the GuardDuty membership invitations that were sent to an AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListInvitations.html"
+    },
+    "ListMembers": {
+      "description": "Grants permission to retrieve a list of GuardDuty member accounts associated with an administrator account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html"
+    },
+    "ListOrganizationAdminAccounts": {
+      "description": "Grants permission to list details about the organization delegated administrator for GuardDuty",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListOrganizationAdminAccounts.html"
+    },
+    "ListPublishingDestinations": {
+      "description": "Grants permission to retrieve a list of publishing destinations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListPublishingDestinations.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to retrieve a list of tags associated with a GuardDuty resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "filter": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ipset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "threatintelset": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListThreatIntelSets": {
+      "description": "Grants permission to retrieve a list of GuardDuty ThreatIntelSets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListThreatIntelSets.html"
+    },
+    "StartMonitoringMembers": {
+      "description": "Grants permission to a GuardDuty administrator account to monitor findings from GuardDuty member accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_StartMonitoringMembers.html"
+    },
+    "StopMonitoringMembers": {
+      "description": "Grants permission to disable monitoring findings from member accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_StopMonitoringMembers.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a GuardDuty resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "filter": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ipset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "threatintelset": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagResource.html"
+    },
+    "UnarchiveFindings": {
+      "description": "Grants permission to unarchive GuardDuty findings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UnarchiveFindings.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a GuardDuty resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "filter": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ipset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "threatintelset": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDetector": {
+      "description": "Grants permission to update GuardDuty detectors",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "detector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateDetector.html"
+    },
+    "UpdateFilter": {
+      "description": "Grants permission to updates GuardDuty filters",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateFilter.html"
+    },
+    "UpdateFindingsFeedback": {
+      "description": "Grants permission to update findings feedback to mark GuardDuty findings as useful or not useful",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateFindingsFeedback.html"
+    },
+    "UpdateIPSet": {
+      "description": "Grants permission to update GuardDuty IPSets",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:DeleteRolePolicy",
+        "iam:PutRolePolicy"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateIPSet.html"
+    },
+    "UpdateMalwareScanSettings": {
+      "description": "Grants permission to update the malware scan settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMalwareScanSettings.html"
+    },
+    "UpdateMemberDetectors": {
+      "description": "Grants permission to update which data sources are enabled for member accounts detectors",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateMemberDetectors.html"
+    },
+    "UpdateOrganizationConfiguration": {
+      "description": "Grants permission to update the delegated administrator configuration associated with a GuardDuty detector",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html"
+    },
+    "UpdatePublishingDestination": {
+      "description": "Grants permission to update a publishing destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "publishingDestination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdatePublishingDestination.html"
+    },
+    "UpdateThreatIntelSet": {
+      "description": "Grants permission to updates the GuardDuty ThreatIntelSets",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "threatintelset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:DeleteRolePolicy",
+        "iam:PutRolePolicy"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateThreatIntelSet.html"
+    }
+  },
+  "resourceTypes": {
+    "detector": {
+      "arn": "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources"
+    },
+    "filter": {
+      "arn": "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/filter/${FilterName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources"
+    },
+    "ipset": {
+      "arn": "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/ipset/${IPSetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources"
+    },
+    "publishingDestination": {
+      "arn": "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/publishingDestination/${PublishingDestinationId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources"
+    },
+    "threatintelset": {
+      "arn": "arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/threatintelset/${ThreatIntelSetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

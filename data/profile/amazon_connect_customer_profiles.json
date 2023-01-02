@@ -1,0 +1,598 @@
+{
+  "name": "Amazon Connect Customer Profiles",
+  "prefix": "profile",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcustomerprofiles.html",
+  "actions": {
+    "AddProfileKey": {
+      "description": "Grants permission to add a profile key",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_AddProfileKey.html"
+    },
+    "CreateDomain": {
+      "description": "Grants permission to create a Domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateDomain.html"
+    },
+    "CreateIntegrationWorkflow": {
+      "description": "Grants permission to create an integration workflow in a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateIntegrationWorkflow.html"
+    },
+    "CreateProfile": {
+      "description": "Grants permission to create a profile in the domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateProfile.html"
+    },
+    "DeleteDomain": {
+      "description": "Grants permission to delete a Domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomain.html"
+    },
+    "DeleteIntegration": {
+      "description": "Grants permission to delete a integration in a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "integrations": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteIntegration.html"
+    },
+    "DeleteProfile": {
+      "description": "Grants permission to delete a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfile.html"
+    },
+    "DeleteProfileKey": {
+      "description": "Grants permission to delete a profile key",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileKey.html"
+    },
+    "DeleteProfileObject": {
+      "description": "Grants permission to delete a profile object",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileObject.html"
+    },
+    "DeleteProfileObjectType": {
+      "description": "Grants permission to delete a specific profile object type in the domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileObjectType.html"
+    },
+    "DeleteWorkflow": {
+      "description": "Grants permission to delete a workflow in a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteWorkflow.html"
+    },
+    "GetAutoMergingPreview": {
+      "description": "Grants permission to get a preview of auto merging in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetAutoMergingPreview.html"
+    },
+    "GetDomain": {
+      "description": "Grants permission to get a specific domain in an account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetDomain.html"
+    },
+    "GetIdentityResolutionJob": {
+      "description": "Grants permission to get an identity resolution job in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetIdentityResolutionJob.html"
+    },
+    "GetIntegration": {
+      "description": "Grants permission to get a specific integrations in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "integrations": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetIntegration.html"
+    },
+    "GetMatches": {
+      "description": "Grants permission to get profile matches in a domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetMatches.html"
+    },
+    "GetProfileObjectType": {
+      "description": "Grants permission to get a specific profile object type in the domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetProfileObjectType.html"
+    },
+    "GetProfileObjectTypeTemplate": {
+      "description": "Grants permission to get a specific object type template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetProfileObjectTypeTemplate.html"
+    },
+    "GetWorkflow": {
+      "description": "Grants permission to get workflow details in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetWorkflow.html"
+    },
+    "GetWorkflowSteps": {
+      "description": "Grants permission to get workflow step details in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetWorkflowSteps.html"
+    },
+    "ListAccountIntegrations": {
+      "description": "Grants permission to list all the integrations in the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListAccountIntegrations.html"
+    },
+    "ListDomains": {
+      "description": "Grants permission to list all the domains in an account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListDomains.html"
+    },
+    "ListIdentityResolutionJobs": {
+      "description": "Grants permission to list identity resolution jobs in a domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListIdentityResolutionJobs.html"
+    },
+    "ListIntegrations": {
+      "description": "Grants permission to list all the integrations in a specific domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListIntegrations.html"
+    },
+    "ListProfileObjectTypeTemplates": {
+      "description": "Grants permission to list all the profile object type templates in the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjectTypeTemplates.html"
+    },
+    "ListProfileObjectTypes": {
+      "description": "Grants permission to list all the profile object types in the domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjectTypes.html"
+    },
+    "ListProfileObjects": {
+      "description": "Grants permission to list all the profile objects for a profile",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjects.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListWorkflows": {
+      "description": "Grants permission to list all the workflows in a specific domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListWorkflows.html"
+    },
+    "MergeProfiles": {
+      "description": "Grants permission to merge profiles in a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_MergeProfiles.html"
+    },
+    "PutIntegration": {
+      "description": "Grants permission to put a integration in a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "integrations": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutIntegration.html"
+    },
+    "PutProfileObject": {
+      "description": "Grants permission to put an object for a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutProfileObject.html"
+    },
+    "PutProfileObjectType": {
+      "description": "Grants permission to put a specific profile object type in the domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "object-types": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutProfileObjectType.html"
+    },
+    "SearchProfiles": {
+      "description": "Grants permission to search for profiles in a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to adds tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDomain": {
+      "description": "Grants permission to update a Domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to update a profile in the domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateProfile.html"
+    }
+  },
+  "resourceTypes": {
+    "domains": {
+      "arn": "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/"
+    },
+    "integrations": {
+      "arn": "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/integrations/${Uri}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/"
+    },
+    "object-types": {
+      "arn": "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/object-types/${ObjectTypeName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/customerprofiles/latest/APIReference/"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a key that is present in the request the user makes to the customer profile service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-permissions.html#iam-contextkeys"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-permissions.html#iam-contextkeys"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the list of all the tag key names present in the request the user makes to the customer profile service",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-permissions.html#iam-contextkeys"
+    }
+  }
+}

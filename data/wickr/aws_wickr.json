@@ -1,0 +1,27 @@
+{
+  "name": "AWS Wickr",
+  "prefix": "wickr",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswickr.html",
+  "actions": {
+    "CreateAdminSession": {
+      "description": "Grants permission to create and manage Wickr networks",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wickr/latest/adminguide/security-iam.html"
+    },
+    "ListNetworks": {
+      "description": "Grants permission to view Wickr networks",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wickr/latest/adminguide/security-iam.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Amazon CodeWhisperer",
+  "prefix": "codewhisperer",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncodewhisperer.html",
+  "actions": {
+    "CreateProfile": {
+      "description": "Grants permission to invoke CreateProfile on CodeWhisperer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codewhisperer/latest/dg/API_CreateProfile.html"
+    },
+    "GenerateRecommendations": {
+      "description": "Grants permission to invoke GenerateRecommendations on CodeWhisperer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codewhisperer/latest/dg/API_GenerateRecommendations.html"
+    },
+    "ListProfiles": {
+      "description": "Grants permission to invoke ListProfiles on CodeWhisperer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codewhisperer/latest/dg/API_ListProfiles.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to invoke UpdateProfile on CodeWhisperer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codewhisperer/latest/dg/API_UpdateProfile.html"
+    }
+  },
+  "resourceTypes": {
+    "profile": {
+      "arn": "arn:${Partition}:codewhisperer::${Account}:profile/${Identifier}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/codewhisperer/latest/dg/profile.html"
+    }
+  },
+  "conditionKeys": {}
+}

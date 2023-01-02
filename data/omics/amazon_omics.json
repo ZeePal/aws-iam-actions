@@ -1,0 +1,1054 @@
+{
+  "name": "Amazon Omics",
+  "prefix": "omics",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonomics.html",
+  "actions": {
+    "BatchDeleteReadSet": {
+      "description": "Grants permission to batch delete Read Sets in the given Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_BatchDeleteReadSet.html"
+    },
+    "CancelAnnotationImportJob": {
+      "description": "Grants permission to cancel an Annotation Import Job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AnnotationImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CancelAnnotationImportJob.html"
+    },
+    "CancelRun": {
+      "description": "Grants permission to cancel a workflow run and stop all workflow tasks",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "run": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CancelRun.html"
+    },
+    "CancelVariantImportJob": {
+      "description": "Grants permission to cancel a Variant Import Job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VariantImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CancelVariantImportJob.html"
+    },
+    "CreateAnnotationStore": {
+      "description": "Grants permission to create an Annotation Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateAnnotationStore.html"
+    },
+    "CreateReferenceStore": {
+      "description": "Grants permission to create a Reference Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateReferenceStore.html"
+    },
+    "CreateRunGroup": {
+      "description": "Grants permission to create a new workflow run group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateRunGroup.html"
+    },
+    "CreateSequenceStore": {
+      "description": "Grants permission to create a Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateSequenceStore.html"
+    },
+    "CreateVariantStore": {
+      "description": "Grants permission to create a Variant Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateVariantStore.html"
+    },
+    "CreateWorkflow": {
+      "description": "Grants permission to create a new workflow with a workflow definition and template of workflow parameters",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_CreateWorkflow.html"
+    },
+    "DeleteAnnotationStore": {
+      "description": "Grants permission to delete an Annotation Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AnnotationStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteAnnotationStore.html"
+    },
+    "DeleteReference": {
+      "description": "Grants permission to delete a Reference in the given Reference Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reference": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteReference.html"
+    },
+    "DeleteReferenceStore": {
+      "description": "Grants permission to delete a Reference Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteReferenceStore.html"
+    },
+    "DeleteRun": {
+      "description": "Grants permission to delete a workflow run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "run": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteRun.html"
+    },
+    "DeleteRunGroup": {
+      "description": "Grants permission to delete a workflow run group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "runGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteRunGroup.html"
+    },
+    "DeleteSequenceStore": {
+      "description": "Grants permission to delete a Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteSequenceStore.html"
+    },
+    "DeleteVariantStore": {
+      "description": "Grants permission to delete a Variant Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VariantStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteVariantStore.html"
+    },
+    "DeleteWorkflow": {
+      "description": "Grants permission to delete a workflow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_DeleteWorkflow.html"
+    },
+    "GetAnnotationImportJob": {
+      "description": "Grants permission to get the status of an Annotation Import Job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AnnotationImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetAnnotationImportJob.html"
+    },
+    "GetAnnotationStore": {
+      "description": "Grants permission to get detailed information about an Annotation Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AnnotationStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetAnnotationStore.html"
+    },
+    "GetReadSet": {
+      "description": "Grants permission to get a Read Set in the given Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "readSet": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReadSet.html"
+    },
+    "GetReadSetActivationJob": {
+      "description": "Grants permission to get details about a Read Set activation job for the given Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetActivationJob.html"
+    },
+    "GetReadSetExportJob": {
+      "description": "Grants permission to get details about a Read Set export job for the given Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetExportJob.html"
+    },
+    "GetReadSetImportJob": {
+      "description": "Grants permission to get details about a Read Set import job for the given Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetImportJob.html"
+    },
+    "GetReadSetMetadata": {
+      "description": "Grants permission to get details about a Read Set in the given Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "readSet": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetMetadata.html"
+    },
+    "GetReference": {
+      "description": "Grants permission to get a Reference in the given Reference Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reference": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReference.html"
+    },
+    "GetReferenceImportJob": {
+      "description": "Grants permission to get details about a Reference import job for the given Reference Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReferenceImportJob.html"
+    },
+    "GetReferenceMetadata": {
+      "description": "Grants permission to get details about a Reference in the given Reference Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reference": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReferenceMetadata.html"
+    },
+    "GetReferenceStore": {
+      "description": "Grants permission to get details about a Reference Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetReferenceStore.html"
+    },
+    "GetRun": {
+      "description": "Grants permission to retrieve workflow run details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "run": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetRun.html"
+    },
+    "GetRunGroup": {
+      "description": "Grants permission to retrieve workflow run group details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "runGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetRunGroup.html"
+    },
+    "GetRunTask": {
+      "description": "Grants permission to retrieve workflow task details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TaskResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "run": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetRunTask.html"
+    },
+    "GetSequenceStore": {
+      "description": "Grants permission to get details about a Sequence Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetSequenceStore.html"
+    },
+    "GetVariantImportJob": {
+      "description": "Grants permission to get the status of a Variant Import Job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VariantImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetVariantImportJob.html"
+    },
+    "GetVariantStore": {
+      "description": "Grants permission to get detailed information about a Variant Store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VariantStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetVariantStore.html"
+    },
+    "GetWorkflow": {
+      "description": "Grants permission to retrieve workflow details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_GetWorkflow.html"
+    },
+    "ListAnnotationImportJobs": {
+      "description": "Grants permission to get a list of Annotation Import Jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationImportJobs.html"
+    },
+    "ListAnnotationStores": {
+      "description": "Grants permission to retrieve a list of information about Annotation Stores",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationStores.html"
+    },
+    "ListReadSetActivationJobs": {
+      "description": "Grants permission to list Read Set activation jobs for the given Sequence Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetActivationJobs.html"
+    },
+    "ListReadSetExportJobs": {
+      "description": "Grants permission to list Read Set export jobs for the given Sequence Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetExportJobs.html"
+    },
+    "ListReadSetImportJobs": {
+      "description": "Grants permission to list Read Set import jobs for the given Sequence Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetImportJobs.html"
+    },
+    "ListReadSets": {
+      "description": "Grants permission to list Read Sets in the given Sequence Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReadSets.html"
+    },
+    "ListReferenceImportJobs": {
+      "description": "Grants permission to list Reference import jobs for the given Reference Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReferenceImportJobs.html"
+    },
+    "ListReferenceStores": {
+      "description": "Grants permission to list Reference Stores",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReferenceStores.html"
+    },
+    "ListReferences": {
+      "description": "Grants permission to list References in the given Reference Store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListReferences.html"
+    },
+    "ListRunGroups": {
+      "description": "Grants permission to retrieve a list of workflow run groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListRunGroups.html"
+    },
+    "ListRunTasks": {
+      "description": "Grants permission to retrieve a list of tasks for a workflow run",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "run": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListRunTasks.html"
+    },
+    "ListRuns": {
+      "description": "Grants permission to retrieve a list of workflow runs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListRuns.html"
+    },
+    "ListSequenceStores": {
+      "description": "Grants permission to list Sequence Stores",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListSequenceStores.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to retrieve a list of resource AWS tags",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListTagsForResource.html"
+    },
+    "ListVariantImportJobs": {
+      "description": "Grants permission to get a list of Variant Import Jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListVariantImportJobs.html"
+    },
+    "ListVariantStores": {
+      "description": "Grants permission to retrieve a list of metadata for Variant Stores",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListVariantStores.html"
+    },
+    "ListWorkflows": {
+      "description": "Grants permission to retrieve a list of available workflows",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ListWorkflows.html"
+    },
+    "StartAnnotationImportJob": {
+      "description": "Grants permission to import a list of Annotation files to an Annotation Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartAnnotationImportJob.html"
+    },
+    "StartReadSetActivationJob": {
+      "description": "Grants permission to start a Read Set activation job from the given Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetActivationJob.html"
+    },
+    "StartReadSetExportJob": {
+      "description": "Grants permission to start a Read Set export job from the given Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetExportJob.html"
+    },
+    "StartReadSetImportJob": {
+      "description": "Grants permission to start a Read Set import job into the given Sequence Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sequenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartReadSetImportJob.html"
+    },
+    "StartReferenceImportJob": {
+      "description": "Grants permission to start a Reference import job into the given Reference Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "referenceStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartReferenceImportJob.html"
+    },
+    "StartRun": {
+      "description": "Grants permission to start a workflow run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartRun.html"
+    },
+    "StartVariantImportJob": {
+      "description": "Grants permission to import a list of variant files to an Variant Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_StartVariantImportJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add AWS tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "readSet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reference": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "referenceStore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "run": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "runGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "sequenceStore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workflow": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove resource AWS tags",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "readSet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reference": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "referenceStore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "run": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "runGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "sequenceStore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workflow": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_UntagResource.html"
+    },
+    "UpdateAnnotationStore": {
+      "description": "Grants permission to update information about the Annotation Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AnnotationStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_UpdateAnnotationStore.html"
+    },
+    "UpdateRunGroup": {
+      "description": "Grants permission to update a workflow run group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "runGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_UpdateRunGroup.html"
+    },
+    "UpdateVariantStore": {
+      "description": "Grants permission to update metadata about the Variant Store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VariantStore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_UpdateVariantStore.html"
+    },
+    "UpdateWorkflow": {
+      "description": "Grants permission to update workflow details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_UpdateWorkflow.html"
+    }
+  },
+  "resourceTypes": {
+    "AnnotationImportJob": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:annotationImportJob/${AnnotationImportJobId}",
+      "conditionKeys": [
+        "omics:AnnotationImportJobJobId"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_AnnotationImportJobItem.html"
+    },
+    "AnnotationStore": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:annotationStore/${AnnotationStoreId}",
+      "conditionKeys": [
+        "omics:AnnotationStoreName"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_AnnotationStoreItem.html"
+    },
+    "TaggingResource": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:tag/${TagKey}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_TagResource.html"
+    },
+    "TaskResource": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:task/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_TaskListItem.html"
+    },
+    "VariantImportJob": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:variantImportJob/${VariantImportJobId}",
+      "conditionKeys": [
+        "omics:VariantImportJobJobId"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_VariantImportJobItem.html"
+    },
+    "VariantStore": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:variantStore/${VariantStoreId}",
+      "conditionKeys": [
+        "omics:VariantStoreName"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_VariantStoreItem.html"
+    },
+    "readSet": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}/readSet/${ReadSetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ReadSetFiles.html"
+    },
+    "reference": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:referenceStore/${ReferenceStoreId}/reference/${ReferenceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ReferenceFiles.html"
+    },
+    "referenceStore": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:referenceStore/${ReferenceStoreId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_ReferenceStoreDetail.html"
+    },
+    "run": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:run/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_RunListItem.html"
+    },
+    "runGroup": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:runGroup/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_RunGroupListItem.html"
+    },
+    "sequenceStore": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_SequenceStoreDetail.html"
+    },
+    "workflow": {
+      "arn": "arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/omics/latest/api/API_WorkflowListItem.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "omics:AnnotationImportJobJobId": {
+      "description": "Filters access by a unique resource identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-annotation-import-job-id"
+    },
+    "omics:AnnotationStoreName": {
+      "description": "Filters access by the name of the store",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-annotation-store-name"
+    },
+    "omics:VariantImportJobJobId": {
+      "description": "Filters access by a unique resource identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-variant-import-job-id"
+    },
+    "omics:VariantStoreName": {
+      "description": "Filters access by the name of the store",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-variant-store-name"
+    }
+  }
+}

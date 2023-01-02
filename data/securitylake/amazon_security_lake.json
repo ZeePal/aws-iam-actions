@@ -1,0 +1,473 @@
+{
+  "name": "Amazon Security Lake",
+  "prefix": "securitylake",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsecuritylake.html",
+  "actions": {
+    "CreateAwsLogSource": {
+      "description": "Grants permission to enable any source type in any region for accounts that are either part of a trusted organization or standalone accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "kms:CreateGrant",
+        "kms:DescribeKey"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateAwsLogSource.html"
+    },
+    "CreateCustomLogSource": {
+      "description": "Grants permission to add a custom source name",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "glue:CreateCrawler",
+        "glue:CreateDatabase",
+        "glue:CreateTable",
+        "glue:StartCrawlerSchedule",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PassRole",
+        "iam:PutRolePolicy",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "kms:GenerateDataKey",
+        "lakeformation:GrantPermissions",
+        "lakeformation:RegisterResource",
+        "s3:ListBucket",
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateCustomLogSource.html"
+    },
+    "CreateDatalake": {
+      "description": "Grants permission to create a new Security Data Lake",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:PutRule",
+        "events:PutTargets",
+        "iam:CreateServiceLinkedRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PassRole",
+        "iam:PutRolePolicy",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "lakeformation:GetDataLakeSettings",
+        "lakeformation:PutDataLakeSettings",
+        "lambda:CreateEventSourceMapping",
+        "lambda:CreateFunction",
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedServicesForAccount",
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutBucketVersioning",
+        "sqs:CreateQueue",
+        "sqs:GetQueueAttributes",
+        "sqs:SetQueueAttributes"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDatalake.html"
+    },
+    "CreateDatalakeAutoEnable": {
+      "description": "Grants permission to add to the configuration for automatically enabling Amazon Security Lake access for new organization accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDatalakeAutoEnable.html"
+    },
+    "CreateDatalakeDelegatedAdmin": {
+      "description": "Grants permission to designate the Amazon Security Lake administrator account for the organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "organizations:DescribeOrganization",
+        "organizations:EnableAWSServiceAccess",
+        "organizations:ListDelegatedAdministrators",
+        "organizations:ListDelegatedServicesForAccount",
+        "organizations:RegisterDelegatedAdministrator"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDatalakeDelegatedAdmin.html"
+    },
+    "CreateDatalakeExceptionsSubscription": {
+      "description": "Grants permission to get instant notifications about exceptions by subscribing to the SNS topics for exception notifications",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDatalakeExceptionsSubscription.html"
+    },
+    "CreateSubscriber": {
+      "description": "Grants permission to create a subscription permission for accounts that are already enabled",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PutRolePolicy",
+        "lakeformation:GrantPermissions",
+        "lakeformation:ListPermissions",
+        "lakeformation:RegisterResource",
+        "lakeformation:RevokePermissions",
+        "ram:GetResourceShareAssociations",
+        "ram:GetResourceShares",
+        "ram:UpdateResourceShare",
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateSubscriber.html"
+    },
+    "CreateSubscriptionNotificationConfiguration": {
+      "description": "Grants permission to create a webhook invocation to notify a client when there is new data in the Data Lake",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:CreateApiDestination",
+        "events:CreateConnection",
+        "events:DescribeRule",
+        "events:ListApiDestinations",
+        "events:ListConnections",
+        "events:PutRule",
+        "events:PutTargets",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PassRole",
+        "s3:GetBucketNotification",
+        "s3:PutBucketNotification",
+        "sqs:CreateQueue",
+        "sqs:DeleteQueue",
+        "sqs:GetQueueAttributes",
+        "sqs:GetQueueUrl",
+        "sqs:SetQueueAttributes"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateSubscriptionNotificationConfiguration.html"
+    },
+    "DeleteAwsLogSource": {
+      "description": "Grants permission to disable any source type in any region for accounts that are either part of a trusted organization or standalone accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteAwsLogSource.html"
+    },
+    "DeleteCustomLogSource": {
+      "description": "Grants permission to remove a custom source name",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "glue:StopCrawlerSchedule"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteCustomLogSource.html"
+    },
+    "DeleteDatalake": {
+      "description": "Grants permission to delete all Security Data Lakes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedAdministrators",
+        "organizations:ListDelegatedServicesForAccount"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDatalake.html"
+    },
+    "DeleteDatalakeAutoEnable": {
+      "description": "Grants permission to remove from the existing configuration the automatic enabling of Amazon Security Lake access for new organization accounts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDatalakeAutoEnable.html"
+    },
+    "DeleteDatalakeDelegatedAdmin": {
+      "description": "Grants permission to remove the Delegated Administrator account and disable Amazon Security Lake as a service for this organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "organizations:DeregisterDelegatedAdministrator",
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedServicesForAccount"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDatalakeDelegatedAdmin.html"
+    },
+    "DeleteDatalakeExceptionsSubscription": {
+      "description": "Grants permission to unsubscribe from SNS topics for exception notifications. Also, removes the SNS exception notifications topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteDatalakeExceptionsSubscription.html"
+    },
+    "DeleteSubscriber": {
+      "description": "Grants permission to delete the specified subscription permissions for accounts that are already enabled",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:DeleteApiDestination",
+        "events:DeleteConnection",
+        "events:DeleteRule",
+        "events:DescribeRule",
+        "events:ListApiDestinations",
+        "events:ListTargetsByRule",
+        "events:RemoveTargets",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:ListRolePolicies",
+        "lakeformation:ListPermissions",
+        "lakeformation:RevokePermissions",
+        "sqs:DeleteQueue",
+        "sqs:GetQueueUrl"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteSubscriber.html"
+    },
+    "DeleteSubscriptionNotificationConfiguration": {
+      "description": "Grants permission to remove a webhook invocation to notify a client when there is new data in the Data Lake",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:DeleteApiDestination",
+        "events:DeleteConnection",
+        "events:DeleteRule",
+        "events:DescribeRule",
+        "events:ListApiDestinations",
+        "events:ListTargetsByRule",
+        "events:RemoveTargets",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:ListRolePolicies",
+        "lakeformation:RevokePermissions",
+        "sqs:DeleteQueue",
+        "sqs:GetQueueUrl"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteSubscriptionNotificationConfiguration.html"
+    },
+    "GetDatalake": {
+      "description": "Grants permission to get information on the Security Data Lake",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDatalake.html"
+    },
+    "GetDatalakeAutoEnable": {
+      "description": "Grants permission to get an organization\u00e2\u0080\u0099s configuration setting for the automatic enabling of Amazon Security Lake access for new organization accounts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "organizations:DescribeOrganization"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDatalakeAutoEnable.html"
+    },
+    "GetDatalakeExceptionsExpiry": {
+      "description": "Grants permission to allow user to query what was set as the expiration period for the exception message",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDatalakeExceptionsExpiry.html"
+    },
+    "GetDatalakeExceptionsSubscription": {
+      "description": "Grants permission to query the protocol and endpoint that were supplied when subscribing to the SNS topics for exception notifications",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDatalakeExceptionsSubscription.html"
+    },
+    "GetDatalakeStatus": {
+      "description": "Grants permission to get a static snapshot of the Security Data Lake in the current region, including enabled accounts and log sources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDatalakeStatus.html"
+    },
+    "GetSubscriber": {
+      "description": "Grants permission to get subscription information for a subscription permission for accounts that are already enabled",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetSubscriber.html"
+    },
+    "GetSubscriptionNotificationConfiguration": {
+      "description": "Grants permission to get information for a webhook invocation to notify a client when there is new data in the Data Lake",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetSubscriptionNotificationConfiguration.html"
+    },
+    "ListDatalakeExceptions": {
+      "description": "Grants permission to get the list of all non-retry-able failures",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListDatalakeExceptions.html"
+    },
+    "ListLogSources": {
+      "description": "Grants permission to show the estate view of enabled accounts with the enabled sources in the enabled regions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListLogSources.html"
+    },
+    "ListSubscribers": {
+      "description": "Grants permission to list all subscription permissions for accounts that are already enabled",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListSubscribers.html"
+    },
+    "UpdateDatalake": {
+      "description": "Grants permission to update a Security Data Lake",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:PutRule",
+        "events:PutTargets",
+        "iam:CreateServiceLinkedRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PutRolePolicy",
+        "kms:CreateGrant",
+        "kms:DescribeKey",
+        "lakeformation:GetDataLakeSettings",
+        "lakeformation:PutDataLakeSettings",
+        "lambda:CreateEventSourceMapping",
+        "lambda:CreateFunction",
+        "organizations:DescribeOrganization",
+        "organizations:ListDelegatedServicesForAccount",
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutBucketVersioning",
+        "sqs:CreateQueue",
+        "sqs:GetQueueAttributes",
+        "sqs:SetQueueAttributes"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDatalake.html"
+    },
+    "UpdateDatalakeExceptionsExpiry": {
+      "description": "Grants permission to control the time-to-live (TTL) for the exception message to remain in service cache",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDatalakeExceptionsExpiry.html"
+    },
+    "UpdateDatalakeExceptionsSubscription": {
+      "description": "Grants permission to update subscriptions to the SNS topics for exception notifications",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDatalakeExceptionsSubscription.html"
+    },
+    "UpdateSubscriber": {
+      "description": "Grants permission to update subscription information for a subscription permission for accounts that are already enabled",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:CreateApiDestination",
+        "events:CreateConnection",
+        "events:DescribeRule",
+        "events:ListApiDestinations",
+        "events:ListConnections",
+        "events:PutRule",
+        "events:PutTargets",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PutRolePolicy"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateSubscriber.html"
+    },
+    "UpdateSubscriptionNotificationConfiguration": {
+      "description": "Grants permission to update a webhook invocation to notify a client when there is new data in the Data Lake",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "events:CreateApiDestination",
+        "events:CreateConnection",
+        "events:DescribeRule",
+        "events:ListApiDestinations",
+        "events:ListConnections",
+        "events:PutRule",
+        "events:PutTargets",
+        "iam:CreateServiceLinkedRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetRole",
+        "iam:PassRole",
+        "iam:PutRolePolicy",
+        "s3:CreateBucket",
+        "s3:GetBucketNotification",
+        "s3:ListBucket",
+        "s3:PutBucketNotification",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutBucketVersioning",
+        "s3:PutLifecycleConfiguration",
+        "sqs:CreateQueue",
+        "sqs:DeleteQueue",
+        "sqs:GetQueueAttributes",
+        "sqs:GetQueueUrl",
+        "sqs:SetQueueAttributes"
+      ],
+      "url": "https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateSubscriptionNotificationConfiguration.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

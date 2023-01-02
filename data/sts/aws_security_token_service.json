@@ -1,0 +1,489 @@
+{
+  "name": "AWS Security Token Service",
+  "prefix": "sts",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecuritytokenservice.html",
+  "actions": {
+    "AssumeRole": {
+      "description": "Grants permission to obtain a set of temporary security credentials that you can use to access AWS resources that you might not normally have access to",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "role": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "iam:ResourceTag/${TagKey}",
+        "sts:ExternalId",
+        "sts:RoleSessionName",
+        "sts:SourceIdentity",
+        "sts:TransitiveTagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html"
+    },
+    "AssumeRoleWithSAML": {
+      "description": "Grants permission to obtain a set of temporary security credentials for users who have been authenticated via a SAML authentication response",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "role": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "saml:aud",
+        "saml:cn",
+        "saml:commonName",
+        "saml:doc",
+        "saml:eduorghomepageuri",
+        "saml:eduorgidentityauthnpolicyuri",
+        "saml:eduorglegalname",
+        "saml:eduorgsuperioruri",
+        "saml:eduorgwhitepagesuri",
+        "saml:edupersonaffiliation",
+        "saml:edupersonassurance",
+        "saml:edupersonentitlement",
+        "saml:edupersonnickname",
+        "saml:edupersonorgdn",
+        "saml:edupersonorgunitdn",
+        "saml:edupersonprimaryaffiliation",
+        "saml:edupersonprimaryorgunitdn",
+        "saml:edupersonprincipalname",
+        "saml:edupersonscopedaffiliation",
+        "saml:edupersontargetedid",
+        "saml:givenName",
+        "saml:iss",
+        "saml:mail",
+        "saml:name",
+        "saml:namequalifier",
+        "saml:organizationStatus",
+        "saml:primaryGroupSID",
+        "saml:sub",
+        "saml:sub_type",
+        "saml:surname",
+        "saml:uid",
+        "saml:x500UniqueIdentifier",
+        "sts:RoleSessionName",
+        "sts:SourceIdentity",
+        "sts:TransitiveTagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html"
+    },
+    "AssumeRoleWithWebIdentity": {
+      "description": "Grants permission to obtain a set of temporary security credentials for users who have been authenticated in a mobile or web application with a web identity provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "role": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "accounts.google.com:aud",
+        "accounts.google.com:oaud",
+        "accounts.google.com:sub",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "cognito-identity.amazonaws.com:amr",
+        "cognito-identity.amazonaws.com:aud",
+        "cognito-identity.amazonaws.com:sub",
+        "graph.facebook.com:app_id",
+        "graph.facebook.com:id",
+        "sts:RoleSessionName",
+        "sts:SourceIdentity",
+        "sts:TransitiveTagKeys",
+        "www.amazon.com:app_id",
+        "www.amazon.com:user_id"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html"
+    },
+    "DecodeAuthorizationMessage": {
+      "description": "Grants permission to decode additional information about the authorization status of a request from an encoded message returned in response to an AWS request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_DecodeAuthorizationMessage.html"
+    },
+    "GetAccessKeyInfo": {
+      "description": "Grants permission to obtain details about the access key id passed as a parameter to the request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetAccessKeyInfo.html"
+    },
+    "GetCallerIdentity": {
+      "description": "Grants permission to obtain details about the IAM identity whose credentials are used to call the API",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html"
+    },
+    "GetFederationToken": {
+      "description": "Grants permission to obtain a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for a federated user",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html"
+    },
+    "GetServiceBearerToken": {
+      "description": "Grants permission to obtain a STS bearer token for an AWS root user, IAM role, or an IAM user",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "sts:AWSServiceName"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_bearer.html"
+    },
+    "GetSessionToken": {
+      "description": "Grants permission to obtain a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for an AWS account or IAM user",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html"
+    },
+    "SetSourceIdentity": {
+      "description": "Grants permission to set a source identity on a STS session",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "role": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "sts:SourceIdentity"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html#id_credentials_temp_control-access_monitor-perms"
+    },
+    "TagSession": {
+      "description": "Grants permission to add tags to a STS session",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "role": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "saml:aud",
+        "sts:TransitiveTagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html"
+    }
+  },
+  "resourceTypes": {
+    "role": {
+      "arn": "arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html"
+    },
+    "user": {
+      "arn": "arn:${Partition}:iam::${Account}:user/${UserNameWithPath}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html"
+    }
+  },
+  "conditionKeys": {
+    "accounts.google.com:aud": {
+      "description": "Filters access by the Google application ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_aud"
+    },
+    "accounts.google.com:oaud": {
+      "description": "Filters access by the Google audience",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_oaud"
+    },
+    "accounts.google.com:sub": {
+      "description": "Filters access by the subject of the claim (the Google user ID)",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_sub"
+    },
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "cognito-identity.amazonaws.com:amr": {
+      "description": "Filters access by the login information for Amazon Cognito",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_amr"
+    },
+    "cognito-identity.amazonaws.com:aud": {
+      "description": "Filters access by the Amazon Cognito identity pool ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_aud"
+    },
+    "cognito-identity.amazonaws.com:sub": {
+      "description": "Filters access by the subject of the claim (the Amazon Cognito user ID)",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_sub"
+    },
+    "graph.facebook.com:app_id": {
+      "description": "Filters access by the Facebook application ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_id"
+    },
+    "graph.facebook.com:id": {
+      "description": "Filters access by the Facebook user ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_id"
+    },
+    "iam:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags that are attached to the role that is being assumed",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceTag"
+    },
+    "saml:aud": {
+      "description": "Filters access by the endpoint URL to which SAML assertions are presented",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_aud"
+    },
+    "saml:cn": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_cn"
+    },
+    "saml:commonName": {
+      "description": "Filters access by the commonName attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_commonname"
+    },
+    "saml:doc": {
+      "description": "Filters access by on the principal that was used to assume the role",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_doc"
+    },
+    "saml:eduorghomepageuri": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_eduorghomepageuri"
+    },
+    "saml:eduorgidentityauthnpolicyuri": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_aud"
+    },
+    "saml:eduorglegalname": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_eduorglegalname"
+    },
+    "saml:eduorgsuperioruri": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_eduorgsuperioruri"
+    },
+    "saml:eduorgwhitepagesuri": {
+      "description": "Filters access by the eduOrg attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_eduorgwhitepagesuri"
+    },
+    "saml:edupersonaffiliation": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonaffiliation"
+    },
+    "saml:edupersonassurance": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonassurance"
+    },
+    "saml:edupersonentitlement": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonentitlement"
+    },
+    "saml:edupersonnickname": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonnickname"
+    },
+    "saml:edupersonorgdn": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonorgdn"
+    },
+    "saml:edupersonorgunitdn": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonorgunitdn"
+    },
+    "saml:edupersonprimaryaffiliation": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonprimaryaffiliation"
+    },
+    "saml:edupersonprimaryorgunitdn": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonprimaryorgunitdn"
+    },
+    "saml:edupersonprincipalname": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonprincipalname"
+    },
+    "saml:edupersonscopedaffiliation": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersonscopedaffiliation"
+    },
+    "saml:edupersontargetedid": {
+      "description": "Filters access by the eduPerson attribute",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_edupersontargetedid"
+    },
+    "saml:givenName": {
+      "description": "Filters access by the givenName attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_givenname"
+    },
+    "saml:iss": {
+      "description": "Filters access by on the issuer, which is represented by a URN",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_iss"
+    },
+    "saml:mail": {
+      "description": "Filters access by the mail attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_mail"
+    },
+    "saml:name": {
+      "description": "Filters access by the name attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_name"
+    },
+    "saml:namequalifier": {
+      "description": "Filters access by the hash value of the issuer, account ID, and friendly name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_namequalifier"
+    },
+    "saml:organizationStatus": {
+      "description": "Filters access by the organizationStatus attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_organizationstatus"
+    },
+    "saml:primaryGroupSID": {
+      "description": "Filters access by the primaryGroupSID attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_primarygroupsid"
+    },
+    "saml:sub": {
+      "description": "Filters access by the subject of the claim (the SAML user ID)",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_sub"
+    },
+    "saml:sub_type": {
+      "description": "Filters access by the value persistent, transient, or the full Format URI",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_subtype"
+    },
+    "saml:surname": {
+      "description": "Filters access by the surname attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_surname"
+    },
+    "saml:uid": {
+      "description": "Filters access by the uid attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_uid"
+    },
+    "saml:x500UniqueIdentifier": {
+      "description": "Filters access by the uid attribute",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_x500uniqueidentifier"
+    },
+    "sts:AWSServiceName": {
+      "description": "Filters access by the service that is obtaining a bearer token",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_awsservicename"
+    },
+    "sts:ExternalId": {
+      "description": "Filters access by the unique identifier required when you assume a role in another account",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_externalid"
+    },
+    "sts:RoleSessionName": {
+      "description": "Filters access by the role session name required when you assume a role",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_rolesessionname"
+    },
+    "sts:SourceIdentity": {
+      "description": "Filters access by the source identity that is passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_sourceidentity"
+    },
+    "sts:TransitiveTagKeys": {
+      "description": "Filters access by the transitive tag keys that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_TransitiveTagKeys"
+    },
+    "www.amazon.com:app_id": {
+      "description": "Filters access by the Login with Amazon application ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_id"
+    },
+    "www.amazon.com:user_id": {
+      "description": "Filters access by the Login with Amazon user ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_id"
+    }
+  }
+}

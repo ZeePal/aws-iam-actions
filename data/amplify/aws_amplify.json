@@ -1,0 +1,603 @@
+{
+  "name": "AWS Amplify",
+  "prefix": "amplify",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplify.html",
+  "actions": {
+    "CreateApp": {
+      "description": "Grants permission to create a new Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "CreateBackendEnvironment": {
+      "description": "Grants permission to create a new backend environment for an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "CreateBranch": {
+      "description": "Grants permission to create a new Branch for an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "CreateDeployment": {
+      "description": "Grants permission to create a deployment for manual deploy apps. (Apps are not connected to repository)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "CreateDomainAssociation": {
+      "description": "Grants permission to create a new DomainAssociation on an App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "CreateWebHook": {
+      "description": "Grants permission to create a new webhook on an App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteApp": {
+      "description": "Grants permission to delete an existing Amplify App by appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteBackendEnvironment": {
+      "description": "Grants permission to delete a branch for an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteBranch": {
+      "description": "Grants permission to delete a branch for an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteDomainAssociation": {
+      "description": "Grants permission to delete a DomainAssociation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteJob": {
+      "description": "Grants permission to delete a job, for an Amplify branch, part of Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobs": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "DeleteWebHook": {
+      "description": "Grants permission to delete a webhook by id",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GenerateAccessLogs": {
+      "description": "Grants permission to generate website access logs for a specific time range via a pre-signed URL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetApp": {
+      "description": "Grants permission to retrieve an existing Amplify App by appId",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetArtifactUrl": {
+      "description": "Grants permission to retrieve artifact info that corresponds to a artifactId",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetBackendEnvironment": {
+      "description": "Grants permission to retrieve a backend environment for an Amplify App",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetBranch": {
+      "description": "Grants permission to retrieve a branch for an Amplify App",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetDomainAssociation": {
+      "description": "Grants permission to retrieve domain info that corresponds to an appId and domainName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetJob": {
+      "description": "Grants permission to get a job for a branch, part of an Amplify App",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobs": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "GetWebHook": {
+      "description": "Grants permission to retrieve webhook info that corresponds to a webhookId",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListApps": {
+      "description": "Grants permission to list existing Amplify Apps",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListArtifacts": {
+      "description": "Grants permission to list artifacts with an app, a branch, a job and an artifact type",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListBackendEnvironments": {
+      "description": "Grants permission to list backend environments for an Amplify App",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListBranches": {
+      "description": "Grants permission to list branches for an Amplify App",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListDomainAssociations": {
+      "description": "Grants permission to list domains with an app",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListJobs": {
+      "description": "Grants permission to list Jobs for a branch, part of an Amplify App",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for an AWS Amplify Console resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "branches": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobs": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "ListWebHooks": {
+      "description": "Grants permission to list webhooks on an App",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "StartDeployment": {
+      "description": "Grants permission to start a deployment for manual deploy apps. (Apps are not connected to repository)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "StartJob": {
+      "description": "Grants permission to start a new job for a branch, part of an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobs": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "StopJob": {
+      "description": "Grants permission to stop a job that is in progress, for an Amplify branch, part of Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobs": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AWS Amplify Console resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "branches": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobs": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from an AWS Amplify Console resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "branches": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobs": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "UpdateApp": {
+      "description": "Grants permission to update an existing Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "UpdateBranch": {
+      "description": "Grants permission to update a branch for an Amplify App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "branches": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "UpdateDomainAssociation": {
+      "description": "Grants permission to update a DomainAssociation on an App",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domains": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "UpdateWebHook": {
+      "description": "Grants permission to update a webhook",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "apps": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    }
+  },
+  "resourceTypes": {
+    "apps": {
+      "arn": "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "branches": {
+      "arn": "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "domains": {
+      "arn": "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/domains/${DomainName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    },
+    "jobs": {
+      "arn": "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}/jobs/${JobId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag's key and value in a request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag's key associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys in a request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

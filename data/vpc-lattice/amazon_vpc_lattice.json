@@ -1,0 +1,1035 @@
+{
+  "name": "Amazon VPC Lattice",
+  "prefix": "vpc-lattice",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonvpclattice.html",
+  "actions": {
+    "CreateAccessLogSubscription": {
+      "description": "Grants permission to create an access log subscription",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "logs:CreateLogDelivery",
+        "logs:GetLogDelivery"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateListener": {
+      "description": "Grants permission to create a listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Listener": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:Protocol",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateRule": {
+      "description": "Grants permission to create a rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateService": {
+      "description": "Grants permission to create a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateServiceNetwork": {
+      "description": "Grants permission to create a service network",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateServiceNetworkServiceAssociation": {
+      "description": "Grants permission to create a service network and service association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "ServiceNetworkServiceAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateServiceNetworkVpcAssociation": {
+      "description": "Grants permission to create a service network and VPC association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "ServiceNetworkVpcAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [
+        "ec2:DescribeVpcs"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "CreateTargetGroup": {
+      "description": "Grants permission to create a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteAccessLogSubscription": {
+      "description": "Grants permission to delete an access log subscription",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "logs:DeleteLogDelivery",
+        "logs:GetLogDelivery"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteAuthPolicy": {
+      "description": "Grants permission to delete an auth policy",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteListener": {
+      "description": "Grants permission to delete a listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Listener": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteResourcePolicy": {
+      "description": "Grants permission to delete a resource policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteRule": {
+      "description": "Grants permission to delete a rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteService": {
+      "description": "Grants permission to delete a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteServiceNetwork": {
+      "description": "Grants permission to delete a service network",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteServiceNetworkServiceAssociation": {
+      "description": "Grants permission to delete a service network service association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetworkServiceAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteServiceNetworkVpcAssociation": {
+      "description": "Grants permission to delete a service network and VPC association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetworkVpcAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeleteTargetGroup": {
+      "description": "Grants permission to delete a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "DeregisterTargets": {
+      "description": "Grants permission to deregister targets from a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetAccessLogSubscription": {
+      "description": "Grants permission to get information about an access log subscription",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "logs:GetLogDelivery"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetAuthPolicy": {
+      "description": "Grants permission to get information about an auth policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetListener": {
+      "description": "Grants permission to get information about a listener",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Listener": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetResourcePolicy": {
+      "description": "Grants permission to get information about a resource policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetRule": {
+      "description": "Grants permission to get information about a rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetService": {
+      "description": "Grants permission to get information about a service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetServiceNetwork": {
+      "description": "Grants permission to get information about a service network",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetServiceNetworkServiceAssociation": {
+      "description": "Grants permission to get information about a service network and service association",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetworkServiceAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetServiceNetworkVpcAssociation": {
+      "description": "Grants permission to get information about a service network and VPC association",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetworkVpcAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "GetTargetGroup": {
+      "description": "Grants permission to get information about a target group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListAccessLogSubscriptions": {
+      "description": "Grants permission to list some or all access log subscriptions about a service network or a service",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListListeners": {
+      "description": "Grants permission to list some or all listeners",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListRules": {
+      "description": "Grants permission to list some or all rules",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListServiceNetworkServiceAssociations": {
+      "description": "Grants permission to list some or all service network and service associations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListServiceNetworkVpcAssociations": {
+      "description": "Grants permission to list some or all service network and VPC associations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListServiceNetworks": {
+      "description": "Grants permission to list the service networks owned by a caller account or shared with the caller account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListServices": {
+      "description": "Grants permission to list the services owned by a caller account or shared with the caller account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a vpc-lattice resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListTargetGroups": {
+      "description": "Grants permission to list some or all target groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ListTargets": {
+      "description": "Grants permission to list some or all targets in a target group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "PutAuthPolicy": {
+      "description": "Grants permission to create or update the auth policy for a service network or a service",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "PutResourcePolicy": {
+      "description": "Grants permission to create a resource policy for a service network or a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "RegisterTargets": {
+      "description": "Grants permission to register targets to a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a vpc-lattice resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Listener": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetworkServiceAssociation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetworkVpcAssociation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "TargetGroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a vpc-lattice resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Listener": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetwork": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetworkServiceAssociation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ServiceNetworkVpcAssociation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "TargetGroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateAccessLogSubscription": {
+      "description": "Grants permission to update an access log subscription",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AccessLogSubscription": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [
+        "logs:GetLogDelivery",
+        "logs:UpdateLogDelivery"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateListener": {
+      "description": "Grants permission to update a listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Listener": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateRule": {
+      "description": "Grants permission to update a rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateService": {
+      "description": "Grants permission to update a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:AuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateServiceNetwork": {
+      "description": "Grants permission to update a service network",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetwork": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:AuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateServiceNetworkVpcAssociation": {
+      "description": "Grants permission to update a service network and VPC association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ServiceNetworkVpcAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "dependentActions": [
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeVpcs"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "UpdateTargetGroup": {
+      "description": "Grants permission to update a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TargetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    }
+  },
+  "resourceTypes": {
+    "AccessLogSubscription": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:accesslogsubscription/${AccessLogSubscriptionId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "Listener": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:service/${ServiceId}/listener/${ListenerId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:Protocol",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "Rule": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:service/${ServiceId}/listener/${ListenerId}/rule/${RuleId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "Service": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:service/${ServiceId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ServiceNetwork": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:servicenetwork/${ServiceNetworkId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ServiceNetworkServiceAssociation": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:servicenetworkserviceassociation/${ServiceNetworkServiceAssociationId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "ServiceNetworkVpcAssociation": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:servicenetworkvpcassociation/${ServiceNetworkVpcAssociationId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "TargetGroup": {
+      "arn": "arn:${Partition}:vpc-lattice::${Account}:targetgroup/${TargetGroupId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:VpcId"
+      ],
+      "url": "https://aws.amazon.com/vpc/lattice"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "vpc-lattice:AuthType": {
+      "description": "Filters access by the auth type specified in the request",
+      "type": "String",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:Protocol": {
+      "description": "Filters access by the protocol specified in the request",
+      "type": "String",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:SecurityGroupIds": {
+      "description": "Filters access by the IDs of security groups",
+      "type": "ArrayOfString",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:ServiceArn": {
+      "description": "Filters access by the ARN of a service",
+      "type": "String",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:ServiceNetworkArn": {
+      "description": "Filters access by the ARN of a service network",
+      "type": "String",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:TargetGroupArns": {
+      "description": "Filters access by the ARNs of target groups",
+      "type": "ArrayOfString",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    },
+    "vpc-lattice:VpcId": {
+      "description": "Filters access by the ID of a virtual private cloud (VPC)",
+      "type": "String",
+      "url": "https://aws.amazon.com/vpc/lattice"
+    }
+  }
+}

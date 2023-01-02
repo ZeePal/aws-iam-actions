@@ -1,0 +1,63 @@
+{
+  "name": "AWS Application Cost Profiler Service",
+  "prefix": "application-cost-profiler",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationcostprofilerservice.html",
+  "actions": {
+    "DeleteReportDefinition": {
+      "description": "Grants permission to delete the configuration with specific Application Cost Profiler Report thereby effectively disabling report generation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_DeleteReportDefinition.html"
+    },
+    "GetReportDefinition": {
+      "description": "Grants permission to fetch the configuration with specific Application Cost Profiler Report request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_GetReportDefinition.html"
+    },
+    "ImportApplicationUsage": {
+      "description": "Grants permission to import the application usage from S3",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_ImportApplicationUsage.html"
+    },
+    "ListReportDefinitions": {
+      "description": "Grants permission to get a list of the different Application Cost Profiler Report configurations they have created",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_ListReportDefinitions.html"
+    },
+    "PutReportDefinition": {
+      "description": "Grants permission to create Application Cost Profiler Report configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_PutReportDefinition.html"
+    },
+    "UpdateReportDefinition": {
+      "description": "Grants permission to update an existing Application Cost Profiler Report configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/application-cost-profiler/latest/APIReference/API_UpdateReportDefinition.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

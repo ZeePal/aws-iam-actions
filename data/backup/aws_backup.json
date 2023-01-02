@@ -1,0 +1,1087 @@
+{
+  "name": "AWS Backup",
+  "prefix": "backup",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackup.html",
+  "actions": {
+    "CancelLegalHold": {
+      "description": "Grants permission to cancel a legal hold",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "legalHold": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CancelLegalHold.html"
+    },
+    "CopyFromBackupVault": {
+      "description": "Grants permission to copy from a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "backup:CopyTargetOrgPaths",
+        "backup:CopyTargets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartCopyJob.html"
+    },
+    "CopyIntoBackupVault": {
+      "description": "Grants permission to copy into a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartCopyJob.html"
+    },
+    "CreateBackupPlan": {
+      "description": "Grants permission to create a new backup plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateBackupPlan.html"
+    },
+    "CreateBackupSelection": {
+      "description": "Grants permission to create a new resource assignment in a backup plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateBackupSelection.html"
+    },
+    "CreateBackupVault": {
+      "description": "Grants permission to create a new backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateBackupVault.html"
+    },
+    "CreateFramework": {
+      "description": "Grants permission to create a new framework",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "framework": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateFramework.html"
+    },
+    "CreateLegalHold": {
+      "description": "Grants permission to create a new legal hold",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "legalHold": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateLegalHold.html"
+    },
+    "CreateReportPlan": {
+      "description": "Grants permission to create a new report plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reportPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "backup:FrameworkArns"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_CreateReportPlan.html"
+    },
+    "DeleteBackupPlan": {
+      "description": "Grants permission to delete a backup plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupPlan.html"
+    },
+    "DeleteBackupSelection": {
+      "description": "Grants permission to delete a resource assignment from a backup plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupSelection.html"
+    },
+    "DeleteBackupVault": {
+      "description": "Grants permission to delete a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVault.html"
+    },
+    "DeleteBackupVaultAccessPolicy": {
+      "description": "Grants permission to delete backup vault access policy",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVaultAccessPolicy.html"
+    },
+    "DeleteBackupVaultLockConfiguration": {
+      "description": "Grants permission to remove the lock configuration from a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVaultLockConfiguration.html"
+    },
+    "DeleteBackupVaultNotifications": {
+      "description": "Grants permission to remove the notifications from a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVaultNotifications.html"
+    },
+    "DeleteFramework": {
+      "description": "Grants permission to delete a framework",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "framework": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteFramework.html"
+    },
+    "DeleteRecoveryPoint": {
+      "description": "Grants permission to delete a recovery point from a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteRecoveryPoint.html"
+    },
+    "DeleteReportPlan": {
+      "description": "Grants permission to delete a report plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reportPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteReportPlan.html"
+    },
+    "DescribeBackupJob": {
+      "description": "Grants permission to describe a backup job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupJob.html"
+    },
+    "DescribeBackupVault": {
+      "description": "Grants permission to describe a new backup vault with the specified name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupVault.html"
+    },
+    "DescribeCopyJob": {
+      "description": "Grants permission to describe a copy job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeCopyJob.html"
+    },
+    "DescribeFramework": {
+      "description": "Grants permission to describe a framework with the specified name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "framework": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeFramework.html"
+    },
+    "DescribeGlobalSettings": {
+      "description": "Grants permission to describe global settings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeGlobalSettings.html"
+    },
+    "DescribeProtectedResource": {
+      "description": "Grants permission to describe a protected resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeProtectedResource.html"
+    },
+    "DescribeRecoveryPoint": {
+      "description": "Grants permission to describe a recovery point",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRecoveryPoint.html"
+    },
+    "DescribeRegionSettings": {
+      "description": "Grants permission to describe region settings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRegionSettings.html"
+    },
+    "DescribeReportJob": {
+      "description": "Grants permission to describe a report job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeReportJob.html"
+    },
+    "DescribeReportPlan": {
+      "description": "Grants permission to describe a report plan with the specified name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reportPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeReportPlan.html"
+    },
+    "DescribeRestoreJob": {
+      "description": "Grants permission to describe a restore job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeRestoreJob.html"
+    },
+    "DisassociateRecoveryPoint": {
+      "description": "Grants permission to disassociate a recovery point from a backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DisassociateRecoveryPoint.html"
+    },
+    "DisassociateRecoveryPointFromParent": {
+      "description": "Grants permission to disassociate a recovery point from its parent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DisassociateRecoveryPointFromParent.html"
+    },
+    "ExportBackupPlanTemplate": {
+      "description": "Grants permission to export a backup plan as a JSON",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ExportBackupPlanTemplate.html"
+    },
+    "GetBackupPlan": {
+      "description": "Grants permission to get a backup plan",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupPlan.html"
+    },
+    "GetBackupPlanFromJSON": {
+      "description": "Grants permission to transform a JSON to a backup plan",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupPlanFromJSON.html"
+    },
+    "GetBackupPlanFromTemplate": {
+      "description": "Grants permission to transform a template to a backup plan",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupPlanFromTemplate.html"
+    },
+    "GetBackupSelection": {
+      "description": "Grants permission to get a backup plan resource assignment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupSelection.html"
+    },
+    "GetBackupVaultAccessPolicy": {
+      "description": "Grants permission to get backup vault access policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupVaultAccessPolicy.html"
+    },
+    "GetBackupVaultNotifications": {
+      "description": "Grants permission to get backup vault notifications",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetBackupVaultNotifications.html"
+    },
+    "GetLegalHold": {
+      "description": "Grants permission to get a legal hold",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "legalHold": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetLegalHold.html"
+    },
+    "GetRecoveryPointRestoreMetadata": {
+      "description": "Grants permission to get recovery point restore metadata",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetRecoveryPointRestoreMetadata.html"
+    },
+    "GetSupportedResourceTypes": {
+      "description": "Grants permission to get supported resource types",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_GetSupportedResourceTypes.html"
+    },
+    "ListBackupJobs": {
+      "description": "Grants permission to list backup jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupJobs.html"
+    },
+    "ListBackupPlanTemplates": {
+      "description": "Grants permission to list backup plan templates provided by AWS Backup",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupPlanTemplates.html"
+    },
+    "ListBackupPlanVersions": {
+      "description": "Grants permission to list backup plan versions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupPlanVersions.html"
+    },
+    "ListBackupPlans": {
+      "description": "Grants permission to list backup plans",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupPlans.html"
+    },
+    "ListBackupSelections": {
+      "description": "Grants permission to list resource assignments for a specific backup plan",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupSelections.html"
+    },
+    "ListBackupVaults": {
+      "description": "Grants permission to list backup vaults",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html"
+    },
+    "ListCopyJobs": {
+      "description": "Grants permission to list copy jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListCopyJobs.html"
+    },
+    "ListFrameworks": {
+      "description": "Grants permission to list frameworks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListFrameworks.html"
+    },
+    "ListLegalHolds": {
+      "description": "Grants permission to list legal holds",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListLegalHolds.html"
+    },
+    "ListProtectedResources": {
+      "description": "Grants permission to list protected resources by AWS Backup",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListProtectedResources.html"
+    },
+    "ListRecoveryPointsByBackupVault": {
+      "description": "Grants permission to list recovery points inside a backup vault",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByBackupVault.html"
+    },
+    "ListRecoveryPointsByLegalHold": {
+      "description": "Grants permission to list recovery points by legal hold",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "legalHold": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByLegalHold.html"
+    },
+    "ListRecoveryPointsByResource": {
+      "description": "Grants permission to list recovery points for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRecoveryPointsByResource.html"
+    },
+    "ListReportJobs": {
+      "description": "Grants permission to list report jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListReportJobs.html"
+    },
+    "ListReportPlans": {
+      "description": "Grants permission to list report plans",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListReportPlans.html"
+    },
+    "ListRestoreJobs": {
+      "description": "Grants permission to lists restore jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListRestoreJobs.html"
+    },
+    "ListTags": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "backupVault": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "framework": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "recoveryPoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reportPlan": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListTags.html"
+    },
+    "PutBackupVaultAccessPolicy": {
+      "description": "Grants permission to add an access policy to the backup vault",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_PutBackupVaultAccessPolicy.html"
+    },
+    "PutBackupVaultLockConfiguration": {
+      "description": "Grants permission to add a lock configuration to the backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "backup:ChangeableForDays"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_PutBackupVaultLockConfiguration.html"
+    },
+    "PutBackupVaultNotifications": {
+      "description": "Grants permission to add an SNS topic to the backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_PutBackupVaultNotifications.html"
+    },
+    "StartBackupJob": {
+      "description": "Grants permission to start a new backup job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupVault": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html"
+    },
+    "StartCopyJob": {
+      "description": "Grants permission to copy a backup from a source backup vault to a destination backup vault",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartCopyJob.html"
+    },
+    "StartReportJob": {
+      "description": "Grants permission to start a new report job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reportPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartReportJob.html"
+    },
+    "StartRestoreJob": {
+      "description": "Grants permission to start a new restore job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html"
+    },
+    "StopBackupJob": {
+      "description": "Grants permission to stop a backup job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StopBackupJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "backupVault": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "framework": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "legalHold": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "recoveryPoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reportPlan": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "backupVault": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "framework": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "legalHold": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "recoveryPoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reportPlan": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UntagResource.html"
+    },
+    "UpdateBackupPlan": {
+      "description": "Grants permission to update a backup plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backupPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateBackupPlan.html"
+    },
+    "UpdateFramework": {
+      "description": "Grants permission to update a framework",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "framework": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateFramework.html"
+    },
+    "UpdateGlobalSettings": {
+      "description": "Grants permission to update the current global settings for the AWS Account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateGlobalSettings.html"
+    },
+    "UpdateRecoveryPointLifecycle": {
+      "description": "Grants permission to update the lifecycle of the recovery point",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRecoveryPointLifecycle.html"
+    },
+    "UpdateRegionSettings": {
+      "description": "Grants permission to update the current service opt-in settings for the Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html"
+    },
+    "UpdateReportPlan": {
+      "description": "Grants permission to update a report plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reportPlan": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "backup:FrameworkArns"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateReportPlan.html"
+    }
+  },
+  "resourceTypes": {
+    "backupPlan": {
+      "arn": "arn:${Partition}:backup:${Region}:${Account}:backup-plan:${BackupPlanId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/about-backup-plans.html"
+    },
+    "backupVault": {
+      "arn": "arn:${Partition}:backup:${Region}:${Account}:backup-vault:${BackupVaultName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html"
+    },
+    "framework": {
+      "arn": "arn:${Partition}:backup:${Region}:${Account}:framework:${FrameworkName}-${FrameworkId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/frameworks.html"
+    },
+    "legalHold": {
+      "arn": "arn:${Partition}:backup:${Region}:${Account}:legal-hold:${LegalHoldId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/legal-holds.html"
+    },
+    "recoveryPoint": {
+      "arn": "arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/recovery-points.html"
+    },
+    "reportPlan": {
+      "arn": "arn:${Partition}:backup:${Region}:${Account}:report-plan:${ReportPlanName}-${ReportPlanId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/report-plans.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the allowed set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "backup:ChangeableForDays": {
+      "description": "Filters access by the value of the ChangeableForDays parameter",
+      "type": "Numeric",
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys"
+    },
+    "backup:CopyTargetOrgPaths": {
+      "description": "Filters access by the organization unit",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys"
+    },
+    "backup:CopyTargets": {
+      "description": "Filters access by the ARN of an backup vault",
+      "type": "ArrayOfARN",
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys"
+    },
+    "backup:FrameworkArns": {
+      "description": "Filters access by the Framework ARNs",
+      "type": "ArrayOfARN",
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys"
+    }
+  }
+}

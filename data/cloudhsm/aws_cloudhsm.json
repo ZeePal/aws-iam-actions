@@ -1,0 +1,420 @@
+{
+  "name": "AWS CloudHSM",
+  "prefix": "cloudhsm",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudhsm.html",
+  "actions": {
+    "AddTagsToResource": {
+      "description": "Adds or overwrites one or more tags for the specified AWS CloudHSM resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_AddTagsToResource.html"
+    },
+    "CopyBackupToRegion": {
+      "description": "Creates a copy of a backup in the specified region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CopyBackupToRegion.html"
+    },
+    "CreateCluster": {
+      "description": "Creates a new AWS CloudHSM cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateCluster.html"
+    },
+    "CreateHapg": {
+      "description": "Creates a high-availability partition group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_CreateHapg.html"
+    },
+    "CreateHsm": {
+      "description": "Creates a new hardware security module (HSM) in the specified AWS CloudHSM cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateHsm.html"
+    },
+    "CreateLunaClient": {
+      "description": "Creates an HSM client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_CreateLunaClient.html"
+    },
+    "DeleteBackup": {
+      "description": "Deletes the specified CloudHSM backup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteBackup.html"
+    },
+    "DeleteCluster": {
+      "description": "Deletes the specified AWS CloudHSM cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteCluster.html"
+    },
+    "DeleteHapg": {
+      "description": "Deletes a high-availability partition group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DeleteHapg.html"
+    },
+    "DeleteHsm": {
+      "description": "Deletes the specified HSM",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteHsm.html"
+    },
+    "DeleteLunaClient": {
+      "description": "Deletes a client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DeleteLunaClient.html"
+    },
+    "DescribeBackups": {
+      "description": "Gets information about backups of AWS CloudHSM clusters",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeBackups.html"
+    },
+    "DescribeClusters": {
+      "description": "Gets information about AWS CloudHSM clusters",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html"
+    },
+    "DescribeHapg": {
+      "description": "Retrieves information about a high-availability partition group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeHapg.html"
+    },
+    "DescribeHsm": {
+      "description": "Retrieves information about an HSM. You can identify the HSM by its ARN or its serial number",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeHsm.html"
+    },
+    "DescribeLunaClient": {
+      "description": "Retrieves information about an HSM client",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_DescribeLunaClient.html"
+    },
+    "GetConfig": {
+      "description": "Gets the configuration files necessary to connect to all high availability partition groups the client is associated with",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_GetConfig.html"
+    },
+    "InitializeCluster": {
+      "description": "Claims an AWS CloudHSM cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_InitializeCluster.html"
+    },
+    "ListAvailableZones": {
+      "description": "Lists the Availability Zones that have available AWS CloudHSM capacity",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListAvailableZones.html"
+    },
+    "ListHapgs": {
+      "description": "Lists the high-availability partition groups for the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListHapgs.html"
+    },
+    "ListHsms": {
+      "description": "Retrieves the identifiers of all of the HSMs provisioned for the current customer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListHsms.html"
+    },
+    "ListLunaClients": {
+      "description": "Lists all of the clients",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListLunaClients.html"
+    },
+    "ListTags": {
+      "description": "Gets a list of tags for the specified AWS CloudHSM cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTags.html"
+    },
+    "ListTagsForResource": {
+      "description": "Returns a list of all tags for the specified AWS CloudHSM resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ListTagsForResource.html"
+    },
+    "ModifyBackupAttributes": {
+      "description": "Modifies attributes for AWS CloudHSM backup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyBackupAttributes.html"
+    },
+    "ModifyCluster": {
+      "description": "Modifies AWS CloudHSM cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyCluster.html"
+    },
+    "ModifyHapg": {
+      "description": "Modifies an existing high-availability partition group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyHapg.html"
+    },
+    "ModifyHsm": {
+      "description": "Modifies an HSM",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyHsm.html"
+    },
+    "ModifyLunaClient": {
+      "description": "Modifies the certificate used by the client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_ModifyLunaClient.html"
+    },
+    "RemoveTagsFromResource": {
+      "description": "Removes one or more tags from the specified AWS CloudHSM resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/classic/APIReference/API_RemoveTagsFromResource.html"
+    },
+    "RestoreBackup": {
+      "description": "Restores the specified CloudHSM backup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_RestoreBackup.html"
+    },
+    "TagResource": {
+      "description": "Adds or overwrites one or more tags for the specified AWS CloudHSM cluster",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Removes the specified tag or tags from the specified AWS CloudHSM cluster",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_UntagResource.html"
+    }
+  },
+  "resourceTypes": {
+    "backup": {
+      "arn": "arn:${Partition}:cloudhsm:${Region}:${Account}:backup/${CloudHsmBackupInstanceName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/backups.html"
+    },
+    "cluster": {
+      "arn": "arn:${Partition}:cloudhsm:${Region}:${Account}:cluster/${CloudHsmClusterInstanceName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

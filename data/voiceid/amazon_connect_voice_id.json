@@ -1,0 +1,343 @@
+{
+  "name": "Amazon Connect Voice ID",
+  "prefix": "voiceid",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectvoiceid.html",
+  "actions": {
+    "CreateDomain": {
+      "description": "Grants permission to create a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_CreateDomain.html"
+    },
+    "DeleteDomain": {
+      "description": "Grants permission to delete a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DeleteDomain.html"
+    },
+    "DeleteFraudster": {
+      "description": "Grants permission to delete a fraudster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DeleteFraudster.html"
+    },
+    "DeleteSpeaker": {
+      "description": "Grants permission to delete a speaker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DeleteSpeaker.html"
+    },
+    "DescribeComplianceConsent": {
+      "description": "Grants permission to describe compliance consent",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/enable-voiceid.html#enable-voiceid-step1"
+    },
+    "DescribeDomain": {
+      "description": "Grants permission to describe a domain",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeDomain.html"
+    },
+    "DescribeFraudster": {
+      "description": "Grants permission to describe a fraudster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeFraudster.html"
+    },
+    "DescribeFraudsterRegistrationJob": {
+      "description": "Grants permission to describe a fraudster registration job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeFraudsterRegistrationJob.html"
+    },
+    "DescribeSpeaker": {
+      "description": "Grants permission to describe a speaker",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeSpeaker.html"
+    },
+    "DescribeSpeakerEnrollmentJob": {
+      "description": "Grants permission to describe a speaker enrollment job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_DescribeSpeakerEnrollmentJob.html"
+    },
+    "EvaluateSession": {
+      "description": "Grants permission to evaluate a session",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_EvaluateSession.html"
+    },
+    "ListDomains": {
+      "description": "Grants permission to list domains for an account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListDomains.html"
+    },
+    "ListFraudsterRegistrationJobs": {
+      "description": "Grants permission to list fraudster registration jobs for a domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListFraudsterRegistrationJobs.html"
+    },
+    "ListSpeakerEnrollmentJobs": {
+      "description": "Grants permission to list speaker enrollment jobs for a domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListSpeakerEnrollmentJobs.html"
+    },
+    "ListSpeakers": {
+      "description": "Grants permission to list speakers for a domain",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListSpeakers.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a Voice ID resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "OptOutSpeaker": {
+      "description": "Grants permission to opt out a speaker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_OptOutSpeaker.html"
+    },
+    "RegisterComplianceConsent": {
+      "description": "Grants permission to register compliance consent",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/enable-voiceid.html#enable-voiceid-step1"
+    },
+    "StartFraudsterRegistrationJob": {
+      "description": "Grants permission to start a fraudster registration job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_StartFraudsterRegistrationJob.html"
+    },
+    "StartSpeakerEnrollmentJob": {
+      "description": "Grants permission to start a speaker enrollment job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_StartSpeakerEnrollmentJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a Voice ID resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from a Voice ID resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDomain": {
+      "description": "Grants permission to update a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domain": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UpdateDomain.html"
+    }
+  },
+  "resourceTypes": {
+    "domain": {
+      "arn": "arn:${Partition}:voiceid:${Region}:${Account}:domain/${DomainId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/enable-voiceid.html#voiceid-domain"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

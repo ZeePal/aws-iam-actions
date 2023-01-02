@@ -1,0 +1,36 @@
+{
+  "name": "Amazon Mobile Analytics",
+  "prefix": "mobileanalytics",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmobileanalytics.html",
+  "actions": {
+    "GetFinancialReports": {
+      "description": "Grant access to financial metrics for an app",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetReports": {
+      "description": "Grant access to standard metrics for an app",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "PutEvents": {
+      "description": "The PutEvents operation records one or more events",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobileanalytics/latest/ug/PutEvents.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

@@ -1,0 +1,535 @@
+{
+  "name": "AWS Batch",
+  "prefix": "batch",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html",
+  "actions": {
+    "CancelJob": {
+      "description": "Grants permission to cancel a job in an AWS Batch job queue in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJob.html"
+    },
+    "CreateComputeEnvironment": {
+      "description": "Grants permission to create an AWS Batch compute environment in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComputeEnvironment.html"
+    },
+    "CreateJobQueue": {
+      "description": "Grants permission to create an AWS Batch job queue in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "scheduling-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateJobQueue.html"
+    },
+    "CreateSchedulingPolicy": {
+      "description": "Grants permission to create an AWS Batch scheduling policy in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduling-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateSchedulingPolicy.html"
+    },
+    "DeleteComputeEnvironment": {
+      "description": "Grants permission to delete an AWS Batch compute environment in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteComputeEnvironment.html"
+    },
+    "DeleteJobQueue": {
+      "description": "Grants permission to delete an AWS Batch job queue in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job-queue": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteJobQueue.html"
+    },
+    "DeleteSchedulingPolicy": {
+      "description": "Grants permission to delete an AWS Batch scheduling policy in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduling-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteSchedulingPolicy.html"
+    },
+    "DeregisterJobDefinition": {
+      "description": "Grants permission to deregister an AWS Batch job definition in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job-definition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DeregisterJobDefinition.html"
+    },
+    "DescribeComputeEnvironments": {
+      "description": "Grants permission to describe one or more AWS Batch compute environments in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeComputeEnvironments.html"
+    },
+    "DescribeJobDefinitions": {
+      "description": "Grants permission to describe one or more AWS Batch job definitions in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobDefinitions.html"
+    },
+    "DescribeJobQueues": {
+      "description": "Grants permission to describe one or more AWS Batch job queues in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobQueues.html"
+    },
+    "DescribeJobs": {
+      "description": "Grants permission to describe a list of AWS Batch jobs in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html"
+    },
+    "DescribeSchedulingPolicies": {
+      "description": "Grants permission to describe one or more AWS Batch scheduling policies in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeSchedulingPolicies.html"
+    },
+    "ListJobs": {
+      "description": "Grants permission to list jobs for a specified AWS Batch job queue in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobs.html"
+    },
+    "ListSchedulingPolicies": {
+      "description": "Grants permission to list AWS Batch scheduling policies in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_ListSchedulingPolicies.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for an AWS Batch resource in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-definition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduling-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "RegisterJobDefinition": {
+      "description": "Grants permission to register an AWS Batch job definition in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job-definition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "batch:AWSLogsCreateGroup",
+        "batch:AWSLogsGroup",
+        "batch:AWSLogsRegion",
+        "batch:AWSLogsStreamPrefix",
+        "batch:EKSImage",
+        "batch:EKSPrivileged",
+        "batch:EKSRunAsGroup",
+        "batch:EKSRunAsUser",
+        "batch:EKSServiceAccountName",
+        "batch:Image",
+        "batch:LogDriver",
+        "batch:Privileged",
+        "batch:User"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html"
+    },
+    "SubmitJob": {
+      "description": "Grants permission to submit an AWS Batch job from a job definition in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job-definition": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "batch:EKSImage",
+        "batch:ShareIdentifier"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AWS Batch resource in your account",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-definition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduling-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_TagResource.html"
+    },
+    "TerminateJob": {
+      "description": "Grants permission to terminate a job in an AWS Batch job queue in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJob.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an AWS Batch resource in your account",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-definition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduling-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateComputeEnvironment": {
+      "description": "Grants permission to update an AWS Batch compute environment in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html"
+    },
+    "UpdateJobQueue": {
+      "description": "Grants permission to update an AWS Batch job queue in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "compute-environment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job-queue": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "scheduling-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQueue.html"
+    },
+    "UpdateSchedulingPolicy": {
+      "description": "Grants permission to update an AWS Batch scheduling policy in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduling-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateSchedulingPolicy.html"
+    }
+  },
+  "resourceTypes": {
+    "compute-environment": {
+      "arn": "arn:${Partition}:batch:${Region}:${Account}:compute-environment/${ComputeEnvironmentName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html"
+    },
+    "job": {
+      "arn": "arn:${Partition}:batch:${Region}:${Account}:job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/batch/latest/userguide/jobs.html"
+    },
+    "job-definition": {
+      "arn": "arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}:${Revision}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/batch/latest/userguide/job_definitions.html"
+    },
+    "job-queue": {
+      "arn": "arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/batch/latest/userguide/job_queues.html"
+    },
+    "scheduling-policy": {
+      "arn": "arn:${Partition}:batch:${Region}:${Account}:scheduling-policy/${SchedulingPolicyName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/batch/latest/userguide/scheduling-policies.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "batch:AWSLogsCreateGroup": {
+      "description": "Filters access by the specified logging driver to determine whether awslogs group will be created for the logs",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:AWSLogsGroup": {
+      "description": "Filters access by the awslogs group where the logs are located",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:AWSLogsRegion": {
+      "description": "Filters access by the region where the logs are sent to",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:AWSLogsStreamPrefix": {
+      "description": "Filters access by the awslogs log stream prefix",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:EKSImage": {
+      "description": "Filters access by the image used to start a container for an Amazon EKS job",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:EKSPrivileged": {
+      "description": "Filters access by the specified privileged parameter value that determines whether the container is given elevated privileges on the host container instance (similar to the root user) for an Amazon EKS job",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:EKSRunAsGroup": {
+      "description": "Filters access by the specified group numeric ID (gid) used to start a container in an Amazon EKS job",
+      "type": "Numeric",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:EKSRunAsUser": {
+      "description": "Filters access by the specified user numeric ID (uid) used to start a a container in an Amazon EKS job",
+      "type": "Numeric",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:EKSServiceAccountName": {
+      "description": "Filters access by the name of the service account used to run the pod for an Amazon EKS job",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:Image": {
+      "description": "Filters access by the image used to start a container",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:LogDriver": {
+      "description": "Filters access by the log driver used for the container",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:Privileged": {
+      "description": "Filters access by the specified privileged parameter value that determines whether the container is given elevated privileges on the host container instance (similar to the root user)",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:ShareIdentifier": {
+      "description": "Filters access by the shareIdentifier used inside submit job",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    },
+    "batch:User": {
+      "description": "Filters access by user name or numeric uid used inside the container",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html#awsbatch-policy-keys"
+    }
+  }
+}

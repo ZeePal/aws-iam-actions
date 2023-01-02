@@ -1,0 +1,1260 @@
+{
+  "name": "AWS Config",
+  "prefix": "config",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsconfig.html",
+  "actions": {
+    "BatchGetAggregateResourceConfig": {
+      "description": "Grants permission to return the current configuration items for resources that are present in your AWS Config aggregator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_BatchGetAggregateResourceConfig.html"
+    },
+    "BatchGetResourceConfig": {
+      "description": "Grants permission to return the current configuration for one or more requested resources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_BatchGetResourceConfig.html"
+    },
+    "DeleteAggregationAuthorization": {
+      "description": "Grants permission to delete the authorization granted to the specified configuration aggregator account in a specified region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AggregationAuthorization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteAggregationAuthorization.html"
+    },
+    "DeleteConfigRule": {
+      "description": "Grants permission to delete the specified AWS Config rule and all of its evaluation results",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteConfigRule.html"
+    },
+    "DeleteConfigurationAggregator": {
+      "description": "Grants permission to delete the specified configuration aggregator and the aggregated data associated with the aggregator",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteConfigurationAggregator.html"
+    },
+    "DeleteConfigurationRecorder": {
+      "description": "Grants permission to delete the configuration recorder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteConfigurationRecorder.html"
+    },
+    "DeleteConformancePack": {
+      "description": "Grants permission to delete the specified conformance pack and all the AWS Config rules and all evaluation results within that conformance pack",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteConformancePack.html"
+    },
+    "DeleteDeliveryChannel": {
+      "description": "Grants permission to delete the delivery channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteDeliveryChannel.html"
+    },
+    "DeleteEvaluationResults": {
+      "description": "Grants permission to delete the evaluation results for the specified Config rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteEvaluationResults.html"
+    },
+    "DeleteOrganizationConfigRule": {
+      "description": "Grants permission to delete the specified organization config rule and all of its evaluation results from all member accounts in that organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteOrganizationConfigRule.html"
+    },
+    "DeleteOrganizationConformancePack": {
+      "description": "Grants permission to delete the specified organization conformance pack and all of its evaluation results from all member accounts in that organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteOrganizationConformancePack.html"
+    },
+    "DeletePendingAggregationRequest": {
+      "description": "Grants permission to delete pending authorization requests for a specified aggregator account in a specified region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeletePendingAggregationRequest.html"
+    },
+    "DeleteRemediationConfiguration": {
+      "description": "Grants permission to delete the remediation configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RemediationConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRemediationConfiguration.html"
+    },
+    "DeleteRemediationExceptions": {
+      "description": "Grants permission to delete one or more remediation exceptions for specific resource keys for a specific AWS Config Rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRemediationExceptions.html"
+    },
+    "DeleteResourceConfig": {
+      "description": "Grants permission to record the configuration state for a custom resource that has been deleted",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteResourceConfig.html"
+    },
+    "DeleteRetentionConfiguration": {
+      "description": "Grants permission to delete the retention configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRetentionConfiguration.html"
+    },
+    "DeleteStoredQuery": {
+      "description": "Grants permission to delete the stored query for an AWS account in an AWS Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "StoredQuery": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteStoredQuery.html"
+    },
+    "DeliverConfigSnapshot": {
+      "description": "Grants permission to schedule delivery of a configuration snapshot to the Amazon S3 bucket in the specified delivery channel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DeliverConfigSnapshot.html"
+    },
+    "DescribeAggregateComplianceByConfigRules": {
+      "description": "Grants permission to return a list of compliant and noncompliant rules with the number of resources for compliant and noncompliant rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeAggregateComplianceByConfigRules.html"
+    },
+    "DescribeAggregateComplianceByConformancePacks": {
+      "description": "Grants permission to return a list of compliant and noncompliant conformance packs along with count of compliant, non-compliant and total rules within each conformance pack",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeAggregateComplianceByConformancePacks.html"
+    },
+    "DescribeAggregationAuthorizations": {
+      "description": "Grants permission to return a list of authorizations granted to various aggregator accounts and regions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeAggregationAuthorizations.html"
+    },
+    "DescribeComplianceByConfigRule": {
+      "description": "Grants permission to indicate whether the specified AWS Config rules are compliant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeComplianceByConfigRule.html"
+    },
+    "DescribeComplianceByResource": {
+      "description": "Grants permission to indicate whether the specified AWS resources are compliant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeComplianceByResource.html"
+    },
+    "DescribeConfigRuleEvaluationStatus": {
+      "description": "Grants permission to return status information for each of your AWS managed Config rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigRuleEvaluationStatus.html"
+    },
+    "DescribeConfigRules": {
+      "description": "Grants permission to return details about your AWS Config rules",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigRules.html"
+    },
+    "DescribeConfigurationAggregatorSourcesStatus": {
+      "description": "Grants permission to return status information for sources within an aggregator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigurationAggregatorSourcesStatus.html"
+    },
+    "DescribeConfigurationAggregators": {
+      "description": "Grants permission to return the details of one or more configuration aggregators",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigurationAggregators.html"
+    },
+    "DescribeConfigurationRecorderStatus": {
+      "description": "Grants permission to return the current status of the specified configuration recorder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigurationRecorderStatus.html"
+    },
+    "DescribeConfigurationRecorders": {
+      "description": "Grants permission to return the names of one or more specified configuration recorders",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConfigurationRecorders.html"
+    },
+    "DescribeConformancePackCompliance": {
+      "description": "Grants permission to return compliance information for each rule in that conformance pack",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConformancePackCompliance.html"
+    },
+    "DescribeConformancePackStatus": {
+      "description": "Grants permission to provide one or more conformance packs deployment status",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConformancePackStatus.html"
+    },
+    "DescribeConformancePacks": {
+      "description": "Grants permission to return a list of one or more conformance packs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeConformancePacks.html"
+    },
+    "DescribeDeliveryChannelStatus": {
+      "description": "Grants permission to return the current status of the specified delivery channel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeDeliveryChannelStatus.html"
+    },
+    "DescribeDeliveryChannels": {
+      "description": "Grants permission to return details about the specified delivery channel",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeDeliveryChannels.html"
+    },
+    "DescribeOrganizationConfigRuleStatuses": {
+      "description": "Grants permission to provide organization config rule deployment status for an organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeOrganizationConfigRuleStatuses.html"
+    },
+    "DescribeOrganizationConfigRules": {
+      "description": "Grants permission to return a list of organization config rules",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeOrganizationConfigRules.html"
+    },
+    "DescribeOrganizationConformancePackStatuses": {
+      "description": "Grants permission to provide organization conformance pack deployment status for an organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeOrganizationConformancePackStatuses.html"
+    },
+    "DescribeOrganizationConformancePacks": {
+      "description": "Grants permission to return a list of organization conformance packs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeOrganizationConformancePacks.html"
+    },
+    "DescribePendingAggregationRequests": {
+      "description": "Grants permission to return a list of all pending aggregation requests",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribePendingAggregationRequests.html"
+    },
+    "DescribeRemediationConfigurations": {
+      "description": "Grants permission to return the details of one or more remediation configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RemediationConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeRemediationConfigurations.html"
+    },
+    "DescribeRemediationExceptions": {
+      "description": "Grants permission to return the details of one or more remediation exceptions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeRemediationExceptions.html"
+    },
+    "DescribeRemediationExecutionStatus": {
+      "description": "Grants permission to provide a detailed view of a Remediation Execution for a set of resources including state, timestamps and any error messages for steps that have failed",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RemediationConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeRemediationExecutionStatus.html"
+    },
+    "DescribeRetentionConfigurations": {
+      "description": "Grants permission to return the details of one or more retention configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeRetentionConfigurations.html"
+    },
+    "GetAggregateComplianceDetailsByConfigRule": {
+      "description": "Grants permission to return the evaluation results for the specified AWS Config rule for a specific resource in a rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggregateComplianceDetailsByConfigRule.html"
+    },
+    "GetAggregateConfigRuleComplianceSummary": {
+      "description": "Grants permission to return the number of compliant and noncompliant rules for one or more accounts and regions in an aggregator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggregateConfigRuleComplianceSummary.html"
+    },
+    "GetAggregateConformancePackComplianceSummary": {
+      "description": "Grants permission to return the number of compliant and noncompliant conformance packs for one or more accounts and regions in an aggregator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggregateConformancePackComplianceSummary.html"
+    },
+    "GetAggregateDiscoveredResourceCounts": {
+      "description": "Grants permission to return the resource counts across accounts and regions that are present in your AWS Config aggregator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggregateDiscoveredResourceCounts.html"
+    },
+    "GetAggregateResourceConfig": {
+      "description": "Grants permission to return configuration item that is aggregated for your specific resource in a specific source account and region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggregateResourceConfig.html"
+    },
+    "GetComplianceDetailsByConfigRule": {
+      "description": "Grants permission to return the evaluation results for the specified AWS Config rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetComplianceDetailsByConfigRule.html"
+    },
+    "GetComplianceDetailsByResource": {
+      "description": "Grants permission to return the evaluation results for the specified AWS resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetComplianceDetailsByResource.html"
+    },
+    "GetComplianceSummaryByConfigRule": {
+      "description": "Grants permission to return the number of AWS Config rules that are compliant and noncompliant, up to a maximum of 25 for each",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetComplianceSummaryByConfigRule.html"
+    },
+    "GetComplianceSummaryByResourceType": {
+      "description": "Grants permission to return the number of resources that are compliant and the number that are noncompliant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetComplianceSummaryByResourceType.html"
+    },
+    "GetConformancePackComplianceDetails": {
+      "description": "Grants permission to return compliance details of a conformance pack for all AWS resources that are monitered by conformance pack",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetConformancePackComplianceDetails.html"
+    },
+    "GetConformancePackComplianceSummary": {
+      "description": "Grants permission to provide compliance summary for one or more conformance packs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetConformancePackComplianceSummary.html"
+    },
+    "GetCustomRulePolicy": {
+      "description": "Grants permission to return the policy definition containing the logic for your AWS Config Custom Policy rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetCustomRulePolicy.html"
+    },
+    "GetDiscoveredResourceCounts": {
+      "description": "Grants permission to return the resource types, the number of each resource type, and the total number of resources that AWS Config is recording in this region for your AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetDiscoveredResourceCounts.html"
+    },
+    "GetOrganizationConfigRuleDetailedStatus": {
+      "description": "Grants permission to return detailed status for each member account within an organization for a given organization config rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetOrganizationConfigRuleDetailedStatus.html"
+    },
+    "GetOrganizationConformancePackDetailedStatus": {
+      "description": "Grants permission to return detailed status for each member account within an organization for a given organization conformance pack",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetOrganizationConformancePackDetailedStatus.html"
+    },
+    "GetOrganizationCustomRulePolicy": {
+      "description": "Grants permission to return the policy definition containing the logic for your organization AWS Config Custom Policy rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetOrganizationCustomRulePolicy.html"
+    },
+    "GetResourceConfigHistory": {
+      "description": "Grants permission to return a list of configuration items for the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetResourceConfigHistory.html"
+    },
+    "GetStoredQuery": {
+      "description": "Grants permission to return the details of a specific stored query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "StoredQuery": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_GetStoredQuery.html"
+    },
+    "ListAggregateDiscoveredResources": {
+      "description": "Grants permission to accept a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ListAggregateDiscoveredResources.html"
+    },
+    "ListConformancePackComplianceScores": {
+      "description": "Grants permission to return the percentage of compliant rule-resource combinations in a conformance pack compared to the number of total possible rule-resource combinations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ListConformancePackComplianceScores.html"
+    },
+    "ListDiscoveredResources": {
+      "description": "Grants permission to accept a resource type and returns a list of resource identifiers for the resources of that type",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ListDiscoveredResources.html"
+    },
+    "ListStoredQueries": {
+      "description": "Grants permission to list the stored queries for an AWS account in an AWS Region",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ListStoredQueries.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags for AWS Config resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AggregationAuthorization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigurationAggregator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "StoredQuery": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "PutAggregationAuthorization": {
+      "description": "Grants permission to authorize the aggregator account and region to collect data from the source account and region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AggregationAuthorization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutAggregationAuthorization.html"
+    },
+    "PutConfigRule": {
+      "description": "Grants permission to add or update an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigRule.html"
+    },
+    "PutConfigurationAggregator": {
+      "description": "Grants permission to create and update the configuration aggregator with the selected source accounts and regions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole",
+        "organizations:EnableAWSServiceAccess",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigurationAggregator.html"
+    },
+    "PutConfigurationRecorder": {
+      "description": "Grants permission to create a new configuration recorder to record the selected resource configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfigurationRecorder.html"
+    },
+    "PutConformancePack": {
+      "description": "Grants permission to create or update a conformance pack",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "s3:GetObject",
+        "s3:ListBucket",
+        "ssm:GetDocument"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutConformancePack.html"
+    },
+    "PutDeliveryChannel": {
+      "description": "Grants permission to create a delivery channel object to deliver configuration information to an Amazon S3 bucket and Amazon SNS topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutDeliveryChannel.html"
+    },
+    "PutEvaluations": {
+      "description": "Grants permission to be used by an AWS Lambda function to deliver evaluation results to AWS Config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutEvaluations.html"
+    },
+    "PutExternalEvaluation": {
+      "description": "Grants permission to deliver evaluation result to AWS Config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutExternalEvaluation.html"
+    },
+    "PutOrganizationConfigRule": {
+      "description": "Grants permission to add or update organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "organizations:EnableAWSServiceAccess",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutOrganizationConfigRule.html"
+    },
+    "PutOrganizationConformancePack": {
+      "description": "Grants permission to add or update organization conformance pack for your entire organization evaluating whether your AWS resources comply with your desired configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "OrganizationConformancePack": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "organizations:EnableAWSServiceAccess",
+        "organizations:ListDelegatedAdministrators",
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutOrganizationConformancePack.html"
+    },
+    "PutRemediationConfigurations": {
+      "description": "Grants permission to add or update the remediation configuration with a specific AWS Config rule with the selected target or action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RemediationConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutRemediationConfigurations.html"
+    },
+    "PutRemediationExceptions": {
+      "description": "Grants permission to add or update remediation exceptions for specific resources for a specific AWS Config rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutRemediationExceptions.html"
+    },
+    "PutResourceConfig": {
+      "description": "Grants permission to record the configuration state for the resource provided in the request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutResourceConfig.html"
+    },
+    "PutRetentionConfiguration": {
+      "description": "Grants permission to create and update the retention configuration with details about retention period (number of days) that AWS Config stores your historical information",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutRetentionConfiguration.html"
+    },
+    "PutStoredQuery": {
+      "description": "Grants permission to save a new query or updates an existing saved query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "StoredQuery": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_PutStoredQuery.html"
+    },
+    "SelectAggregateResourceConfig": {
+      "description": "Grants permission to accept a structured query language (SQL) SELECT command and an aggregator to query configuration state of AWS resources across multiple accounts and regions, performs the corresponding search, and returns resource configurations matching the properties",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigurationAggregator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_SelectAggregateResourceConfig.html"
+    },
+    "SelectResourceConfig": {
+      "description": "Grants permission to accept a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_SelectResourceConfig.html"
+    },
+    "StartConfigRulesEvaluation": {
+      "description": "Grants permission to evaluate your resources against the specified Config rules",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ConfigRule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigRulesEvaluation.html"
+    },
+    "StartConfigurationRecorder": {
+      "description": "Grants permission to start recording configurations of the AWS resources you have selected to record in your AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigurationRecorder.html"
+    },
+    "StartRemediationExecution": {
+      "description": "Grants permission to run an on-demand remediation for the specified AWS Config rules against the last known remediation configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_StartRemediationExecution.html"
+    },
+    "StopConfigurationRecorder": {
+      "description": "Grants permission to stop recording configurations of the AWS resources you have selected to record in your AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_StopConfigurationRecorder.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to associate the specified tags to a resource with the specified resourceArn",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AggregationAuthorization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigurationAggregator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "StoredQuery": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to delete specified tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "AggregationAuthorization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConfigurationAggregator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConfigRule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "OrganizationConformancePack": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "StoredQuery": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_UntagResource.html"
+    }
+  },
+  "resourceTypes": {
+    "AggregationAuthorization": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:aggregation-authorization/${AggregatorAccount}/${AggregatorRegion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_AggregationAuthorization.html"
+    },
+    "ConfigRule": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:config-rule/${ConfigRuleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigRule.html"
+    },
+    "ConfigurationAggregator": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:config-aggregator/${AggregatorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigurationAggregator.html"
+    },
+    "ConformancePack": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:conformance-pack/${ConformancePackName}/${ConformancePackId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_ConformancePack.html"
+    },
+    "OrganizationConfigRule": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:organization-config-rule/${OrganizationConfigRuleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_OrganizationConfigRule.html"
+    },
+    "OrganizationConformancePack": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:organization-conformance-pack/${OrganizationConformancePackId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_OrganizationConformancePack.html"
+    },
+    "RemediationConfiguration": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:remediation-configuration/${RemediationConfigurationId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_RemediationConfiguration.html"
+    },
+    "StoredQuery": {
+      "arn": "arn:${Partition}:config:${Region}:${Account}:stored-query/${StoredQueryName}/${StoredQueryId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/config/latest/APIReference/API_StoredQuery.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the allowed set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag-value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

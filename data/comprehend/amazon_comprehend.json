@@ -1,0 +1,1305 @@
+{
+  "name": "Amazon Comprehend",
+  "prefix": "comprehend",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncomprehend.html",
+  "actions": {
+    "BatchDetectDominantLanguage": {
+      "description": "Grants permission to detect the language or languages present in the list of text documents",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectDominantLanguage.html"
+    },
+    "BatchDetectEntities": {
+      "description": "Grants permission to detect the named entities (\"People\", \"Places\", \"Locations\", etc) within the given list of text documents",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectEntities.html"
+    },
+    "BatchDetectKeyPhrases": {
+      "description": "Grants permission to detect the phrases in the list of text documents that are most indicative of the content",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectKeyPhrases.html"
+    },
+    "BatchDetectSentiment": {
+      "description": "Grants permission to detect the sentiment of a text in the list of documents (Positive, Negative, Neutral, or Mixed)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectSentiment.html"
+    },
+    "BatchDetectSyntax": {
+      "description": "Grants permission to detect syntactic information (like Part of Speech, Tokens) in a list of text documents",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectSyntax.html"
+    },
+    "BatchDetectTargetedSentiment": {
+      "description": "Grants permission to detect the sentiments associated with specific entities (such as brands or products) within the given list of text documents",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_BatchDetectTargetedSentiment.html"
+    },
+    "ClassifyDocument": {
+      "description": "Grants permission to create a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ClassifyDocument.html"
+    },
+    "ContainsPiiEntities": {
+      "description": "Grants permission to classify the personally identifiable information within given documents in real-time",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ContainsPiiEntities.html"
+    },
+    "CreateDocumentClassifier": {
+      "description": "Grants permission to create a new document classifier that you can use to categorize documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_CreateDocumentClassifier.html"
+    },
+    "CreateEndpoint": {
+      "description": "Grants permission to create a model-specific endpoint for synchronous inference for a previously trained custom model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "document-classifier-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_CreateEndpoint.html"
+    },
+    "CreateEntityRecognizer": {
+      "description": "Grants permission to create an entity recognizer using submitted files",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_CreateEntityRecognizer.html"
+    },
+    "DeleteDocumentClassifier": {
+      "description": "Grants permission to delete a previously created document classifier",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DeleteDocumentClassifier.html"
+    },
+    "DeleteEndpoint": {
+      "description": "Grants permission to delete a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DeleteEndpoint.html"
+    },
+    "DeleteEntityRecognizer": {
+      "description": "Grants permission to delete a submitted entity recognizer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DeleteEntityRecognizer.html"
+    },
+    "DeleteResourcePolicy": {
+      "description": "Grants permission to remove policy on resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DeleteResourcePolicy.html"
+    },
+    "DescribeDocumentClassificationJob": {
+      "description": "Grants permission to get the properties associated with a document classification job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classification-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeDocumentClassificationJob.html"
+    },
+    "DescribeDocumentClassifier": {
+      "description": "Grants permission to get the properties associated with a document classifier",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeDocumentClassifier.html"
+    },
+    "DescribeDominantLanguageDetectionJob": {
+      "description": "Grants permission to get the properties associated with a dominant language detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dominant-language-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeDominantLanguageDetectionJob.html"
+    },
+    "DescribeEndpoint": {
+      "description": "Grants permission to get the properties associated with a specific endpoint. Use this operation to get the status of an endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeEndpoint.html"
+    },
+    "DescribeEntitiesDetectionJob": {
+      "description": "Grants permission to get the properties associated with an entities detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeEntitiesDetectionJob.html"
+    },
+    "DescribeEntityRecognizer": {
+      "description": "Grants permission to provide details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeEntityRecognizer.html"
+    },
+    "DescribeEventsDetectionJob": {
+      "description": "Grants permission to get the properties associated with an Events detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "events-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeEventsDetectionJob.html"
+    },
+    "DescribeKeyPhrasesDetectionJob": {
+      "description": "Grants permission to get the properties associated with a key phrases detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "key-phrases-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeKeyPhrasesDetectionJob.html"
+    },
+    "DescribePiiEntitiesDetectionJob": {
+      "description": "Grants permission to get the properties associated with a PII entities detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "pii-entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribePiiEntitiesDetectionJob.html"
+    },
+    "DescribeResourcePolicy": {
+      "description": "Grants permission to read attached policy on resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeResourcePolicy.html"
+    },
+    "DescribeSentimentDetectionJob": {
+      "description": "Grants permission to get the properties associated with a sentiment detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeSentimentDetectionJob.html"
+    },
+    "DescribeTargetedSentimentDetectionJob": {
+      "description": "Grants permission to get the properties associated with a targeted sentiment detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targeted-sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeTargetedSentimentDetectionJob.html"
+    },
+    "DescribeTopicsDetectionJob": {
+      "description": "Grants permission to get the properties associated with a topic detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topics-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DescribeTopicsDetectionJob.html"
+    },
+    "DetectDominantLanguage": {
+      "description": "Grants permission to detect the language or languages present in the text",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectDominantLanguage.html"
+    },
+    "DetectEntities": {
+      "description": "Grants permission to detect the named entities (\"People\", \"Places\", \"Locations\", etc) within the given text document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity-recognizer-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectEntities.html"
+    },
+    "DetectKeyPhrases": {
+      "description": "Grants permission to detect the phrases in the text that are most indicative of the content",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectKeyPhrases.html"
+    },
+    "DetectPiiEntities": {
+      "description": "Grants permission to detect the personally identifiable information entities (\"Name\", \"SSN\", \"PIN\", etc) within the given text document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectPiiEntities.html"
+    },
+    "DetectSentiment": {
+      "description": "Grants permission to detect the sentiment of a text in a document (Positive, Negative, Neutral, or Mixed)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html"
+    },
+    "DetectSyntax": {
+      "description": "Grants permission to detect syntactic information (like Part of Speech, Tokens) in a text document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSyntax.html"
+    },
+    "DetectTargetedSentiment": {
+      "description": "Grants permission to detect the sentiments associated with specific entities (such as brands or products) in a document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectTargetedSentiment.html"
+    },
+    "ImportModel": {
+      "description": "Grants permission to import a trained Comprehend model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ImportModel.html"
+    },
+    "ListDocumentClassificationJobs": {
+      "description": "Grants permission to get a list of the document classification jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListDocumentClassificationJobs.html"
+    },
+    "ListDocumentClassifierSummaries": {
+      "description": "Grants permission to get a list of summaries of the document classifiers that you have created",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListDocumentClassifierSummaries.html"
+    },
+    "ListDocumentClassifiers": {
+      "description": "Grants permission to get a list of the document classifiers that you have created",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListDocumentClassifiers.html"
+    },
+    "ListDominantLanguageDetectionJobs": {
+      "description": "Grants permission to get a list of the dominant language detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListDominantLanguageDetectionJobs.html"
+    },
+    "ListEndpoints": {
+      "description": "Grants permission to get a list of all existing endpoints that you've created",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListEndpoints.html"
+    },
+    "ListEntitiesDetectionJobs": {
+      "description": "Grants permission to get a list of the entity detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListEntitiesDetectionJobs.html"
+    },
+    "ListEntityRecognizerSummaries": {
+      "description": "Grants permission to get a list of summaries for the entity recognizers that you have created",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListEntityRecognizerSummaries.html"
+    },
+    "ListEntityRecognizers": {
+      "description": "Grants permission to get a list of the properties of all entity recognizers that you created, including recognizers currently in training",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListEntityRecognizers.html"
+    },
+    "ListEventsDetectionJobs": {
+      "description": "Grants permission to get a list of Events detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListEventsDetectionJobs.html"
+    },
+    "ListKeyPhrasesDetectionJobs": {
+      "description": "Grants permission to get a list of key phrase detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListKeyPhrasesDetectionJobs.html"
+    },
+    "ListPiiEntitiesDetectionJobs": {
+      "description": "Grants permission to get a list of PII entities detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListPiiEntitiesDetectionJobs.html"
+    },
+    "ListSentimentDetectionJobs": {
+      "description": "Grants permission to get a list of sentiment detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListSentimentDetectionJobs.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classification-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dominant-language-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "events-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "key-phrases-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "pii-entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "targeted-sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "topics-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListTagsForResource.html"
+    },
+    "ListTargetedSentimentDetectionJobs": {
+      "description": "Grants permission to get a list of targeted sentiment detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListTargetedSentimentDetectionJobs.html"
+    },
+    "ListTopicsDetectionJobs": {
+      "description": "Grants permission to get a list of the topic detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_ListTopicsDetectionJobs.html"
+    },
+    "PutResourcePolicy": {
+      "description": "Grants permission to attach policy to resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_PutResourcePolicy.html"
+    },
+    "StartDocumentClassificationJob": {
+      "description": "Grants permission to start an asynchronous document classification job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classification-job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartDocumentClassificationJob.html"
+    },
+    "StartDominantLanguageDetectionJob": {
+      "description": "Grants permission to start an asynchronous dominant language detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dominant-language-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartDominantLanguageDetectionJob.html"
+    },
+    "StartEntitiesDetectionJob": {
+      "description": "Grants permission to start an asynchronous entity detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartEntitiesDetectionJob.html"
+    },
+    "StartEventsDetectionJob": {
+      "description": "Grants permission to start an asynchronous Events detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "events-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartEventsDetectionJob.html"
+    },
+    "StartKeyPhrasesDetectionJob": {
+      "description": "Grants permission to start an asynchronous key phrase detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "key-phrases-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartKeyPhrasesDetectionJob.html"
+    },
+    "StartPiiEntitiesDetectionJob": {
+      "description": "Grants permission to start an asynchronous PII entities detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "pii-entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartPiiEntitiesDetectionJob.html"
+    },
+    "StartSentimentDetectionJob": {
+      "description": "Grants permission to start an asynchronous sentiment detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartSentimentDetectionJob.html"
+    },
+    "StartTargetedSentimentDetectionJob": {
+      "description": "Grants permission to start an asynchronous targeted sentiment detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targeted-sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartTargetedSentimentDetectionJob.html"
+    },
+    "StartTopicsDetectionJob": {
+      "description": "Grants permission to start an asynchronous job to detect the most common topics in the collection of documents and the phrases associated with each topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topics-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartTopicsDetectionJob.html"
+    },
+    "StopDominantLanguageDetectionJob": {
+      "description": "Grants permission to stop a dominant language detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dominant-language-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopDominantLanguageDetectionJob.html"
+    },
+    "StopEntitiesDetectionJob": {
+      "description": "Grants permission to stop an entity detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopEntitiesDetectionJob.html"
+    },
+    "StopEventsDetectionJob": {
+      "description": "Grants permission to stop an Events detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "events-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopEventsDetectionJob.html"
+    },
+    "StopKeyPhrasesDetectionJob": {
+      "description": "Grants permission to stop a key phrase detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "key-phrases-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopKeyPhrasesDetectionJob.html"
+    },
+    "StopPiiEntitiesDetectionJob": {
+      "description": "Grants permission to stop a PII entities detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "pii-entities-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopPiiEntitiesDetectionJob.html"
+    },
+    "StopSentimentDetectionJob": {
+      "description": "Grants permission to stop a sentiment detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopSentimentDetectionJob.html"
+    },
+    "StopTargetedSentimentDetectionJob": {
+      "description": "Grants permission to stop a targeted sentiment detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targeted-sentiment-detection-job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopTargetedSentimentDetectionJob.html"
+    },
+    "StopTrainingDocumentClassifier": {
+      "description": "Grants permission to stop a previously created document classifier training job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopTrainingDocumentClassifier.html"
+    },
+    "StopTrainingEntityRecognizer": {
+      "description": "Grants permission to stop a previously created entity recognizer training job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity-recognizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StopTrainingEntityRecognizer.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource with given key value pairs",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classification-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dominant-language-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "events-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "key-phrases-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "pii-entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "targeted-sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "topics-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource with given key",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classification-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "document-classifier-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dominant-language-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "events-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "key-phrases-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "pii-entities-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "targeted-sentiment-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "topics-detection-job": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_UntagResource.html"
+    },
+    "UpdateEndpoint": {
+      "description": "Grants permission to update information about the specified endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "document-classifier-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "entity-recognizer-endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_UpdateEndpoint.html"
+    }
+  },
+  "resourceTypes": {
+    "document-classification-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:document-classification-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartDocumentClassificationJob.html"
+    },
+    "document-classifier": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier/${DocumentClassifierName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/how-document-classification-training.html"
+    },
+    "document-classifier-endpoint": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier-endpoint/${DocumentClassifierEndpointName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/custom-realtime-analysis.html"
+    },
+    "dominant-language-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:dominant-language-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartDominantLanguageDetectionJob.html"
+    },
+    "entities-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:entities-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartEntitiesDetectionJob.html"
+    },
+    "entity-recognizer": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer/${EntityRecognizerName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/training-recognizers.html"
+    },
+    "entity-recognizer-endpoint": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer-endpoint/${EntityRecognizerEndpointName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/custom-realtime-analysis.html"
+    },
+    "events-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:events-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartEventsDetectionJob.html"
+    },
+    "key-phrases-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:key-phrases-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartKeyPhrasesDetectionJob.html"
+    },
+    "pii-entities-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:pii-entities-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartPiiEntitiesDetectionJob.html"
+    },
+    "sentiment-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:sentiment-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartSentimentDetectionJob.html"
+    },
+    "targeted-sentiment-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:targeted-sentiment-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartTargetedSentimentDetectionJob.html"
+    },
+    "topics-detection-job": {
+      "arn": "arn:${Partition}:comprehend:${Region}:${Account}:topics-detection-job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/comprehend/latest/dg/API_StartTopicsDetectionJob.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by requiring tag values present in a resource creation request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by requiring tag value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by requiring the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available"
+    },
+    "comprehend:ModelKmsKey": {
+      "description": "Filters access by the model KMS key associated with the resource in the request",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html#amazoncomprehend-policy-keys"
+    },
+    "comprehend:OutputKmsKey": {
+      "description": "Filters access by the output KMS key associated with the resource in the request",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html#amazoncomprehend-policy-keys"
+    },
+    "comprehend:VolumeKmsKey": {
+      "description": "Filters access by the volume KMS key associated with the resource in the request",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html#amazoncomprehend-policy-keys"
+    },
+    "comprehend:VpcSecurityGroupIds": {
+      "description": "Filters access by the list of all VPC security group ids associated with the resource in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html#amazoncomprehend-policy-keys"
+    },
+    "comprehend:VpcSubnets": {
+      "description": "Filters access by the list of all VPC subnets associated with the resource in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html#amazoncomprehend-policy-keys"
+    }
+  }
+}

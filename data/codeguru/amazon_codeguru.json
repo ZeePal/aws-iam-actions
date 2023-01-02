@@ -1,0 +1,18 @@
+{
+  "name": "Amazon CodeGuru",
+  "prefix": "codeguru",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncodeguru.html",
+  "actions": {
+    "GetCodeGuruFreeTrialSummary": {
+      "description": "Grants permission to get free trial summary for the CodeGuru service which includes expiration date",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetCodeGuruFreeTrialSummary.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

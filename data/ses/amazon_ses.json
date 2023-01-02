@@ -1,0 +1,912 @@
+{
+  "name": "Amazon SES",
+  "prefix": "ses",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonses.html",
+  "actions": {
+    "CloneReceiptRuleSet": {
+      "description": "Grants permission to create a receipt rule set by cloning an existing one",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CloneReceiptRuleSet.html"
+    },
+    "CreateConfigurationSet": {
+      "description": "Grants permission to create a new configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSet.html"
+    },
+    "CreateConfigurationSetEventDestination": {
+      "description": "Grants permission to create a configuration set event destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetEventDestination.html"
+    },
+    "CreateConfigurationSetTrackingOptions": {
+      "description": "Grants permission to creates an association between a configuration set and a custom domain for open and click event tracking",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetTrackingOptions.html"
+    },
+    "CreateCustomVerificationEmailTemplate": {
+      "description": "Grants permission to create a new custom verification email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateCustomVerificationEmailTemplate.html"
+    },
+    "CreateReceiptFilter": {
+      "description": "Grants permission to create a new IP address filter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateReceiptFilter.html"
+    },
+    "CreateReceiptRule": {
+      "description": "Grants permission to create a receipt rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateReceiptRule.html"
+    },
+    "CreateReceiptRuleSet": {
+      "description": "Grants permission to create an empty receipt rule set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateReceiptRuleSet.html"
+    },
+    "CreateTemplate": {
+      "description": "Grants permission to creates an email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateTemplate.html"
+    },
+    "DeleteConfigurationSet": {
+      "description": "Grants permission to delete an existing configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSet.html"
+    },
+    "DeleteConfigurationSetEventDestination": {
+      "description": "Grants permission to delete an event destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetEventDestination.html"
+    },
+    "DeleteConfigurationSetTrackingOptions": {
+      "description": "Grants permission to delete an association between a configuration set and a custom domain for open and click event tracking",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetTrackingOptions.html"
+    },
+    "DeleteCustomVerificationEmailTemplate": {
+      "description": "Grants permission to delete an existing custom verification email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteCustomVerificationEmailTemplate.html"
+    },
+    "DeleteIdentity": {
+      "description": "Grants permission to delete the specified identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteIdentity.html"
+    },
+    "DeleteIdentityPolicy": {
+      "description": "Grants permission to delete the specified sending authorization policy for the given identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteIdentityPolicy.html"
+    },
+    "DeleteReceiptFilter": {
+      "description": "Grants permission to delete the specified IP address filter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteReceiptFilter.html"
+    },
+    "DeleteReceiptRule": {
+      "description": "Grants permission to delete the specified receipt rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteReceiptRule.html"
+    },
+    "DeleteReceiptRuleSet": {
+      "description": "Grants permission to delete the specified receipt rule set and all of the receipt rules it contains",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteReceiptRuleSet.html"
+    },
+    "DeleteTemplate": {
+      "description": "Grants permission to delete an email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteTemplate.html"
+    },
+    "DeleteVerifiedEmailAddress": {
+      "description": "Grants permission to delete the specified email address from the list of verified addresses",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteVerifiedEmailAddress.html"
+    },
+    "DescribeActiveReceiptRuleSet": {
+      "description": "Grants permission to return the metadata and receipt rules for the receipt rule set that is currently active",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeActiveReceiptRuleSet.html"
+    },
+    "DescribeConfigurationSet": {
+      "description": "Grants permission to return the details of the specified configuration set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeConfigurationSet.html"
+    },
+    "DescribeReceiptRule": {
+      "description": "Grants permission to return the details of the specified receipt rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeReceiptRule.html"
+    },
+    "DescribeReceiptRuleSet": {
+      "description": "Grants permission to return the details of the specified receipt rule set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeReceiptRuleSet.html"
+    },
+    "GetAccountSendingEnabled": {
+      "description": "Grants permission to return the email sending status of your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetAccountSendingEnabled.html"
+    },
+    "GetCustomVerificationEmailTemplate": {
+      "description": "Grants permission to return the custom email verification template for the template name you specify",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetCustomVerificationEmailTemplate.html"
+    },
+    "GetIdentityDkimAttributes": {
+      "description": "Grants permission to return the current status of Easy DKIM signing for an entity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityDkimAttributes.html"
+    },
+    "GetIdentityMailFromDomainAttributes": {
+      "description": "Grants permission to return the custom MAIL FROM attributes for a list of identities (email addresses and/or domains)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityMailFromDomainAttributes.html"
+    },
+    "GetIdentityNotificationAttributes": {
+      "description": "Grants permission to return a structure describing identity notification attributes for a list of verified identities (email addresses and/or domains),",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityNotificationAttributes.html"
+    },
+    "GetIdentityPolicies": {
+      "description": "Grants permission to return the requested sending authorization policies for the given identity (an email address or a domain)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityPolicies.html"
+    },
+    "GetIdentityVerificationAttributes": {
+      "description": "Grants permission to return the verification status and (for domain identities) the verification token for a list of identities",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityVerificationAttributes.html"
+    },
+    "GetSendQuota": {
+      "description": "Grants permission to return the user's current sending limits",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetSendQuota.html"
+    },
+    "GetSendStatistics": {
+      "description": "Grants permission to returns the user's sending statistics",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetSendStatistics.html"
+    },
+    "GetTemplate": {
+      "description": "Grants permission to return the template object, which includes the subject line, HTML par, and text part for the template you specify",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_GetTemplate.html"
+    },
+    "ListConfigurationSets": {
+      "description": "Grants permission to list all of the configuration sets for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListConfigurationSets.html"
+    },
+    "ListCustomVerificationEmailTemplates": {
+      "description": "Grants permission to list all of the existing custom verification email templates for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListCustomVerificationEmailTemplates.html"
+    },
+    "ListIdentities": {
+      "description": "Grants permission to list the email identities for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListIdentities.html"
+    },
+    "ListIdentityPolicies": {
+      "description": "Grants permission to list all of the email templates for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListIdentityPolicies.html"
+    },
+    "ListReceiptFilters": {
+      "description": "Grants permission to list the IP address filters associated with your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListReceiptFilters.html"
+    },
+    "ListReceiptRuleSets": {
+      "description": "Grants permission to list the receipt rule sets that exist under your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListReceiptRuleSets.html"
+    },
+    "ListTemplates": {
+      "description": "Grants permission to list the email templates present in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListTemplates.html"
+    },
+    "ListVerifiedEmailAddresses": {
+      "description": "Grants permission to list all of the email addresses that have been verified in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ListVerifiedEmailAddresses.html"
+    },
+    "PutConfigurationSetDeliveryOptions": {
+      "description": "Grants permission to add or update the delivery options for a configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_PutConfigurationSetDeliveryOptions.html"
+    },
+    "PutIdentityPolicy": {
+      "description": "Grants permission to add or update a sending authorization policy for the specified identity (an email address or a domain)",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_PutIdentityPolicy.html"
+    },
+    "ReorderReceiptRuleSet": {
+      "description": "Grants permission to reorder the receipt rules within a receipt rule set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ReorderReceiptRuleSet.html"
+    },
+    "SendBounce": {
+      "description": "Grants permission to generate and send a bounce message to the sender of an email you received through Amazon SES",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FromAddress"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBounce.html"
+    },
+    "SendBulkTemplatedEmail": {
+      "description": "Grants permission to compose an email message to multiple destinations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration-set": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FeedbackAddress",
+        "ses:FromAddress",
+        "ses:FromDisplayName",
+        "ses:Recipients"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemplatedEmail.html"
+    },
+    "SendCustomVerificationEmail": {
+      "description": "Grants permission to add an email address to the list of identities and attempts to verify it for your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FeedbackAddress",
+        "ses:FromAddress",
+        "ses:FromDisplayName",
+        "ses:Recipients"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendCustomVerificationEmail.html"
+    },
+    "SendEmail": {
+      "description": "Grants permission to send an email message",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration-set": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FeedbackAddress",
+        "ses:FromAddress",
+        "ses:FromDisplayName",
+        "ses:Recipients"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.html"
+    },
+    "SendRawEmail": {
+      "description": "Grants permission to send an email message, with header and content specified by the client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration-set": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FeedbackAddress",
+        "ses:FromAddress",
+        "ses:FromDisplayName",
+        "ses:Recipients"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendRawEmail.html"
+    },
+    "SendTemplatedEmail": {
+      "description": "Grants permission to compose an email message using an email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "configuration-set": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identity": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ses:ApiVersion",
+        "ses:FeedbackAddress",
+        "ses:FromAddress",
+        "ses:FromDisplayName",
+        "ses:Recipients"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplatedEmail.html"
+    },
+    "SetActiveReceiptRuleSet": {
+      "description": "Grants permission to set the specified receipt rule set as the active receipt rule set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetActiveReceiptRuleSet.html"
+    },
+    "SetIdentityDkimEnabled": {
+      "description": "Grants permission to enable or disable Easy DKIM signing of email sent from an identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityDkimEnabled.html"
+    },
+    "SetIdentityFeedbackForwardingEnabled": {
+      "description": "Grants permission to enable or disable whether Amazon SES forwards bounce and complaint notifications for an identity (an email address or a domain)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityFeedbackForwardingEnabled.html"
+    },
+    "SetIdentityHeadersInNotificationsEnabled": {
+      "description": "Grants permission to set whether Amazon SES includes the original email headers in the Amazon Simple Notification Service (Amazon SNS) notifications of a specified type for a given identity (an email address or a domain)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityHeadersInNotificationsEnabled.html"
+    },
+    "SetIdentityMailFromDomain": {
+      "description": "Grants permission to enable or disable the custom MAIL FROM domain setup for a verified identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityMailFromDomain.html"
+    },
+    "SetIdentityNotificationTopic": {
+      "description": "Grants permission to set an Amazon Simple Notification Service (Amazon SNS) topic to use when delivering notifications for a verified identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityNotificationTopic.html"
+    },
+    "SetReceiptRulePosition": {
+      "description": "Grants permission to set the position of the specified receipt rule in the receipt rule set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_SetReceiptRulePosition.html"
+    },
+    "TestRenderTemplate": {
+      "description": "Grants permission to create a preview of the MIME content of an email when provided with a template and a set of replacement data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_TestRenderTemplate.html"
+    },
+    "UpdateAccountSendingEnabled": {
+      "description": "Grants permission to enable or disable email sending for your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateAccountSendingEnabled.html"
+    },
+    "UpdateConfigurationSetEventDestination": {
+      "description": "Grants permission to update the event destination of a configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html"
+    },
+    "UpdateConfigurationSetReputationMetricsEnabled": {
+      "description": "Grants permission to enable or disable the publishing of reputation metrics for emails sent using a specific configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetReputationMetricsEnabled.html"
+    },
+    "UpdateConfigurationSetSendingEnabled": {
+      "description": "Grants permission  to enable or disable email sending for messages sent using a specific configuration set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetSendingEnabled.html"
+    },
+    "UpdateConfigurationSetTrackingOptions": {
+      "description": "Grants permission to modify an association between a configuration set and a custom domain for open and click event tracking",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetTrackingOptions.html"
+    },
+    "UpdateCustomVerificationEmailTemplate": {
+      "description": "Grants permission to update an existing custom verification email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateCustomVerificationEmailTemplate.html"
+    },
+    "UpdateReceiptRule": {
+      "description": "Grants permission to update a receipt rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateReceiptRule.html"
+    },
+    "UpdateTemplate": {
+      "description": "Grants permission to update an email template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateTemplate.html"
+    },
+    "VerifyDomainDkim": {
+      "description": "Grants permission to return a set of DKIM tokens for a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomainDkim.html"
+    },
+    "VerifyDomainIdentity": {
+      "description": "Grants permission to verify a domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomainIdentity.html"
+    },
+    "VerifyEmailAddress": {
+      "description": "Grants permission to verify an email address",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailAddress.html"
+    },
+    "VerifyEmailIdentity": {
+      "description": "Grants permission to verify an email identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ses:ApiVersion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailIdentity.html"
+    }
+  },
+  "resourceTypes": {
+    "configuration-set": {
+      "arn": "arn:${Partition}:ses:${Region}:${Account}:configuration-set/${ConfigurationSetName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_ConfigurationSet.html"
+    },
+    "custom-verification-email-template": {
+      "arn": "arn:${Partition}:ses:${Region}:${Account}:custom-verification-email-template/${TemplateName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_CustomVerificationEmailTemplate.html"
+    },
+    "identity": {
+      "arn": "arn:${Partition}:ses:${Region}:${Account}:identity/${IdentityName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IdentityInfo.html"
+    },
+    "template": {
+      "arn": "arn:${Partition}:ses:${Region}:${Account}:template/${TemplateName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/ses/latest/APIReference/API_Template.html"
+    }
+  },
+  "conditionKeys": {
+    "ses:ApiVersion": {
+      "description": "Filters actions based on the SES API version",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys"
+    },
+    "ses:FeedbackAddress": {
+      "description": "Filters actions based on the \"Return-Path\" address, which specifies where bounces and complaints are sent by email feedback forwarding",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys"
+    },
+    "ses:FromAddress": {
+      "description": "Filters actions based on the \"From\" address of a message",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys"
+    },
+    "ses:FromDisplayName": {
+      "description": "Filters actions based on the \"From\" address that is used as the display name of a message",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys"
+    },
+    "ses:Recipients": {
+      "description": "Filters actions based on the recipient addresses of a message, which include the \"To\", \"CC\", and \"BCC\" addresses",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys"
+    }
+  }
+}

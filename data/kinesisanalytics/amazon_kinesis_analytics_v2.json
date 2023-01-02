@@ -1,0 +1,460 @@
+{
+  "name": "Amazon Kinesis Analytics V2",
+  "prefix": "kinesisanalytics",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisanalyticsv2.html",
+  "actions": {
+    "AddApplicationCloudWatchLoggingOption": {
+      "description": "Grants permission to add cloudwatch logging option to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationCloudWatchLoggingOption.html"
+    },
+    "AddApplicationInput": {
+      "description": "Grants permission to add input to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInput.html"
+    },
+    "AddApplicationInputProcessingConfiguration": {
+      "description": "Grants permission to add input processing configuration to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInputProcessingConfiguration.html"
+    },
+    "AddApplicationOutput": {
+      "description": "Grants permission to add output to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationOutput.html"
+    },
+    "AddApplicationReferenceDataSource": {
+      "description": "Grants permission to add reference data source to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationReferenceDataSource.html"
+    },
+    "AddApplicationVpcConfiguration": {
+      "description": "Grants permission to add VPC configuration to the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationVpcConfiguration.html"
+    },
+    "CreateApplication": {
+      "description": "Grants permission to create an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html"
+    },
+    "CreateApplicationPresignedUrl": {
+      "description": "Grants permission to create and return a URL that you can use to connect to an application's extension",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplicationPresignedUrl.html"
+    },
+    "CreateApplicationSnapshot": {
+      "description": "Grants permission to create a snapshot for an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplicationSnapshot.html"
+    },
+    "DeleteApplication": {
+      "description": "Grants permission to delete the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplication.html"
+    },
+    "DeleteApplicationCloudWatchLoggingOption": {
+      "description": "Grants permission to delete the specified cloudwatch logging option of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html"
+    },
+    "DeleteApplicationInputProcessingConfiguration": {
+      "description": "Grants permission to delete the specified input processing configuration of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationInputProcessingConfiguration.html"
+    },
+    "DeleteApplicationOutput": {
+      "description": "Grants permission to delete the specified output of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationOutput.html"
+    },
+    "DeleteApplicationReferenceDataSource": {
+      "description": "Grants permission to delete the specified reference data source of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationReferenceDataSource.html"
+    },
+    "DeleteApplicationSnapshot": {
+      "description": "Grants permission to delete a snapshot for an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationSnapshot.html"
+    },
+    "DeleteApplicationVpcConfiguration": {
+      "description": "Grants permission to delete the specified VPC configuration of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationVpcConfiguration.html"
+    },
+    "DescribeApplication": {
+      "description": "Grants permission to describe the specified application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplication.html"
+    },
+    "DescribeApplicationSnapshot": {
+      "description": "Grants permission to describe an application snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplicationSnapshot.html"
+    },
+    "DescribeApplicationVersion": {
+      "description": "Grants permission to describe the application version of an application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplicationVersion.html"
+    },
+    "DiscoverInputSchema": {
+      "description": "Grants permission to discover the input schema for the application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DiscoverInputSchema.html"
+    },
+    "ListApplicationSnapshots": {
+      "description": "Grants permission to list the snapshots for an application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplicationSnapshots.html"
+    },
+    "ListApplicationVersions": {
+      "description": "Grants permission to list application versions of an application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplicationVersions.html"
+    },
+    "ListApplications": {
+      "description": "Grants permission to list applications for the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplications.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to fetch the tags associated with the application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListTagsForResource.html"
+    },
+    "RollbackApplication": {
+      "description": "Grants permission to perform rollback operation on an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_RollbackApplication.html"
+    },
+    "StartApplication": {
+      "description": "Grants permission to start the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html"
+    },
+    "StopApplication": {
+      "description": "Grants permission to stop the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to the application",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove the specified tags from the application",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UntagResource.html"
+    },
+    "UpdateApplication": {
+      "description": "Grants permission to update the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UpdateApplication.html"
+    },
+    "UpdateApplicationMaintenanceConfiguration": {
+      "description": "Grants permission to update the maintenance configuration of an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UpdateApplicationMaintenanceConfiguration.html"
+    }
+  },
+  "resourceTypes": {
+    "application": {
+      "arn": "arn:${Partition}:kinesisanalytics:${Region}:${Account}:application/${ApplicationName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-it-works.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag-value assoicated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of mandatory tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

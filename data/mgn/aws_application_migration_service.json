@@ -1,0 +1,1387 @@
+{
+  "name": "AWS Application Migration Service",
+  "prefix": "mgn",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapplicationmigrationservice.html",
+  "actions": {
+    "ArchiveApplication": {
+      "description": "Grants permission to archive an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ArchiveApplication.html"
+    },
+    "ArchiveWave": {
+      "description": "Grants permission to archive a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ArchiveWave.html"
+    },
+    "AssociateApplications": {
+      "description": "Grants permission to associate applications to a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_AssociateApplications.html"
+    },
+    "AssociateSourceServers": {
+      "description": "Grants permission to associate source servers to an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_AssociateSourceServers.html"
+    },
+    "BatchCreateVolumeSnapshotGroupForMgn": {
+      "description": "Grants permission to create volume snapshot group",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "BatchDeleteSnapshotRequestForMgn": {
+      "description": "Grants permission to batch delete snapshot request",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "ChangeServerLifeCycleState": {
+      "description": "Grants permission to change source server life cycle state",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ChangeServerLifeCycleState.html"
+    },
+    "CreateApplication": {
+      "description": "Grants permission to create an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateApplication.html"
+    },
+    "CreateLaunchConfigurationTemplate": {
+      "description": "Grants permission to create launch configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateLaunchConfigurationTemplate.html"
+    },
+    "CreateReplicationConfigurationTemplate": {
+      "description": "Grants permission to create replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateReplicationConfigurationTemplate.html"
+    },
+    "CreateVcenterClientForMgn": {
+      "description": "Grants permission to create vcenter client",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "CreateWave": {
+      "description": "Grants permission to create a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateWave.html"
+    },
+    "DeleteApplication": {
+      "description": "Grants permission to delete an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteApplication.html"
+    },
+    "DeleteJob": {
+      "description": "Grants permission to delete job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteJob.html"
+    },
+    "DeleteLaunchConfigurationTemplate": {
+      "description": "Grants permission to delete launch configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "LaunchConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteLaunchConfigurationTemplate.html"
+    },
+    "DeleteReplicationConfigurationTemplate": {
+      "description": "Grants permission to delete replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ReplicationConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteReplicationConfigurationTemplate.html"
+    },
+    "DeleteSourceServer": {
+      "description": "Grants permission to delete source server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteSourceServer.html"
+    },
+    "DeleteVcenterClient": {
+      "description": "Grants permission to delete vcenter client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteVcenterClient.html"
+    },
+    "DeleteWave": {
+      "description": "Grants permission to delete a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteWave.html"
+    },
+    "DescribeJobLogItems": {
+      "description": "Grants permission to describe job log items",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "JobResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeJobLogItems.html"
+    },
+    "DescribeJobs": {
+      "description": "Grants permission to describe jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeJobs.html"
+    },
+    "DescribeLaunchConfigurationTemplates": {
+      "description": "Grants permission to describe launch configuration template",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeLaunchConfigurationTemplates.html"
+    },
+    "DescribeReplicationConfigurationTemplates": {
+      "description": "Grants permission to describe replication configuration template",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeReplicationConfigurationTemplates.html"
+    },
+    "DescribeReplicationServerAssociationsForMgn": {
+      "description": "Grants permission to describe replication server associations",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "DescribeSnapshotRequestsForMgn": {
+      "description": "Grants permission to describe snapshots requests",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "DescribeSourceServers": {
+      "description": "Grants permission to describe source servers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeSourceServers.html"
+    },
+    "DescribeVcenterClients": {
+      "description": "Grants permission to describe vcenter clients",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeVcenterClients.html"
+    },
+    "DisassociateApplications": {
+      "description": "Grants permission to disassociate applications from a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DisassociateApplications.html"
+    },
+    "DisassociateSourceServers": {
+      "description": "Grants permission to disassociate source servers from an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DisassociateSourceServers.html"
+    },
+    "DisconnectFromService": {
+      "description": "Grants permission to disconnect source server from service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_DisconnectFromService.html"
+    },
+    "FinalizeCutover": {
+      "description": "Grants permission to finalize cutover",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_FinalizeCutover.html"
+    },
+    "GetAgentCommandForMgn": {
+      "description": "Grants permission to get agent command",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetAgentConfirmedResumeInfoForMgn": {
+      "description": "Grants permission to get agent confirmed resume info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetAgentInstallationAssetsForMgn": {
+      "description": "Grants permission to get agent installation assets",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetAgentReplicationInfoForMgn": {
+      "description": "Grants permission to get agent replication info",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetAgentRuntimeConfigurationForMgn": {
+      "description": "Grants permission to get agent runtime configuration",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetAgentSnapshotCreditsForMgn": {
+      "description": "Grants permission to get agent snapshots credits",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetChannelCommandsForMgn": {
+      "description": "Grants permission to get channel commands",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "GetLaunchConfiguration": {
+      "description": "Grants permission to get launch configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetLaunchConfiguration.html"
+    },
+    "GetReplicationConfiguration": {
+      "description": "Grants permission to get replication configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetReplicationConfiguration.html"
+    },
+    "GetVcenterClientCommandsForMgn": {
+      "description": "Grants permission to get vcenter client commands",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "InitializeService": {
+      "description": "Grants permission to initialize service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:AddRoleToInstanceProfile",
+        "iam:CreateInstanceProfile",
+        "iam:CreateServiceLinkedRole",
+        "iam:GetInstanceProfile"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_InitializeService.html"
+    },
+    "IssueClientCertificateForMgn": {
+      "description": "Grants permission to issue a client certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "ListApplications": {
+      "description": "Grants permission to list application summaries",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListApplications.html"
+    },
+    "ListSourceServerActions": {
+      "description": "Grants permission to list source server action documents",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListSourceServerActions.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTemplateActions": {
+      "description": "Grants permission to list launch configuration template action documents",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "LaunchConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListTemplateActions.html"
+    },
+    "ListWaves": {
+      "description": "Grants permission to list wave summaries",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListWaves.html"
+    },
+    "MarkAsArchived": {
+      "description": "Grants permission to mark source server as archived",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_MarkAsArchived.html"
+    },
+    "NotifyAgentAuthenticationForMgn": {
+      "description": "Grants permission to notify agent authentication",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "NotifyAgentConnectedForMgn": {
+      "description": "Grants permission to notify agent is connected",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "NotifyAgentDisconnectedForMgn": {
+      "description": "Grants permission to notify agent is disconnected",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "NotifyAgentReplicationProgressForMgn": {
+      "description": "Grants permission to notify agent replication progress",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "NotifyVcenterClientStartedForMgn": {
+      "description": "Grants permission to notify vcenter client started",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "PutSourceServerAction": {
+      "description": "Grants permission to put source server action document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_PutSourceServerAction.html"
+    },
+    "PutTemplateAction": {
+      "description": "Grants permission to put launch configuration template action document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "LaunchConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_PutTemplateAction.html"
+    },
+    "RegisterAgentForMgn": {
+      "description": "Grants permission to register agent",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "RemoveSourceServerAction": {
+      "description": "Grants permission to remove source server action document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_RemoveSourceServerAction.html"
+    },
+    "RemoveTemplateAction": {
+      "description": "Grants permission to remove launch configuration template action document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "LaunchConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_RemoveTemplateAction.html"
+    },
+    "RetryDataReplication": {
+      "description": "Grants permission to retry replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_RetryDataReplication.html"
+    },
+    "SendAgentLogsForMgn": {
+      "description": "Grants permission to send agent logs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendAgentMetricsForMgn": {
+      "description": "Grants permission to send agent metrics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendChannelCommandResultForMgn": {
+      "description": "Grants permission to send channel command result",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendClientLogsForMgn": {
+      "description": "Grants permission to send client logs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendClientMetricsForMgn": {
+      "description": "Grants permission to send client metrics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendVcenterClientCommandResultForMgn": {
+      "description": "Grants permission to send vcenter client command result",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendVcenterClientLogsForMgn": {
+      "description": "Grants permission to send vcenter client logs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "SendVcenterClientMetricsForMgn": {
+      "description": "Grants permission to send vcenter client metrics",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "VcenterClientResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "StartCutover": {
+      "description": "Grants permission to start cutover",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:AttachVolume",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CreateLaunchTemplate",
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSnapshot",
+        "ec2:CreateTags",
+        "ec2:CreateVolume",
+        "ec2:DeleteLaunchTemplateVersions",
+        "ec2:DeleteSnapshot",
+        "ec2:DeleteVolume",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeImages",
+        "ec2:DescribeInstanceAttribute",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstances",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVolumes",
+        "ec2:DetachVolume",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:ModifyLaunchTemplate",
+        "ec2:ReportInstanceStatus",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RunInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:TerminateInstances",
+        "iam:PassRole",
+        "mgn:ListTagsForResource"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartCutover.html"
+    },
+    "StartReplication": {
+      "description": "Grants permission to start replication",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartReplication.html"
+    },
+    "StartTest": {
+      "description": "Grants permission to start test",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:AttachVolume",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CreateLaunchTemplate",
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSnapshot",
+        "ec2:CreateTags",
+        "ec2:CreateVolume",
+        "ec2:DeleteLaunchTemplateVersions",
+        "ec2:DeleteSnapshot",
+        "ec2:DeleteVolume",
+        "ec2:DescribeAccountAttributes",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeImages",
+        "ec2:DescribeInstanceAttribute",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstanceTypes",
+        "ec2:DescribeInstances",
+        "ec2:DescribeLaunchTemplateVersions",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVolumes",
+        "ec2:DetachVolume",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:ModifyLaunchTemplate",
+        "ec2:ReportInstanceStatus",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RunInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:TerminateInstances",
+        "iam:PassRole",
+        "mgn:ListTagsForResource"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartTest.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "JobResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "LaunchConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ReplicationConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VcenterClientResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "WaveResource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "mgn:CreateAction"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_TagResource.html"
+    },
+    "TerminateTargetInstances": {
+      "description": "Grants permission to terminate target instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:DeleteVolume",
+        "ec2:DescribeInstances",
+        "ec2:DescribeVolumes",
+        "ec2:TerminateInstances"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_TerminateTargetInstances.html"
+    },
+    "UnarchiveApplication": {
+      "description": "Grants permission to unarchive an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UnarchiveApplication.html"
+    },
+    "UnarchiveWave": {
+      "description": "Grants permission to unarchive a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UnarchiveWave.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "JobResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "LaunchConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ReplicationConfigurationTemplateResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "SourceServerResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VcenterClientResource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "WaveResource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAgentBacklogForMgn": {
+      "description": "Grants permission to update agent backlog",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "UpdateAgentConversionInfoForMgn": {
+      "description": "Grants permission to update agent conversion info",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "UpdateAgentReplicationInfoForMgn": {
+      "description": "Grants permission to update agent replication info",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "UpdateAgentReplicationProcessStateForMgn": {
+      "description": "Grants permission to update agent replication process state",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "UpdateAgentSourcePropertiesForMgn": {
+      "description": "Grants permission to update agent source properties",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    },
+    "UpdateApplication": {
+      "description": "Grants permission to update an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApplicationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateApplication.html"
+    },
+    "UpdateLaunchConfiguration": {
+      "description": "Grants permission to update launch configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateLaunchConfiguration.html"
+    },
+    "UpdateLaunchConfigurationTemplate": {
+      "description": "Grants permission to update launch configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "LaunchConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateLaunchConfigurationTemplate.html"
+    },
+    "UpdateReplicationConfiguration": {
+      "description": "Grants permission to update replication configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateReplicationConfiguration.html"
+    },
+    "UpdateReplicationConfigurationTemplate": {
+      "description": "Grants permission to update replication configuration template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ReplicationConfigurationTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateReplicationConfigurationTemplate.html"
+    },
+    "UpdateSourceServerReplicationType": {
+      "description": "Grants permission to update source server replication type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SourceServerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateSourceServerReplicationType.html"
+    },
+    "UpdateWave": {
+      "description": "Grants permission to update a wave",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WaveResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateWave.html"
+    },
+    "VerifyClientRoleForMgn": {
+      "description": "Grants permission to verify client role",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/mgn-apis.html"
+    }
+  },
+  "resourceTypes": {
+    "ApplicationResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:application/${ApplicationID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/applications.html"
+    },
+    "JobResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:job/${JobID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/launching-target-servers.html"
+    },
+    "LaunchConfigurationTemplateResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/post-launch-settings.html"
+    },
+    "ReplicationConfigurationTemplateResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/replication-settings-template.html"
+    },
+    "SourceServerResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:source-server/${SourceServerID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/source-servers.html"
+    },
+    "VcenterClientResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:vcenter-client/${VcenterClientID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/agentless-mgn.html"
+    },
+    "WaveResource": {
+      "arn": "arn:${Partition}:mgn:${Region}:${Account}:wave/${WaveID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/waves.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "mgn:CreateAction": {
+      "description": "Filters access by the name of a resource-creating API action",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/mgn/latest/ug/supported-iam-actions-tagging.html"
+    }
+  }
+}

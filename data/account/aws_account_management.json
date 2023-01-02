@@ -1,0 +1,168 @@
+{
+  "name": "AWS Account Management",
+  "prefix": "account",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsaccountmanagement.html",
+  "actions": {
+    "DeleteAlternateContact": {
+      "description": "Grants permission to delete the alternate contacts for an account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "accountInOrganization": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/API_DeleteAlternateContact.html"
+    },
+    "DisableRegion": {
+      "description": "Grants permission to disable use of a Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "account:TargetRegion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/general/latest/gr/rande-manage.html"
+    },
+    "EnableRegion": {
+      "description": "Grants permission to enable use of a Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "account:TargetRegion"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/general/latest/gr/rande-manage.html"
+    },
+    "GetAlternateContact": {
+      "description": "Grants permission to retrieve the alternate contacts for an account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "accountInOrganization": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/API_GetAlternateContact.html"
+    },
+    "GetContactInformation": {
+      "description": "Grants permission to retrieve the primary contact information for an account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "accountInOrganization": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/API_GetContactInformation.html"
+    },
+    "ListRegions": {
+      "description": "Grants permission to list the available Regions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/general/latest/gr/rande-manage.html"
+    },
+    "PutAlternateContact": {
+      "description": "Grants permission to modify the alternate contacts for an account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "accountInOrganization": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/API_PutAlternateContact.html"
+    },
+    "PutContactInformation": {
+      "description": "Grants permission to update the primary contact information for an account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "accountInOrganization": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/API_PutContactInformation.html"
+    }
+  },
+  "resourceTypes": {
+    "account": {
+      "arn": "arn:${Partition}:account::${Account}:account",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-resources"
+    },
+    "accountInOrganization": {
+      "arn": "arn:${Partition}:account::${ManagementAccountId}:account/o-${OrganizationId}/${MemberAccountId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-resources"
+    }
+  },
+  "conditionKeys": {
+    "account:AccountResourceOrgPaths": {
+      "description": "Filters access by the resource path for an account in an organization",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "account:AccountResourceOrgTags/${TagKey}": {
+      "description": "Filters access by resource tags for an account in an organization",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "account:AlternateContactTypes": {
+      "description": "Filters access by alternate contact types",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "account:TargetRegion": {
+      "description": "Filters access by a list of Regions. Enables or disables all the Regions specified here",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "name": "AWS Migration Hub Strategy Recommendations",
+  "prefix": "migrationhub-strategy",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhubstrategyrecommendations.html",
+  "actions": {
+    "GetAntiPattern": {
+      "description": "Grants permission to get details of each anti pattern that collector should look at in a customer's environment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetAntiPattern.html"
+    },
+    "GetApplicationComponentDetails": {
+      "description": "Grants permission to get details of an application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetApplicationComponentDetails.html"
+    },
+    "GetApplicationComponentStrategies": {
+      "description": "Grants permission to get a list of all recommended strategies and tools for an application running in a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetApplicationComponentStrategies.html"
+    },
+    "GetAssessment": {
+      "description": "Grants permission to retrieve status of an on-going assessment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetAssessment.html"
+    },
+    "GetImportFileTask": {
+      "description": "Grants permission to get details of a specific import task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetImportFileTask.html"
+    },
+    "GetLatestAssessmentId": {
+      "description": "Grants permission to retrieve the latest assessment id",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetLatestAssessmentId.html"
+    },
+    "GetMessage": {
+      "description": "Grants permission to the collector to receive information from the service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetMessage.html"
+    },
+    "GetPortfolioPreferences": {
+      "description": "Grants permission to retrieve customer migration/Modernization preferences",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetPortfolioPreferences.html"
+    },
+    "GetPortfolioSummary": {
+      "description": "Grants permission to retrieve overall summary (number-of servers to rehost etc as well as overall number of anti patterns)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetPortfolioSummary.html"
+    },
+    "GetRecommendationReportDetails": {
+      "description": "Grants permission to retrieve detailed information about a recommendation report",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetRecommendationReportDetails.html"
+    },
+    "GetServerDetails": {
+      "description": "Grants permission to get info about a specific server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetServerDetails.html"
+    },
+    "GetServerStrategies": {
+      "description": "Grants permission to get recommended strategies and tools for a specific server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetServerStrategies.html"
+    },
+    "ListAntiPatterns": {
+      "description": "Grants permission to get a list of all anti patterns that collector should look for in a customer's environment",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListAntiPatterns.html"
+    },
+    "ListApplicationComponents": {
+      "description": "Grants permission to get a list of all applications running on servers on customer's servers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListApplicationComponents.html"
+    },
+    "ListCollectors": {
+      "description": "Grants permission to get a list of all collectors installed by the customer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListCollectors.html"
+    },
+    "ListImportFileTask": {
+      "description": "Grants permission to get list of all imports performed by the customer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListImportFileTask.html"
+    },
+    "ListJarArtifacts": {
+      "description": "Grants permission to get a list of binaries that collector should assess",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListJarArtifacts.html"
+    },
+    "ListServers": {
+      "description": "Grants permission to get a list of all servers in a customer's environment",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_ListServers.html"
+    },
+    "PutPortfolioPreferences": {
+      "description": "Grants permission to save customer's Migration/Modernization preferences",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_PutPortfolioPreferences.html"
+    },
+    "RegisterCollector": {
+      "description": "Grants permission to register the collector to receive an ID and to start receiving messages from the service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_RegisterCollector.html"
+    },
+    "SendMessage": {
+      "description": "Grants permission to the collector to send information to the service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_SendMessage.html"
+    },
+    "StartAssessment": {
+      "description": "Grants permission to start assessment in a customer's environment (collect data from all servers and provide recommendations)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_StartAssessment.html"
+    },
+    "StartImportFileTask": {
+      "description": "Grants permission to start importing data from a file provided by customer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_StartImportFileTask.html"
+    },
+    "StartRecommendationReportGeneration": {
+      "description": "Grants permission to start generating a recommendation report",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_StartRecommendationReportGeneration.html"
+    },
+    "StopAssessment": {
+      "description": "Grants permission to stop an on-going assessment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_StopAssessment.html"
+    },
+    "UpdateApplicationComponentConfig": {
+      "description": "Grants permission to update details for an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_UpdateApplicationComponentConfig.html"
+    },
+    "UpdateCollectorConfiguration": {
+      "description": "Grants permission to the collector to send configuration information to the service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_UpdateCollectorConfiguration.html"
+    },
+    "UpdateServerConfig": {
+      "description": "Grants permission to update info on a server along with the recommended strategy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_UpdateServerConfig.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

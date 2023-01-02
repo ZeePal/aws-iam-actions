@@ -1,0 +1,349 @@
+{
+  "name": "Amazon SageMaker geospatial capabilities",
+  "prefix": "sagemaker-geospatial",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemakergeospatialcapabilities.html",
+  "actions": {
+    "DeleteEarthObservationJob": {
+      "description": "Grants permission to the DeleteEarthObservationJob operation which deletes an existing earth observation job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_DeleteEarthObservationJob.html"
+    },
+    "DeleteVectorEnrichmentJob": {
+      "description": "Grants permission to the DeleteVectorEnrichmentJob operation which deletes an existing vector enrichment job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VectorEnrichmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_DeleteVectorEnrichmentJob.html"
+    },
+    "ExportEarthObservationJob": {
+      "description": "Grants permission to copy results of an earth observation job to an S3 location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ExportEarthObservationJob.html"
+    },
+    "ExportVectorEnrichmentJob": {
+      "description": "Grants permission to copy results of an VectorEnrichmentJob to an S3 location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VectorEnrichmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ExportVectorEnrichmentJob.html"
+    },
+    "GetEarthObservationJob": {
+      "description": "Grants permission to return details about the earth observation job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_GetEarthObservationJob.html"
+    },
+    "GetRasterDataCollection": {
+      "description": "Grants permission to return details about the raster data collection",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RasterDataCollection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_GetRasterDataCollection.html"
+    },
+    "GetTile": {
+      "description": "Grants permission to get the tile of an earth observation job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_GetTile.html"
+    },
+    "GetVectorEnrichmentJob": {
+      "description": "Grants permission to return details about the vector enrichment job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VectorEnrichmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_GetVectorEnrichmentJob.html"
+    },
+    "ListEarthObservationJobs": {
+      "description": "Grants permission to return an array of earth observation jobs associated with the current account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListEarthObservationJobs.html"
+    },
+    "ListRasterDataCollections": {
+      "description": "Grants permission to return an array of aster data collections associated with the given model name",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListRasterDataCollections.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to lists tag for an SageMaker Geospatial resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RasterDataCollection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VectorEnrichmentJob": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListTagsForResource.html"
+    },
+    "ListVectorEnrichmentJobs": {
+      "description": "Grants permission to return an array of vector enrichment jobs associated with the current account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListVectorEnrichmentJobs.html"
+    },
+    "SearchRasterDataCollection": {
+      "description": "Grants permission to query raster data collections",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_SearchRasterDataCollection.html"
+    },
+    "StartEarthObservationJob": {
+      "description": "Grants permission to the StartEarthObservationJob operation which starts a new earth observation job to your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_StartEarthObservationJob.html"
+    },
+    "StartVectorEnrichmentJob": {
+      "description": "Grants permission to the StartVectorEnrichmentJob operation which starts a new vector enrichment job to your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VectorEnrichmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_StartVectorEnrichmentJob.html"
+    },
+    "StopEarthObservationJob": {
+      "description": "Grants permission to the StopEarthObservationJob operation which stops an existing earth observation job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_StopEarthObservationJob.html"
+    },
+    "StopVectorEnrichmentJob": {
+      "description": "Grants permission to the StopVectorEnrichmentJob operation which stops an existing vector enrichment job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "VectorEnrichmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_StopVectorEnrichmentJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an SageMaker Geospatial resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RasterDataCollection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VectorEnrichmentJob": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an SageMaker Geospatial resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "EarthObservationJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RasterDataCollection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VectorEnrichmentJob": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_UntagResource.html"
+    }
+  },
+  "resourceTypes": {
+    "EarthObservationJob": {
+      "arn": "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:earth-observation-job/${JobID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-eoj.html"
+    },
+    "RasterDataCollection": {
+      "arn": "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:raster-data-collection/${CollectionID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-rdc.html"
+    },
+    "VectorEnrichmentJob": {
+      "arn": "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:vector-enrichment-job/${JobID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-vej.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

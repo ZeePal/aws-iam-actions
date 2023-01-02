@@ -1,0 +1,54 @@
+{
+  "name": "AWS IoT Device Tester",
+  "prefix": "iot-device-tester",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotdevicetester.html",
+  "actions": {
+    "CheckVersion": {
+      "description": "Grants permission to IoT Device Tester to check if a given set of product, test suite and device tester version are compatible",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html"
+    },
+    "DownloadTestSuite": {
+      "description": "Grants permission to IoT Device Tester to download compatible test suite versions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html"
+    },
+    "LatestIdt": {
+      "description": "Grants permission to IoT Device Tester to get information on latest version of device tester available",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html"
+    },
+    "SendMetrics": {
+      "description": "Grants permission to IoT Device Tester to send usage metrics on your behalf",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html"
+    },
+    "SupportedVersion": {
+      "description": "Grants permission to IoT Device Tester to get list of supported products and test suite versions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

@@ -1,0 +1,374 @@
+{
+  "name": "AWS Amplify UI Builder",
+  "prefix": "amplifyuibuilder",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplifyuibuilder.html",
+  "actions": {
+    "CreateComponent": {
+      "description": "Grants permission to create a component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_CreateComponent.html"
+    },
+    "CreateForm": {
+      "description": "Grants permission to create a form",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_CreateForm.html"
+    },
+    "CreateTheme": {
+      "description": "Grants permission to create a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_CreateTheme.html"
+    },
+    "DeleteComponent": {
+      "description": "Grants permission to delete a component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ComponentResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_DeleteComponent.html"
+    },
+    "DeleteForm": {
+      "description": "Grants permission to delete a form",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "FormResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_DeleteForm.html"
+    },
+    "DeleteTheme": {
+      "description": "Grants permission to delete a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ThemeResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_DeleteTheme.html"
+    },
+    "ExportComponents": {
+      "description": "Grants permission to export components",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ExportComponents.html"
+    },
+    "ExportForms": {
+      "description": "Grants permission to export forms",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ExportForms.html"
+    },
+    "ExportThemes": {
+      "description": "Grants permission to export themes",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ExportThemes.html"
+    },
+    "GetComponent": {
+      "description": "Grants permission to get an existing component",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ComponentResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_GetComponent.html"
+    },
+    "GetForm": {
+      "description": "Grants permission to get an existing form",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "FormResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_GetForm.html"
+    },
+    "GetMetadata": {
+      "description": "Grants permission to get an existing metadata",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_GetMetadata.html"
+    },
+    "GetTheme": {
+      "description": "Grants permission to get an existing theme",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ThemeResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_GetTheme.html"
+    },
+    "ListComponents": {
+      "description": "Grants permission to list components",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListComponents.html"
+    },
+    "ListForms": {
+      "description": "Grants permission to list forms",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListForms.html"
+    },
+    "ListThemes": {
+      "description": "Grants permission to list themes",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ListThemes.html"
+    },
+    "PutMetadataFlag": {
+      "description": "Grants permission to put an existing metadata",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_PutMetadataFlag.html"
+    },
+    "ResetMetadataFlag": {
+      "description": "Grants permission to reset an existing metadata",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ResetMetadataFlag.html"
+    },
+    "UpdateComponent": {
+      "description": "Grants permission to update a component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ComponentResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_UpdateComponent.html"
+    },
+    "UpdateForm": {
+      "description": "Grants permission to update a form",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "FormResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_UpdateForm.html"
+    },
+    "UpdateTheme": {
+      "description": "Grants permission to update a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ThemeResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "amplify:GetApp"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_UpdateTheme.html"
+    }
+  },
+  "resourceTypes": {
+    "ComponentResource": {
+      "arn": "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/components/${Id}",
+      "conditionKeys": [
+        "amplifyuibuilder:ComponentResourceAppId",
+        "amplifyuibuilder:ComponentResourceEnvironmentName",
+        "amplifyuibuilder:ComponentResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Component.html"
+    },
+    "FormResource": {
+      "arn": "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/forms/${Id}",
+      "conditionKeys": [
+        "amplifyuibuilder:FormResourceAppId",
+        "amplifyuibuilder:FormResourceEnvironmentName",
+        "amplifyuibuilder:FormResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Form.html"
+    },
+    "ThemeResource": {
+      "arn": "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/themes/${Id}",
+      "conditionKeys": [
+        "amplifyuibuilder:ThemeResourceAppId",
+        "amplifyuibuilder:ThemeResourceEnvironmentName",
+        "amplifyuibuilder:ThemeResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Theme.html"
+    }
+  },
+  "conditionKeys": {
+    "amplifyuibuilder:ComponentResourceAppId": {
+      "description": "Filters access by the app ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html"
+    },
+    "amplifyuibuilder:ComponentResourceEnvironmentName": {
+      "description": "Filters access by the backend environment name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_BackendEnvironment.html"
+    },
+    "amplifyuibuilder:ComponentResourceId": {
+      "description": "Filters access by the component ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Component.html"
+    },
+    "amplifyuibuilder:FormResourceAppId": {
+      "description": "Filters access by the app ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html"
+    },
+    "amplifyuibuilder:FormResourceEnvironmentName": {
+      "description": "Filters access by the backend environment name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_BackendEnvironment.html"
+    },
+    "amplifyuibuilder:FormResourceId": {
+      "description": "Filters access by the form ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Form.html"
+    },
+    "amplifyuibuilder:ThemeResourceAppId": {
+      "description": "Filters access by the app ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html"
+    },
+    "amplifyuibuilder:ThemeResourceEnvironmentName": {
+      "description": "Filters access by the backend environment name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplify/latest/APIReference/API_BackendEnvironment.html"
+    },
+    "amplifyuibuilder:ThemeResourceId": {
+      "description": "Filters access by the theme ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_Theme.html"
+    },
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

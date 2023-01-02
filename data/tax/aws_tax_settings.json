@@ -1,0 +1,63 @@
+{
+  "name": "AWS Tax Settings",
+  "prefix": "tax",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstaxsettings.html",
+  "actions": {
+    "GetExemptions": {
+      "description": "Grants permission to view tax exemptions data",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "GetTaxInterview": {
+      "description": "Grants permission to retrieve tax interview data",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetTaxRegistration": {
+      "description": "Grants permission to view tax registrations data",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "PutTaxInterview": {
+      "description": "Grants permission to update tax interview data",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "PutTaxRegistration": {
+      "description": "Grants permission to update tax registrations data",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "UpdateExemptions": {
+      "description": "Grants permission to update tax exemptions data",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

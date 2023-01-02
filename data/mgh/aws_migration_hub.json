@@ -1,0 +1,260 @@
+{
+  "name": "AWS Migration Hub",
+  "prefix": "mgh",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmigrationhub.html",
+  "actions": {
+    "AssociateCreatedArtifact": {
+      "description": "Associate a given AWS artifact to a MigrationTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_AssociateCreatedArtifact.html"
+    },
+    "AssociateDiscoveredResource": {
+      "description": "Associate a given ADS resource to a MigrationTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_AssociateDiscoveredResource.html"
+    },
+    "CreateHomeRegionControl": {
+      "description": "Create a Migration Hub Home Region Control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateHomeRegionControl.html"
+    },
+    "CreateProgressUpdateStream": {
+      "description": "Create a ProgressUpdateStream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "progressUpdateStream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateProgressUpdateStream.html"
+    },
+    "DeleteProgressUpdateStream": {
+      "description": "Delete a ProgressUpdateStream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "progressUpdateStream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DeleteProgressUpdateStream.html"
+    },
+    "DescribeApplicationState": {
+      "description": "Get an Application Discovery Service Application's state",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeApplicationState.html"
+    },
+    "DescribeHomeRegionControls": {
+      "description": "List Home Region Controls",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeHomeRegionControls.html"
+    },
+    "DescribeMigrationTask": {
+      "description": "Describe a MigrationTask",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeMigrationTask.html"
+    },
+    "DisassociateCreatedArtifact": {
+      "description": "Disassociate a given AWS artifact from a MigrationTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateCreatedArtifact.html"
+    },
+    "DisassociateDiscoveredResource": {
+      "description": "Disassociate a given ADS resource from a MigrationTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateDiscoveredResource.html"
+    },
+    "GetHomeRegion": {
+      "description": "Get the Migration Hub Home Region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_GetHomeRegion.html"
+    },
+    "ImportMigrationTask": {
+      "description": "Import a MigrationTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ImportMigrationTask.html"
+    },
+    "ListApplicationStates": {
+      "description": "List Application statuses",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListApplicationStates.html"
+    },
+    "ListCreatedArtifacts": {
+      "description": "List associated created artifacts for a MigrationTask",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListCreatedArtifacts.html"
+    },
+    "ListDiscoveredResources": {
+      "description": "List associated ADS resources from MigrationTask",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListDiscoveredResources.html"
+    },
+    "ListMigrationTasks": {
+      "description": "List MigrationTasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListMigrationTasks.html"
+    },
+    "ListProgressUpdateStreams": {
+      "description": "List ProgressUpdateStreams",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListProgressUpdateStreams.html"
+    },
+    "NotifyApplicationState": {
+      "description": "Update an Application Discovery Service Application's state",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyApplicationState.html"
+    },
+    "NotifyMigrationTaskState": {
+      "description": "Notify latest MigrationTask state",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyMigrationTaskState.html"
+    },
+    "PutResourceAttributes": {
+      "description": "Put ResourceAttributes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "migrationTask": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html"
+    }
+  },
+  "resourceTypes": {
+    "migrationTask": {
+      "arn": "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}/migrationTask/${Task}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_MigrationTask.html"
+    },
+    "progressUpdateStream": {
+      "arn": "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/API_ProgressUpdateStreamSummary.html"
+    }
+  },
+  "conditionKeys": {}
+}

@@ -1,0 +1,630 @@
+{
+  "name": "Amazon Elastic Kubernetes Service",
+  "prefix": "eks",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html",
+  "actions": {
+    "AccessKubernetesApi": {
+      "description": "Grants permission to view Kubernetes objects via AWS EKS console",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/view-workloads.html"
+    },
+    "AssociateEncryptionConfig": {
+      "description": "Grants permission to associate encryption configuration to a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateEncryptionConfig.html"
+    },
+    "AssociateIdentityProviderConfig": {
+      "description": "Grants permission to associate an identity provider configuration to a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "eks:clientId",
+        "eks:issuerUrl"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateIdentityProviderConfig.html"
+    },
+    "CreateAddon": {
+      "description": "Grants permission to create an Amazon EKS add-on",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateAddon.html"
+    },
+    "CreateCluster": {
+      "description": "Grants permission to create an Amazon EKS cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html"
+    },
+    "CreateFargateProfile": {
+      "description": "Grants permission to create an AWS Fargate profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargateProfile.html"
+    },
+    "CreateNodegroup": {
+      "description": "Grants permission to create an Amazon EKS Nodegroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegroup.html"
+    },
+    "DeleteAddon": {
+      "description": "Grants permission to delete an Amazon EKS add-on",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteAddon.html"
+    },
+    "DeleteCluster": {
+      "description": "Grants permission to delete an Amazon EKS cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluster.html"
+    },
+    "DeleteFargateProfile": {
+      "description": "Grants permission to delete an AWS Fargate profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fargateprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteFargateProfile.html"
+    },
+    "DeleteNodegroup": {
+      "description": "Grants permission to delete an Amazon EKS Nodegroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "nodegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegroup.html"
+    },
+    "DeregisterCluster": {
+      "description": "Grants permission to deregister an External cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DeregisterCluster.html"
+    },
+    "DescribeAddon": {
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS add-on",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddon.html"
+    },
+    "DescribeAddonVersions": {
+      "description": "Grants permission to retrieve descriptive version information about the add-ons that Amazon EKS Add-ons supports",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html"
+    },
+    "DescribeCluster": {
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html"
+    },
+    "DescribeFargateProfile": {
+      "description": "Grants permission to retrieve descriptive information about an AWS Fargate profile associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fargateprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeFargateProfile.html"
+    },
+    "DescribeIdentityProviderConfig": {
+      "description": "Grants permission to retrieve descriptive information about an Idp config associated with a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identityproviderconfig": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeIdentityProviderConfig.html"
+    },
+    "DescribeNodegroup": {
+      "description": "Grants permission to retrieve descriptive information about an Amazon EKS nodegroup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "nodegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeNodegroup.html"
+    },
+    "DescribeUpdate": {
+      "description": "Grants permission to retrieve a given update for a given Amazon EKS cluster/nodegroup/add-on (in the specified or default region)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "nodegroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html"
+    },
+    "DisassociateIdentityProviderConfig": {
+      "description": "Grants permission to delete an asssociated Idp config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identityproviderconfig": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_DisassociateIdentityProviderConfig.html"
+    },
+    "ListAddons": {
+      "description": "Grants permission to list the Amazon EKS add-ons in your AWS account (in the specified or default region) for a given cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html"
+    },
+    "ListClusters": {
+      "description": "Grants permission to list the Amazon EKS clusters in your AWS account (in the specified or default region)",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListClusters.html"
+    },
+    "ListFargateProfiles": {
+      "description": "Grants permission to list the AWS Fargate profiles in your AWS account (in the specified or default region) associated with a given cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListFargateProfiles.html"
+    },
+    "ListIdentityProviderConfigs": {
+      "description": "Grants permission to list the Idp configs in your AWS account (in the specified or default region) associated with a given cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListIdentityProviderConfigs.html"
+    },
+    "ListNodegroups": {
+      "description": "Grants permission to list the Amazon EKS nodegroups in your AWS account (in the specified or default region) attached to given cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListNodegroups.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fargateprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identityproviderconfig": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "nodegroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListUpdates": {
+      "description": "Grants permission to list the updates for a given Amazon EKS cluster/nodegroup/add-on (in the specified or default region)",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "nodegroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_ListUpdates.html"
+    },
+    "RegisterCluster": {
+      "description": "Grants permission to register an External cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_RegisterCluster.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fargateprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identityproviderconfig": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "nodegroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fargateprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "identityproviderconfig": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "nodegroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAddon": {
+      "description": "Grants permission to update Amazon EKS add-on configurations, such as the VPC-CNI version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addon": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAddon.html"
+    },
+    "UpdateClusterConfig": {
+      "description": "Grants permission to update Amazon EKS cluster configurations (eg: API server endpoint access)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterConfig.html"
+    },
+    "UpdateClusterVersion": {
+      "description": "Grants permission to update the Kubernetes version of an Amazon EKS cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateClusterVersion.html"
+    },
+    "UpdateNodegroupConfig": {
+      "description": "Grants permission to update Amazon EKS nodegroup configurations (eg: min/max/desired capacity or labels)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "nodegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegroupConfig.html"
+    },
+    "UpdateNodegroupVersion": {
+      "description": "Grants permission to update the Kubernetes version of an Amazon EKS nodegroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "nodegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegroupVersion.html"
+    }
+  },
+  "resourceTypes": {
+    "addon": {
+      "arn": "arn:${Partition}:eks:${Region}:${Account}:addon/${ClusterName}/${AddonName}/${UUID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/managed-addons.html"
+    },
+    "cluster": {
+      "arn": "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/clusters.html"
+    },
+    "fargateprofile": {
+      "arn": "arn:${Partition}:eks:${Region}:${Account}:fargateprofile/${ClusterName}/${FargateProfileName}/${UUID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html"
+    },
+    "identityproviderconfig": {
+      "arn": "arn:${Partition}:eks:${Region}:${Account}:identityproviderconfig/${ClusterName}/${IdentityProviderType}/${IdentityProviderConfigName}/${UUID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/authenticate-oidc-identity-provider.html"
+    },
+    "nodegroup": {
+      "arn": "arn:${Partition}:eks:${Region}:${Account}:nodegroup/${ClusterName}/${NodegroupName}/${UUID}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a key that is present in the request the user makes to the EKS service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the list of all the tag key names present in the request the user makes to the EKS service",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    },
+    "eks:clientId": {
+      "description": "Filters access by the clientId present in the associateIdentityProviderConfig request the user makes to the EKS service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies"
+    },
+    "eks:issuerUrl": {
+      "description": "Filters access by the issuerUrl present in the associateIdentityProviderConfig request the user makes to the EKS service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies"
+    }
+  }
+}

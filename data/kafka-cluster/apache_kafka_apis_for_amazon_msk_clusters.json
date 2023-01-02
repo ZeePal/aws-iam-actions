@@ -1,0 +1,353 @@
+{
+  "name": "Apache Kafka APIs for Amazon MSK clusters",
+  "prefix": "kafka-cluster",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_apachekafkaapisforamazonmskclusters.html",
+  "actions": {
+    "AlterCluster": {
+      "description": "Grants permission to alter various aspects of the cluster, equivalent to Apache Kafka's ALTER CLUSTER ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeCluster"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "AlterClusterDynamicConfiguration": {
+      "description": "Grants permission to alter the dynamic configuration of a cluster, equivalent to Apache Kafka's ALTER_CONFIGS CLUSTER ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeClusterDynamicConfiguration"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "AlterGroup": {
+      "description": "Grants permission to join groups on a cluster, equivalent to Apache Kafka's READ GROUP ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeGroup"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "AlterTopic": {
+      "description": "Grants permission to alter topics on a cluster, equivalent to Apache Kafka's ALTER TOPIC ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "AlterTopicDynamicConfiguration": {
+      "description": "Grants permission to alter the dynamic configuration of topics on a cluster, equivalent to Apache Kafka's ALTER_CONFIGS TOPIC ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopicDynamicConfiguration"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "AlterTransactionalId": {
+      "description": "Grants permission to alter transactional IDs on a cluster, equivalent to Apache Kafka's WRITE TRANSACTIONAL_ID ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "transactional-id": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTransactionalId",
+        "kafka-cluster:WriteData"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "Connect": {
+      "description": "Grants permission to connect and authenticate to the cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "CreateTopic": {
+      "description": "Grants permission to create topics on a cluster, equivalent to Apache Kafka's CREATE CLUSTER/TOPIC ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DeleteGroup": {
+      "description": "Grants permission to delete groups on a cluster, equivalent to Apache Kafka's DELETE GROUP ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeGroup"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DeleteTopic": {
+      "description": "Grants permission to delete topics on a cluster, equivalent to Apache Kafka's DELETE TOPIC ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeCluster": {
+      "description": "Grants permission to describe various aspects of the cluster, equivalent to Apache Kafka's DESCRIBE CLUSTER ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeClusterDynamicConfiguration": {
+      "description": "Grants permission to describe the dynamic configuration of a cluster, equivalent to Apache Kafka's DESCRIBE_CONFIGS CLUSTER ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeGroup": {
+      "description": "Grants permission to describe groups on a cluster, equivalent to Apache Kafka's DESCRIBE GROUP ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeTopic": {
+      "description": "Grants permission to describe topics on a cluster, equivalent to Apache Kafka's DESCRIBE TOPIC ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeTopicDynamicConfiguration": {
+      "description": "Grants permission to describe the dynamic configuration of topics on a cluster, equivalent to Apache Kafka's DESCRIBE_CONFIGS TOPIC ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "DescribeTransactionalId": {
+      "description": "Grants permission to describe transactional IDs on a cluster, equivalent to Apache Kafka's DESCRIBE TRANSACTIONAL_ID ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "transactional-id": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "ReadData": {
+      "description": "Grants permission to read data from topics on a cluster, equivalent to Apache Kafka's READ TOPIC ACL",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:AlterGroup",
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "WriteData": {
+      "description": "Grants permission to write data to topics on a cluster, equivalent to Apache Kafka's WRITE TOPIC ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:DescribeTopic"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    },
+    "WriteDataIdempotently": {
+      "description": "Grants permission to write data idempotently on a cluster, equivalent to Apache Kafka's IDEMPOTENT_WRITE CLUSTER ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kafka-cluster:Connect",
+        "kafka-cluster:WriteData"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions"
+    }
+  },
+  "resourceTypes": {
+    "cluster": {
+      "arn": "arn:${Partition}:kafka:${Region}:${Account}:cluster/${ClusterName}/${ClusterUuid}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#msk-iam-resources"
+    },
+    "group": {
+      "arn": "arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/${GroupName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#msk-iam-resources"
+    },
+    "topic": {
+      "arn": "arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#msk-iam-resources"
+    },
+    "transactional-id": {
+      "arn": "arn:${Partition}:kafka:${Region}:${Account}:transactional-id/${ClusterName}/${ClusterUuid}/${TransactionalId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#msk-iam-resources"
+    }
+  },
+  "conditionKeys": {
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource. The resource tag context key will only apply to the cluster resource, not topics, groups and transactional IDs",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    }
+  }
+}

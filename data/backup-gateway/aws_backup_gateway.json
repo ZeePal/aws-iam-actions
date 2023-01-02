@@ -1,0 +1,453 @@
+{
+  "name": "AWS Backup Gateway",
+  "prefix": "backup-gateway",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackupgateway.html",
+  "actions": {
+    "AssociateGatewayToServer": {
+      "description": "Grants permission to AssociateGatewayToServer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_AssociateGatewayToServer.html"
+    },
+    "Backup": {
+      "description": "Grants permission to Backup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualmachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartBackupJob.html"
+    },
+    "CreateGateway": {
+      "description": "Grants permission to to CreateGateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_CreateGateway.html"
+    },
+    "DeleteGateway": {
+      "description": "Grants permission to DeleteGateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_DeleteGateway.html"
+    },
+    "DeleteHypervisor": {
+      "description": "Grants permission to DeleteHypervisor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_DeleteHypervisor.html"
+    },
+    "DisassociateGatewayFromServer": {
+      "description": "Grants permission to DisassociateGatewayFromServer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_DisassociateGatewayFromServer.html"
+    },
+    "GetBandwidthRateLimitSchedule": {
+      "description": "Grants permission to GetBandwidthRateLimitSchedule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html"
+    },
+    "GetGateway": {
+      "description": "Grants permission to GetGateway",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetGateway.html"
+    },
+    "GetHypervisor": {
+      "description": "Grants permission to GetHypervisor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisor.html"
+    },
+    "GetHypervisorPropertyMappings": {
+      "description": "Grants permission to GetHypervisorPropertyMappings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisorPropertyMappings.html"
+    },
+    "GetVirtualMachine": {
+      "description": "Grants permission to GetVirtualMachine",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualmachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetVirtualMachine.html"
+    },
+    "ImportHypervisorConfiguration": {
+      "description": "Grants permission to ImportHypervisorConfiguration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ImportHypervisorConfiguration.html"
+    },
+    "ListGateways": {
+      "description": "Grants permission to ListGateways",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListGateways.html"
+    },
+    "ListHypervisors": {
+      "description": "Grants permission to ListHypervisors",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListHypervisors.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to ListTagsForResource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "hypervisor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualmachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListTagsForResource.html"
+    },
+    "ListVirtualMachines": {
+      "description": "Grants permission to ListVirtualMachines",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_ListVirtualMachines.html"
+    },
+    "PutBandwidthRateLimitSchedule": {
+      "description": "Grants permission to PutBandwidthRateLimitSchedule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html"
+    },
+    "PutHypervisorPropertyMappings": {
+      "description": "Grants permission to PutHypervisorPropertyMappings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutHypervisorPropertyMappings.html"
+    },
+    "PutMaintenanceStartTime": {
+      "description": "Grants permission to PutMaintenanceStartTime",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutMaintenanceStartTime.html"
+    },
+    "Restore": {
+      "description": "Grants permission to Restore",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html"
+    },
+    "StartVirtualMachinesMetadataSync": {
+      "description": "Grants permission to StartVirtualMachinesMetadataSync",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "hypervisor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_StartVirtualMachinesMetadataSync.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to TagResource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "hypervisor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualmachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_TagResource.html"
+    },
+    "TestHypervisorConfiguration": {
+      "description": "Grants permission to TestHypervisorConfiguration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_TestHypervisorConfiguration.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to UntagResource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "hypervisor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualmachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UntagResource.html"
+    },
+    "UpdateGatewayInformation": {
+      "description": "Grants permission to UpdateGatewayInformation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateGatewayInformation.html"
+    },
+    "UpdateGatewaySoftwareNow": {
+      "description": "Grants permission to UpdateGatewaySoftwareNow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateGatewaySoftwareNow.html"
+    },
+    "UpdateHypervisor": {
+      "description": "Grants permission to UpdateHypervisor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_UpdateHypervisor.html"
+    }
+  },
+  "resourceTypes": {
+    "gateway": {
+      "arn": "arn:${Partition}:backup-gateway::${Account}:gateway/${GatewayId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_Gateway.html"
+    },
+    "hypervisor": {
+      "arn": "arn:${Partition}:backup-gateway::${Account}:hypervisor/${HypervisorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_Hypervisor.html"
+    },
+    "virtualmachine": {
+      "arn": "arn:${Partition}:backup-gateway::${Account}:vm/${VirtualmachineId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_VirtualMachine.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the allowed set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag-value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

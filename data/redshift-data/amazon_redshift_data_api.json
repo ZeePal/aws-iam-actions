@@ -1,0 +1,187 @@
+{
+  "name": "Amazon Redshift Data API",
+  "prefix": "redshift-data",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftdataapi.html",
+  "actions": {
+    "BatchExecuteStatement": {
+      "description": "Grants permission to execute multiple queries under a single connection",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_BatchExecuteStatement.html"
+    },
+    "CancelStatement": {
+      "description": "Grants permission to cancel a running query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_CancelStatement.html"
+    },
+    "DescribeStatement": {
+      "description": "Grants permission to retrieve detailed information about a statement execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_DescribeStatement.html"
+    },
+    "DescribeTable": {
+      "description": "Grants permission to retrieve metadata about a particular table",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_DescribeTable.html"
+    },
+    "ExecuteStatement": {
+      "description": "Grants permission to execute a query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ExecuteStatement.html"
+    },
+    "GetStatementResult": {
+      "description": "Grants permission to fetch the result of a query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_GetStatementResult.html"
+    },
+    "ListDatabases": {
+      "description": "Grants permission to list databases for a given cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ListDatabases.html"
+    },
+    "ListSchemas": {
+      "description": "Grants permission to list schemas for a given cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ListSchemas.html"
+    },
+    "ListStatements": {
+      "description": "Grants permission to list queries for a given principal",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ListStatements.html"
+    },
+    "ListTables": {
+      "description": "Grants permission to list tables for a given cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_ListTables.html"
+    }
+  },
+  "resourceTypes": {
+    "cluster": {
+      "arn": "arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html"
+    },
+    "workgroup": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag-value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-overview.html#redshift-policy-resources.conditions"
+    },
+    "redshift-data:statement-owner-iam-userid": {
+      "description": "Filters access by statement owner iam userid",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-overview.html#redshift-policy-resources.conditions"
+    }
+  }
+}

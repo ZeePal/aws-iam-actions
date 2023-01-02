@@ -1,0 +1,224 @@
+{
+  "name": "AWS Elemental Appliances and Software",
+  "prefix": "elemental-appliances-software",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftware.html",
+  "actions": {
+    "CompleteUpload": {
+      "description": "Grants permission to complete an upload of an attachment for a quote or order",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "CreateOrderV1": {
+      "description": "Grants permission to create an order",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "CreateQuote": {
+      "description": "Grants permission to create a quote",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetAvsCorrectAddress": {
+      "description": "Grants permission to validate an address",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetBillingAddresses": {
+      "description": "Grants permission to list the billing addresses in the user account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetDeliveryAddressesV2": {
+      "description": "Grants permission to list the delivery addresses in the user account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetOrder": {
+      "description": "Grants permission to describe an order",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetOrdersV2": {
+      "description": "Grants permission to list the orders in the user account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetQuote": {
+      "description": "Grants permission to describe a quote",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "GetTaxes": {
+      "description": "Grants permission to calculate taxes for an order",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "ListQuotes": {
+      "description": "Grants permission to list the quotes in the user account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to lists tags for an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "StartUpload": {
+      "description": "Grants permission to start an upload of an attachment for a quote or order",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "SubmitOrderV1": {
+      "description": "Grants permission to submit an order",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from an AWS Elemental Appliances and Software resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "UpdateQuote": {
+      "description": "Grants permission to modify a quote",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "quote": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    }
+  },
+  "resourceTypes": {
+    "quote": {
+      "arn": "arn:${Partition}:elemental-appliances-software:${Region}:${Account}:quote/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by request tag",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by resource tag",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software"
+    }
+  }
+}

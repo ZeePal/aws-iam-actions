@@ -1,0 +1,313 @@
+{
+  "name": "Amazon Cognito Identity",
+  "prefix": "cognito-identity",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncognitoidentity.html",
+  "actions": {
+    "CreateIdentityPool": {
+      "description": "Grants permission to create a new identity pool",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_CreateIdentityPool.html"
+    },
+    "DeleteIdentities": {
+      "description": "Grants permission to delete identities from an identity pool. You can specify a list of 1-60 identities that you want to delete",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_DeleteIdentities.html"
+    },
+    "DeleteIdentityPool": {
+      "description": "Grants permission to delete a user pool. Once a pool is deleted, users will not be able to authenticate with the pool",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_DeleteIdentityPool.html"
+    },
+    "DescribeIdentity": {
+      "description": "Grants permission to return metadata related to the given identity, including when the identity was created and any associated linked logins",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_DescribeIdentity.html"
+    },
+    "DescribeIdentityPool": {
+      "description": "Grants permission to get details about a particular identity pool, including the pool name, ID description, creation date, and current number of users",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_DescribeIdentityPool.html"
+    },
+    "GetCredentialsForIdentity": {
+      "description": "Grants permission to return credentials for the provided identity ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetCredentialsForIdentity.html"
+    },
+    "GetId": {
+      "description": "Grants permission to generate (or retrieve) a Cognito ID. Supplying multiple logins will create an implicit linked account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetId.html"
+    },
+    "GetIdentityPoolRoles": {
+      "description": "Grants permission to get the roles for an identity pool",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetIdentityPoolRoles.html"
+    },
+    "GetOpenIdToken": {
+      "description": "Grants permission to get an OpenID token, using a known Cognito ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdToken.html"
+    },
+    "GetOpenIdTokenForDeveloperIdentity": {
+      "description": "Grants permission to register (or retrieve) a Cognito IdentityId and an OpenID Connect token for a user authenticated by your backend authentication process",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdTokenForDeveloperIdentity.html"
+    },
+    "GetPrincipalTagAttributeMap": {
+      "description": "Grants permission to get the principal tags for an identity pool and provider",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetPrincipalTagAttributeMap.html"
+    },
+    "ListIdentities": {
+      "description": "Grants permission to list the identities in an identity pool",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_ListIdentities.html"
+    },
+    "ListIdentityPools": {
+      "description": "Grants permission to list all of the Cognito identity pools registered for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_ListIdentityPools.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags that are assigned to an Amazon Cognito identity pool",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "LookupDeveloperIdentity": {
+      "description": "Grants permission to retrieve the IdentityId associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifiers associated with an IdentityId for an existing identity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_LookupDeveloperIdentity.html"
+    },
+    "MergeDeveloperIdentities": {
+      "description": "Grants permission to merge two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_MergeDeveloperIdentities.html"
+    },
+    "SetIdentityPoolRoles": {
+      "description": "Grants permission to set the roles for an identity pool. These roles are used when making calls to GetCredentialsForIdentity action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_SetIdentityPoolRoles.html"
+    },
+    "SetPrincipalTagAttributeMap": {
+      "description": "Grants permission to set the principal tags for an identity pool and provider. These tags are used when making calls to GetOpenIdToken action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_SetPrincipalTagAttributeMap.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign a set of tags to an Amazon Cognito identity pool",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_TagResource.html"
+    },
+    "UnlinkDeveloperIdentity": {
+      "description": "Grants permission to unlink a DeveloperUserIdentifier from an existing identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkDeveloperIdentity.html"
+    },
+    "UnlinkIdentity": {
+      "description": "Grants permission to unlink a federated identity from an existing account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkIdentity.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove the specified tags from an Amazon Cognito identity pool",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateIdentityPool": {
+      "description": "Grants permission to update an identity pool",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "identitypool": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UpdateIdentityPool.html"
+    }
+  },
+  "resourceTypes": {
+    "identitypool": {
+      "arn": "arn:${Partition}:cognito-identity:${Region}:${Account}:identitypool/${IdentityPoolId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by a key that is present in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

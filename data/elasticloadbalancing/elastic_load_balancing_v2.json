@@ -1,0 +1,643 @@
+{
+  "name": "Elastic Load Balancing V2",
+  "prefix": "elasticloadbalancing",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancingv2.html",
+  "actions": {
+    "AddListenerCertificates": {
+      "description": "Grants permission to add the specified certificates to the specified secure listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_AddListenerCertificates.html"
+    },
+    "AddTags": {
+      "description": "Grants permission to add the specified tags to the specified load balancer. Each load balancer can have a maximum of 10 tags",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener-rule/app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener-rule/net": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener/app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "targetgroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_AddTags.html"
+    },
+    "CreateListener": {
+      "description": "Grants permission to create a listener for the specified Application Load Balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateListener.html"
+    },
+    "CreateLoadBalancer": {
+      "description": "Grants permission to create a load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html"
+    },
+    "CreateRule": {
+      "description": "Grants permission to create a rule for the specified listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateRule.html"
+    },
+    "CreateTargetGroup": {
+      "description": "Grants permission to create a target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html"
+    },
+    "DeleteListener": {
+      "description": "Grants permission to delete the specified listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteListener.html"
+    },
+    "DeleteLoadBalancer": {
+      "description": "Grants permission to delete the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteLoadBalancer.html"
+    },
+    "DeleteRule": {
+      "description": "Grants permission to delete the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener-rule/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener-rule/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteRule.html"
+    },
+    "DeleteTargetGroup": {
+      "description": "Grants permission to delete the specified target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteTargetGroup.html"
+    },
+    "DeregisterTargets": {
+      "description": "Grants permission to deregister the specified targets from the specified target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeregisterTargets.html"
+    },
+    "DescribeAccountLimits": {
+      "description": "Grants permission to describe the Elastic Load Balancing resource limits for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeAccountLimits.html"
+    },
+    "DescribeListenerCertificates": {
+      "description": "Grants permission to describe the certificates for the specified secure listener",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeListenerCertificates.html"
+    },
+    "DescribeListeners": {
+      "description": "Grants permission to describe the specified listeners or the listeners for the specified Application Load Balancer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeListeners.html"
+    },
+    "DescribeLoadBalancerAttributes": {
+      "description": "Grants permission to describe the attributes for the specified load balancer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancerAttributes.html"
+    },
+    "DescribeLoadBalancers": {
+      "description": "Grants permission to describe the specified the load balancers. If no load balancers are specified, the call describes all of your load balancers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancers.html"
+    },
+    "DescribeRules": {
+      "description": "Grants permission to describe the specified rules or the rules for the specified listener",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeRules.html"
+    },
+    "DescribeSSLPolicies": {
+      "description": "Grants permission to describe the specified policies or all policies used for SSL negotiation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeSSLPolicies.html"
+    },
+    "DescribeTags": {
+      "description": "Grants permission to describe the tags associated with the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTags.html"
+    },
+    "DescribeTargetGroupAttributes": {
+      "description": "Grants permission to describe the attributes for the specified target group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTargetGroupAttributes.html"
+    },
+    "DescribeTargetGroups": {
+      "description": "Grants permission to describe the specified target groups or all of your target groups",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTargetGroups.html"
+    },
+    "DescribeTargetHealth": {
+      "description": "Grants permission to describe the health of the specified targets or all of your targets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTargetHealth.html"
+    },
+    "ModifyListener": {
+      "description": "Grants permission to modify the specified properties of the specified listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyListener.html"
+    },
+    "ModifyLoadBalancerAttributes": {
+      "description": "Grants permission to modify the attributes of the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyLoadBalancerAttributes.html"
+    },
+    "ModifyRule": {
+      "description": "Grants permission to modify the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener-rule/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener-rule/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyRule.html"
+    },
+    "ModifyTargetGroup": {
+      "description": "Grants permission to modify the health checks used when evaluating the health state of the targets in the specified target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyTargetGroup.html"
+    },
+    "ModifyTargetGroupAttributes": {
+      "description": "Grants permission to modify the specified attributes of the specified target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyTargetGroupAttributes.html"
+    },
+    "RegisterTargets": {
+      "description": "Grants permission to register the specified targets with the specified target group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "targetgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_RegisterTargets.html"
+    },
+    "RemoveListenerCertificates": {
+      "description": "Grants permission to remove the specified certificates of the specified secure listener",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_RemoveListenerCertificates.html"
+    },
+    "RemoveTags": {
+      "description": "Grants permission to remove one or more tags from the specified load balancer",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener-rule/app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener-rule/net": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener/app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "listener/net": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "targetgroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_RemoveTags.html"
+    },
+    "SetIpAddressType": {
+      "description": "Grants permission to set the type of IP addresses used by the subnets of the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_SetIpAddressType.html"
+    },
+    "SetRulePriorities": {
+      "description": "Grants permission to set the priorities of the specified rules",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "listener-rule/app": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "listener-rule/net": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_SetRulePriorities.html"
+    },
+    "SetSecurityGroups": {
+      "description": "Grants permission to associate the specified security groups with the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_SetSecurityGroups.html"
+    },
+    "SetSubnets": {
+      "description": "Grants permission to enable the Availability Zone for the specified subnets for the specified load balancer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "loadbalancer/net/": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_SetSubnets.html"
+    },
+    "SetWebAcl": {
+      "description": "Grants permission to give WebAcl permission to WAF",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_SetWebAcl.html"
+    }
+  },
+  "resourceTypes": {
+    "listener-rule/app": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener-rule/app/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}/${ListenerRuleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html"
+    },
+    "listener-rule/net": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener-rule/net/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}/${ListenerRuleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html"
+    },
+    "listener/app": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener/app/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html"
+    },
+    "listener/net": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener/net/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html"
+    },
+    "loadbalancer/app/": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html#application-load-balancer-overview"
+    },
+    "loadbalancer/net/": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html#network-load-balancer-overview"
+    },
+    "targetgroup": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:targetgroup/${TargetGroupName}/${TargetGroupId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "A key that is present in the request the user makes to the ELB service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Global tag key and value pair",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "The list of all the tag key names associated with the resource in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "elasticloadbalancing:ResourceTag/${TagKey}": {
+      "description": "A tag key and value pair",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    }
+  }
+}

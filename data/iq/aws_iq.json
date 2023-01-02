@@ -1,0 +1,18 @@
+{
+  "name": "AWS IQ",
+  "prefix": "iq",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiq.html",
+  "actions": {
+    "CreateProject": {
+      "description": "Grants permission to submit new project requests",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/iq/"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

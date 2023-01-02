@@ -1,0 +1,477 @@
+{
+  "name": "AWS Cloud9",
+  "prefix": "cloud9",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloud9.html",
+  "actions": {
+    "ActivateEC2Remote": {
+      "description": "Grants permission to start the Amazon EC2 instance that your AWS Cloud9 IDE connects to",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "CreateEnvironmentEC2": {
+      "description": "Grants permission to create an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then hosts the environment on the instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "cloud9:EnvironmentName",
+        "cloud9:InstanceType",
+        "cloud9:OwnerArn",
+        "cloud9:SubnetId",
+        "cloud9:UserArn"
+      ],
+      "dependentActions": [
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_CreateEnvironmentEC2.html"
+    },
+    "CreateEnvironmentMembership": {
+      "description": "Grants permission to add an environment member to an AWS Cloud9 development environment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "cloud9:EnvironmentId",
+        "cloud9:Permissions",
+        "cloud9:UserArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_CreateEnvironmentMembership.html"
+    },
+    "CreateEnvironmentSSH": {
+      "description": "Grants permission to create an AWS Cloud9 SSH development environment",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "cloud9:EnvironmentName",
+        "cloud9:OwnerArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "CreateEnvironmentToken": {
+      "description": "Grants permission to create an authentication token that allows a connection between the AWS Cloud9 IDE and the user's environment",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "DeleteEnvironment": {
+      "description": "Grants permission to delete an AWS Cloud9 development environment. If the environment is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance, also terminates the instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DeleteEnvironment.html"
+    },
+    "DeleteEnvironmentMembership": {
+      "description": "Grants permission to delete an environment member from an AWS Cloud9 development environment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DeleteEnvironmentMembership.html"
+    },
+    "DescribeEC2Remote": {
+      "description": "Grants permission to get details about the connection to the EC2 development environment, including host, user, and port",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "DescribeEnvironmentMemberships": {
+      "description": "Grants permission to get information about environment members for an AWS Cloud9 development environment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "cloud9:EnvironmentId",
+        "cloud9:UserArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeEnvironmentMemberships.html"
+    },
+    "DescribeEnvironmentStatus": {
+      "description": "Grants permission to get status information for an AWS Cloud9 development environment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeEnvironmentStatus.html"
+    },
+    "DescribeEnvironments": {
+      "description": "Grants permission to get information about AWS Cloud9 development environments",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeEnvironments.html"
+    },
+    "DescribeSSHRemote": {
+      "description": "Grants permission to get details about the connection to the SSH development environment, including host, user, and port",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "GetEnvironmentConfig": {
+      "description": "Grants permission to get configuration information that's used to initialize the AWS Cloud9 IDE",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "GetEnvironmentSettings": {
+      "description": "Grants permission to get the AWS Cloud9 IDE settings for a specified development environment",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "GetMembershipSettings": {
+      "description": "Grants permission to get the AWS Cloud9 IDE settings for a specified environment member",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "GetUserPublicKey": {
+      "description": "Grants permission to get the user's public SSH key, which is used by AWS Cloud9 to connect to SSH development environments",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "cloud9:UserArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "GetUserSettings": {
+      "description": "Grants permission to get the AWS Cloud9 IDE settings for a specified user",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "ListEnvironments": {
+      "description": "Grants permission to get a list of AWS Cloud9 development environment identifiers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_ListEnvironments.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a cloud9 environment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ModifyTemporaryCredentialsOnEnvironmentEC2": {
+      "description": "Grants permission to set AWS managed temporary credentials on the Amazon EC2 instance that's used by the AWS Cloud9 integrated development environment (IDE)",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a cloud9 environment",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a cloud9 environment",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateEnvironment": {
+      "description": "Grants permission to change the settings of an existing AWS Cloud9 development environment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironment.html"
+    },
+    "UpdateEnvironmentMembership": {
+      "description": "Grants permission to change the settings of an existing environment member for an AWS Cloud9 development environment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "cloud9:EnvironmentId",
+        "cloud9:Permissions",
+        "cloud9:UserArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironmentMembership.html"
+    },
+    "UpdateEnvironmentSettings": {
+      "description": "Grants permission to update the AWS Cloud9 IDE settings for a specified development environment",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "UpdateMembershipSettings": {
+      "description": "Grants permission to update the AWS Cloud9 IDE settings for a specified environment member",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "UpdateSSHRemote": {
+      "description": "Grants permission to update details about the connection to the SSH development environment, including host, user, and port",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "UpdateUserSettings": {
+      "description": "Grants permission to update IDE-specific settings of an AWS Cloud9 user",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    },
+    "ValidateEnvironmentName": {
+      "description": "Grants permission to validate the environment name during the process of creating an AWS Cloud9 development environment",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix"
+    }
+  },
+  "resourceTypes": {
+    "environment": {
+      "arn": "arn:${Partition}:cloud9:${Region}:${Account}:environment:${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-environment"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "cloud9:EnvironmentId": {
+      "description": "Filters access by the AWS Cloud9 environment ID",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_EnvironmentId"
+    },
+    "cloud9:EnvironmentName": {
+      "description": "Filters access by the AWS Cloud9 environment name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_EnvironmentName"
+    },
+    "cloud9:InstanceType": {
+      "description": "Filters access by the instance type of the AWS Cloud9 environment's Amazon EC2 instance",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_InstanceType"
+    },
+    "cloud9:OwnerArn": {
+      "description": "Filters access by the owner ARN specified",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_OwnerArn"
+    },
+    "cloud9:Permissions": {
+      "description": "Filters access by the type of AWS Cloud9 permissions",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_Permissions"
+    },
+    "cloud9:SubnetId": {
+      "description": "Filters access by the subnet ID that the AWS Cloud9 environment will be created in",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_SubnetId"
+    },
+    "cloud9:UserArn": {
+      "description": "Filters access by the user ARN specified",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html##awscloud9-cloud9_UserArn"
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "name": "AWS service providing managed private networks",
+  "prefix": "private-networks",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsserviceprovidingmanagedprivatenetworks.html",
+  "actions": {
+    "AcknowledgeOrderReceipt": {
+      "description": "Grants permission to acknowledge that an order has been received",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "order": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_AcknowledgeOrderReceipt.html"
+    },
+    "ActivateDeviceIdentifier": {
+      "description": "Grants permission to activate a device identifier",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device-identifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ActivateDeviceIdentifier.html"
+    },
+    "ActivateNetworkSite": {
+      "description": "Grants permission to activate a network site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-site": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "order": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ActivateNetworkSite.html"
+    },
+    "ConfigureAccessPoint": {
+      "description": "Grants permission to configure an access point",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-resource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ConfigureAccessPoint.html"
+    },
+    "CreateNetwork": {
+      "description": "Grants permission to create a network",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_CreateNetwork.html"
+    },
+    "CreateNetworkSite": {
+      "description": "Grants permission to create a network site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_CreateNetworkSite.html"
+    },
+    "DeactivateDeviceIdentifier": {
+      "description": "Grants permission to deactivate a device identifier",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device-identifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_DeactivateDeviceIdentifier.html"
+    },
+    "DeleteNetwork": {
+      "description": "Grants permission to delete a network",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_DeleteNetwork.html"
+    },
+    "DeleteNetworkSite": {
+      "description": "Grants permission to delete a network site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-site": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_DeleteNetworkSite.html"
+    },
+    "GetDeviceIdentifier": {
+      "description": "Grants permission to get a device identifier",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device-identifier": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetDeviceIdentifier.html"
+    },
+    "GetNetwork": {
+      "description": "Grants permission to get a network",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetNetwork.html"
+    },
+    "GetNetworkResource": {
+      "description": "Grants permission to get a network resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-resource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetNetworkResource.html"
+    },
+    "GetNetworkSite": {
+      "description": "Grants permission to get a network site",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-site": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetNetworkSite.html"
+    },
+    "GetOrder": {
+      "description": "Grants permission to get a network order",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "order": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetOrder.html"
+    },
+    "ListDeviceIdentifiers": {
+      "description": "Grants permission to list device identifiers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListDeviceIdentifiers.html"
+    },
+    "ListNetworkResources": {
+      "description": "Grants permission to list network resources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListNetworkResources.html"
+    },
+    "ListNetworkSites": {
+      "description": "Grants permission to list network sites",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListNetworkSites.html"
+    },
+    "ListNetworks": {
+      "description": "Grants permission to list networks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListNetworks.html"
+    },
+    "ListOrders": {
+      "description": "Grants permission to list network orders",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListOrders.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to return a list of tags for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "Ping": {
+      "description": "Grants permission to check the health of the service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_Ping.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to adds tags to the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device-identifier": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network-resource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network-site": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "order": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to removes tags from the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device-identifier": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network-resource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "network-site": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "order": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateNetworkSite": {
+      "description": "Grants permission to update a network site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-site": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_UpdateNetworkSite.html"
+    },
+    "UpdateNetworkSitePlan": {
+      "description": "Grants permission to update a plan at a network site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "network-site": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/APIReference/API_UpdateNetworkSitePlan.html"
+    }
+  },
+  "resourceTypes": {
+    "device-identifier": {
+      "arn": "arn:${Partition}:private-networks:${Region}:${Account}:device-identifier/${NetworkName}/${DeviceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/userguide/identity-access-management.html"
+    },
+    "network": {
+      "arn": "arn:${Partition}:private-networks:${Region}:${Account}:network/${NetworkName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/userguide/identity-access-management.html"
+    },
+    "network-resource": {
+      "arn": "arn:${Partition}:private-networks:${Region}:${Account}:network-resource/${NetworkName}/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/userguide/identity-access-management.html"
+    },
+    "network-site": {
+      "arn": "arn:${Partition}:private-networks:${Region}:${Account}:network-site/${NetworkName}/${NetworkSiteName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/userguide/identity-access-management.html"
+    },
+    "order": {
+      "arn": "arn:${Partition}:private-networks:${Region}:${Account}:order/${NetworkName}/${OrderId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/private-networks/latest/userguide/identity-access-management.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by checking the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by checking tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

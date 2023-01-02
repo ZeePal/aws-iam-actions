@@ -1,0 +1,250 @@
+{
+  "name": "Amazon Comprehend Medical",
+  "prefix": "comprehendmedical",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncomprehendmedical.html",
+  "actions": {
+    "DescribeEntitiesDetectionV2Job": {
+      "description": "Grants permission to describe the properties of a medical entity detection job that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DescribeEntitiesDetectionV2Job.html"
+    },
+    "DescribeICD10CMInferenceJob": {
+      "description": "Grants permission to describe the properties of an ICD-10-CM linking job that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DescribeICD10CMInferenceJob.html"
+    },
+    "DescribePHIDetectionJob": {
+      "description": "Grants permission to describe the properties of a PHI entity detection job that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DescribePHIDetectionJob.html"
+    },
+    "DescribeRxNormInferenceJob": {
+      "description": "Grants permission to describe the properties of an RxNorm linking job that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DescribeRxNormInferenceJob.html"
+    },
+    "DescribeSNOMEDCTInferenceJob": {
+      "description": "Grants permission to describe the properties of a SNOMED-CT linking job that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DescribeSNOMEDCTInferenceJob.html"
+    },
+    "DetectEntitiesV2": {
+      "description": "Grants permission to detect the named medical entities, and their relationships and traits within the given text document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DetectEntitiesV2.html"
+    },
+    "DetectPHI": {
+      "description": "Grants permission to detect the protected health information (PHI) entities within the given text document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_DetectPHI.html"
+    },
+    "InferICD10CM": {
+      "description": "Grants permission to detect the medical condition entities within the given text document and link them to ICD-10-CM codes",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_InferICD10CM.html"
+    },
+    "InferRxNorm": {
+      "description": "Grants permission to detect the medication entities within the given text document and link them to RxCUI concept identifiers from the National Library of Medicine RxNorm database",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_InferRxNorm.html"
+    },
+    "InferSNOMEDCT": {
+      "description": "Grants permission to detect the medical condition, anatomy, and test, treatment, and procedure entities within the given text document and link them to SNOMED-CT codes",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_InferSNOMEDCT.html"
+    },
+    "ListEntitiesDetectionV2Jobs": {
+      "description": "Grants permission to list the medical entity detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_ListEntitiesDetectionV2Jobs.html"
+    },
+    "ListICD10CMInferenceJobs": {
+      "description": "Grants permission to list the ICD-10-CM linking jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_ListICD10CMInferenceJobs.html"
+    },
+    "ListPHIDetectionJobs": {
+      "description": "Grants permission to list the PHI entity detection jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_ListPHIDetectionJobs.html"
+    },
+    "ListRxNormInferenceJobs": {
+      "description": "Grants permission to list the RxNorm linking jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_ListRxNormInferenceJobs.html"
+    },
+    "ListSNOMEDCTInferenceJobs": {
+      "description": "Grants permission to list the SNOMED-CT linking jobs that you have submitted",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_ListSNOMEDCTInferenceJobs.html"
+    },
+    "StartEntitiesDetectionV2Job": {
+      "description": "Grants permission to start an asynchronous medical entity detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StartEntitiesDetectionV2Job.html"
+    },
+    "StartICD10CMInferenceJob": {
+      "description": "Grants permission to start an asynchronous ICD-10-CM linking job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StartICD10CMInferenceJob.html"
+    },
+    "StartPHIDetectionJob": {
+      "description": "Grants permission to start an asynchronous PHI entity detection job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StartPHIDetectionJob.html"
+    },
+    "StartRxNormInferenceJob": {
+      "description": "Grants permission to start an asynchronous RxNorm linking job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StartRxNormInferenceJob.html"
+    },
+    "StartSNOMEDCTInferenceJob": {
+      "description": "Grants permission to start an asynchronous SNOMED-CT linking job for a collection of documents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StartSNOMEDCTInferenceJob.html"
+    },
+    "StopEntitiesDetectionV2Job": {
+      "description": "Grants permission to stop a medical entity detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StopEntitiesDetectionV2Job.html"
+    },
+    "StopICD10CMInferenceJob": {
+      "description": "Grants permission to stop an ICD-10-CM linking job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StopICD10CMInferenceJob.html"
+    },
+    "StopPHIDetectionJob": {
+      "description": "Grants permission to stop a PHI entity detection job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StopPHIDetectionJob.html"
+    },
+    "StopRxNormInferenceJob": {
+      "description": "Grants permission to stop an RxNorm linking job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StopRxNormInferenceJob.html"
+    },
+    "StopSNOMEDCTInferenceJob": {
+      "description": "Grants permission to stop a SNOMED-CT linking job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/comprehend-medical/latest/dev/API_medical_StopSNOMEDCTInferenceJob.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {
+    "aws:SourceArn": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn"
+    },
+    "aws:SourceVpc": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcevpc"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "AWS Purchase Orders Console",
+  "prefix": "purchase-orders",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspurchaseordersconsole.html",
+  "actions": {
+    "ModifyPurchaseOrders": {
+      "description": "Modify purchase orders and details",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    },
+    "ViewPurchaseOrders": {
+      "description": "View purchase orders and details",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

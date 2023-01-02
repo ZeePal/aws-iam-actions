@@ -1,0 +1,154 @@
+{
+  "name": "Amazon Elastic Block Store",
+  "prefix": "ebs",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticblockstore.html",
+  "actions": {
+    "CompleteSnapshot": {
+      "description": "Grants permission to seal and complete the snapshot after all of the required blocks of data have been written to it",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_CompleteSnapshot.html"
+    },
+    "GetSnapshotBlock": {
+      "description": "Grants permission to return the data of a block in an Amazon Elastic Block Store (EBS) snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_GetSnapshotBlock.html"
+    },
+    "ListChangedBlocks": {
+      "description": "Grants permission to list the blocks that are different between two Amazon Elastic Block Store (EBS) snapshots of the same volume/snapshot lineage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListChangedBlocks.html"
+    },
+    "ListSnapshotBlocks": {
+      "description": "Grants permission to list the blocks in an Amazon Elastic Block Store (EBS) snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListSnapshotBlocks.html"
+    },
+    "PutSnapshotBlock": {
+      "description": "Grants permission to write a block of data to a snapshot created by the StartSnapshot operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_PutSnapshotBlock.html"
+    },
+    "StartSnapshot": {
+      "description": "Grants permission to create a new EBS snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ebs:Description",
+        "ebs:ParentSnapshot",
+        "ebs:VolumeSize"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/ebs/latest/APIReference/API_StartSnapshot.html"
+    }
+  },
+  "resourceTypes": {
+    "snapshot": {
+      "arn": "arn:${Partition}:ec2:${Region}::snapshot/${SnapshotId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ebs:Description",
+        "ebs:ParentSnapshot",
+        "ebs:VolumeSize"
+      ],
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair that is allowed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair of a resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by a list of tag keys that are allowed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "ebs:Description": {
+      "description": "Filters access by the description of the snapshot being created",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys"
+    },
+    "ebs:ParentSnapshot": {
+      "description": "Filters access by the ID of the parent snapshot",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys"
+    },
+    "ebs:VolumeSize": {
+      "description": "Filters access by the size of the volume for the snapshot being created, in GiB",
+      "type": "Numeric",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys"
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "name": "Amazon Machine Learning",
+  "prefix": "machinelearning",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmachinelearning.html",
+  "actions": {
+    "AddTags": {
+      "description": "Adds one or more tags to an object, up to a limit of 10. Each tag consists of a key and an optional value",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "evaluation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_AddTags.html"
+    },
+    "CreateBatchPrediction": {
+      "description": "Generates predictions for a group of observations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateBatchPrediction.html"
+    },
+    "CreateDataSourceFromRDS": {
+      "description": "Creates a DataSource object from an Amazon RDS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateDataSourceFromRDS.html"
+    },
+    "CreateDataSourceFromRedshift": {
+      "description": "Creates a DataSource from a database hosted on an Amazon Redshift cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateDataSourceFromRedshift.html"
+    },
+    "CreateDataSourceFromS3": {
+      "description": "Creates a DataSource object from S3",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateDataSourceFromS3.html"
+    },
+    "CreateEvaluation": {
+      "description": "Creates a new Evaluation of an MLModel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "evaluation": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateEvaluation.html"
+    },
+    "CreateMLModel": {
+      "description": "Creates a new MLModel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateMLModel.html"
+    },
+    "CreateRealtimeEndpoint": {
+      "description": "Creates a real-time endpoint for the MLModel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateRealtimeEndpoint.html"
+    },
+    "DeleteBatchPrediction": {
+      "description": "Assigns the DELETED status to a BatchPrediction, rendering it unusable",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteBatchPrediction.html"
+    },
+    "DeleteDataSource": {
+      "description": "Assigns the DELETED status to a DataSource, rendering it unusable",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteDataSource.html"
+    },
+    "DeleteEvaluation": {
+      "description": "Assigns the DELETED status to an Evaluation, rendering it unusable",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "evaluation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteEvaluation.html"
+    },
+    "DeleteMLModel": {
+      "description": "Assigns the DELETED status to an MLModel, rendering it unusable",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteMLModel.html"
+    },
+    "DeleteRealtimeEndpoint": {
+      "description": "Deletes a real time endpoint of an MLModel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteRealtimeEndpoint.html"
+    },
+    "DeleteTags": {
+      "description": "Deletes the specified tags associated with an ML object. After this operation is complete, you can't recover deleted tags",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "evaluation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DeleteTags.html"
+    },
+    "DescribeBatchPredictions": {
+      "description": "Returns a list of BatchPrediction operations that match the search criteria in the request",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeBatchPredictions.html"
+    },
+    "DescribeDataSources": {
+      "description": "Returns a list of DataSource that match the search criteria in the request",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeDataSources.html"
+    },
+    "DescribeEvaluations": {
+      "description": "Returns a list of DescribeEvaluations that match the search criteria in the request",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeEvaluations.html"
+    },
+    "DescribeMLModels": {
+      "description": "Returns a list of MLModel that match the search criteria in the request",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeMLModels.html"
+    },
+    "DescribeTags": {
+      "description": "Describes one or more of the tags for your Amazon ML object",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "evaluation": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mlmodel": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeTags.html"
+    },
+    "GetBatchPrediction": {
+      "description": "Returns a BatchPrediction that includes detailed metadata, status, and data file information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_GetBatchPrediction.html"
+    },
+    "GetDataSource": {
+      "description": "Returns a DataSource that includes metadata and data file information, as well as the current status of the DataSource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_GetDataSource.html"
+    },
+    "GetEvaluation": {
+      "description": "Returns an Evaluation that includes metadata as well as the current status of the Evaluation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_GetEvaluation.html"
+    },
+    "GetMLModel": {
+      "description": "Returns an MLModel that includes detailed metadata, and data source information as well as the current status of the MLModel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_GetMLModel.html"
+    },
+    "Predict": {
+      "description": "Generates a prediction for the observation using the specified ML Model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_Predict.html"
+    },
+    "UpdateBatchPrediction": {
+      "description": "Updates the BatchPredictionName of a BatchPrediction",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchprediction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateBatchPrediction.html"
+    },
+    "UpdateDataSource": {
+      "description": "Updates the DataSourceName of a DataSource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateDataSource.html"
+    },
+    "UpdateEvaluation": {
+      "description": "Updates the EvaluationName of an Evaluation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "evaluation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateEvaluation.html"
+    },
+    "UpdateMLModel": {
+      "description": "Updates the MLModelName and the ScoreThreshold of an MLModel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mlmodel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateMLModel.html"
+    }
+  },
+  "resourceTypes": {
+    "batchprediction": {
+      "arn": "arn:${Partition}:machinelearning:${Region}:${Account}:batchprediction/${BatchPredictionId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/dg/amazon-machine-learning-key-concepts.html#batch-predictions"
+    },
+    "datasource": {
+      "arn": "arn:${Partition}:machinelearning:${Region}:${Account}:datasource/${DatasourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/dg/amazon-machine-learning-key-concepts.html#datasources"
+    },
+    "evaluation": {
+      "arn": "arn:${Partition}:machinelearning:${Region}:${Account}:evaluation/${EvaluationId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/dg/amazon-machine-learning-key-concepts.html#evaluations"
+    },
+    "mlmodel": {
+      "arn": "arn:${Partition}:machinelearning:${Region}:${Account}:mlmodel/${MlModelId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/machine-learning/latest/dg/amazon-machine-learning-key-concepts.html#ml-models"
+    }
+  },
+  "conditionKeys": {}
+}

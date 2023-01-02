@@ -1,0 +1,366 @@
+{
+  "name": "Amazon EMR on EKS (EMR Containers)",
+  "prefix": "emr-containers",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonemroneksemrcontainers.html",
+  "actions": {
+    "CancelJobRun": {
+      "description": "Grants permission to cancel a job run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CancelJobRun.html"
+    },
+    "CreateJobTemplate": {
+      "description": "Grants permission to create a job template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateJobTemplate.html"
+    },
+    "CreateManagedEndpoint": {
+      "description": "Grants permission to create a managed endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "emr-containers:ExecutionRoleArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateManagedEndpoint.html"
+    },
+    "CreateVirtualCluster": {
+      "description": "Grants permission to create a virtual cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateVirtualCluster.html"
+    },
+    "DeleteJobTemplate": {
+      "description": "Grants permission to delete a job template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteJobTemplate.html"
+    },
+    "DeleteManagedEndpoint": {
+      "description": "Grants permission to delete a managed endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "managedEndpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteManagedEndpoint.html"
+    },
+    "DeleteVirtualCluster": {
+      "description": "Grants permission to delete a virtual cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DeleteVirtualCluster.html"
+    },
+    "DescribeJobRun": {
+      "description": "Grants permission to describe a job run",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobRun.html"
+    },
+    "DescribeJobTemplate": {
+      "description": "Grants permission to describe a job template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobTemplate.html"
+    },
+    "DescribeManagedEndpoint": {
+      "description": "Grants permission to describe a managed endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "managedEndpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeManagedEndpoint.html"
+    },
+    "DescribeVirtualCluster": {
+      "description": "Grants permission to describe a virtual cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeVirtualCluster.html"
+    },
+    "ListJobRuns": {
+      "description": "Grants permission to list job runs associated with a virtual cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobRuns.html"
+    },
+    "ListJobTemplates": {
+      "description": "Grants permission to list job templates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJobTemplates.html"
+    },
+    "ListManagedEndpoints": {
+      "description": "Grants permission to list managed endpoints associated with a virtual cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListManagedEndpoints.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for the specified resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobTemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "managedEndpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualCluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListVirtualClusters": {
+      "description": "Grants permission to list virtual clusters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListVirtualClusters.html"
+    },
+    "StartJobRun": {
+      "description": "Grants permission to start a job run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "virtualCluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "emr-containers:ExecutionRoleArn",
+        "emr-containers:JobTemplateArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobTemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "managedEndpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualCluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobTemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "managedEndpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "virtualCluster": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_UntagResource.html"
+    }
+  },
+  "resourceTypes": {
+    "jobRun": {
+      "arn": "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/jobruns/${JobRunId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs.html"
+    },
+    "jobTemplate": {
+      "arn": "arn:${Partition}:emr-containers:${Region}:${Account}:/jobtemplates/${JobTemplateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-templates.html"
+    },
+    "managedEndpoint": {
+      "arn": "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/endpoints/${EndpointId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-create-eks-cluster.html#emr-studio-create-managed-endpoint"
+    },
+    "virtualCluster": {
+      "arn": "arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/virtual-cluster.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs present in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys present in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "emr-containers:ExecutionRoleArn": {
+      "description": "Filters access by the execution role arn present in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/iam-execution-role.html"
+    },
+    "emr-containers:JobTemplateArn": {
+      "description": "Filters access by the job template arn present in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/iam-job-template.html"
+    }
+  }
+}

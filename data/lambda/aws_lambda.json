@@ -1,0 +1,1069 @@
+{
+  "name": "AWS Lambda",
+  "prefix": "lambda",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html",
+  "actions": {
+    "AddLayerVersionPermission": {
+      "description": "Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layerVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_AddLayerVersionPermission.html"
+    },
+    "AddPermission": {
+      "description": "Grants permission to give an AWS service or another account permission to use an AWS Lambda function",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionUrlAuthType",
+        "lambda:Principal"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_AddPermission.html"
+    },
+    "CreateAlias": {
+      "description": "Grants permission to create an alias for a Lambda function version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_CreateAlias.html"
+    },
+    "CreateCodeSigningConfig": {
+      "description": "Grants permission to create an AWS Lambda code signing config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_CreateCodeSigningConfig.html"
+    },
+    "CreateEventSourceMapping": {
+      "description": "Grants permission to create a mapping between an event source and an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "lambda:FunctionArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_CreateEventSourceMapping.html"
+    },
+    "CreateFunction": {
+      "description": "Grants permission to create an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "lambda:CodeSigningConfigArn",
+        "lambda:Layer",
+        "lambda:SecurityGroupIds",
+        "lambda:SubnetIds",
+        "lambda:VpcIds"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html"
+    },
+    "CreateFunctionUrlConfig": {
+      "description": "Grants permission to create a function url configuration for a Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn",
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunctionUrlConfig.html"
+    },
+    "DeleteAlias": {
+      "description": "Grants permission to delete an AWS Lambda function alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteAlias.html"
+    },
+    "DeleteCodeSigningConfig": {
+      "description": "Grants permission to delete an AWS Lambda code signing config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteCodeSigningConfig.html"
+    },
+    "DeleteEventSourceMapping": {
+      "description": "Grants permission to delete an AWS Lambda event source mapping",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventSourceMapping": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteEventSourceMapping.html"
+    },
+    "DeleteFunction": {
+      "description": "Grants permission to delete an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunction.html"
+    },
+    "DeleteFunctionCodeSigningConfig": {
+      "description": "Grants permission to detach a code signing config from an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunctionCodeSigningConfig.html"
+    },
+    "DeleteFunctionConcurrency": {
+      "description": "Grants permission to remove a concurrent execution limit from an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunctionConcurrency.html"
+    },
+    "DeleteFunctionEventInvokeConfig": {
+      "description": "Grants permission to delete the configuration for asynchronous invocation for an AWS Lambda function, version, or alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunctionEventInvokeConfig.html"
+    },
+    "DeleteFunctionUrlConfig": {
+      "description": "Grants permission to delete function url configuration for a Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn",
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunctionUrlConfig.html"
+    },
+    "DeleteLayerVersion": {
+      "description": "Grants permission to delete a version of an AWS Lambda layer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layerVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteLayerVersion.html"
+    },
+    "DeleteProvisionedConcurrencyConfig": {
+      "description": "Grants permission to delete the provisioned concurrency configuration for an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function alias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "function version": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteProvisionedConcurrencyConfig.html"
+    },
+    "DisableReplication": {
+      "description": "Grants permission to disable replication for a Lambda@Edge function",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "EnableReplication": {
+      "description": "Grants permission to enable replication for a Lambda@Edge function",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetAccountSettings": {
+      "description": "Grants permission to view details about an account's limits and usage in an AWS Region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetAccountSettings.html"
+    },
+    "GetAlias": {
+      "description": "Grants permission to view details about an AWS Lambda function alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetAlias.html"
+    },
+    "GetCodeSigningConfig": {
+      "description": "Grants permission to view details about an AWS Lambda code signing config",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetCodeSigningConfig.html"
+    },
+    "GetEventSourceMapping": {
+      "description": "Grants permission to view details about an AWS Lambda event source mapping",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventSourceMapping": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetEventSourceMapping.html"
+    },
+    "GetFunction": {
+      "description": "Grants permission to view details about an AWS Lambda function",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunction.html"
+    },
+    "GetFunctionCodeSigningConfig": {
+      "description": "Grants permission to view the code signing config arn attached to an AWS Lambda function",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionCodeSigningConfig.html"
+    },
+    "GetFunctionConcurrency": {
+      "description": "Grants permission to view details about the reserved concurrency configuration for a function",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionConcurrency.html"
+    },
+    "GetFunctionConfiguration": {
+      "description": "Grants permission to view details about the version-specific settings of an AWS Lambda function or version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionConfiguration.html"
+    },
+    "GetFunctionEventInvokeConfig": {
+      "description": "Grants permission to view the configuration for asynchronous invocation for a function, version, or alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionEventInvokeConfig.html"
+    },
+    "GetFunctionUrlConfig": {
+      "description": "Grants permission to read function url configuration for a Lambda function",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn",
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionUrlConfig.html"
+    },
+    "GetLayerVersion": {
+      "description": "Grants permission to view details about a version of an AWS Lambda layer. Note this action also supports GetLayerVersionByArn API",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layerVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetLayerVersion.html"
+    },
+    "GetLayerVersionPolicy": {
+      "description": "Grants permission to view the resource-based policy for a version of an AWS Lambda layer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layerVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetLayerVersionPolicy.html"
+    },
+    "GetPolicy": {
+      "description": "Grants permission to view the resource-based policy for an AWS Lambda function, version, or alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetPolicy.html"
+    },
+    "GetProvisionedConcurrencyConfig": {
+      "description": "Grants permission to view the provisioned concurrency configuration for an AWS Lambda function's alias or version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function alias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "function version": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_GetProvisionedConcurrencyConfig.html"
+    },
+    "InvokeAsync": {
+      "description": "Grants permission to invoke a function asynchronously (Deprecated)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_InvokeAsync.html"
+    },
+    "InvokeFunction": {
+      "description": "Grants permission to invoke an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html"
+    },
+    "InvokeFunctionUrl": {
+      "description": "Grants permission to invoke an AWS Lambda function through url",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn",
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_InvokeFunctionUrl.html"
+    },
+    "ListAliases": {
+      "description": "Grants permission to retrieve a list of aliases for an AWS Lambda function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListAliases.html"
+    },
+    "ListCodeSigningConfigs": {
+      "description": "Grants permission to retrieve a list of AWS Lambda code signing configs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListCodeSigningConfigs.html"
+    },
+    "ListEventSourceMappings": {
+      "description": "Grants permission to retrieve a list of AWS Lambda event source mappings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListEventSourceMappings.html"
+    },
+    "ListFunctionEventInvokeConfigs": {
+      "description": "Grants permission to retrieve a list of configurations for asynchronous invocation for a function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctionEventInvokeConfigs.html"
+    },
+    "ListFunctionUrlConfigs": {
+      "description": "Grants permission to read function url configurations for a function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctionUrlConfigs.html"
+    },
+    "ListFunctions": {
+      "description": "Grants permission to retrieve a list of AWS Lambda functions, with the version-specific configuration of each function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctions.html"
+    },
+    "ListFunctionsByCodeSigningConfig": {
+      "description": "Grants permission to retrieve a list of AWS Lambda functions by the code signing config assigned",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctionsByCodeSigningConfig.html"
+    },
+    "ListLayerVersions": {
+      "description": "Grants permission to retrieve a list of versions of an AWS Lambda layer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListLayerVersions.html"
+    },
+    "ListLayers": {
+      "description": "Grants permission to retrieve a list of AWS Lambda layers, with details about the latest version of each layer",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListLayers.html"
+    },
+    "ListProvisionedConcurrencyConfigs": {
+      "description": "Grants permission to retrieve a list of provisioned concurrency configurations for an AWS Lambda function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListProvisionedConcurrencyConfigs.html"
+    },
+    "ListTags": {
+      "description": "Grants permission to retrieve a list of tags for an AWS Lambda function",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListTags.html"
+    },
+    "ListVersionsByFunction": {
+      "description": "Grants permission to retrieve a list of versions for an AWS Lambda function",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_ListVersionsByFunction.html"
+    },
+    "PublishLayerVersion": {
+      "description": "Grants permission to create an AWS Lambda layer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html"
+    },
+    "PublishVersion": {
+      "description": "Grants permission to create an AWS Lambda function version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PublishVersion.html"
+    },
+    "PutFunctionCodeSigningConfig": {
+      "description": "Grants permission to attach a code signing config to an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:CodeSigningConfigArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PutFunctionCodeSigningConfig.html"
+    },
+    "PutFunctionConcurrency": {
+      "description": "Grants permission to configure reserved concurrency for an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PutFunctionConcurrency.html"
+    },
+    "PutFunctionEventInvokeConfig": {
+      "description": "Grants permission to configures options for asynchronous invocation on an AWS Lambda function, version, or alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PutFunctionEventInvokeConfig.html"
+    },
+    "PutProvisionedConcurrencyConfig": {
+      "description": "Grants permission to configure provisioned concurrency for an AWS Lambda function's alias or version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function alias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "function version": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_PutProvisionedConcurrencyConfig.html"
+    },
+    "RemoveLayerVersionPermission": {
+      "description": "Grants permission to remove a statement from the permissions policy for a version of an AWS Lambda layer",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "layerVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_RemoveLayerVersionPermission.html"
+    },
+    "RemovePermission": {
+      "description": "Grants permission to revoke function-use permission from an AWS service or another account",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionUrlAuthType",
+        "lambda:Principal"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_RemovePermission.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to an AWS Lambda function",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_TagResources.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from an AWS Lambda function",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UntagResource.html"
+    },
+    "UpdateAlias": {
+      "description": "Grants permission to update the configuration of an AWS Lambda function's alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateAlias.html"
+    },
+    "UpdateCodeSigningConfig": {
+      "description": "Grants permission to update an AWS Lambda code signing config",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateCodeSigningConfig.html"
+    },
+    "UpdateEventSourceMapping": {
+      "description": "Grants permission to update the configuration of an AWS Lambda event source mapping",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventSourceMapping": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateEventSourceMapping.html"
+    },
+    "UpdateFunctionCode": {
+      "description": "Grants permission to update the code of an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionCode.html"
+    },
+    "UpdateFunctionCodeSigningConfig": {
+      "description": "Grants permission to update the code signing config of an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "code signing config": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionCodeSigningConfig.html"
+    },
+    "UpdateFunctionConfiguration": {
+      "description": "Grants permission to modify the version-specific settings of an AWS Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:Layer",
+        "lambda:SecurityGroupIds",
+        "lambda:SubnetIds",
+        "lambda:VpcIds"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionConfiguration.html"
+    },
+    "UpdateFunctionEventInvokeConfig": {
+      "description": "Grants permission to modify the configuration for asynchronous invocation for an AWS Lambda function, version, or alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionEventInvokeConfig.html"
+    },
+    "UpdateFunctionUrlConfig": {
+      "description": "Grants permission to update a function url configuration for a Lambda function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "lambda:FunctionArn",
+        "lambda:FunctionUrlAuthType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionUrlConfig.html"
+    }
+  },
+  "resourceTypes": {
+    "code signing config": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:code-signing-config:${CodeSigningConfigId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "eventSourceMapping": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:event-source-mapping:${UUID}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "function": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "function alias": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Alias}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "function version": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Version}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "layer": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "layerVersion": {
+      "arn": "arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}:${LayerVersion}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "lambda:CodeSigningConfigArn": {
+      "description": "Filters access by the ARN of an AWS Lambda code signing config",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:FunctionArn": {
+      "description": "Filters access by the ARN of an AWS Lambda function",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:FunctionUrlAuthType": {
+      "description": "Filters access by authorization type specified in request. Available during CreateFunctionUrlConfig, UpdateFunctionUrlConfig, DeleteFunctionUrlConfig, GetFunctionUrlConfig, ListFunctionUrlConfig, AddPermission and RemovePermission operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:Layer": {
+      "description": "Filters access by the ARN of a version of an AWS Lambda layer",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:Principal": {
+      "description": "Filters access by restricting the AWS service or account that can invoke a function",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:SecurityGroupIds": {
+      "description": "Filters access by the ID of security groups configured for the AWS Lambda function",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:SourceFunctionArn": {
+      "description": "Filters access by the ARN of the AWS Lambda function from which the request originated",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:SubnetIds": {
+      "description": "Filters access by the ID of subnets configured for the AWS Lambda function",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    },
+    "lambda:VpcIds": {
+      "description": "Filters access by the ID of the VPC configured for the AWS Lambda function",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html"
+    }
+  }
+}

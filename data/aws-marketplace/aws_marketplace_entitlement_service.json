@@ -1,0 +1,18 @@
+{
+  "name": "AWS Marketplace Entitlement Service",
+  "prefix": "aws-marketplace",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceentitlementservice.html",
+  "actions": {
+    "GetEntitlements": {
+      "description": "Retrieves entitlement values for a given product. The results can be filtered based on customer identifier or product dimensions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

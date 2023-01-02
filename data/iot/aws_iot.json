@@ -1,0 +1,3815 @@
+{
+  "name": "AWS IoT",
+  "prefix": "iot",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html",
+  "actions": {
+    "AcceptCertificateTransfer": {
+      "description": "Grants permission to accept a pending certificate transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AcceptCertificateTransfer.html"
+    },
+    "AddThingToBillingGroup": {
+      "description": "Grants permission to add a thing to the specified billing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToBillingGroup.html"
+    },
+    "AddThingToThingGroup": {
+      "description": "Grants permission to add a thing to the specified thing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html"
+    },
+    "AssociateTargetsWithJob": {
+      "description": "Grants permission to associate a group with a continuous job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateTargetsWithJob.html"
+    },
+    "AttachPolicy": {
+      "description": "Grants permission to attach a policy to the specified target",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html"
+    },
+    "AttachPrincipalPolicy": {
+      "description": "Grants permission to attach the specified policy to the specified principal (certificate or other credential)",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPrincipalPolicy.html"
+    },
+    "AttachSecurityProfile": {
+      "description": "Grants permission to associate a Device Defender security profile with a thing group or with this account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AttachSecurityProfile.html"
+    },
+    "AttachThingPrincipal": {
+      "description": "Grants permission to attach the specified principal to the specified thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingPrincipal.html"
+    },
+    "CancelAuditMitigationActionsTask": {
+      "description": "Grants permission to cancel a mitigation action task that is in progress",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelAuditMitigationActionsTask.html"
+    },
+    "CancelAuditTask": {
+      "description": "Grants permission to cancel an audit that is in progress. The audit can be either scheduled or on-demand",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelAuditTask.html"
+    },
+    "CancelCertificateTransfer": {
+      "description": "Grants permission to cancel a pending transfer for the specified certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelCertificateTransfer.html"
+    },
+    "CancelDetectMitigationActionsTask": {
+      "description": "Grants permission to cancel a Device Defender ML Detect mitigation action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelDetectMitigationActionsTask.html"
+    },
+    "CancelJob": {
+      "description": "Grants permission to cancel a job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJob.html"
+    },
+    "CancelJobExecution": {
+      "description": "Grants permission to cancel a job execution on a particular device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJobExecution.html"
+    },
+    "ClearDefaultAuthorizer": {
+      "description": "Grants permission to clear the default authorizer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ClearDefaultAuthorizer.html"
+    },
+    "CloseTunnel": {
+      "description": "Grants permission to close a tunnel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "tunnel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "iot:Delete"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-tunneling_CloseTunnel.html"
+    },
+    "ConfirmTopicRuleDestination": {
+      "description": "Grants permission to confirm a http url TopicRuleDestinationDestination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "destination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ConfirmTopicRuleDestination.html"
+    },
+    "Connect": {
+      "description": "Grants permission to connect as the specified client",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "client": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "CreateAuditSuppression": {
+      "description": "Grants permission to create a Device Defender audit suppression",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuditSuppression.html"
+    },
+    "CreateAuthorizer": {
+      "description": "Grants permission to create an authorizer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuthorizer.html"
+    },
+    "CreateBillingGroup": {
+      "description": "Grants permission to create a billing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateBillingGroup.html"
+    },
+    "CreateCertificateFromCsr": {
+      "description": "Grants permission to create an X.509 certificate using the specified certificate signing request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html"
+    },
+    "CreateCustomMetric": {
+      "description": "Grants permission to create a custom metric for device side metric reporting and monitoring",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCustomMetric.html"
+    },
+    "CreateDimension": {
+      "description": "Grants permission to define a dimension that can be used to to limit the scope of a metric used in a security profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dimension": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDimension.html"
+    },
+    "CreateDomainConfiguration": {
+      "description": "Grants permission to create a domain configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domainconfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "iot:DomainName"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html"
+    },
+    "CreateDynamicThingGroup": {
+      "description": "Grants permission to create a Dynamic Thing Group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dynamicthinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDynamicThingGroup.html"
+    },
+    "CreateFleetMetric": {
+      "description": "Grants permission to create a fleet metric",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleetmetric": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "CreateJob": {
+      "description": "Grants permission to create a job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "jobtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html"
+    },
+    "CreateJobTemplate": {
+      "description": "Grants permission to create a job template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJobTemplate.html"
+    },
+    "CreateKeysAndCertificate": {
+      "description": "Grants permission to create a 2048 bit RSA key pair and issues an X.509 certificate using the issued public key",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html"
+    },
+    "CreateMitigationAction": {
+      "description": "Grants permission to define an action that can be applied to audit findings by using StartAuditMitigationActionsTask",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mitigationaction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateMitigationAction.html"
+    },
+    "CreateOTAUpdate": {
+      "description": "Grants permission to create an OTA update job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "otaupdate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateOTAUpdate.html"
+    },
+    "CreatePolicy": {
+      "description": "Grants permission to create an AWS IoT policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePolicy.html"
+    },
+    "CreatePolicyVersion": {
+      "description": "Grants permission to create a new version of the specified AWS IoT policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePolicyVersion.html"
+    },
+    "CreateProvisioningClaim": {
+      "description": "Grants permission to create a provisioning claim",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningClaim.html"
+    },
+    "CreateProvisioningTemplate": {
+      "description": "Grants permission to create a fleet provisioning template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplate.html"
+    },
+    "CreateProvisioningTemplateVersion": {
+      "description": "Grants permission to create a new version of a fleet provisioning template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvisioningTemplateVersion.html"
+    },
+    "CreateRoleAlias": {
+      "description": "Grants permission to create a role alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rolealias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateRoleAlias.html"
+    },
+    "CreateScheduledAudit": {
+      "description": "Grants permission to create a scheduled audit that is run at a specified time interval",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduledaudit": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateScheduledAudit.html"
+    },
+    "CreateSecurityProfile": {
+      "description": "Grants permission to create a Device Defender security profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateSecurityProfile.html"
+    },
+    "CreateStream": {
+      "description": "Grants permission to create a new AWS IoT stream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateStream.html"
+    },
+    "CreateThing": {
+      "description": "Grants permission to create a thing in the thing registry",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThing.html"
+    },
+    "CreateThingGroup": {
+      "description": "Grants permission to create a thing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingGroup.html"
+    },
+    "CreateThingType": {
+      "description": "Grants permission to create a new thing type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thingtype": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingType.html"
+    },
+    "CreateTopicRule": {
+      "description": "Grants permission to create a rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule.html"
+    },
+    "CreateTopicRuleDestination": {
+      "description": "Grants permission to create a TopicRuleDestination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "destination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRuleDestination.html"
+    },
+    "DeleteAccountAuditConfiguration": {
+      "description": "Grants permission to delete the audit configuration associated with the account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAccountAuditConfiguration.html"
+    },
+    "DeleteAuditSuppression": {
+      "description": "Grants permission to delete a Device Defender audit suppression",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAuditSuppression.html"
+    },
+    "DeleteAuthorizer": {
+      "description": "Grants permission to delete the specified authorizer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAuthorizer.html"
+    },
+    "DeleteBillingGroup": {
+      "description": "Grants permission to delete the specified billing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteBillingGroup.html"
+    },
+    "DeleteCACertificate": {
+      "description": "Grants permission to delete a registered CA certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cacert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCACertificate.html"
+    },
+    "DeleteCertificate": {
+      "description": "Grants permission to delete the specified certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCertificate.html"
+    },
+    "DeleteCustomMetric": {
+      "description": "Grants permission to deletes the specified custom metric from your AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCustomMetric.html"
+    },
+    "DeleteDimension": {
+      "description": "Grants permission to remove the specified dimension from your AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dimension": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteDimension.html"
+    },
+    "DeleteDomainConfiguration": {
+      "description": "Grants permission to delete a domain configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domainconfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteDomainConfiguration.html"
+    },
+    "DeleteDynamicThingGroup": {
+      "description": "Grants permission to delete the specified Dynamic Thing Group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dynamicthinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteDynamicThingGroup.html"
+    },
+    "DeleteFleetMetric": {
+      "description": "Grants permission to delete the specified fleet metric",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleetmetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "DeleteJob": {
+      "description": "Grants permission to delete a job and its related job executions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJob.html"
+    },
+    "DeleteJobExecution": {
+      "description": "Grants permission to delete a job execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobExecution.html"
+    },
+    "DeleteJobTemplate": {
+      "description": "Grants permission to delete a job template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobTemplate.html"
+    },
+    "DeleteMitigationAction": {
+      "description": "Grants permission to delete a defined mitigation action from your AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mitigationaction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteMitigationAction.html"
+    },
+    "DeleteOTAUpdate": {
+      "description": "Grants permission to delete an OTA update job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "otaupdate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteOTAUpdate.html"
+    },
+    "DeletePolicy": {
+      "description": "Grants permission to delete the specified policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeletePolicy.html"
+    },
+    "DeletePolicyVersion": {
+      "description": "Grants permission to Delete the specified version of the specified policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeletePolicyVersion.html"
+    },
+    "DeleteProvisioningTemplate": {
+      "description": "Grants permission to delete a fleet provisioning template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteProvisioningTemplate.html"
+    },
+    "DeleteProvisioningTemplateVersion": {
+      "description": "Grants permission to delete a fleet provisioning template version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteProvisioningTemplateVersion.html"
+    },
+    "DeleteRegistrationCode": {
+      "description": "Grants permission to delete a CA certificate registration code",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteRegistrationCode.html"
+    },
+    "DeleteRoleAlias": {
+      "description": "Grants permission to delete the specified role alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rolealias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteRoleAlias.html"
+    },
+    "DeleteScheduledAudit": {
+      "description": "Grants permission to delete a scheduled audit",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduledaudit": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteScheduledAudit.html"
+    },
+    "DeleteSecurityProfile": {
+      "description": "Grants permission to delete a Device Defender security profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteSecurityProfile.html"
+    },
+    "DeleteStream": {
+      "description": "Grants permission to delete a specified stream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteStream.html"
+    },
+    "DeleteThing": {
+      "description": "Grants permission to delete the specified thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThing.html"
+    },
+    "DeleteThingGroup": {
+      "description": "Grants permission to delete the specified thing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThingGroup.html"
+    },
+    "DeleteThingShadow": {
+      "description": "Grants permission to delete the specified thing shadow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "DeleteThingType": {
+      "description": "Grants permission to delete the specified thing type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thingtype": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThingType.html"
+    },
+    "DeleteTopicRule": {
+      "description": "Grants permission to delete the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteTopicRule.html"
+    },
+    "DeleteTopicRuleDestination": {
+      "description": "Grants permission to delete a TopicRuleDestination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "destination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteTopicRuleDestination.html"
+    },
+    "DeleteV2LoggingLevel": {
+      "description": "Grants permission to delete the specified v2 logging level",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteV2LoggingLevel.html"
+    },
+    "DeprecateThingType": {
+      "description": "Grants permission to deprecate the specified thing type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thingtype": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DeprecateThingType.html"
+    },
+    "DescribeAccountAuditConfiguration": {
+      "description": "Grants permission to get information about audit configurations for the account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAccountAuditConfiguration.html"
+    },
+    "DescribeAuditFinding": {
+      "description": "Grants permission to get information about a single audit finding. Properties include the reason for noncompliance, the severity of the issue, and when the audit that returned the finding was started",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuditFinding.html"
+    },
+    "DescribeAuditMitigationActionsTask": {
+      "description": "Grants permission to get information about an audit mitigation task that is used to apply mitigation actions to a set of audit findings",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuditMitigationActionsTask.html"
+    },
+    "DescribeAuditSuppression": {
+      "description": "Grants permission to get information about a Device Defender audit suppression",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuditSuppression.html"
+    },
+    "DescribeAuditTask": {
+      "description": "Grants permission to get information about a Device Defender audit",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuditTask.html"
+    },
+    "DescribeAuthorizer": {
+      "description": "Grants permission to describe an authorizer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuthorizer.html"
+    },
+    "DescribeBillingGroup": {
+      "description": "Grants permission to get information about the specified billing group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeBillingGroup.html"
+    },
+    "DescribeCACertificate": {
+      "description": "Grants permission to describe a registered CA certificate",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cacert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCACertificate.html"
+    },
+    "DescribeCertificate": {
+      "description": "Grants permission to get information about the specified certificate",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCertificate.html"
+    },
+    "DescribeCustomMetric": {
+      "description": "Grants permission to describe a custom metric that is defined in your AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCustomMetric.html"
+    },
+    "DescribeDefaultAuthorizer": {
+      "description": "Grants permission to describe the default authorizer",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDefaultAuthorizer.html"
+    },
+    "DescribeDetectMitigationActionsTask": {
+      "description": "Grants permission to describe a Device Defender ML Detect mitigation action",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDetectMitigationActionsTask.html"
+    },
+    "DescribeDimension": {
+      "description": "Grants permission to get details about a dimension that is defined in your AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dimension": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDimension.html"
+    },
+    "DescribeDomainConfiguration": {
+      "description": "Grants permission to get information about the domain configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domainconfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDomainConfiguration.html"
+    },
+    "DescribeEndpoint": {
+      "description": "Grants permission to get a unique endpoint specific to the AWS account making the call",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html"
+    },
+    "DescribeEventConfigurations": {
+      "description": "Grants permission to get account event configurations",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEventConfigurations.html"
+    },
+    "DescribeFleetMetric": {
+      "description": "Grants permission to get information about the specified fleet metric",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleetmetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "DescribeIndex": {
+      "description": "Grants permission to get information about the specified index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeIndex.html"
+    },
+    "DescribeJob": {
+      "description": "Grants permission to describe a job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.html"
+    },
+    "DescribeJobExecution": {
+      "description": "Grants permission to describe a job execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobExecution.html"
+    },
+    "DescribeJobTemplate": {
+      "description": "Grants permission to describe a job template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobTemplate.html"
+    },
+    "DescribeManagedJobTemplate": {
+      "description": "Grants permission to describe a managed job template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeManagedJobTemplate.html"
+    },
+    "DescribeMitigationAction": {
+      "description": "Grants permission to get information about a mitigation action",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mitigationaction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeMitigationAction.html"
+    },
+    "DescribeProvisioningTemplate": {
+      "description": "Grants permission to get information about a fleet provisioning template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeProvisioningTemplate.html"
+    },
+    "DescribeProvisioningTemplateVersion": {
+      "description": "Grants permission to get information about a fleet provisioning template version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeProvisioningTemplateVersion.html"
+    },
+    "DescribeRoleAlias": {
+      "description": "Grants permission to describe a role alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rolealias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeRoleAlias.html"
+    },
+    "DescribeScheduledAudit": {
+      "description": "Grants permission to get information about a scheduled audit",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduledaudit": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeScheduledAudit.html"
+    },
+    "DescribeSecurityProfile": {
+      "description": "Grants permission to get information about a Device Defender security profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeSecurityProfile.html"
+    },
+    "DescribeStream": {
+      "description": "Grants permission to get information about the specified stream",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeStream.html"
+    },
+    "DescribeThing": {
+      "description": "Grants permission to get information about the specified thing",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing.html"
+    },
+    "DescribeThingGroup": {
+      "description": "Grants permission to get information about the specified thing group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThingGroup.html"
+    },
+    "DescribeThingRegistrationTask": {
+      "description": "Grants permission to get information about the bulk thing registration task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThingRegistrationTask.html"
+    },
+    "DescribeThingType": {
+      "description": "Grants permission to get information about the specified thing type",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thingtype": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThingType.html"
+    },
+    "DescribeTunnel": {
+      "description": "Grants permission to describe a tunnel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "tunnel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-tunneling_DescribeTunnel.html"
+    },
+    "DetachPolicy": {
+      "description": "Grants permission to detach a policy from the specified target",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPolicy.html"
+    },
+    "DetachPrincipalPolicy": {
+      "description": "Grants permission to remove the specified policy from the specified certificate",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPrincipalPolicy.html"
+    },
+    "DetachSecurityProfile": {
+      "description": "Grants permission to disassociate a Device Defender security profile from a thing group or from this account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DetachSecurityProfile.html"
+    },
+    "DetachThingPrincipal": {
+      "description": "Grants permission to detach the specified principal from the specified thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DetachThingPrincipal.html"
+    },
+    "DisableTopicRule": {
+      "description": "Grants permission to disable the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_DisableTopicRule.html"
+    },
+    "EnableTopicRule": {
+      "description": "Grants permission to enable the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_EnableTopicRule.html"
+    },
+    "GetBehaviorModelTrainingSummaries": {
+      "description": "Grants permission to fetch a Device Defender's ML Detect Security Profile training model's status",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetBehaviorModelTrainingSummaries.html"
+    },
+    "GetBucketsAggregation": {
+      "description": "Grants permission to get buckets aggregation for IoT fleet index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "GetCardinality": {
+      "description": "Grants permission to get cardinality for IoT fleet index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetCardinality.html"
+    },
+    "GetEffectivePolicies": {
+      "description": "Grants permission to get effective policies",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetEffectivePolicies.html"
+    },
+    "GetIndexingConfiguration": {
+      "description": "Grants permission to get current fleet indexing configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetIndexingConfiguration.html"
+    },
+    "GetJobDocument": {
+      "description": "Grants permission to get a job document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocument.html"
+    },
+    "GetLoggingOptions": {
+      "description": "Grants permission to get the logging options",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetLoggingOptions.html"
+    },
+    "GetOTAUpdate": {
+      "description": "Grants permission to get the information about the OTA update job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "otaupdate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetOTAUpdate.html"
+    },
+    "GetPercentiles": {
+      "description": "Grants permission to get percentiles for IoT fleet index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetPercentiles.html"
+    },
+    "GetPolicy": {
+      "description": "Grants permission to get information about the specified policy with the policy document of the default version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetPolicy.html"
+    },
+    "GetPolicyVersion": {
+      "description": "Grants permission to get information about the specified policy version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetPolicyVersion.html"
+    },
+    "GetRegistrationCode": {
+      "description": "Grants permission to get a registration code used to register a CA certificate with AWS IoT",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetRegistrationCode.html"
+    },
+    "GetRetainedMessage": {
+      "description": "Grants permission to get the retained message on the specified topic",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "GetStatistics": {
+      "description": "Grants permission to get statistics for IoT fleet index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetStatistics.html"
+    },
+    "GetThingShadow": {
+      "description": "Grants permission to get the thing shadow",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "GetTopicRule": {
+      "description": "Grants permission to get information about the specified rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetTopicRule.html"
+    },
+    "GetTopicRuleDestination": {
+      "description": "Grants permission to get a TopicRuleDestination",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "destination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetTopicRuleDestination.html"
+    },
+    "GetV2LoggingOptions": {
+      "description": "Grants permission to get v2 logging options",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_GetV2LoggingOptions.html"
+    },
+    "ListActiveViolations": {
+      "description": "Grants permission to list the active violations for a given Device Defender security profile or Thing",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListActiveViolations.html"
+    },
+    "ListAttachedPolicies": {
+      "description": "Grants permission to list the policies attached to the specified thing group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAttachedPolicies.html"
+    },
+    "ListAuditFindings": {
+      "description": "Grants permission to list the findings (results) of a Device Defender audit or of the audits performed during a specified time period",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditFindings.html"
+    },
+    "ListAuditMitigationActionsExecutions": {
+      "description": "Grants permission to get the status of audit mitigation action tasks that were executed",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditMitigationActionsExecutions.html"
+    },
+    "ListAuditMitigationActionsTasks": {
+      "description": "Grants permission to get a list of audit mitigation action tasks that match the specified filters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditMitigationActionsTasks.html"
+    },
+    "ListAuditSuppressions": {
+      "description": "Grants permission to list your Device Defender audit suppressions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditSuppressions.html"
+    },
+    "ListAuditTasks": {
+      "description": "Grants permission to list the Device Defender audits that have been performed during a given time period",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditTasks.html"
+    },
+    "ListAuthorizers": {
+      "description": "Grants permission to list the authorizers registered in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuthorizers.html"
+    },
+    "ListBillingGroups": {
+      "description": "Grants permission to list all billing groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListBillingGroups.html"
+    },
+    "ListCACertificates": {
+      "description": "Grants permission to list the CA certificates registered for your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListCACertificates.html"
+    },
+    "ListCertificates": {
+      "description": "Grants permission to list your certificates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificates.html"
+    },
+    "ListCertificatesByCA": {
+      "description": "Grants permission to list the device certificates signed by the specified CA certificate",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificatesByCA.html"
+    },
+    "ListCustomMetrics": {
+      "description": "Grants permission to list the custom metrics in your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListCustomMetrics.html"
+    },
+    "ListDetectMitigationActionsExecutions": {
+      "description": "Grants permission to lists mitigation actions executions for a Device Defender ML Detect Security Profile",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListDetectMitigationActionsExecutions.html"
+    },
+    "ListDetectMitigationActionsTasks": {
+      "description": "Grants permission to list Device Defender ML Detect mitigation actions tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListDetectMitigationActionsTasks.html"
+    },
+    "ListDimensions": {
+      "description": "Grants permission to list the dimensions that are defined for your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListDimensions.html"
+    },
+    "ListDomainConfigurations": {
+      "description": "Grants permission to list the domain configuration created by your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListDomainConfigurations.html"
+    },
+    "ListFleetMetrics": {
+      "description": "Grants permission to list the fleet metrics in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "ListIndices": {
+      "description": "Grants permission to list all indices for fleet index",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListIndices.html"
+    },
+    "ListJobExecutionsForJob": {
+      "description": "Grants permission to list the job executions for a job",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForJob.html"
+    },
+    "ListJobExecutionsForThing": {
+      "description": "Grants permission to list the job executions for the specified thing",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobExecutionsForThing.html"
+    },
+    "ListJobTemplates": {
+      "description": "Grants permission to list job templates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobTemplates.html"
+    },
+    "ListJobs": {
+      "description": "Grants permission to list jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobs.html"
+    },
+    "ListManagedJobTemplates": {
+      "description": "Grants permission to list managed job templates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListManagedJobTemplates.html"
+    },
+    "ListMetricValues": {
+      "description": "Adds support to list metric datapoints collected for IoT devices",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListMetricValues.html"
+    },
+    "ListMitigationActions": {
+      "description": "Grants permission to get a list of all mitigation actions that match the specified filter criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListMitigationActions.html"
+    },
+    "ListNamedShadowsForThing": {
+      "description": "Grants permission to list all named shadows for a given thing",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListNamedShadowsForThing.html"
+    },
+    "ListOTAUpdates": {
+      "description": "Grants permission to list OTA update jobs in the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListOTAUpdates.html"
+    },
+    "ListOutgoingCertificates": {
+      "description": "Grants permission to list certificates that are being transfered but not yet accepted",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListOutgoingCertificates.html"
+    },
+    "ListPolicies": {
+      "description": "Grants permission to list your policies",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicies.html"
+    },
+    "ListPolicyPrincipals": {
+      "description": "Grants permission to list the principals associated with the specified policy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicyPrincipals.html"
+    },
+    "ListPolicyVersions": {
+      "description": "Grants permission to list the versions of the specified policy, and identifies the default version",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListPolicyVersions.html"
+    },
+    "ListPrincipalPolicies": {
+      "description": "Grants permission to list the policies attached to the specified principal. If you use an Amazon Cognito identity, the ID needs to be in Amazon Cognito Identity format",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListPrincipalPolicies.html"
+    },
+    "ListPrincipalThings": {
+      "description": "Grants permission to list the things associated with the specified principal",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListPrincipalThings.html"
+    },
+    "ListProvisioningTemplateVersions": {
+      "description": "Grants permission to get a list of fleet provisioning template versions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListProvisioningTemplateVersions.html"
+    },
+    "ListProvisioningTemplates": {
+      "description": "Grants permission to list the fleet provisioning templates in your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListProvisioningTemplates.html"
+    },
+    "ListRetainedMessages": {
+      "description": "Grants permission to list the retained messages for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "ListRoleAliases": {
+      "description": "Grants permission to list role aliases",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListRoleAliases.html"
+    },
+    "ListScheduledAudits": {
+      "description": "Grants permission to list all of your scheduled audits",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListScheduledAudits.html"
+    },
+    "ListSecurityProfiles": {
+      "description": "Grants permission to list the Device Defender security profiles you have created",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListSecurityProfiles.html"
+    },
+    "ListSecurityProfilesForTarget": {
+      "description": "Grants permission to list the Device Defender security profiles attached to a target",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListSecurityProfilesForTarget.html"
+    },
+    "ListStreams": {
+      "description": "Grants permission to list the streams in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListStreams.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list all tags for a given resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "billinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cacert": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "domainconfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dynamicthinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleetmetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mitigationaction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "otaupdate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "provisioningtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rolealias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduledaudit": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thingtype": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListTagsForResource.html"
+    },
+    "ListTargetsForPolicy": {
+      "description": "Grants permission to list targets for the specified policy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListTargetsForPolicy.html"
+    },
+    "ListTargetsForSecurityProfile": {
+      "description": "Grants permission to list the targets associated with a given Device Defender security profile",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListTargetsForSecurityProfile.html"
+    },
+    "ListThingGroups": {
+      "description": "Grants permission to list all thing groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingGroups.html"
+    },
+    "ListThingGroupsForThing": {
+      "description": "Grants permission to list thing groups to which the specified thing belongs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingGroupsForThing.html"
+    },
+    "ListThingPrincipals": {
+      "description": "Grants permission to list the principals associated with the specified thing",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingPrincipals.html"
+    },
+    "ListThingRegistrationTaskReports": {
+      "description": "Grants permission to list information about bulk thing registration tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingRegistrationTaskReports.html"
+    },
+    "ListThingRegistrationTasks": {
+      "description": "Grants permission to list bulk thing registration tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingRegistrationTasks.html"
+    },
+    "ListThingTypes": {
+      "description": "Grants permission to list all thing types",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingTypes.html"
+    },
+    "ListThings": {
+      "description": "Grants permission to list all things",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThings.html"
+    },
+    "ListThingsInBillingGroup": {
+      "description": "Grants permission to list all things in the specified billing group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingsInBillingGroup.html"
+    },
+    "ListThingsInThingGroup": {
+      "description": "Grants permission to list all things in the specified thing group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingsInThingGroup.html"
+    },
+    "ListTopicRuleDestinations": {
+      "description": "Grants permission to list all TopicRuleDestinations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListTopicRuleDestinations.html"
+    },
+    "ListTopicRules": {
+      "description": "Grants permission to list the rules for the specific topic",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListTopicRules.html"
+    },
+    "ListTunnels": {
+      "description": "Grants permission to list tunnels",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-tunneling_ListTunnels.html"
+    },
+    "ListV2LoggingLevels": {
+      "description": "Grants permission to list the v2 logging levels",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListV2LoggingLevels.html"
+    },
+    "ListViolationEvents": {
+      "description": "Grants permission to list the Device Defender security profile violations discovered during the given time period",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ListViolationEvents.html"
+    },
+    "OpenTunnel": {
+      "description": "Grants permission to open a tunnel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "iot:ThingGroupArn",
+        "iot:TunnelDestinationService"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-tunneling_OpenTunnel.html"
+    },
+    "Publish": {
+      "description": "Grants permission to publish to the specified topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "PutVerificationStateOnViolation": {
+      "description": "Grants permission to put verification state on a violation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_PutVerificationStateOnViolation.html"
+    },
+    "Receive": {
+      "description": "Grants permission to receive from the specified topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "RegisterCACertificate": {
+      "description": "Grants permission to register a CA certificate with AWS IoT",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html"
+    },
+    "RegisterCertificate": {
+      "description": "Grants permission to register a device certificate with AWS IoT",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificate.html"
+    },
+    "RegisterCertificateWithoutCA": {
+      "description": "Grants permission to register a device certificate with AWS IoT without a registered CA (certificate authority)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificateWithoutCA.html"
+    },
+    "RegisterThing": {
+      "description": "Grants permission to register your thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterThing.html"
+    },
+    "RejectCertificateTransfer": {
+      "description": "Grants permission to reject a pending certificate transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RejectCertificateTransfer.html"
+    },
+    "RemoveThingFromBillingGroup": {
+      "description": "Grants permission to remove thing from the specified billing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RemoveThingFromBillingGroup.html"
+    },
+    "RemoveThingFromThingGroup": {
+      "description": "Grants permission to remove thing from the specified thing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_RemoveThingFromThingGroup.html"
+    },
+    "ReplaceTopicRule": {
+      "description": "Grants permission to replace the specified rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ReplaceTopicRule.html"
+    },
+    "RetainPublish": {
+      "description": "Grants permission to publish a retained message to the specified topic",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topic": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "RotateTunnelAccessToken": {
+      "description": "Grants permission to rotate the access token of a tunnel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "tunnel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "iot:ClientMode",
+        "iot:ThingGroupArn",
+        "iot:TunnelDestinationService"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-tunneling_RotateTunnelAccessToken.html"
+    },
+    "SearchIndex": {
+      "description": "Grants permission to search IoT fleet index",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.html"
+    },
+    "SetDefaultAuthorizer": {
+      "description": "Grants permission to set the default authorizer. This will be used if a websocket connection is made without specifying an authorizer",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SetDefaultAuthorizer.html"
+    },
+    "SetDefaultPolicyVersion": {
+      "description": "Grants permission to set the specified version of the specified policy as the policy's default (operative) version",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SetDefaultPolicyVersion.html"
+    },
+    "SetLoggingOptions": {
+      "description": "Grants permission to set the logging options",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SetLoggingOptions.html"
+    },
+    "SetV2LoggingLevel": {
+      "description": "Grants permission to set the v2 logging level",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SetV2LoggingLevel.html"
+    },
+    "SetV2LoggingOptions": {
+      "description": "Grants permission to set the v2 logging options",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_SetV2LoggingOptions.html"
+    },
+    "StartAuditMitigationActionsTask": {
+      "description": "Grants permission to start a task that applies a set of mitigation actions to the specified target",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_StartAuditMitigationActionsTask.html"
+    },
+    "StartDetectMitigationActionsTask": {
+      "description": "Grants permission to start a Device Defender ML Detect mitigation actions task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_StartDetectMitigationActionsTask.html"
+    },
+    "StartOnDemandAuditTask": {
+      "description": "Grants permission to start an on-demand Device Defender audit",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_StartOnDemandAuditTask.html"
+    },
+    "StartThingRegistrationTask": {
+      "description": "Grants permission to start a bulk thing registration task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_StartThingRegistrationTask.html"
+    },
+    "StopThingRegistrationTask": {
+      "description": "Grants permission to stop a bulk thing registration task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_StopThingRegistrationTask.html"
+    },
+    "Subscribe": {
+      "description": "Grants permission to subscribe to the specified TopicFilter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "topicfilter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "billinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cacert": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "domainconfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dynamicthinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleetmetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mitigationaction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "otaupdate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "provisioningtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rolealias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduledaudit": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thingtype": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_TagResource.html"
+    },
+    "TestAuthorization": {
+      "description": "Grants permission to test the policies evaluation for group policies",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_TestAuthorization.html"
+    },
+    "TestInvokeAuthorizer": {
+      "description": "Grants permission to test invoke the specified custom authorizer for testing purposes",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_TestInvokeAuthorizer.html"
+    },
+    "TransferCertificate": {
+      "description": "Grants permission to transfer the specified certificate to the specified AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_TransferCertificate.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "billinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cacert": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "domainconfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dynamicthinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleetmetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "mitigationaction": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "otaupdate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "policy": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "provisioningtemplate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rolealias": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scheduledaudit": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "thingtype": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UntagResource.html"
+    },
+    "UpdateAccountAuditConfiguration": {
+      "description": "Grants permission to configure or reconfigure the Device Defender audit settings for this account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAccountAuditConfiguration.html"
+    },
+    "UpdateAuditSuppression": {
+      "description": "Grants permission to update a Device Defender audit suppression",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAuditSuppression.html"
+    },
+    "UpdateAuthorizer": {
+      "description": "Grants permission to update an authorizer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "authorizer": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAuthorizer.html"
+    },
+    "UpdateBillingGroup": {
+      "description": "Grants permission to update information associated with the specified billing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "billinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateBillingGroup.html"
+    },
+    "UpdateCACertificate": {
+      "description": "Grants permission to update a registered CA certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cacert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCACertificate.html"
+    },
+    "UpdateCertificate": {
+      "description": "Grants permission to update the status of the specified certificate. This operation is idempotent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cert": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertificate.html"
+    },
+    "UpdateCustomMetric": {
+      "description": "Grants permission to update the specified custom metric",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCustomMetric.html"
+    },
+    "UpdateDimension": {
+      "description": "Grants permission to update the definition for a dimension",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dimension": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDimension.html"
+    },
+    "UpdateDomainConfiguration": {
+      "description": "Grants permission to update a domain configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "domainconfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html"
+    },
+    "UpdateDynamicThingGroup": {
+      "description": "Grants permission to update a Dynamic Thing Group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dynamicthinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDynamicThingGroup.html"
+    },
+    "UpdateEventConfigurations": {
+      "description": "Grants permission to update event configurations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateEventConfigurations.html"
+    },
+    "UpdateFleetMetric": {
+      "description": "Grants permission to update a fleet metric",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleetmetric": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "index": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/iot-indexing.html"
+    },
+    "UpdateIndexingConfiguration": {
+      "description": "Grants permission to update fleet indexing configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateIndexingConfiguration.html"
+    },
+    "UpdateJob": {
+      "description": "Grants permission to update a job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateJob.html"
+    },
+    "UpdateMitigationAction": {
+      "description": "Grants permission to update the definition for the specified mitigation action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "mitigationaction": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateMitigationAction.html"
+    },
+    "UpdateProvisioningTemplate": {
+      "description": "Grants permission to update a fleet provisioning template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "provisioningtemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateProvisioningTemplate.html"
+    },
+    "UpdateRoleAlias": {
+      "description": "Grants permission to update the role alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rolealias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateRoleAlias.html"
+    },
+    "UpdateScheduledAudit": {
+      "description": "Grants permission to update a scheduled audit, including what checks are performed and how often the audit takes place",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scheduledaudit": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateScheduledAudit.html"
+    },
+    "UpdateSecurityProfile": {
+      "description": "Grants permission to update a Device Defender security profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "custommetric": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dimension": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "securityprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateSecurityProfile.html"
+    },
+    "UpdateStream": {
+      "description": "Grants permission to update the data for a stream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateStream.html"
+    },
+    "UpdateThing": {
+      "description": "Grants permission to update information associated with the specified thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThing.html"
+    },
+    "UpdateThingGroup": {
+      "description": "Grants permission to update information associated with the specified thing group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thinggroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingGroup.html"
+    },
+    "UpdateThingGroupsForThing": {
+      "description": "Grants permission to update the thing groups to which the thing belongs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "thinggroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingGroupsForThing.html"
+    },
+    "UpdateThingShadow": {
+      "description": "Grants permission to update the thing shadow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html"
+    },
+    "UpdateTopicRuleDestination": {
+      "description": "Grants permission to update a TopicRuleDestination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "destination": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateTopicRuleDestination.html"
+    },
+    "ValidateSecurityProfileBehaviors": {
+      "description": "Grants permission to validate a Device Defender security profile behaviors specification",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_ValidateSecurityProfileBehaviors.html"
+    }
+  },
+  "resourceTypes": {
+    "authorizer": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:authorizer/${AuthorizerName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/custom-authorizer.html"
+    },
+    "billinggroup": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:billinggroup/${BillingGroupName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/billing-groups.html"
+    },
+    "cacert": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:cacert/${CACertificate}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/x509-certs.html"
+    },
+    "cert": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:cert/${Certificate}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/x509-certs.html"
+    },
+    "client": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:client/${ClientId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-message-broker.html"
+    },
+    "custommetric": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:custommetric/${MetricName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html"
+    },
+    "destination": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:destination/${DestinationType}/${Uuid}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html"
+    },
+    "dimension": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:dimension/${DimensionName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html"
+    },
+    "domainconfiguration": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:domainconfiguration/${DomainConfigurationName}/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/domain-configuration.html"
+    },
+    "dynamicthinggroup": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/dynamic-thing-groups.html"
+    },
+    "fleetmetric": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:fleetmetric/${FleetMetricName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-indexing.html"
+    },
+    "index": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:index/${IndexName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-indexing.html"
+    },
+    "job": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:job/${JobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html"
+    },
+    "jobtemplate": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:jobtemplate/${JobTemplateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-job-templates.html"
+    },
+    "mitigationaction": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:mitigationaction/${MitigationActionName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-mitigation-actions.html"
+    },
+    "otaupdate": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:otaupdate/${OtaUpdateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html"
+    },
+    "policy": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:policy/${PolicyName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html"
+    },
+    "provisioningtemplate": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:provisioningtemplate/${ProvisioningTemplate}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/provision-template.html"
+    },
+    "rolealias": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:rolealias/${RoleAlias}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html"
+    },
+    "rule": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:rule/${RuleName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html"
+    },
+    "scheduledaudit": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:scheduledaudit/${ScheduleName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-audit.html"
+    },
+    "securityprofile": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:securityprofile/${SecurityProfileName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html"
+    },
+    "stream": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:stream/${StreamId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html"
+    },
+    "thing": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html"
+    },
+    "thinggroup": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/thing-groups.html"
+    },
+    "thingtype": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:thingtype/${ThingTypeName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/thing-types.html"
+    },
+    "topic": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:topic/${TopicName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-message-broker.html"
+    },
+    "topicfilter": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:topicfilter/${TopicFilter}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/topics.html"
+    },
+    "tunnel": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:tunnel/${TunnelId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-tunnels.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag key that is present in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key component of a tag associated to the IoT resource in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by a list of tag keys associated to the IoT resource in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html"
+    },
+    "iot:ClientMode": {
+      "description": "Filters access by the mode of the client for IoT Tunnel",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    },
+    "iot:Delete": {
+      "description": "Filters access by a flag indicating whether or not to also delete an IoT Tunnel immediately when making iot:CloseTunnel request",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    },
+    "iot:DomainName": {
+      "description": "Filters access by based on the domain name of an IoT DomainConfiguration",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    },
+    "iot:ThingGroupArn": {
+      "description": "Filters access by a list of IoT Thing Group ARNs that the destination IoT Thing belongs to for an IoT Tunnel",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    },
+    "iot:TunnelDestinationService": {
+      "description": "Filters access by a list of destination services for an IoT Tunnel",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    }
+  }
+}

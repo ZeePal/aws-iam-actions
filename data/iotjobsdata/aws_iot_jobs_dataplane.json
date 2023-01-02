@@ -1,0 +1,81 @@
+{
+  "name": "AWS IoT Jobs DataPlane",
+  "prefix": "iotjobsdata",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotjobsdataplane.html",
+  "actions": {
+    "DescribeJobExecution": {
+      "description": "Grants permission to describe a job execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "iot:JobId"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_DescribeJobExecution.html"
+    },
+    "GetPendingJobExecutions": {
+      "description": "Grants permission to get the list of all jobs for a thing that are not in a terminal state",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_GetPendingJobExecutions.html"
+    },
+    "StartNextPendingJobExecution": {
+      "description": "Grants permission to get and start the next pending job execution for a thing",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html"
+    },
+    "UpdateJobExecution": {
+      "description": "Grants permission to update a job execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "thing": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "iot:JobId"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html"
+    }
+  },
+  "resourceTypes": {
+    "thing": {
+      "arn": "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html"
+    }
+  },
+  "conditionKeys": {
+    "iot:JobId": {
+      "description": "Filters access by jobId for iotjobsdata:DescribeJobExecution and iotjobsdata:UpdateJobExecution APIs",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html"
+    }
+  }
+}

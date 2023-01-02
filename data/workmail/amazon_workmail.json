@@ -1,0 +1,1851 @@
+{
+  "name": "Amazon WorkMail",
+  "prefix": "workmail",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkmail.html",
+  "actions": {
+    "AddMembersToGroup": {
+      "description": "Grants permission to add a list of members (users or groups) to a group",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "AssociateDelegateToResource": {
+      "description": "Grants permission to add a member (user or group) to the resource's set of delegates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_AssociateDelegateToResource.html"
+    },
+    "AssociateMemberToGroup": {
+      "description": "Grants permission to add a member (user or group) to the group's set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_AssociateMemberToGroup.html"
+    },
+    "AssumeImpersonationRole": {
+      "description": "Grants permission to assume an impersonation role for the given Amazon WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_AssumeImpersonationRole.html"
+    },
+    "CancelMailboxExportJob": {
+      "description": "Grants permission to cancel a currently running mailbox export job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CancelMailboxExportJob.html"
+    },
+    "CreateAlias": {
+      "description": "Grants permission to add an alias to the set of a given member (user or group) of WorkMail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateAlias.html"
+    },
+    "CreateAvailabilityConfiguration": {
+      "description": "Grants permission to create an AvailabilityConfiguration for the given Amazon WorkMail organization and domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateAvailabilityConfiguration.html"
+    },
+    "CreateGroup": {
+      "description": "Grants permission to create a group that can be used in WorkMail by calling the RegisterToWorkMail operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateGroup.html"
+    },
+    "CreateImpersonationRole": {
+      "description": "Grants permission to create an impersonation role for the given Amazon WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateImpersonationRole.html"
+    },
+    "CreateInboundMailFlowRule": {
+      "description": "Grants permission to create an inbound email flow rule which will apply to all email sent to an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/create-email-rules.html"
+    },
+    "CreateMailDomain": {
+      "description": "Grants permission to create a mail domain",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html"
+    },
+    "CreateMailUser": {
+      "description": "Grants permission to create a user in the directory",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html"
+    },
+    "CreateMobileDeviceAccessRule": {
+      "description": "Grants permission to create a new mobile device access rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateMobileDeviceAccessRule.html"
+    },
+    "CreateOrganization": {
+      "description": "Grants permission to create a new Amazon WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateOrganization.html"
+    },
+    "CreateOutboundMailFlowRule": {
+      "description": "Grants permission to create an outbound email flow rule which will apply to all email sent from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/create-email-rules.html"
+    },
+    "CreateResource": {
+      "description": "Grants permission to create a new WorkMail resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateResource.html"
+    },
+    "CreateSmtpGateway": {
+      "description": "Grants permission to register an SMTP gateway to a WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/smtp-gateway.html"
+    },
+    "CreateUser": {
+      "description": "Grants permission to create a user, which can be enabled afterwards by calling the RegisterToWorkMail operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_CreateUser.html"
+    },
+    "DeleteAccessControlRule": {
+      "description": "Grants permission to delete an access control rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteAccessControlRule.html"
+    },
+    "DeleteAlias": {
+      "description": "Grants permission to remove one or more specified aliases from a set of aliases for a given user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteAlias.html"
+    },
+    "DeleteAvailabilityConfiguration": {
+      "description": "Grants permission to delete the AvailabilityConfiguration for the given Amazon WorkMail organization and domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteAvailabilityConfiguration.html"
+    },
+    "DeleteEmailMonitoringConfiguration": {
+      "description": "Grants permission to delete the email monitoring configuration for an organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteEmailMonitoringConfiguration.html"
+    },
+    "DeleteGroup": {
+      "description": "Grants permission to delete a group from WorkMail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteGroup.html"
+    },
+    "DeleteImpersonationRole": {
+      "description": "Grants permission to delete an impersonation role for the given Amazon WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteImpersonationRole.html"
+    },
+    "DeleteInboundMailFlowRule": {
+      "description": "Grants permission to remove an inbound email flow rule to no longer apply to emails sent to an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/remove-email-flow-rule.html"
+    },
+    "DeleteMailDomain": {
+      "description": "Grants permission to remove an unused mail domain from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/remove_domain.html"
+    },
+    "DeleteMailboxPermissions": {
+      "description": "Grants permission to delete permissions granted to a member (user or group)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteMailboxPermissions.html"
+    },
+    "DeleteMobileDevice": {
+      "description": "Grants permission to remove a mobile device from a user",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-devices.html#remove_mobile_device"
+    },
+    "DeleteMobileDeviceAccessOverride": {
+      "description": "Grants permission to delete a mobile device access override",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteMobileDeviceAccessOverride.html"
+    },
+    "DeleteMobileDeviceAccessRule": {
+      "description": "Grants permission to delete a mobile device access rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteMobileDeviceAccessRule.html"
+    },
+    "DeleteOrganization": {
+      "description": "Grants permission to delete an Amazon WorkMail organization and all underlying AWS resources managed by Amazon WorkMail as part of the organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteOrganization.html"
+    },
+    "DeleteOutboundMailFlowRule": {
+      "description": "Grants permission to remove an outbound email flow rule so that it no longer applies to emails sent from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/remove-email-flow-rule.html"
+    },
+    "DeleteResource": {
+      "description": "Grants permission to delete the specified resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteResource.html"
+    },
+    "DeleteRetentionPolicy": {
+      "description": "Grants permission to delete the retention policy based on the supplied organization and policy identifiers",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteRetentionPolicy.html"
+    },
+    "DeleteSmtpGateway": {
+      "description": "Grants permission to remove an SMTP gateway from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/smtp-gateway.html"
+    },
+    "DeleteUser": {
+      "description": "Grants permission to delete a user from WorkMail and all subsequent systems",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeleteUser.html"
+    },
+    "DeregisterFromWorkMail": {
+      "description": "Grants permission to mark a user, group, or resource as no longer used in WorkMail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeregisterFromWorkMail.html"
+    },
+    "DeregisterMailDomain": {
+      "description": "Grants permission to deregister a mail domain from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DeregisterMailDomain.html"
+    },
+    "DescribeDirectories": {
+      "description": "Grants permission to show a list of directories available for use in creating an organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_organization.html"
+    },
+    "DescribeEmailMonitoringConfiguration": {
+      "description": "Grants permission to retrieve the email monitoring configuration for an organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeEmailMonitoringConfiguration.html"
+    },
+    "DescribeGroup": {
+      "description": "Grants permission to read the details for a group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeGroup.html"
+    },
+    "DescribeInboundDmarcSettings": {
+      "description": "Grants permission to read the settings in a DMARC policy for a specified organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeInboundDmarcSettings.html"
+    },
+    "DescribeInboundMailFlowRule": {
+      "description": "Grants permission to read the details of an inbound mail flow rule configured for an organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/email-flows.html#email-flows-rule-actions"
+    },
+    "DescribeKmsKeys": {
+      "description": "Grants permission to show a list of KMS Keys available for use in creating an organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_organization.html"
+    },
+    "DescribeMailDomains": {
+      "description": "Grants permission to show the details of all mail domains associated with the organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/domains_overview.html"
+    },
+    "DescribeMailGroups": {
+      "description": "Grants permission to show the details of all groups associated with the organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "DescribeMailUsers": {
+      "description": "Grants permission to show the details of all users associated with the organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html"
+    },
+    "DescribeMailboxExportJob": {
+      "description": "Grants permission to retrieve details of a mailbox export job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeMailboxExportJob.html"
+    },
+    "DescribeOrganization": {
+      "description": "Grants permission to read details of an organization",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeOrganization.html"
+    },
+    "DescribeOrganizations": {
+      "description": "Grants permission to show a summary of all organizations associated with the account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/organizations_overview.html"
+    },
+    "DescribeOutboundMailFlowRule": {
+      "description": "Grants permission to read the details of an outbound mail flow rule configured for an organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/email-flows.html#email-flows-rule-outbound"
+    },
+    "DescribeResource": {
+      "description": "Grants permission to read the details for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeResource.html"
+    },
+    "DescribeSmtpGateway": {
+      "description": "Grants permission to read the details of an SMTP gateway registered to an organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/smtp-gateway.html"
+    },
+    "DescribeUser": {
+      "description": "Grants permission to read details for a user",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeUser.html"
+    },
+    "DisableMailGroups": {
+      "description": "Grants permission to disable a mail group when it is not being used, in order to allow it to be deleted",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/remove_group.html"
+    },
+    "DisableMailUsers": {
+      "description": "Grants permission to disable a user mailbox when it is no longer being used, in order to allow it to be deleted",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-mailboxes.html#delete_user_mailbox"
+    },
+    "DisassociateDelegateFromResource": {
+      "description": "Grants permission to remove a member from the resource's set of delegates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DisassociateDelegateFromResource.html"
+    },
+    "DisassociateMemberFromGroup": {
+      "description": "Grants permission to remove a member from a group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_DisassociateMemberFromGroup.html"
+    },
+    "EnableMailDomain": {
+      "description": "Grants permission to enable a mail domain in the organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/add_domain.html"
+    },
+    "EnableMailGroups": {
+      "description": "Grants permission to enable a mail group after it has been created to allow it to receive mail",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/enable_existing_group.html"
+    },
+    "EnableMailUsers": {
+      "description": "Grants permission to enable a user's mailbox after it has been created to allow it to receive mail",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html#enable_existing_user"
+    },
+    "GetAccessControlEffect": {
+      "description": "Grants permission to get the effects of access control rules as they apply to a specified IPv4 address, access protocol action, or user ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetAccessControlEffect.html"
+    },
+    "GetDefaultRetentionPolicy": {
+      "description": "Grants permission to retrieve the retention policy associated at an organizational level",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetDefaultRetentionPolicy.html"
+    },
+    "GetImpersonationRole": {
+      "description": "Grants permission to retrieve an impersonation role for the given Amazon WorkMail organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetImpersonationRole.html"
+    },
+    "GetImpersonationRoleEffect": {
+      "description": "Grants permission to get the effect of the rules associated to an impersonation role for a specific user",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetImpersonationRoleEffect.html"
+    },
+    "GetJournalingRules": {
+      "description": "Grants permission to read the configured journaling and fallback email addresses for email journaling",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/journaling_overview.html"
+    },
+    "GetMailDomain": {
+      "description": "Grants permission to retrieve details of a given mail domain in an organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetMailDomain.html"
+    },
+    "GetMailDomainDetails": {
+      "description": "Grants permission to get the details of the mail domain",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/domains_overview.html"
+    },
+    "GetMailGroupDetails": {
+      "description": "Grants permission to get the details of the mail group",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "GetMailUserDetails": {
+      "description": "Grants permission to get the details of the user's mailbox and account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html"
+    },
+    "GetMailboxDetails": {
+      "description": "Grants permission to read the details of the user's mailbox",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetMailboxDetails.html"
+    },
+    "GetMobileDeviceAccessEffect": {
+      "description": "Grants permission to simulate the effect of the mobile device access rules for the given attributes of a sample access event",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetMobileDeviceAccessEffect.html"
+    },
+    "GetMobileDeviceAccessOverride": {
+      "description": "Grants permission to retrieve a mobile device access override",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_GetMobileDeviceAccessOverride.html"
+    },
+    "GetMobileDeviceDetails": {
+      "description": "Grants permission to get the details of the mobile device",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-devices.html"
+    },
+    "GetMobileDevicesForUser": {
+      "description": "Grants permission to get a list of the mobile devices associated with the user",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-devices.html"
+    },
+    "GetMobilePolicyDetails": {
+      "description": "Grants permission to get the details of the mobile device policy associated with the organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/edit_organization_mobile_policy.html"
+    },
+    "ListAccessControlRules": {
+      "description": "Grants permission to list the access control rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListAccessControlRules.html"
+    },
+    "ListAliases": {
+      "description": "Grants permission to list the aliases associated with a given entity",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListAliases.html"
+    },
+    "ListAvailabilityConfigurations": {
+      "description": "Grants permission to list all the AvailabilityConfiguration's for the given Amazon WorkMail organization",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListAvailabilityConfigurations.html"
+    },
+    "ListGroupMembers": {
+      "description": "Grants permission to read an overview of the members of a group. Users and groups can be members of a group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListGroupMembers.html"
+    },
+    "ListGroups": {
+      "description": "Grants permission to list summaries of the organization's groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListGroups.html"
+    },
+    "ListImpersonationRoles": {
+      "description": "Grants permission to list the impersonation roles for the given Amazon WorkMail organization",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListImpersonationRoles.html"
+    },
+    "ListInboundMailFlowRules": {
+      "description": "Grants permission to list inbound mail flow rules configured for an organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/email-flows.html#email-flows-rule-actions"
+    },
+    "ListMailDomains": {
+      "description": "Grants permission to list the mail domains for a given organization",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMailDomains.html"
+    },
+    "ListMailboxExportJobs": {
+      "description": "Grants permission to list mailbox export jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMailboxExportJobs.html"
+    },
+    "ListMailboxPermissions": {
+      "description": "Grants permission to list the mailbox permissions associated with a user, group, or resource mailbox",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMailboxPermissions.html"
+    },
+    "ListMembersInMailGroup": {
+      "description": "Grants permission to get a list of all the members in a mail group",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "ListMobileDeviceAccessOverrides": {
+      "description": "Grants permission to list the mobile device access overrides",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMobileDeviceAccessOverrides.html"
+    },
+    "ListMobileDeviceAccessRules": {
+      "description": "Grants permission to list the mobile device access rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListMobileDeviceAccessRules.html"
+    },
+    "ListOrganizations": {
+      "description": "Grants permission to list the non-deleted organizations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListOrganizations.html"
+    },
+    "ListOutboundMailFlowRules": {
+      "description": "Grants permission to list outbound mail flow rules configured for an organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/email-flows.html#email-flows-rule-outbound"
+    },
+    "ListResourceDelegates": {
+      "description": "Grants permission to list the delegates associated with a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListResourceDelegates.html"
+    },
+    "ListResources": {
+      "description": "Grants permission to list the organization's resources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListResources.html"
+    },
+    "ListSmtpGateways": {
+      "description": "Grants permission to list SMTP gateways registered to the organization",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/smtp-gateway.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags applied to an Amazon WorkMail organization resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListUsers": {
+      "description": "Grants permission to list the organization's users",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListUsers.html"
+    },
+    "PutAccessControlRule": {
+      "description": "Grants permission to add a new access control rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutAccessControlRule.html"
+    },
+    "PutEmailMonitoringConfiguration": {
+      "description": "Grants permission to add or update the email monitoring configuration for an organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutEmailMonitoringConfiguration.html"
+    },
+    "PutInboundDmarcSettings": {
+      "description": "Grants permission to enable or disable a DMARC policy for a given organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutInboundDmarcSettings.html"
+    },
+    "PutMailboxPermissions": {
+      "description": "Grants permission to set permissions for a user, group, or resource, replacing any existing permissions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutMailboxPermissions.html"
+    },
+    "PutMobileDeviceAccessOverride": {
+      "description": "Grants permission to add or update a mobile device access override",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutMobileDeviceAccessOverride.html"
+    },
+    "PutRetentionPolicy": {
+      "description": "Grants permission to add or update the retention policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_PutRetentionPolicy.html"
+    },
+    "RegisterMailDomain": {
+      "description": "Grants permission to register a new mail domain in an organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_RegisterMailDomain.html"
+    },
+    "RegisterToWorkMail": {
+      "description": "Grants permission to register an existing and disabled user, group, or resource for use by associating a mailbox and calendaring capabilities",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_RegisterToWorkMail.html"
+    },
+    "RemoveMembersFromGroup": {
+      "description": "Grants permission to remove members from a mail group",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "ResetPassword": {
+      "description": "Grants permission to allow the administrator to reset the password for a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_ResetPassword.html"
+    },
+    "ResetUserPassword": {
+      "description": "Grants permission to reset the password for a user's account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html#reset_user_password"
+    },
+    "SearchMembers": {
+      "description": "Grants permission to perform a prefix search to find a specific user in a mail group",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html"
+    },
+    "SetAdmin": {
+      "description": "Grants permission to mark a user as being an administrator",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html"
+    },
+    "SetDefaultMailDomain": {
+      "description": "Grants permission to set the default mail domain for the organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/default_domain.html"
+    },
+    "SetJournalingRules": {
+      "description": "Grants permission to set journaling and fallback email addresses for email journaling",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/journaling_overview.html"
+    },
+    "SetMailGroupDetails": {
+      "description": "Grants permission to set the details of the mail group which has just been created",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_group.html"
+    },
+    "SetMailUserDetails": {
+      "description": "Grants permission to set the details for the user account which has just been created",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html"
+    },
+    "SetMobilePolicyDetails": {
+      "description": "Grants permission to set the details of a mobile policy associated with the organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/edit_organization_mobile_policy.html"
+    },
+    "StartMailboxExportJob": {
+      "description": "Grants permission to start a new mailbox export job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_StartMailboxExportJob.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag the specified Amazon WorkMail organization resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_TagResource.html"
+    },
+    "TestAvailabilityConfiguration": {
+      "description": "Grants permission to performs a test on an availability provider to ensure that access is allowed",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_TestAvailabilityConfiguration.html"
+    },
+    "TestInboundMailFlowRules": {
+      "description": "Grants permission to test what inbound rules will apply to an email with a given sender and recipient",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/test-email-flow-rule.html"
+    },
+    "TestOutboundMailFlowRules": {
+      "description": "Grants permission to test what outbound rules will apply to an email with a given sender and recipient",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/test-email-flow-rule.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag the specified Amazon WorkMail organization resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAvailabilityConfiguration": {
+      "description": "Grants permission to update an existing AvailabilityConfiguration for the given Amazon WorkMail organization and domain",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateAvailabilityConfiguration.html"
+    },
+    "UpdateDefaultMailDomain": {
+      "description": "Grants permission to update which domain is the default domain for an organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateDefaultMailDomain.html"
+    },
+    "UpdateImpersonationRole": {
+      "description": "Grants permission to update an existing impersonation role for the given Amazon WorkMail organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateImpersonationRole.html"
+    },
+    "UpdateInboundMailFlowRule": {
+      "description": "Grants permission to update the details of an inbound email flow rule which will apply to all email sent to an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/modify-email-flow-rule.html"
+    },
+    "UpdateMailboxQuota": {
+      "description": "Grants permission to update the maximum size (in MB) of the user's mailbox",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateMailboxQuota.html"
+    },
+    "UpdateMobileDeviceAccessRule": {
+      "description": "Grants permission to update a mobile device access rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateMobileDeviceAccessRule.html"
+    },
+    "UpdateOutboundMailFlowRule": {
+      "description": "Grants permission to update the details of an outbound email flow rule which will apply to all email sent from an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/modify-email-flow-rule.html"
+    },
+    "UpdatePrimaryEmailAddress": {
+      "description": "Grants permission to update the primary email for a user, group, or resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdatePrimaryEmailAddress.html"
+    },
+    "UpdateResource": {
+      "description": "Grants permission to update details for the resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_UpdateResource.html"
+    },
+    "UpdateSmtpGateway": {
+      "description": "Grants permission to update the details of an existing SMTP gateway registered to an organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/smtp-gateway.html"
+    },
+    "WipeMobileDevice": {
+      "description": "Grants permission to remotely wipe the mobile device associated with a user's account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "organization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/manage-devices.html#remote_wipe_device"
+    }
+  },
+  "resourceTypes": {
+    "organization": {
+      "arn": "arn:${Partition}:workmail:${Region}:${Account}:organization/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/organizations_overview.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "name": "AWS Step Functions",
+  "prefix": "states",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsstepfunctions.html",
+  "actions": {
+    "CreateActivity": {
+      "description": "Grants permission to create an activity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateActivity.html"
+    },
+    "CreateStateMachine": {
+      "description": "Grants permission to create a state machine",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_CreateStateMachine.html"
+    },
+    "DeleteActivity": {
+      "description": "Grants permission to delete an activity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteActivity.html"
+    },
+    "DeleteStateMachine": {
+      "description": "Grants permission to delete a state machine",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DeleteStateMachine.html"
+    },
+    "DescribeActivity": {
+      "description": "Grants permission to describe an activity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeActivity.html"
+    },
+    "DescribeExecution": {
+      "description": "Grants permission to describe an execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execution": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "express": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeExecution.html"
+    },
+    "DescribeMapRun": {
+      "description": "Grants permission to describe a map run",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "maprun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeMapRun.html"
+    },
+    "DescribeStateMachine": {
+      "description": "Grants permission to describe a state machine",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachine.html"
+    },
+    "DescribeStateMachineForExecution": {
+      "description": "Grants permission to describe the state machine for an execution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeStateMachineForExecution.html"
+    },
+    "GetActivityTask": {
+      "description": "Grants permission to be used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetActivityTask.html"
+    },
+    "GetExecutionHistory": {
+      "description": "Grants permission to return the history of the specified execution as a list of events",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html"
+    },
+    "ListActivities": {
+      "description": "Grants permission to list the existing activities",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListActivities.html"
+    },
+    "ListExecutions": {
+      "description": "Grants permission to list the executions of a state machine",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "maprun": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListExecutions.html"
+    },
+    "ListMapRuns": {
+      "description": "Grants permission to list the map runs of an execution",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListMapRuns.html"
+    },
+    "ListStateMachines": {
+      "description": "Grants permission to lists the existing state machines",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListStateMachines.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for an AWS Step Functions resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "statemachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html"
+    },
+    "SendTaskFailure": {
+      "description": "Grants permission to report that the task identified by the taskToken failed",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskFailure.html"
+    },
+    "SendTaskHeartbeat": {
+      "description": "Grants permission to report to the service that the task represented by the specified taskToken is still making progress",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskHeartbeat.html"
+    },
+    "SendTaskSuccess": {
+      "description": "Grants permission to report that the task identified by the taskToken completed successfully",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html"
+    },
+    "StartExecution": {
+      "description": "Grants permission to start a state machine execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html"
+    },
+    "StartSyncExecution": {
+      "description": "Grants permission to start a Synchronous Express state machine execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartSyncExecution.html"
+    },
+    "StopExecution": {
+      "description": "Grants permission to stop an execution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "execution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_StopExecution.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AWS Step Functions resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "statemachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from an AWS Step Functions resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "activity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "statemachine": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_UntagResource.html"
+    },
+    "UpdateMapRun": {
+      "description": "Grants permission to update a map run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "maprun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateMapRun.html"
+    },
+    "UpdateStateMachine": {
+      "description": "Grants permission to update a state machine",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "statemachine": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/apireference/API_UpdateStateMachine.html"
+    }
+  },
+  "resourceTypes": {
+    "activity": {
+      "arn": "arn:${Partition}:states:${Region}:${Account}:activity:${ActivityName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-activities.html"
+    },
+    "execution": {
+      "arn": "arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}:${ExecutionId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-executions.html"
+    },
+    "express": {
+      "arn": "arn:${Partition}:states:${Region}:${Account}:express:${StateMachineName}:${ExecutionId}:${ExpressId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-executions.html"
+    },
+    "maprun": {
+      "arn": "arn:${Partition}:states:${Region}:${Account}:mapRun:${StateMachineName}/${MapRunLabel}:${MapRunId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-examine-map-run.html"
+    },
+    "statemachine": {
+      "arn": "arn:${Partition}:states:${Region}:${Account}:stateMachine:${StateMachineName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair that is allowed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair of a resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by a list of tag keys that are allowed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "AWS Cost and Usage Report",
+  "prefix": "cur",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscostandusagereport.html",
+  "actions": {
+    "DeleteReportDefinition": {
+      "description": "Grants permission to delete Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cur": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_DeleteReportDefinition.html"
+    },
+    "DescribeReportDefinitions": {
+      "description": "Grants permission to get Cost and Usage Report Definitions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_DescribeReportDefinitions.html"
+    },
+    "ModifyReportDefinition": {
+      "description": "Grants permission to modify Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cur": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_ModifyReportDefinition.html"
+    },
+    "PutReportDefinition": {
+      "description": "Grants permission to write Cost and Usage Report Definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cur": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_PutReportDefinition.html"
+    }
+  },
+  "resourceTypes": {
+    "cur": {
+      "arn": "arn:${Partition}:cur:${Region}:${Account}:definition/${ReportName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
+    }
+  },
+  "conditionKeys": {}
+}

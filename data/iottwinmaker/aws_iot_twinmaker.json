@@ -1,0 +1,667 @@
+{
+  "name": "AWS IoT TwinMaker",
+  "prefix": "iottwinmaker",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiottwinmaker.html",
+  "actions": {
+    "BatchPutPropertyValues": {
+      "description": "Grants permission to set values for multiple time series properties",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iottwinmaker:GetComponentType",
+        "iottwinmaker:GetEntity",
+        "iottwinmaker:GetWorkspace"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html"
+    },
+    "CreateComponentType": {
+      "description": "Grants permission to create a componentType",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateComponentType.html"
+    },
+    "CreateEntity": {
+      "description": "Grants permission to create an entity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateEntity.html"
+    },
+    "CreateScene": {
+      "description": "Grants permission to create a scene",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateScene.html"
+    },
+    "CreateSyncJob": {
+      "description": "Grants permission to create a sync job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateSyncJob.html"
+    },
+    "CreateWorkspace": {
+      "description": "Grants permission to create a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateWorkspace.html"
+    },
+    "DeleteComponentType": {
+      "description": "Grants permission to delete a componentType",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteComponentType.html"
+    },
+    "DeleteEntity": {
+      "description": "Grants permission to delete an entity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteEntity.html"
+    },
+    "DeleteScene": {
+      "description": "Grants permission to delete a scene",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scene": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteScene.html"
+    },
+    "DeleteSyncJob": {
+      "description": "Grants permission to delete a sync job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "syncJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteSyncJob.html"
+    },
+    "DeleteWorkspace": {
+      "description": "Grants permission to delete a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteWorkspace.html"
+    },
+    "ExecuteQuery": {
+      "description": "Grants permission to execute query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ExecuteQuery.html"
+    },
+    "GetComponentType": {
+      "description": "Grants permission to get a componentType",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetComponentType.html"
+    },
+    "GetEntity": {
+      "description": "Grants permission to get an entity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetEntity.html"
+    },
+    "GetPricingPlan": {
+      "description": "Grants permission to get pricing plan",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPricingPlan.html"
+    },
+    "GetPropertyValue": {
+      "description": "Grants permission to retrieve the property values",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iottwinmaker:GetComponentType",
+        "iottwinmaker:GetEntity",
+        "iottwinmaker:GetWorkspace"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValue.html"
+    },
+    "GetPropertyValueHistory": {
+      "description": "Grants permission to retrieve the time series value history",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iottwinmaker:GetComponentType",
+        "iottwinmaker:GetEntity",
+        "iottwinmaker:GetWorkspace"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html"
+    },
+    "GetScene": {
+      "description": "Grants permission to get a scene",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scene": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetScene.html"
+    },
+    "GetSyncJob": {
+      "description": "Grants permission to get a sync job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "syncJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetSyncJob.html"
+    },
+    "GetWorkspace": {
+      "description": "Grants permission to get a workspace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetWorkspace.html"
+    },
+    "ListComponentTypes": {
+      "description": "Grants permission to list all componentTypes in a workspace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListComponentTypes.html"
+    },
+    "ListEntities": {
+      "description": "Grants permission to list all entities in a workspace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListEntities.html"
+    },
+    "ListScenes": {
+      "description": "Grants permission to list all scenes in a workspace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListScenes.html"
+    },
+    "ListSyncJobs": {
+      "description": "Grants permission to list all sync jobs in a workspace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListSyncJobs.html"
+    },
+    "ListSyncResources": {
+      "description": "Grants permission to list all sync resources for a sync job",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "syncJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListSyncResources.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list all tags for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scene": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "syncJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListTagsForResource.html"
+    },
+    "ListWorkspaces": {
+      "description": "Grants permission to list all workspaces",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListWorkspaces.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scene": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "syncJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "entity": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "scene": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "syncJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UntagResource.html"
+    },
+    "UpdateComponentType": {
+      "description": "Grants permission to update a componentType",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentType": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateComponentType.html"
+    },
+    "UpdateEntity": {
+      "description": "Grants permission to update an entity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "entity": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateEntity.html"
+    },
+    "UpdatePricingPlan": {
+      "description": "Grants permission to update pricing plan",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdatePricingPlan.html"
+    },
+    "UpdateScene": {
+      "description": "Grants permission to update a scene",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "scene": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateScene.html"
+    },
+    "UpdateWorkspace": {
+      "description": "Grants permission to update a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateWorkspace.html"
+    }
+  },
+  "resourceTypes": {
+    "componentType": {
+      "arn": "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/component-type/${ComponentTypeId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateComponentType.html"
+    },
+    "entity": {
+      "arn": "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/entity/${EntityId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateEntity.html"
+    },
+    "scene": {
+      "arn": "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/scene/${SceneId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateScene.html"
+    },
+    "syncJob": {
+      "arn": "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/sync-job/${SyncJobId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateSyncJob.html"
+    },
+    "workspace": {
+      "arn": "arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateWorkspace.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

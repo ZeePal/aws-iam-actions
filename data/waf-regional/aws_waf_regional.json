@@ -1,0 +1,1213 @@
+{
+  "name": "AWS WAF Regional",
+  "prefix": "waf-regional",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswafregional.html",
+  "actions": {
+    "AssociateWebACL": {
+      "description": "Grants permission to associate a web ACL with a resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_AssociateWebACL.html"
+    },
+    "CreateByteMatchSet": {
+      "description": "Grants permission to create a ByteMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bytematchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateByteMatchSet.html"
+    },
+    "CreateGeoMatchSet": {
+      "description": "Grants permission to create a GeoMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "geomatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateGeoMatchSet.html"
+    },
+    "CreateIPSet": {
+      "description": "Grants permission to create an IPSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateIPSet.html"
+    },
+    "CreateRateBasedRule": {
+      "description": "Grants permission to create a RateBasedRule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateRateBasedRule.html"
+    },
+    "CreateRegexMatchSet": {
+      "description": "Grants permission to create a RegexMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateRegexMatchSet.html"
+    },
+    "CreateRegexPatternSet": {
+      "description": "Grants permission to create a RegexPatternSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexpatternset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateRegexPatternSet.html"
+    },
+    "CreateRule": {
+      "description": "Grants permission to create a Rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateRule.html"
+    },
+    "CreateRuleGroup": {
+      "description": "Grants permission to create a RuleGroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateRuleGroup.html"
+    },
+    "CreateSizeConstraintSet": {
+      "description": "Grants permission to create a SizeConstraintSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sizeconstraintset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateSizeConstraintSet.html"
+    },
+    "CreateSqlInjectionMatchSet": {
+      "description": "Grants permission to create an SqlInjectionMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sqlinjectionmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateSqlInjectionMatchSet.html"
+    },
+    "CreateWebACL": {
+      "description": "Grants permission to create a WebACL",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateWebACL.html"
+    },
+    "CreateWebACLMigrationStack": {
+      "description": "Grants permission to create a CloudFormation web ACL template in an S3 bucket for the purposes of migrating the web ACL from AWS WAF Classic to AWS WAF v2",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateWebACLMigrationStack.html"
+    },
+    "CreateXssMatchSet": {
+      "description": "Grants permission to create an XssMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "xssmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateXssMatchSet.html"
+    },
+    "DeleteByteMatchSet": {
+      "description": "Grants permission to delete a ByteMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bytematchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteByteMatchSet.html"
+    },
+    "DeleteGeoMatchSet": {
+      "description": "Grants permission to delete a GeoMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "geomatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteGeoMatchSet.html"
+    },
+    "DeleteIPSet": {
+      "description": "Grants permission to delete an IPSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteIPSet.html"
+    },
+    "DeleteLoggingConfiguration": {
+      "description": "Grants permission to delete a LoggingConfiguration from a web ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteLoggingConfiguration.html"
+    },
+    "DeletePermissionPolicy": {
+      "description": "Grants permission to delete an IAM policy from a rule group",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeletePermissionPolicy.html"
+    },
+    "DeleteRateBasedRule": {
+      "description": "Grants permission to delete a RateBasedRule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteRateBasedRule.html"
+    },
+    "DeleteRegexMatchSet": {
+      "description": "Grants permission to delete a RegexMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteRegexMatchSet.html"
+    },
+    "DeleteRegexPatternSet": {
+      "description": "Grants permission to delete a RegexPatternSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexpatternset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteRegexPatternSet.html"
+    },
+    "DeleteRule": {
+      "description": "Grants permission to delete a Rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteRule.html"
+    },
+    "DeleteRuleGroup": {
+      "description": "Grants permission to delete a RuleGroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteRuleGroup.html"
+    },
+    "DeleteSizeConstraintSet": {
+      "description": "Grants permission to delete a SizeConstraintSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sizeconstraintset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteSizeConstraintSet.html"
+    },
+    "DeleteSqlInjectionMatchSet": {
+      "description": "Grants permission to delete an SqlInjectionMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sqlinjectionmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteSqlInjectionMatchSet.html"
+    },
+    "DeleteWebACL": {
+      "description": "Grants permission to delete a WebACL",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteWebACL.html"
+    },
+    "DeleteXssMatchSet": {
+      "description": "Grants permission to delete an XssMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "xssmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteXssMatchSet.html"
+    },
+    "DisassociateWebACL": {
+      "description": "Grants permission to delete an association between a web ACL and a resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DisassociateWebACL.html"
+    },
+    "GetByteMatchSet": {
+      "description": "Grants permission to retrieve a ByteMatchSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bytematchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetByteMatchSet.html"
+    },
+    "GetChangeToken": {
+      "description": "Grants permission to retrieve a change token to use in create, update, and delete requests",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetChangeToken.html"
+    },
+    "GetChangeTokenStatus": {
+      "description": "Grants permission to retrieve the status of a change token",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetChangeTokenStatus.html"
+    },
+    "GetGeoMatchSet": {
+      "description": "Grants permission to retrieve a GeoMatchSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "geomatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetGeoMatchSet.html"
+    },
+    "GetIPSet": {
+      "description": "Grants permission to retrieve an IPSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetIPSet.html"
+    },
+    "GetLoggingConfiguration": {
+      "description": "Grants permission to retrieve a LoggingConfiguration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetLoggingConfiguration.html"
+    },
+    "GetPermissionPolicy": {
+      "description": "Grants permission to retrieve an IAM policy attached to a RuleGroup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetPermissionPolicy.html"
+    },
+    "GetRateBasedRule": {
+      "description": "Grants permission to retrieve a RateBasedRule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRateBasedRule.html"
+    },
+    "GetRateBasedRuleManagedKeys": {
+      "description": "Grants permission to retrieve the array of IP addresses that are currently being blocked by a RateBasedRule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRateBasedRuleManagedKeys.html"
+    },
+    "GetRegexMatchSet": {
+      "description": "Grants permission to retrieve a RegexMatchSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRegexMatchSet.html"
+    },
+    "GetRegexPatternSet": {
+      "description": "Grants permission to retrieve a RegexPatternSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexpatternset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRegexPatternSet.html"
+    },
+    "GetRule": {
+      "description": "Grants permission to retrieve a Rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRule.html"
+    },
+    "GetRuleGroup": {
+      "description": "Grants permission to retrieve a RuleGroup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetRuleGroup.html"
+    },
+    "GetSampledRequests": {
+      "description": "Grants permission to retrieve detailed information for a sample set of web requests",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "webacl": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetSampledRequests.html"
+    },
+    "GetSizeConstraintSet": {
+      "description": "Grants permission to retrieve a SizeConstraintSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sizeconstraintset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetSizeConstraintSet.html"
+    },
+    "GetSqlInjectionMatchSet": {
+      "description": "Grants permission to retrieve an SqlInjectionMatchSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sqlinjectionmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetSqlInjectionMatchSet.html"
+    },
+    "GetWebACL": {
+      "description": "Grants permission to retrieve a WebACL",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetWebACL.html"
+    },
+    "GetWebACLForResource": {
+      "description": "Grants permission to retrieve a WebACL that's associated with a specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "loadbalancer/app/": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetWebACLForResource.html"
+    },
+    "GetXssMatchSet": {
+      "description": "Grants permission to retrieve an XssMatchSet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "xssmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetXssMatchSet.html"
+    },
+    "ListActivatedRulesInRuleGroup": {
+      "description": "Grants permission to retrieve an array of ActivatedRule objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListActivatedRulesInRuleGroup.html"
+    },
+    "ListByteMatchSets": {
+      "description": "Grants permission to retrieve an array of ByteMatchSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListByteMatchSets.html"
+    },
+    "ListGeoMatchSets": {
+      "description": "Grants permission to retrieve an array of GeoMatchSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListGeoMatchSets.html"
+    },
+    "ListIPSets": {
+      "description": "Grants permission to retrieve an array of IPSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListIPSets.html"
+    },
+    "ListLoggingConfigurations": {
+      "description": "Grants permission to retrieve an array of LoggingConfiguration objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListLoggingConfigurations.html"
+    },
+    "ListRateBasedRules": {
+      "description": "Grants permission to retrieve an array of RuleSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListRateBasedRules.html"
+    },
+    "ListRegexMatchSets": {
+      "description": "Grants permission to retrieve an array of RegexMatchSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListRegexMatchSets.html"
+    },
+    "ListRegexPatternSets": {
+      "description": "Grants permission to retrieve an array of RegexPatternSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListRegexPatternSets.html"
+    },
+    "ListResourcesForWebACL": {
+      "description": "Grants permission to retrieve an array of resources associated with a specified WebACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListResourcesForWebACL.html"
+    },
+    "ListRuleGroups": {
+      "description": "Grants permission to retrieve an array of RuleGroup objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListRuleGroups.html"
+    },
+    "ListRules": {
+      "description": "Grants permission to retrieve an array of RuleSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListRules.html"
+    },
+    "ListSizeConstraintSets": {
+      "description": "Grants permission to retrieve an array of SizeConstraintSetSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListSizeConstraintSets.html"
+    },
+    "ListSqlInjectionMatchSets": {
+      "description": "Grants permission to retrieve an array of SqlInjectionMatchSet objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListSqlInjectionMatchSets.html"
+    },
+    "ListSubscribedRuleGroups": {
+      "description": "Grants permission to retrieve an array of RuleGroup objects that you are subscribed to",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListSubscribedRuleGroups.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to lists the Tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rulegroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "webacl": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListTagsForResource.html"
+    },
+    "ListWebACLs": {
+      "description": "Grants permission to retrieve an array of WebACLSummary objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListWebACLs.html"
+    },
+    "ListXssMatchSets": {
+      "description": "Grants permission to retrieve an array of XssMatchSet objects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ListXssMatchSets.html"
+    },
+    "PutLoggingConfiguration": {
+      "description": "Grants permission to associates a LoggingConfiguration with a web ACL",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_PutLoggingConfiguration.html"
+    },
+    "PutPermissionPolicy": {
+      "description": "Grants permission to attach an IAM policy to a specified rule group, to support rule group sharing between accounts",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_PutPermissionPolicy.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add a Tag to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rulegroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "webacl": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a Tag from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rule": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "rulegroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "webacl": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UntagResource.html"
+    },
+    "UpdateByteMatchSet": {
+      "description": "Grants permission to insert or delete ByteMatchTuple objects in a ByteMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bytematchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateByteMatchSet.html"
+    },
+    "UpdateGeoMatchSet": {
+      "description": "Grants permission to insert or delete GeoMatchConstraint objects in a GeoMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "geomatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateGeoMatchSet.html"
+    },
+    "UpdateIPSet": {
+      "description": "Grants permission to insert or delete IPSetDescriptor objects in an IPSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ipset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateIPSet.html"
+    },
+    "UpdateRateBasedRule": {
+      "description": "Grants permission to insert or delete predicate objects in a rate based rule and update the RateLimit in the rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ratebasedrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateRateBasedRule.html"
+    },
+    "UpdateRegexMatchSet": {
+      "description": "Grants permission to insert or delete RegexMatchTuple objects in a RegexMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateRegexMatchSet.html"
+    },
+    "UpdateRegexPatternSet": {
+      "description": "Grants permission to insert or delete RegexPatternStrings in a RegexPatternSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "regexpatternset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateRegexPatternSet.html"
+    },
+    "UpdateRule": {
+      "description": "Grants permission to insert or delete predicate objects in a Rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateRule.html"
+    },
+    "UpdateRuleGroup": {
+      "description": "Grants permission to insert or delete ActivatedRule objects in a RuleGroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateRuleGroup.html"
+    },
+    "UpdateSizeConstraintSet": {
+      "description": "Grants permission to insert or delete SizeConstraint objects in a SizeConstraintSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sizeconstraintset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateSizeConstraintSet.html"
+    },
+    "UpdateSqlInjectionMatchSet": {
+      "description": "Grants permission to insert or delete SqlInjectionMatchTuple objects in an SqlInjectionMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "sqlinjectionmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateSqlInjectionMatchSet.html"
+    },
+    "UpdateWebACL": {
+      "description": "Grants permission to insert or delete ActivatedRule objects in a WebACL",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "webacl": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateWebACL.html"
+    },
+    "UpdateXssMatchSet": {
+      "description": "Grants permission to insert or delete XssMatchTuple objects in an XssMatchSet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "xssmatchset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateXssMatchSet.html"
+    }
+  },
+  "resourceTypes": {
+    "bytematchset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:bytematchset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_ByteMatchSet.html"
+    },
+    "geomatchset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:geomatchset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GeoMatchSet.html"
+    },
+    "ipset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:ipset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_IPSet.html"
+    },
+    "loadbalancer/app/": {
+      "arn": "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_WebACL.html"
+    },
+    "ratebasedrule": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:ratebasedrule/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_RateBasedRule.html"
+    },
+    "regexmatchset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:regexmatch/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_RegexMatchSet.html"
+    },
+    "regexpatternset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:regexpatternset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_RegexPatternSet.html"
+    },
+    "rule": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:rule/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_Rule.html"
+    },
+    "rulegroup": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:rulegroup/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_RuleGroup.html"
+    },
+    "sizeconstraintset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:sizeconstraintset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_SizeConstraintSet.html"
+    },
+    "sqlinjectionmatchset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:sqlinjectionset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_SqlInjectionMatchSet.html"
+    },
+    "webacl": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:webacl/${Id}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_WebACL.html"
+    },
+    "xssmatchset": {
+      "arn": "arn:${Partition}:waf-regional:${Region}:${Account}:xssmatchset/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_XssMatchSet.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the allowed set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag-value assoicated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

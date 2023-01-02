@@ -1,0 +1,644 @@
+{
+  "name": "AWS License Manager",
+  "prefix": "license-manager",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslicensemanager.html",
+  "actions": {
+    "AcceptGrant": {
+      "description": "Grants permission to accept a grant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "grant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_AcceptGrant.html"
+    },
+    "CheckInLicense": {
+      "description": "Grants permission to check in license entitlements back to pool",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckInLicense.html"
+    },
+    "CheckoutBorrowLicense": {
+      "description": "Grants permission to check out license entitlements for borrow use case",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckoutBorrowLicense.html"
+    },
+    "CheckoutLicense": {
+      "description": "Grants permission to check out license entitlements",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckoutLicense.html"
+    },
+    "CreateGrant": {
+      "description": "Grants permission to create a new grant for license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateGrant.html"
+    },
+    "CreateGrantVersion": {
+      "description": "Grants permission to create new version of grant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "grant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateGrantVersion.html"
+    },
+    "CreateLicense": {
+      "description": "Grants permission to create a new license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicense.html"
+    },
+    "CreateLicenseConfiguration": {
+      "description": "Grants permission to create a new license configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseConfiguration.html"
+    },
+    "CreateLicenseConversionTaskForResource": {
+      "description": "Grants permission to create a license conversion task for a resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseConversionTaskForResource.html"
+    },
+    "CreateLicenseManagerReportGenerator": {
+      "description": "Grants permission to create a report generator for a license configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseManagerReportGenerator.html"
+    },
+    "CreateLicenseVersion": {
+      "description": "Grants permission to create new version of license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateLicenseVersion.html"
+    },
+    "CreateToken": {
+      "description": "Grants permission to create a new token for license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CreateToken.html"
+    },
+    "DeleteGrant": {
+      "description": "Grants permission to delete a grant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "grant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_DeleteGrant.html"
+    },
+    "DeleteLicense": {
+      "description": "Grants permission to delete a license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_DeleteLicense.html"
+    },
+    "DeleteLicenseConfiguration": {
+      "description": "Grants permission to permanently delete a license configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_DeleteLicenseConfiguration.html"
+    },
+    "DeleteLicenseManagerReportGenerator": {
+      "description": "Grants permission to delete a report generator",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report-generator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_DeleteLicenseManagerReportGenerator.html"
+    },
+    "DeleteToken": {
+      "description": "Grants permission to delete token",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_DeleteToken.html"
+    },
+    "ExtendLicenseConsumption": {
+      "description": "Grants permission to extend consumption period of already checkout license entitlements",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ExtendLicenseConsumption.html"
+    },
+    "GetAccessToken": {
+      "description": "Grants permission to get access token",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetAccessToken.html"
+    },
+    "GetGrant": {
+      "description": "Grants permission to get a grant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "grant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetGrant.html"
+    },
+    "GetLicense": {
+      "description": "Grants permission to get a license",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetLicense.html"
+    },
+    "GetLicenseConfiguration": {
+      "description": "Grants permission to get a license configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetLicenseConfiguration.html"
+    },
+    "GetLicenseConversionTask": {
+      "description": "Grants permission to retrieve a license conversion task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetLicenseConversionTask.html"
+    },
+    "GetLicenseManagerReportGenerator": {
+      "description": "Grants permission to get a report generator",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report-generator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetLicenseManagerReportGenerator.html"
+    },
+    "GetLicenseUsage": {
+      "description": "Grants permission to get a license usage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetLicenseUsage.html"
+    },
+    "GetServiceSettings": {
+      "description": "Grants permission to get service settings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetServiceSettings.html"
+    },
+    "ListAssociationsForLicenseConfiguration": {
+      "description": "Grants permission to list associations for a selected license configuration",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListAssociationsForLicenseConfiguration.html"
+    },
+    "ListDistributedGrants": {
+      "description": "Grants permission to list distributed grants",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListDistributedGrants.html"
+    },
+    "ListFailuresForLicenseConfigurationOperations": {
+      "description": "Grants permission to list the license configuration operations that failed",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListFailuresForLicenseConfigurationOperations.html"
+    },
+    "ListLicenseConfigurations": {
+      "description": "Grants permission to list license configurations",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenseConfigurations.html"
+    },
+    "ListLicenseConversionTasks": {
+      "description": "Grants permission to list license conversion tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenseConversionTasks.html"
+    },
+    "ListLicenseManagerReportGenerators": {
+      "description": "Grants permission to list report generators",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenseManagerReportGenerators.html"
+    },
+    "ListLicenseSpecificationsForResource": {
+      "description": "Grants permission to list license specifications associated with a selected resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenseSpecificationsForResource.html"
+    },
+    "ListLicenseVersions": {
+      "description": "Grants permission to list license versions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenseVersions.html"
+    },
+    "ListLicenses": {
+      "description": "Grants permission to list licenses",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListLicenses.html"
+    },
+    "ListReceivedGrants": {
+      "description": "Grants permission to list received grants",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListReceivedGrants.html"
+    },
+    "ListReceivedGrantsForOrganization": {
+      "description": "Grants permission to list received grants for organization",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListReceivedGrantsForOrganization.html"
+    },
+    "ListReceivedLicenses": {
+      "description": "Grants permission to list received licenses",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListReceivedLicenses.html"
+    },
+    "ListReceivedLicensesForOrganization": {
+      "description": "Grants permission to list received licenses for organization",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListReceivedLicensesForOrganization.html"
+    },
+    "ListResourceInventory": {
+      "description": "Grants permission to list resource inventory",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListResourceInventory.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a selected resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTokens": {
+      "description": "Grants permission to list tokens",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListTokens.html"
+    },
+    "ListUsageForLicenseConfiguration": {
+      "description": "Grants permission to list usage records for selected license configuration",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_ListUsageForLicenseConfiguration.html"
+    },
+    "RejectGrant": {
+      "description": "Grants permission to reject a grant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "grant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_RejectGrant.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a selected resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a selected resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateLicenseConfiguration": {
+      "description": "Grants permission to update an existing license configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateLicenseConfiguration.html"
+    },
+    "UpdateLicenseManagerReportGenerator": {
+      "description": "Grants permission to update a report generator for a license configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report-generator": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateLicenseManagerReportGenerator.html"
+    },
+    "UpdateLicenseSpecificationsForResource": {
+      "description": "Grants permission to updates license specifications for a selected resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "license-configuration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateLicenseSpecificationsForResource.html"
+    },
+    "UpdateServiceSettings": {
+      "description": "Grants permission to updates service settings",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateServiceSettings.html"
+    }
+  },
+  "resourceTypes": {
+    "grant": {
+      "arn": "arn:${Partition}:license-manager::${Account}:grant:${GrantId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html"
+    },
+    "license": {
+      "arn": "arn:${Partition}:license-manager::${Account}:license:${LicenseId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/seller-issued-licenses.html"
+    },
+    "license-configuration": {
+      "arn": "arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}",
+      "conditionKeys": [
+        "license-manager:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html"
+    },
+    "report-generator": {
+      "arn": "arn:${Partition}:license-manager:${Region}:${Account}:report-generator:${ReportGeneratorId}",
+      "conditionKeys": [
+        "license-manager:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/report-generators.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/identity-access-management.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/identity-access-management.html"
+    },
+    "license-manager:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/license-manager/latest/userguide/identity-access-management.html"
+    }
+  }
+}

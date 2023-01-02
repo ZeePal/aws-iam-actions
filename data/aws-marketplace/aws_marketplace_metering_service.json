@@ -1,0 +1,45 @@
+{
+  "name": "AWS Marketplace Metering Service",
+  "prefix": "aws-marketplace",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacemeteringservice.html",
+  "actions": {
+    "BatchMeterUsage": {
+      "description": "Grants permission to post metering records for a set of customers for SaaS applications",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_BatchMeterUsage.html"
+    },
+    "MeterUsage": {
+      "description": "Grants permission to emit metering records",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html"
+    },
+    "RegisterUsage": {
+      "description": "Grants permission to to verify that the customer running your paid software is subscribed to your product on AWS Marketplace, enabling you to guard against unauthorized use. Meters software use per ECS task, per hour, with usage prorated to the second",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_RegisterUsage.html"
+    },
+    "ResolveCustomer": {
+      "description": "Grants permission to resolve a registration token to obtain a CustomerIdentifier and product code",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_ResolveCustomer.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

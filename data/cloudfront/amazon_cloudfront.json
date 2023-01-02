@@ -1,0 +1,1342 @@
+{
+  "name": "Amazon CloudFront",
+  "prefix": "cloudfront",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudfront.html",
+  "actions": {
+    "AssociateAlias": {
+      "description": "Grants permission to associate an alias to a CloudFront distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_AssociateAlias.html"
+    },
+    "CreateCachePolicy": {
+      "description": "Grants permission to add a new cache policy to CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cache-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateCachePolicy.html"
+    },
+    "CreateCloudFrontOriginAccessIdentity": {
+      "description": "Grants permission to create a new CloudFront origin access identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateCloudFrontOriginAccessIdentity.html"
+    },
+    "CreateDistribution": {
+      "description": "Grants permission to create a new web distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateDistribution.html"
+    },
+    "CreateFieldLevelEncryptionConfig": {
+      "description": "Grants permission to create a new field-level encryption configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateFieldLevelEncryptionConfig.html"
+    },
+    "CreateFieldLevelEncryptionProfile": {
+      "description": "Grants permission to create a field-level encryption profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateFieldLevelEncryptionProfile.html"
+    },
+    "CreateFunction": {
+      "description": "Grants permission to create a CloudFront function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateFunction.html"
+    },
+    "CreateInvalidation": {
+      "description": "Grants permission to create a new invalidation batch request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateInvalidation.html"
+    },
+    "CreateKeyGroup": {
+      "description": "Grants permission to add a new key group to CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateKeyGroup.html"
+    },
+    "CreateMonitoringSubscription": {
+      "description": "Grants permission to enable additional CloudWatch metrics for the specified CloudFront distribution. The additional metrics incur an additional cost",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateMonitoringSubscription.html"
+    },
+    "CreateOriginAccessControl": {
+      "description": "Grants permission to create a new origin access control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateOriginAccessControl.html"
+    },
+    "CreateOriginRequestPolicy": {
+      "description": "Grants permission to add a new origin request policy to CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-request-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateOriginRequestPolicy.html"
+    },
+    "CreatePublicKey": {
+      "description": "Grants permission to add a new public key to CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreatePublicKey.html"
+    },
+    "CreateRealtimeLogConfig": {
+      "description": "Grants permission to create a real-time log configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "realtime-log-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateRealtimeLogConfig.html"
+    },
+    "CreateResponseHeadersPolicy": {
+      "description": "Grants permission to add a new response headers policy to CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "response-headers-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateResponseHeadersPolicy.html"
+    },
+    "CreateSavingsPlan": {
+      "description": "Grants permission to create a new savings plan",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "CreateStreamingDistribution": {
+      "description": "Grants permission to create a new RTMP distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateStreamingDistribution.html"
+    },
+    "CreateStreamingDistributionWithTags": {
+      "description": "Grants permission to create a new RTMP distribution with tags",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateStreamingDistributionWithTags.html"
+    },
+    "DeleteCachePolicy": {
+      "description": "Grants permission to delete a cache policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cache-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteCachePolicy.html"
+    },
+    "DeleteCloudFrontOriginAccessIdentity": {
+      "description": "Grants permission to delete a CloudFront origin access identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteCloudFrontOriginAccessIdentity.html"
+    },
+    "DeleteDistribution": {
+      "description": "Grants permission to delete a web distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteDistribution.html"
+    },
+    "DeleteFieldLevelEncryptionConfig": {
+      "description": "Grants permission to delete a field-level encryption configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteFieldLevelEncryptionConfig.html"
+    },
+    "DeleteFieldLevelEncryptionProfile": {
+      "description": "Grants permission to delete a field-level encryption profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteFieldLevelEncryptionProfile.html"
+    },
+    "DeleteFunction": {
+      "description": "Grants permission to delete a CloudFront function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteFunction.html"
+    },
+    "DeleteKeyGroup": {
+      "description": "Grants permission to delete a key group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteKeyGroup.html"
+    },
+    "DeleteMonitoringSubscription": {
+      "description": "Grants permission to disable additional CloudWatch metrics for the specified CloudFront distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteMonitoringSubscription.html"
+    },
+    "DeleteOriginAccessControl": {
+      "description": "Grants permission to delete an origin access control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-control": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteOriginAccessControl.html"
+    },
+    "DeleteOriginRequestPolicy": {
+      "description": "Grants permission to delete an origin request policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-request-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteOriginRequestPolicy.html"
+    },
+    "DeletePublicKey": {
+      "description": "Grants permission to delete a public key from CloudFront",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeletePublicKey.html"
+    },
+    "DeleteRealtimeLogConfig": {
+      "description": "Grants permission to delete a real-time log configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "realtime-log-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteRealtimeLogConfig.html"
+    },
+    "DeleteResponseHeadersPolicy": {
+      "description": "Grants permission to delete a response headers policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "response-headers-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteResponseHeadersPolicy.html"
+    },
+    "DeleteStreamingDistribution": {
+      "description": "Grants permission to delete an RTMP distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteStreamingDistribution.html"
+    },
+    "DescribeFunction": {
+      "description": "Grants permission to get a CloudFront function summary",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeFunction.html"
+    },
+    "GetCachePolicy": {
+      "description": "Grants permission to get the cache policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cache-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCachePolicy.html"
+    },
+    "GetCachePolicyConfig": {
+      "description": "Grants permission to get the cache policy configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cache-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCachePolicyConfig.html"
+    },
+    "GetCloudFrontOriginAccessIdentity": {
+      "description": "Grants permission to get the information about a CloudFront origin access identity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCloudFrontOriginAccessIdentity.html"
+    },
+    "GetCloudFrontOriginAccessIdentityConfig": {
+      "description": "Grants permission to get the configuration information about a Cloudfront origin access identity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCloudFrontOriginAccessIdentityConfig.html"
+    },
+    "GetDistribution": {
+      "description": "Grants permission to get the information about a web distribution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetDistribution.html"
+    },
+    "GetDistributionConfig": {
+      "description": "Grants permission to get the configuration information about a distribution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetDistributionConfig.html"
+    },
+    "GetFieldLevelEncryption": {
+      "description": "Grants permission to get the field-level encryption configuration information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFieldLevelEncryption.html"
+    },
+    "GetFieldLevelEncryptionConfig": {
+      "description": "Grants permission to get the field-level encryption configuration information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFieldLevelEncryptionConfig.html"
+    },
+    "GetFieldLevelEncryptionProfile": {
+      "description": "Grants permission to get the field-level encryption configuration information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFieldLevelEncryptionProfile.html"
+    },
+    "GetFieldLevelEncryptionProfileConfig": {
+      "description": "Grants permission to get the field-level encryption profile configuration information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFieldLevelEncryptionProfileConfig.html"
+    },
+    "GetFunction": {
+      "description": "Grants permission to get a CloudFront function's code",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFunction.html"
+    },
+    "GetInvalidation": {
+      "description": "Grants permission to get the information about an invalidation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetInvalidation.html"
+    },
+    "GetKeyGroup": {
+      "description": "Grants permission to get a key group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetKeyGroup.html"
+    },
+    "GetKeyGroupConfig": {
+      "description": "Grants permission to get a key group configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetKeyGroupConfig.html"
+    },
+    "GetMonitoringSubscription": {
+      "description": "Grants permission to get information about whether additional CloudWatch metrics are enabled for the specified CloudFront distribution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetMonitoringSubscription.html"
+    },
+    "GetOriginAccessControl": {
+      "description": "Grants permission to get the origin access control",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-control": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOriginAccessControl.html"
+    },
+    "GetOriginAccessControlConfig": {
+      "description": "Grants permission to get the origin access control configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-control": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOriginAccessControlConfig.html"
+    },
+    "GetOriginRequestPolicy": {
+      "description": "Grants permission to get the origin request policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-request-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOriginRequestPolicy.html"
+    },
+    "GetOriginRequestPolicyConfig": {
+      "description": "Grants permission to get the origin request policy configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-request-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOriginRequestPolicyConfig.html"
+    },
+    "GetPublicKey": {
+      "description": "Grants permission to get the public key information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetPublicKey.html"
+    },
+    "GetPublicKeyConfig": {
+      "description": "Grants permission to get the public key configuration information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetPublicKeyConfig.html"
+    },
+    "GetRealtimeLogConfig": {
+      "description": "Grants permission to get a real-time log configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "realtime-log-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetRealtimeLogConfig.html"
+    },
+    "GetResponseHeadersPolicy": {
+      "description": "Grants permission to get the response headers policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "response-headers-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetResponseHeadersPolicy.html"
+    },
+    "GetResponseHeadersPolicyConfig": {
+      "description": "Grants permission to get the response headers policy configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "response-headers-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetResponseHeadersPolicyConfig.html"
+    },
+    "GetSavingsPlan": {
+      "description": "Grants permission to get a savings plan",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "GetStreamingDistribution": {
+      "description": "Grants permission to get the information about an RTMP distribution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetStreamingDistribution.html"
+    },
+    "GetStreamingDistributionConfig": {
+      "description": "Grants permission to get the configuration information about a streaming distribution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetStreamingDistributionConfig.html"
+    },
+    "ListCachePolicies": {
+      "description": "Grants permission to list all cache policies that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListCachePolicies.html"
+    },
+    "ListCloudFrontOriginAccessIdentities": {
+      "description": "Grants permission to list your CloudFront origin access identities",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListCloudFrontOriginAccessIdentities.html"
+    },
+    "ListConflictingAliases": {
+      "description": "Grants permission to list all aliases that conflict with the given alias in CloudFront",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListConflictingAliases.html"
+    },
+    "ListDistributions": {
+      "description": "Grants permission to list the distributions associated with your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributions.html"
+    },
+    "ListDistributionsByCachePolicyId": {
+      "description": "Grants permission to list distribution IDs for distributions that have a cache behavior that's associated with the specified cache policy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByCachePolicyId.html"
+    },
+    "ListDistributionsByKeyGroup": {
+      "description": "Grants permission to list distribution IDs for distributions that have a cache behavior that's associated with the specified key group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByKeyGroup.html"
+    },
+    "ListDistributionsByLambdaFunction": {
+      "description": "Grants permission to list the distributions associated a Lambda function",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "ListDistributionsByOriginRequestPolicyId": {
+      "description": "Grants permission to list distribution IDs for distributions that have a cache behavior that's associated with the specified origin request policy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByOriginRequestPolicyId.html"
+    },
+    "ListDistributionsByRealtimeLogConfig": {
+      "description": "Grants permission to get a list of distributions that have a cache behavior that\u00e2\u0080\u0099s associated with the specified real-time log configuration",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByRealtimeLogConfig.html"
+    },
+    "ListDistributionsByResponseHeadersPolicyId": {
+      "description": "Grants permission to list distribution IDs for distributions that have a cache behavior that's associated with the specified response headers policy",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByResponseHeadersPolicyId.html"
+    },
+    "ListDistributionsByWebACLId": {
+      "description": "Grants permission to list the distributions associated with your AWS account with given AWS WAF web ACL",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListDistributionsByWebACLId.html"
+    },
+    "ListFieldLevelEncryptionConfigs": {
+      "description": "Grants permission to list all field-level encryption configurations that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListFieldLevelEncryptionConfigs.html"
+    },
+    "ListFieldLevelEncryptionProfiles": {
+      "description": "Grants permission to list all field-level encryption profiles that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListFieldLevelEncryptionProfiles.html"
+    },
+    "ListFunctions": {
+      "description": "Grants permission to get a list of CloudFront functions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListFunctions.html"
+    },
+    "ListInvalidations": {
+      "description": "Grants permission to list your invalidation batches",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListInvalidations.html"
+    },
+    "ListKeyGroups": {
+      "description": "Grants permission to list all key groups that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListKeyGroups.html"
+    },
+    "ListOriginAccessControls": {
+      "description": "Grants permission to list all origin access controls in the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListOriginAccessControls.html"
+    },
+    "ListOriginRequestPolicies": {
+      "description": "Grants permission to list all origin request policies that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListOriginRequestPolicies.html"
+    },
+    "ListPublicKeys": {
+      "description": "Grants permission to list all public keys that have been added to CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListPublicKeys.html"
+    },
+    "ListRateCards": {
+      "description": "Grants permission to list CloudFront rate cards for the account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "ListRealtimeLogConfigs": {
+      "description": "Grants permission to get a list of real-time log configurations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListRealtimeLogConfigs.html"
+    },
+    "ListResponseHeadersPolicies": {
+      "description": "Grants permission to list all response headers policies that have been created in CloudFront for this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListResponseHeadersPolicies.html"
+    },
+    "ListSavingsPlans": {
+      "description": "Grants permission to list savings plans in the account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "ListStreamingDistributions": {
+      "description": "Grants permission to list your RTMP distributions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListStreamingDistributions.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a CloudFront resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListUsages": {
+      "description": "Grants permission to list CloudFront usage",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "PublishFunction": {
+      "description": "Grants permission to publish a CloudFront function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_PublishFunction.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a CloudFront resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "streaming-distribution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagResource.html"
+    },
+    "TestFunction": {
+      "description": "Grants permission to test a CloudFront function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TestFunction.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a CloudFront resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "streaming-distribution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateCachePolicy": {
+      "description": "Grants permission to update a cache policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cache-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateCachePolicy.html"
+    },
+    "UpdateCloudFrontOriginAccessIdentity": {
+      "description": "Grants permission to set the configuration for a CloudFront origin access identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-identity": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateCloudFrontOriginAccessIdentity.html"
+    },
+    "UpdateDistribution": {
+      "description": "Grants permission to update the configuration for a web distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateDistribution.html"
+    },
+    "UpdateFieldLevelEncryptionConfig": {
+      "description": "Grants permission to update a field-level encryption configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateFieldLevelEncryptionConfig.html"
+    },
+    "UpdateFieldLevelEncryptionProfile": {
+      "description": "Grants permission to update a field-level encryption profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "field-level-encryption-profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateFieldLevelEncryptionProfile.html"
+    },
+    "UpdateFunction": {
+      "description": "Grants permission to update a CloudFront function",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "function": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateFunction.html"
+    },
+    "UpdateKeyGroup": {
+      "description": "Grants permission to update a key group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateKeyGroup.html"
+    },
+    "UpdateOriginAccessControl": {
+      "description": "Grants permission to update an origin access control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-access-control": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateOriginAccessControl.html"
+    },
+    "UpdateOriginRequestPolicy": {
+      "description": "Grants permission to update an origin request policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "origin-request-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateOriginRequestPolicy.html"
+    },
+    "UpdatePublicKey": {
+      "description": "Grants permission to update public key information",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdatePublicKey.html"
+    },
+    "UpdateRealtimeLogConfig": {
+      "description": "Grants permission to update a real-time log configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "realtime-log-config": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateRealtimeLogConfig.html"
+    },
+    "UpdateResponseHeadersPolicy": {
+      "description": "Grants permission to update a response headers policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "response-headers-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateResponseHeadersPolicy.html"
+    },
+    "UpdateSavingsPlan": {
+      "description": "Grants permission to update a savings plan",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cf-api-permissions-ref.html"
+    },
+    "UpdateStreamingDistribution": {
+      "description": "Grants permission to update the configuration for an RTMP distribution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streaming-distribution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UpdateStreamingDistribution.html"
+    }
+  },
+  "resourceTypes": {
+    "cache-policy": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:cache-policy/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/working-with-policies.html"
+    },
+    "distribution": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:distribution/${DistributionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html"
+    },
+    "field-level-encryption-config": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:field-level-encryption-config/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html"
+    },
+    "field-level-encryption-profile": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:field-level-encryption-profile/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html"
+    },
+    "function": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:function/${Name}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html"
+    },
+    "origin-access-control": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:origin-access-control/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/working-with-policies.html"
+    },
+    "origin-access-identity": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:origin-access-identity/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-restricting-access-to-s3-overview"
+    },
+    "origin-request-policy": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:origin-request-policy/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/working-with-policies.html"
+    },
+    "realtime-log-config": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:realtime-log-config/${Name}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/real-time-logs.html"
+    },
+    "response-headers-policy": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:response-headers-policy/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/working-with-policies.html"
+    },
+    "streaming-distribution": {
+      "arn": "arn:${Partition}:cloudfront::${Account}:streaming-distribution/${DistributionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

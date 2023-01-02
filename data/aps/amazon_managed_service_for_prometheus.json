@@ -1,0 +1,641 @@
+{
+  "name": "Amazon Managed Service for Prometheus",
+  "prefix": "aps",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedserviceforprometheus.html",
+  "actions": {
+    "CreateAlertManagerAlerts": {
+      "description": "Grants permission to create alerts",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-CreateAlertManagerAlerts"
+    },
+    "CreateAlertManagerDefinition": {
+      "description": "Grants permission to create an alert manager definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-CreateAlertManagerDefinition"
+    },
+    "CreateLoggingConfiguration": {
+      "description": "Grants permission to create a logging configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-CreateLoggingConfiguration"
+    },
+    "CreateRuleGroupsNamespace": {
+      "description": "Grants permission to create a rule groups namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-CreateRuleGroupsNamespace"
+    },
+    "CreateWorkspace": {
+      "description": "Grants permission to create a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-CreateWorkspace"
+    },
+    "DeleteAlertManagerDefinition": {
+      "description": "Grants permission to delete an alert manager definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DeleteAlertManagerDefinition"
+    },
+    "DeleteAlertManagerSilence": {
+      "description": "Grants permission to delete a silence",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DeleteAlertManagerSilence"
+    },
+    "DeleteLoggingConfiguration": {
+      "description": "Grants permission to delete a logging configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DeleteLoggingConfiguration"
+    },
+    "DeleteRuleGroupsNamespace": {
+      "description": "Grants permission to delete a rule groups namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DeleteRuleGroupsNamespace"
+    },
+    "DeleteWorkspace": {
+      "description": "Grants permission to delete a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DeleteWorkspace"
+    },
+    "DescribeAlertManagerDefinition": {
+      "description": "Grants permission to describe an alert manager definition",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DescribeAlertManagerDefinition"
+    },
+    "DescribeLoggingConfiguration": {
+      "description": "Grants permission to describe a logging configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DescribeLoggingConfiguration"
+    },
+    "DescribeRuleGroupsNamespace": {
+      "description": "Grants permission to describe a rule groups namespace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DescribeRuleGroupsNamespace"
+    },
+    "DescribeWorkspace": {
+      "description": "Grants permission to describe a workspace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-DescribeWorkspace"
+    },
+    "GetAlertManagerSilence": {
+      "description": "Grants permission to get a silence",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-GetAlertManagerSilence"
+    },
+    "GetAlertManagerStatus": {
+      "description": "Grants permission to get current status of an alertmanager",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-GetAlertManagerStatus"
+    },
+    "GetLabels": {
+      "description": "Grants permission to retrieve AMP workspace labels",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-GetLabels"
+    },
+    "GetMetricMetadata": {
+      "description": "Grants permission to retrieve the metadata for AMP workspace metrics",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-GetMetricMetadata"
+    },
+    "GetSeries": {
+      "description": "Grants permission to retrieve AMP workspace time series data",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-GetSeries"
+    },
+    "ListAlertManagerAlertGroups": {
+      "description": "Grants permission to list groups",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListAlertManagerAlertGroups"
+    },
+    "ListAlertManagerAlerts": {
+      "description": "Grants permission to list alerts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListAlertManagerAlerts"
+    },
+    "ListAlertManagerReceivers": {
+      "description": "Grants permission to list receivers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListAlertManagerReceivers"
+    },
+    "ListAlertManagerSilences": {
+      "description": "Grants permission to list silences",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListAlertManagerSilences"
+    },
+    "ListAlerts": {
+      "description": "Grants permission to list active alerts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListAlerts"
+    },
+    "ListRuleGroupsNamespaces": {
+      "description": "Grants permission to list rule groups namespaces",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListRuleGroupsNamespaces"
+    },
+    "ListRules": {
+      "description": "Grants permission to list alerting and recording rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListRules"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags on an AMP resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListTagsForResource"
+    },
+    "ListWorkspaces": {
+      "description": "Grants permission to list workspaces",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-ListWorkspaces"
+    },
+    "PutAlertManagerDefinition": {
+      "description": "Grants permission to update an alert manager definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-PutAlertManagerDefinition"
+    },
+    "PutAlertManagerSilences": {
+      "description": "Grants permission to create or update a silence",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-PutAlertManagerSilences"
+    },
+    "PutRuleGroupsNamespace": {
+      "description": "Grants permission to update a rule groups namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-PutRuleGroupsNamespace"
+    },
+    "QueryMetrics": {
+      "description": "Grants permission to run a query on AMP workspace metrics",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-QueryMetrics"
+    },
+    "RemoteWrite": {
+      "description": "Grants permission to perform a remote write operation to initiate the streaming of metrics to AMP workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-RemoteWrite"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AMP resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-TagResource"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an AMP resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "rulegroupsnamespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-UntagResource"
+    },
+    "UpdateLoggingConfiguration": {
+      "description": "Grants permission to update a logging configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-UpdateLoggingConfiguration"
+    },
+    "UpdateWorkspaceAlias": {
+      "description": "Grants permission to modify the alias of existing AMP workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-UpdateWorkspaceAlias"
+    }
+  },
+  "resourceTypes": {
+    "rulegroupsnamespace": {
+      "arn": "arn:${Partition}:aps:${Region}:${Account}:rulegroupsnamespace/${WorkspaceId}/${Namespace}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/security-iam.html"
+    },
+    "workspace": {
+      "arn": "arn:${Partition}:aps:${Region}:${Account}:workspace/${WorkspaceId}",
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "url": "https://docs.aws.amazon.com/prometheus/latest/userguide/security-iam.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access based on the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

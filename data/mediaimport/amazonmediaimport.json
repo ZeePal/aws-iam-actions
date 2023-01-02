@@ -1,0 +1,18 @@
+{
+  "name": "AmazonMediaImport",
+  "prefix": "mediaimport",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmediaimport.html",
+  "actions": {
+    "CreateDatabaseBinarySnapshot": {
+      "description": "Grants permission to create a database binary snapshot on the customer's aws account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

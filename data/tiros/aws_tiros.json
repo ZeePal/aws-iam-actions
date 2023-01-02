@@ -1,0 +1,54 @@
+{
+  "name": "AWS Tiros",
+  "prefix": "tiros",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstiros.html",
+  "actions": {
+    "CreateQuery": {
+      "description": "Grants permission to create a VPC reachability query",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html"
+    },
+    "ExtendQuery": {
+      "description": "Grants permission to extend a VPC reachability query to include the calling principals account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html"
+    },
+    "GetQueryAnswer": {
+      "description": "Grants permission to get VPC reachability query answers",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html"
+    },
+    "GetQueryExplanation": {
+      "description": "Grants permission to get VPC reachability query explanations",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html"
+    },
+    "GetQueryExtensionAccounts": {
+      "description": "Grants permission to list accounts that might be useful in a new query",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

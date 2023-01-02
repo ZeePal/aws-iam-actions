@@ -1,0 +1,853 @@
+{
+  "name": "AWS Panorama",
+  "prefix": "panorama",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspanorama.html",
+  "actions": {
+    "CreateApp": {
+      "description": "Grants permission to create an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateApp.html"
+    },
+    "CreateAppDeployment": {
+      "description": "Grants permission to deploy an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateAppDeployment.html"
+    },
+    "CreateAppVersion": {
+      "description": "Grants permission to create a version of an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "appVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateAppVersion.html"
+    },
+    "CreateApplicationInstance": {
+      "description": "Grants permission to create an AWS Panorama Application Instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateApplicationInstance.html"
+    },
+    "CreateDataSource": {
+      "description": "Grants permission to create an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateDataSource.html"
+    },
+    "CreateDeploymentConfiguration": {
+      "description": "Grants permission to configure a deployment for an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateDeploymentConfiguration.html"
+    },
+    "CreateInputs": {
+      "description": "Grants permission to generate a list of cameras on the same network as an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateInputList.html"
+    },
+    "CreateJobForDevices": {
+      "description": "Grants permission to create a job for an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateJobForDevices.html"
+    },
+    "CreateModel": {
+      "description": "Grants permission to import a machine learning model into AWS Panorama",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateModel.html"
+    },
+    "CreateNodeFromTemplateJob": {
+      "description": "Grants permission to create an AWS Panorama Node",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateNodeFromTemplateJob.html"
+    },
+    "CreatePackage": {
+      "description": "Grants permission to create an AWS Panorama Package",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreatePackage.html"
+    },
+    "CreatePackageImportJob": {
+      "description": "Grants permission to create an AWS Panorama Package",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreatePackageImportJob.html"
+    },
+    "CreateStreams": {
+      "description": "Grants permission to generate a list of streams available to an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_CreateStreamsList.html"
+    },
+    "DeleteApp": {
+      "description": "Grants permission to delete an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeleteApp.html"
+    },
+    "DeleteAppVersion": {
+      "description": "Grants permission to delete a version of an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeleteAppVersion.html"
+    },
+    "DeleteDataSource": {
+      "description": "Grants permission to delete an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "dataSource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeleteDataSource.html"
+    },
+    "DeleteDevice": {
+      "description": "Grants permission to deregister an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeleteDevice.html"
+    },
+    "DeleteModel": {
+      "description": "Grants permission to delete a machine learning model from AWS Panorama",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeleteModel.html"
+    },
+    "DeletePackage": {
+      "description": "Grants permission to delete an AWS Panorama Package",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "package": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeletePackage.html"
+    },
+    "DeregisterPackageVersion": {
+      "description": "Grants permission to deregister an AWS Panorama Package Version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DeregisterPackageVersion.html"
+    },
+    "DescribeApp": {
+      "description": "Grants permission to view details about an AWS Panorama application",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeApp.html"
+    },
+    "DescribeAppDeployment": {
+      "description": "Grants permission to view details about a deployment for an AWS Panorama application",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeAppDeployment.html"
+    },
+    "DescribeAppVersion": {
+      "description": "Grants permission to view details about a version of an AWS Panorama application",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeAppVersion.html"
+    },
+    "DescribeApplicationInstance": {
+      "description": "Grants permission to view details about an AWS Panorama Application Instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applicationInstance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeApplicationInstance.html"
+    },
+    "DescribeApplicationInstanceDetails": {
+      "description": "Grants permission to view details about an AWS Panorama Application Instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applicationInstance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeApplicationInstanceDetails.html"
+    },
+    "DescribeDataSource": {
+      "description": "Grants permission to view details about a datasource in AWS Panorama",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "dataSource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeDataSource.html"
+    },
+    "DescribeDevice": {
+      "description": "Grants permission to view details about an AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeDevice.html"
+    },
+    "DescribeDeviceJob": {
+      "description": "Grants permission to view job details for an AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeDeviceJob.html"
+    },
+    "DescribeModel": {
+      "description": "Grants permission to view details about a machine learning model in AWS Panorama",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "model": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeModel.html"
+    },
+    "DescribeNode": {
+      "description": "Grants permission to view details about an AWS Panorama Node",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeNode.html"
+    },
+    "DescribeNodeFromTemplateJob": {
+      "description": "Grants permission to view details about AWS Panorama Node",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeNodeFromTemplateJob.html"
+    },
+    "DescribePackage": {
+      "description": "Grants permission to view details about an AWS Panorama Package",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "package": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribePackage.html"
+    },
+    "DescribePackageImportJob": {
+      "description": "Grants permission to view details about an AWS Panorama Package",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribePackageImportJob.html"
+    },
+    "DescribePackageVersion": {
+      "description": "Grants permission to view details about an AWS Panorama Package Version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribePackageVersion.html"
+    },
+    "DescribeSoftware": {
+      "description": "Grants permission to view details about a software version for the AWS Panorama Appliance",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_DescribeSoftware.html"
+    },
+    "GetDeploymentConfiguration": {
+      "description": "Grants permission to view details about a deployment configuration for an AWS Panorama application",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_GetDeploymentConfiguration.html"
+    },
+    "GetInputs": {
+      "description": "Grants permission to retrieve a list of cameras generated with CreateInputs",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_GetInputList.html"
+    },
+    "GetStreams": {
+      "description": "Grants permission to retrieve a list of streams generated with CreateStreams",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_GetStreamsList.html"
+    },
+    "GetWebSocketURL": {
+      "description": "Grants permission to generate a WebSocket endpoint for communication with AWS Panorama",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_GetWebSocketURL.html"
+    },
+    "ListAppDeploymentOperations": {
+      "description": "Grants permission to retrieve a list of deployments for an AWS Panorama application",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListAppDeploymentOperations.html"
+    },
+    "ListAppVersions": {
+      "description": "Grants permission to retrieve a list of application versions in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListAppVersions.html"
+    },
+    "ListApplicationInstanceDependencies": {
+      "description": "Grants permission to retrieve a list of application instance dependencies in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListApplicationInstanceDependencies.html"
+    },
+    "ListApplicationInstanceNodeInstances": {
+      "description": "Grants permission to retrieve a list of node instances of application instances in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListApplicationInstanceNodeInstances.html"
+    },
+    "ListApplicationInstances": {
+      "description": "Grants permission to retrieve a list of application instances in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListApplicationInstances.html"
+    },
+    "ListApps": {
+      "description": "Grants permission to retrieve a list of applications in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListApps.html"
+    },
+    "ListDataSources": {
+      "description": "Grants permission to retrieve a list of datasources in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListDataSources.html"
+    },
+    "ListDeploymentConfigurations": {
+      "description": "Grants permission to retrieve a list of deployment configurations in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListDeploymentConfigurations.html"
+    },
+    "ListDevices": {
+      "description": "Grants permission to retrieve a list of appliances in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListDevices.html"
+    },
+    "ListDevicesJobs": {
+      "description": "Grants permission to retrieve a list of jobs for an AWS Panorama Appliance",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListDevicesJobs.html"
+    },
+    "ListModels": {
+      "description": "Grants permission to retrieve a list of models in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListModels.html"
+    },
+    "ListNodeFromTemplateJobs": {
+      "description": "Grants permission to retrieve a list of Nodes for an AWS Panorama Appliance",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListNodeFromTemplateJobs.html"
+    },
+    "ListNodes": {
+      "description": "Grants permission to retrieve a list of nodes in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListNodes.html"
+    },
+    "ListPackageImportJobs": {
+      "description": "Grants permission to retrieve a list of packages in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListPackageImportJobs.html"
+    },
+    "ListPackages": {
+      "description": "Grants permission to retrieve a list of packages in AWS Panorama",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListPackages.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to retrieve a list of tags for a resource in AWS Panorama",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataSource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "model": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ListTagsForResource.html"
+    },
+    "ProvisionDevice": {
+      "description": "Grants permission to register an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_ProvisionDevice.html"
+    },
+    "RegisterPackageVersion": {
+      "description": "Grants permission to register an AWS Panorama Package Version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_RegisterPackageVersion.html"
+    },
+    "RemoveApplicationInstance": {
+      "description": "Grants permission to remove an AWS Panorama Application Instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applicationInstance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_RemoveApplicationInstance.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a resource in AWS Panorama",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataSource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "model": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a resource in AWS Panorama",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataSource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "model": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_UntagResource.html"
+    },
+    "UpdateApp": {
+      "description": "Grants permission to modify an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_UpdateApp.html"
+    },
+    "UpdateAppConfiguration": {
+      "description": "Grants permission to modify the version-specific configuration of an AWS Panorama application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "app": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_UpdateAppConfiguration.html"
+    },
+    "UpdateDataSource": {
+      "description": "Grants permission to modify an AWS Panorama datasource",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "dataSource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_UpdateDataSource.html"
+    },
+    "UpdateDeviceMetadata": {
+      "description": "Grants permission to modify basic settings for an AWS Panorama Appliance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/API_UpdateDeviceMetadata.html"
+    }
+  },
+  "resourceTypes": {
+    "app": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:app/${AppName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "appVersion": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:app/${AppName}:${AppVersion}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "applicationInstance": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:applicationInstance/${ApplicationInstanceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "dataSource": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:dataSource/${DeviceId}/${DataSourceName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "device": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:device/${DeviceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "model": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:model/${ModelName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    },
+    "package": {
+      "arn": "arn:${Partition}:panorama:${Region}:${Account}:package/${PackageId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/panorama/latest/dev/"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

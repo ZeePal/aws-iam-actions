@@ -1,0 +1,108 @@
+{
+  "name": "AWS License Manager User Subscriptions",
+  "prefix": "license-manager-user-subscriptions",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslicensemanagerusersubscriptions.html",
+  "actions": {
+    "AssociateUser": {
+      "description": "Grants permission to associate a subscribed user to an instance launched with license manager user subscriptions products",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_AssociateUser.html"
+    },
+    "DeregisterIdentityProvider": {
+      "description": "Grants permission to deregister Microsoft Active Directory with license-manager-user-subscriptions for a product",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_DeregisterIdentityProvider.html"
+    },
+    "DisassociateUser": {
+      "description": "Grants permission to disassociate a subscribed user from an instance launched with license manager user subscriptions products",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_DisassociateUser.html"
+    },
+    "ListIdentityProviders": {
+      "description": "Grants permission to list all the identity providers on license manager user subscriptions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListIdentityProviders.html"
+    },
+    "ListInstances": {
+      "description": "Grants permission to list all the instances launched with license manager user subscription products",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListInstances.html"
+    },
+    "ListProductSubscriptions": {
+      "description": "Grants permission to lists all the product subscriptions for a product and identity provider",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListProductSubscriptions.html"
+    },
+    "ListUserAssociations": {
+      "description": "Grants permission to list all the users associated to an instance launched for a product",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListUserAssociations.html"
+    },
+    "RegisterIdentityProvider": {
+      "description": "Grants permission to registers Microsoft Active Directory with license-manager-user-subscriptions for a product",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_RegisterIdentityProvider.html"
+    },
+    "StartProductSubscription": {
+      "description": "Grants permission to start product subscription for a user on a registered active directory for a product",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StartProductSubscription.html"
+    },
+    "StopProductSubscription": {
+      "description": "Grants permission to stop product subscription for a user on a registered active directory for a product",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_StopProductSubscription.html"
+    },
+    "UpdateIdentityProviderSettings": {
+      "description": "Grants permission to update the identity provider configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_UpdateIdentityProviderSettings.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

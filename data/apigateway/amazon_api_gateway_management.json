@@ -1,0 +1,1035 @@
+{
+  "name": "Amazon API Gateway Management",
+  "prefix": "apigateway",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonapigatewaymanagement.html",
+  "actions": {
+    "AddCertificateToDomain": {
+      "description": "Grants permission to add certificates for mutual TLS authentication to a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DomainName": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainNames": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/ADD_CERTIFICATE_TO_DOMAIN.html"
+    },
+    "DELETE": {
+      "description": "Grants permission to delete a particular resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApiKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "BasePathMapping": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ClientCertificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Deployment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationPart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationVersion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainName": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Integration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "IntegrationResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Method": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MethodResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RequestValidator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Resource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApi": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stage": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlanKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VpcLink": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/API_DELETE.html"
+    },
+    "GET": {
+      "description": "Grants permission to read a particular resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ApiKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ApiKeys": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Authorizers": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "BasePathMapping": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "BasePathMappings": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ClientCertificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ClientCertificates": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Deployment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Deployments": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationPart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationParts": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationVersion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationVersions": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainName": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainNames": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponses": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Integration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "IntegrationResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Method": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MethodResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Models": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RequestValidator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RequestValidators": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Resource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Resources": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApi": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Sdk": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stage": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stages": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlanKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlanKeys": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlans": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VpcLink": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VpcLinks": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/API_GET.html"
+    },
+    "PATCH": {
+      "description": "Grants permission to update a particular resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ApiKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Authorizer": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "BasePathMapping": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ClientCertificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Deployment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationPart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationVersion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainName": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Integration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "IntegrationResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Method": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MethodResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Model": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RequestValidator": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Resource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApi": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stage": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlan": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlanKey": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VpcLink": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/API_PATCH.html"
+    },
+    "POST": {
+      "description": "Grants permission to create a particular resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ApiKeys": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Authorizers": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "BasePathMappings": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ClientCertificates": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Deployments": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationParts": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DocumentationVersions": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainNames": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponses": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "IntegrationResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MethodResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Models": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RequestValidators": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Resources": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stages": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlanKeys": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "UsagePlans": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "VpcLinks": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/API_POST.html"
+    },
+    "PUT": {
+      "description": "Grants permission to update a particular resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DocumentationPart": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "GatewayResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "IntegrationResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "MethodResponse": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApi": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/API_PUT.html"
+    },
+    "RemoveCertificateFromDomain": {
+      "description": "Grants permission to remove certificates for mutual TLS authentication from a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DomainName": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "DomainNames": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/REMOVE_CERTIFICATE_FROM_DOMAIN.html"
+    },
+    "SetWebACL": {
+      "description": "Grants permission set a WAF access control list (ACL). This is an additional authorization control for managing the Stage resource due to the sensitive nature of WebAcl's",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Stage": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "Stages": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/WEBACL_SET.html"
+    },
+    "UpdateRestApiPolicy": {
+      "description": "Grants permission to manage the IAM resource policy for an API. This is an additional authorization control for managing an API due to the sensitive nature of the resource policy",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RestApi": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "RestApis": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/apigateway/api-reference/UPDATE_REST_API_POLICY.html"
+    }
+  },
+  "resourceTypes": {
+    "Account": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/account",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "ApiKey": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/apikeys/${ApiKeyId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "ApiKeys": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/apikeys",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Authorizer": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers/${AuthorizerId}",
+      "conditionKeys": [
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Resource/AuthorizerType",
+        "apigateway:Resource/AuthorizerUri",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Authorizers": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers",
+      "conditionKeys": [
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "BasePathMapping": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/basepathmappings/${BasePath}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "BasePathMappings": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/basepathmappings",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "ClientCertificate": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/clientcertificates/${ClientCertificateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "ClientCertificates": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/clientcertificates",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Deployment": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments/${DeploymentId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Deployments": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments",
+      "conditionKeys": [
+        "apigateway:Request/StageName"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DocumentationPart": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/parts/${DocumentationPartId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DocumentationParts": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/parts",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DocumentationVersion": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/versions/${DocumentationVersionId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DocumentationVersions": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/versions",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DomainName": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}",
+      "conditionKeys": [
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/MtlsTrustStoreUri",
+        "apigateway:Request/MtlsTrustStoreVersion",
+        "apigateway:Request/SecurityPolicy",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/MtlsTrustStoreUri",
+        "apigateway:Resource/MtlsTrustStoreVersion",
+        "apigateway:Resource/SecurityPolicy",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "DomainNames": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/domainnames",
+      "conditionKeys": [
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/MtlsTrustStoreUri",
+        "apigateway:Request/MtlsTrustStoreVersion",
+        "apigateway:Request/SecurityPolicy",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "GatewayResponse": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/gatewayresponses/${ResponseType}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "GatewayResponses": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/gatewayresponses",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Integration": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "IntegrationResponse": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration/responses/${StatusCode}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Method": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}",
+      "conditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "MethodResponse": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/responses/${StatusCode}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Model": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models/${ModelName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Models": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "RequestValidator": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/requestvalidators/${RequestValidatorId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "RequestValidators": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/requestvalidators",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Resource": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Resources": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "RestApi": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}",
+      "conditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/ApiName",
+        "apigateway:Resource/AuthorizerType",
+        "apigateway:Resource/AuthorizerUri",
+        "apigateway:Resource/DisableExecuteApiEndpoint",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "RestApis": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis",
+      "conditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Sdk": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}/sdks/${SdkType}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Stage": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}",
+      "conditionKeys": [
+        "apigateway:Request/AccessLoggingDestination",
+        "apigateway:Request/AccessLoggingFormat",
+        "apigateway:Resource/AccessLoggingDestination",
+        "apigateway:Resource/AccessLoggingFormat",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Stages": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages",
+      "conditionKeys": [
+        "apigateway:Request/AccessLoggingDestination",
+        "apigateway:Request/AccessLoggingFormat",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "Template": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/restapis/models/${ModelName}/template",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "UsagePlan": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "UsagePlanKey": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}/keys/${Id}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "UsagePlanKeys": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}/keys",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "UsagePlans": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/usageplans",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "VpcLink": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/vpclinks/${VpcLinkId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "VpcLinks": {
+      "arn": "arn:${Partition}:apigateway:${Region}::/vpclinks",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    }
+  },
+  "conditionKeys": {
+    "apigateway:Request/AccessLoggingDestination": {
+      "description": "Filters access by access log destination. Available during the CreateStage and UpdateStage operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/AccessLoggingFormat": {
+      "description": "Filters access by access log format. Available during the CreateStage and UpdateStage operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/ApiKeyRequired": {
+      "description": "Filters access based on whether an API key is required or not. Available during the CreateMethod and PutMethod operations. Also available as a collection during import and reimport",
+      "type": "ArrayOfBool",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/ApiName": {
+      "description": "Filters access by API name. Available during the CreateRestApi and UpdateRestApi operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/AuthorizerType": {
+      "description": "Filters access by type of authorizer in the request, for example TOKEN, REQUEST, JWT. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/AuthorizerUri": {
+      "description": "Filters access by URI of a Lambda authorizer function. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/DisableExecuteApiEndpoint": {
+      "description": "Filters access by status of the default execute-api endpoint. Available during the CreateRestApi and DeleteRestApi operations",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/EndpointType": {
+      "description": "Filters access by endpoint type. Available during the CreateDomainName, UpdateDomainName, CreateRestApi, and UpdateRestApi operations",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/MtlsTrustStoreUri": {
+      "description": "Filters access by URI of the truststore used for mutual TLS authentication. Available during the CreateDomainName and UpdateDomainName operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/MtlsTrustStoreVersion": {
+      "description": "Filters access by version of the truststore used for mutual TLS authentication. Available during the CreateDomainName and UpdateDomainName operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/RouteAuthorizationType": {
+      "description": "Filters access by authorization type, for example NONE, AWS_IAM, CUSTOM, JWT, COGNITO_USER_POOLS. Available during the CreateMethod and PutMethod operations Also available as a collection during import",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/SecurityPolicy": {
+      "description": "Filters access by TLS version. Available during the CreateDomain and UpdateDomain operations",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Request/StageName": {
+      "description": "Filters access by stage name of the deployment that you attempt to create. Available during the CreateDeployment operation",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/AccessLoggingDestination": {
+      "description": "Filters access by access log destination of the current Stage resource. Available during the UpdateStage and DeleteStage operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/AccessLoggingFormat": {
+      "description": "Filters access by access log format of the current Stage resource. Available during the UpdateStage and DeleteStage operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/ApiKeyRequired": {
+      "description": "Filters access based on whether an API key is required or not for the existing Method resource. Available during the PutMethod and DeleteMethod operations. Also available as a collection during reimport",
+      "type": "ArrayOfBool",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/ApiName": {
+      "description": "Filters access by API name of the existing RestApi resource. Available during UpdateRestApi and DeleteRestApi operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/AuthorizerType": {
+      "description": "Filters access by the current type of authorizer, for example TOKEN, REQUEST, JWT. Available during UpdateAuthorizer and DeleteAuthorizer operations. Also available during reimport as an ArrayOfString",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/AuthorizerUri": {
+      "description": "Filters access by URI of a Lambda authorizer function. Available during UpdateAuthorizer and DeleteAuthorizer operations. Also available during reimport as an ArrayOfString",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/DisableExecuteApiEndpoint": {
+      "description": "Filters access by status of the default execute-api endpoint of the current RestApi resource. Available during UpdateRestApi and DeleteRestApi operations",
+      "type": "Bool",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/EndpointType": {
+      "description": "Filters access by endpoint type. Available during the UpdateDomainName, DeleteDomainName, UpdateRestApi, and DeleteRestApi operations",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/MtlsTrustStoreUri": {
+      "description": "Filters access by URI of the truststore used for mutual TLS authentication. Available during UpdateDomainName and DeleteDomainName operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/MtlsTrustStoreVersion": {
+      "description": "Filters access by version of the truststore used for mutual TLS authentication. Available during UpdateDomainName and DeleteDomainName operations",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/RouteAuthorizationType": {
+      "description": "Filters access by authorization type of the existing Method resource, for example NONE, AWS_IAM, CUSTOM, JWT, COGNITO_USER_POOLS. Available during the PutMethod and DeleteMethod operations. Also available as a collection during reimport",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "apigateway:Resource/SecurityPolicy": {
+      "description": "Filters access by TLS version. Available during UpdateDomain and DeleteDomain operations",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html"
+    },
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html"
+    }
+  }
+}

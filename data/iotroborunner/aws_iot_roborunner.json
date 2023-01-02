@@ -1,0 +1,710 @@
+{
+  "name": "AWS IoT RoboRunner",
+  "prefix": "iotroborunner",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotroborunner.html",
+  "actions": {
+    "CreateAction": {
+      "description": "Grants permission to create an action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateAction.html"
+    },
+    "CreateActionTemplate": {
+      "description": "Grants permission to create an action template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateActionTemplate.html"
+    },
+    "CreateActionTemplateDependency": {
+      "description": "Grants permission to create an action template dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateActionTemplateDependency.html"
+    },
+    "CreateActivity": {
+      "description": "Grants permission to create an activity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateActivity.html"
+    },
+    "CreateActivityDependency": {
+      "description": "Grants permission to create an activity dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateActivityDependency.html"
+    },
+    "CreateDestination": {
+      "description": "Grants permission to create a destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateDestination.html"
+    },
+    "CreateDestinationRelationship": {
+      "description": "Grants permission to create a destination relationship",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateDestinationRelationship.html"
+    },
+    "CreateSite": {
+      "description": "Grants permission to create a site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateSite.html"
+    },
+    "CreateTask": {
+      "description": "Grants permission to create a task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateTask.html"
+    },
+    "CreateTaskDependency": {
+      "description": "Grants permission to create a task dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateTaskDependency.html"
+    },
+    "CreateWorker": {
+      "description": "Grants permission to create a worker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerFleetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateWorker.html"
+    },
+    "CreateWorkerFleet": {
+      "description": "Grants permission to create a worker fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_CreateWorkerFleet.html"
+    },
+    "DeleteAction": {
+      "description": "Grants permission to delete an action",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActionResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteAction.html"
+    },
+    "DeleteActionTemplate": {
+      "description": "Grants permission to delete an action template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActionTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteActionTemplate.html"
+    },
+    "DeleteActionTemplateDependency": {
+      "description": "Grants permission to delete an action template dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteActionTemplateDependency.html"
+    },
+    "DeleteActivity": {
+      "description": "Grants permission to delete an activity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActivityResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteActivity.html"
+    },
+    "DeleteActivityDependency": {
+      "description": "Grants permission to delete an activity dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteActivityDependency.html"
+    },
+    "DeleteDestination": {
+      "description": "Grants permission to delete a destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DestinationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteDestination.html"
+    },
+    "DeleteDestinationRelationship": {
+      "description": "Grants permission to delete a destination relationship",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DestinationRelationshipResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteDestinationRelationship.html"
+    },
+    "DeleteSite": {
+      "description": "Grants permission to delete a site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteSite.html"
+    },
+    "DeleteTask": {
+      "description": "Grants permission to delete a task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TaskResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteTask.html"
+    },
+    "DeleteTaskDependency": {
+      "description": "Grants permission to delete a task dependency",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteTaskDependency.html"
+    },
+    "DeleteWorker": {
+      "description": "Grants permission to delete a worker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteWorker.html"
+    },
+    "DeleteWorkerFleet": {
+      "description": "Grants permission to delete a worker fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerFleetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_DeleteWorkerFleet.html"
+    },
+    "GetAction": {
+      "description": "Grants permission to get an action",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActionResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetAction.html"
+    },
+    "GetActionTemplate": {
+      "description": "Grants permission to get an action template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActionTemplateResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetActionTemplate.html"
+    },
+    "GetActivity": {
+      "description": "Grants permission to get an activity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActivityResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetActivity.html"
+    },
+    "GetDestination": {
+      "description": "Grants permission to get a destination",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DestinationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetDestination.html"
+    },
+    "GetDestinationRelationship": {
+      "description": "Grants permission to get a destination relationship",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DestinationRelationshipResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetDestinationRelationship.html"
+    },
+    "GetSite": {
+      "description": "Grants permission to get a site",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetSite.html"
+    },
+    "GetTask": {
+      "description": "Grants permission to get a task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TaskResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetTask.html"
+    },
+    "GetWorker": {
+      "description": "Grants permission to get a worker",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetWorker.html"
+    },
+    "GetWorkerFleet": {
+      "description": "Grants permission to get a worker fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerFleetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_GetWorkerFleet.html"
+    },
+    "ListActionTemplates": {
+      "description": "Grants permission to list action templates",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListActionTemplates.html"
+    },
+    "ListActions": {
+      "description": "Grants permission to list actions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListActions.html"
+    },
+    "ListActivities": {
+      "description": "Grants permission to list activities",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListActivities.html"
+    },
+    "ListDestinationRelationships": {
+      "description": "Grants permission to list destination relationships",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListDestinationRelationships.html"
+    },
+    "ListDestinations": {
+      "description": "Grants permission to list destinations",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListDestinations.html"
+    },
+    "ListSites": {
+      "description": "Grants permission to list sites",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListSites.html"
+    },
+    "ListTasks": {
+      "description": "Grants permission to list tasks",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListTasks.html"
+    },
+    "ListWorkerFleets": {
+      "description": "Grants permission to list worker fleets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListWorkerFleets.html"
+    },
+    "ListWorkers": {
+      "description": "Grants permission to list workers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_ListWorkers.html"
+    },
+    "UpdateActionState": {
+      "description": "Grants permission to update an action's state",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActionResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateActionState.html"
+    },
+    "UpdateActivity": {
+      "description": "Grants permission to update an activity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ActivityResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateActivity.html"
+    },
+    "UpdateDestination": {
+      "description": "Grants permission to update a destination",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "DestinationResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateDestination.html"
+    },
+    "UpdateSite": {
+      "description": "Grants permission to update a site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SiteResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateSite.html"
+    },
+    "UpdateTask": {
+      "description": "Grants permission to update a task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "TaskResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateTask.html"
+    },
+    "UpdateWorker": {
+      "description": "Grants permission to update a worker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateWorker.html"
+    },
+    "UpdateWorkerFleet": {
+      "description": "Grants permission to update a worker fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "WorkerFleetResource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/API_UpdateWorkerFleet.html"
+    }
+  },
+  "resourceTypes": {
+    "ActionResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:action/${ActionId}",
+      "conditionKeys": [
+        "iotroborunner:ActionResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "ActionTemplateResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:action-template/${ActionTemplateId}",
+      "conditionKeys": [
+        "iotroborunner:ActionTemplateResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "ActivityResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:activity/${ActivityId}",
+      "conditionKeys": [
+        "iotroborunner:ActivityResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "DestinationRelationshipResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:destination-relationship/${DestinationRelationshipId}",
+      "conditionKeys": [
+        "iotroborunner:DestinationRelationshipResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "DestinationResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:site/${SiteId}/destination/${DestinationId}",
+      "conditionKeys": [
+        "iotroborunner:DestinationResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "SiteResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:site/${SiteId}",
+      "conditionKeys": [
+        "iotroborunner:SiteResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "TaskResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:task/${TaskId}",
+      "conditionKeys": [
+        "iotroborunner:TaskResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "WorkerFleetResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:site/${SiteId}/worker-fleet/${WorkerFleetId}",
+      "conditionKeys": [
+        "iotroborunner:WorkerFleetResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    },
+    "WorkerResource": {
+      "arn": "arn:${Partition}:iotroborunner:${Region}:${Account}:site/${SiteId}/worker-fleet/${WorkerFleetId}/worker/${WorkerId}",
+      "conditionKeys": [
+        "iotroborunner:WorkerResourceId"
+      ],
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/api/"
+    }
+  },
+  "conditionKeys": {
+    "iotroborunner:ActionResourceId": {
+      "description": "Filters access by the action's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Action"
+    },
+    "iotroborunner:ActionTemplateResourceId": {
+      "description": "Filters access by the action template's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#ActionTemplate"
+    },
+    "iotroborunner:ActivityResourceId": {
+      "description": "Filters access by the activity's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Activity"
+    },
+    "iotroborunner:DestinationRelationshipResourceId": {
+      "description": "Filters access by the destination relationship's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#DestinationRelationship"
+    },
+    "iotroborunner:DestinationResourceId": {
+      "description": "Filters access by the destination's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Destination"
+    },
+    "iotroborunner:SiteResourceId": {
+      "description": "Filters access by the site's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Site"
+    },
+    "iotroborunner:TaskResourceId": {
+      "description": "Filters access by the task's identifer",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Task"
+    },
+    "iotroborunner:WorkerFleetResourceId": {
+      "description": "Filters access by the worker fleet's identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#WorkerFleet"
+    },
+    "iotroborunner:WorkerResourceId": {
+      "description": "Filters access by the workers identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/iotroborunner/latest/dev/#Worker"
+    }
+  }
+}

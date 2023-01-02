@@ -1,0 +1,693 @@
+{
+  "name": "AWS DataSync",
+  "prefix": "datasync",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdatasync.html",
+  "actions": {
+    "CancelTaskExecution": {
+      "description": "Grants permission to cancel execution of a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "taskexecution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CancelTaskExecution.html"
+    },
+    "CreateAgent": {
+      "description": "Grants permission to activate an agent that you have deployed on your host",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateAgent.html"
+    },
+    "CreateLocationEfs": {
+      "description": "Grants permission to create an endpoint for an Amazon EFS file system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationEfs.html"
+    },
+    "CreateLocationFsxLustre": {
+      "description": "Grants permission to create an endpoint for an Amazon Fsx Lustre",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationFsxLustre.html"
+    },
+    "CreateLocationFsxOntap": {
+      "description": "Grants permission to create an endpoint for Amazon FSx for ONTAP",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationFsxOntap.html"
+    },
+    "CreateLocationFsxOpenZfs": {
+      "description": "Grants permission to create an endpoint for Amazon FSx for OpenZFS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationFsxOpenZfs.html"
+    },
+    "CreateLocationFsxWindows": {
+      "description": "Grants permission to create an endpoint for an Amazon FSx Windows File Server file system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationFsxWindows.html"
+    },
+    "CreateLocationHdfs": {
+      "description": "Grants permission to create an endpoint for an Amazon Hdfs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationHdfs.html"
+    },
+    "CreateLocationNfs": {
+      "description": "Grants permission to create an endpoint for a NFS file system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationNfs.html"
+    },
+    "CreateLocationObjectStorage": {
+      "description": "Grants permission to create an endpoint for a self-managed object storage bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationObjectStorage.html"
+    },
+    "CreateLocationS3": {
+      "description": "Grants permission to create an endpoint for an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationS3.html"
+    },
+    "CreateLocationSmb": {
+      "description": "Grants permission to create an endpoint for an SMB file system",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateLocationSmb.html"
+    },
+    "CreateTask": {
+      "description": "Grants permission to create a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_CreateTask.html"
+    },
+    "DeleteAgent": {
+      "description": "Grants permission to delete an agent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DeleteAgent.html"
+    },
+    "DeleteLocation": {
+      "description": "Grants permission to delete a location used by AWS DataSync",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DeleteLocation.html"
+    },
+    "DeleteTask": {
+      "description": "Grants permission to delete a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DeleteTask.html"
+    },
+    "DescribeAgent": {
+      "description": "Grants permission to view metadata such as name, network interfaces, and the status (that is, whether the agent is running or not) about a sync agent",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeAgent.html"
+    },
+    "DescribeLocationEfs": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon EFS sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationEfs.html"
+    },
+    "DescribeLocationFsxLustre": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon FSx Lustre sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationFsxLustre.html"
+    },
+    "DescribeLocationFsxOntap": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon FSx for ONTAP sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationFsxOntap.html"
+    },
+    "DescribeLocationFsxOpenZfs": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon FSx OpenZFS sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationFsxOpenZfs.html"
+    },
+    "DescribeLocationFsxWindows": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon FSx Windows sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationFsxWindows.html"
+    },
+    "DescribeLocationHdfs": {
+      "description": "Grants permission to view metadata, such as the path information about an Amazon HDFS sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationHdfs.html"
+    },
+    "DescribeLocationNfs": {
+      "description": "Grants permission to view metadata, such as the path information, about a NFS sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationNfs.html"
+    },
+    "DescribeLocationObjectStorage": {
+      "description": "Grants permission to view metadata about a self-managed object storage server location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationObjectStorage.html"
+    },
+    "DescribeLocationS3": {
+      "description": "Grants permission to view metadata, such as bucket name, about an Amazon S3 bucket sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationS3.html"
+    },
+    "DescribeLocationSmb": {
+      "description": "Grants permission to view metadata, such as the path information, about an SMB sync location",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeLocationSmb.html"
+    },
+    "DescribeTask": {
+      "description": "Grants permission to view metadata about a sync task",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeTask.html"
+    },
+    "DescribeTaskExecution": {
+      "description": "Grants permission to view metadata about a sync task that is being executed",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "taskexecution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeTaskExecution.html"
+    },
+    "ListAgents": {
+      "description": "Grants permission to list agents owned by an AWS account in a region specified in the request",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_ListAgents.html"
+    },
+    "ListLocations": {
+      "description": "Grants permission to list source and destination sync locations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_ListLocations.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags that have been added to the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "location": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "taskexecution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTagsForResource.html"
+    },
+    "ListTaskExecutions": {
+      "description": "Grants permission to list executed sync tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTaskExecutions.html"
+    },
+    "ListTasks": {
+      "description": "Grants permission to list of all the sync tasks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTasks.html"
+    },
+    "StartTaskExecution": {
+      "description": "Grants permission to start a specific invocation of a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_StartTaskExecution.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to apply a key-value pair to an AWS resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "location": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "taskexecution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove one or more tags from the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "location": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "taskexecution": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UntagResource.html"
+    },
+    "UpdateAgent": {
+      "description": "Grants permission to update the name of an agent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agent": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateAgent.html"
+    },
+    "UpdateLocationHdfs": {
+      "description": "Grants permission to update an HDFS sync Location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationHdfs.html"
+    },
+    "UpdateLocationNfs": {
+      "description": "Grants permission to update an NFS sync Location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationNfs.html"
+    },
+    "UpdateLocationObjectStorage": {
+      "description": "Grants permission to update a self-managed object storage server location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationObjectStorage.html"
+    },
+    "UpdateLocationSmb": {
+      "description": "Grants permission to update a SMB sync location",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "location": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateLocationSmb.html"
+    },
+    "UpdateTask": {
+      "description": "Grants permission to update metadata associated with a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateTask.html"
+    },
+    "UpdateTaskExecution": {
+      "description": "Grants permission to update execution of a sync task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "taskexecution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/API_UpdateTaskExecution.html"
+    }
+  },
+  "resourceTypes": {
+    "agent": {
+      "arn": "arn:${Partition}:datasync:${Region}:${AccountId}:agent/${AgentId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-agents.html"
+    },
+    "location": {
+      "arn": "arn:${Partition}:datasync:${Region}:${AccountId}:location/${LocationId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-locations.html"
+    },
+    "task": {
+      "arn": "arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-tasks.html"
+    },
+    "taskexecution": {
+      "arn": "arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}/execution/${ExecutionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-task-executions.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

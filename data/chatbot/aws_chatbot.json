@@ -1,0 +1,188 @@
+{
+  "name": "AWS Chatbot",
+  "prefix": "chatbot",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awschatbot.html",
+  "actions": {
+    "CreateChimeWebhookConfiguration": {
+      "description": "Grants permission to create an AWS Chatbot Chime Webhook Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "CreateSlackChannelConfiguration": {
+      "description": "Grants permission to create an AWS Chatbot Slack Channel Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteChimeWebhookConfiguration": {
+      "description": "Grants permission to delete an AWS Chatbot Chime Webhook Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChatbotConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteSlackChannelConfiguration": {
+      "description": "Grants permission to delete an AWS Chatbot Slack Channel Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChatbotConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteSlackUserIdentity": {
+      "description": "Grants permission to delete an AWS Chatbot Slack User Identity",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteSlackWorkspaceAuthorization": {
+      "description": "Grants permission to delete the Slack workspace authorization with AWS Chatbot, associated with an AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DescribeChimeWebhookConfigurations": {
+      "description": "Grants permission to list all AWS Chatbot Chime Webhook Configurations in an AWS Account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DescribeSlackChannelConfigurations": {
+      "description": "Grants permission to list all AWS Chatbot Slack Channel Configurations in an AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DescribeSlackChannels": {
+      "description": "Grants permission to list all public Slack channels in the Slack workspace connected to the AWS Account onboarded with AWS Chatbot service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DescribeSlackUserIdentities": {
+      "description": "Grants permission to describe AWS Chatbot Slack User Identities",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DescribeSlackWorkspaces": {
+      "description": "Grants permission to list all authorized Slack workspaces connected to the AWS Account onboarded with AWS Chatbot service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetAccountPreferences": {
+      "description": "Grants permission to retrieve AWS Chatbot account preferences",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetSlackOauthParameters": {
+      "description": "Grants permission to generate OAuth parameters to request Slack OAuth code to be used by the AWS Chatbot service",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "RedeemSlackOauthCode": {
+      "description": "Grants permission to redeem previously generated parameters with Slack API, to acquire OAuth tokens to be used by the AWS Chatbot service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "UpdateAccountPreferences": {
+      "description": "Grants permission to update AWS Chatbot account preferences",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "UpdateChimeWebhookConfiguration": {
+      "description": "Grants permission to update an AWS Chatbot Chime Webhook Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChatbotConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "UpdateSlackChannelConfiguration": {
+      "description": "Grants permission to update an AWS Chatbot Slack Channel Configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ChatbotConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {
+    "ChatbotConfiguration": {
+      "arn": "arn:${Partition}:chatbot::${Account}:chat-configuration/${ConfigurationType}/${ChatbotConfigurationName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/chatbot/latest/adminguide/what-is.html"
+    }
+  },
+  "conditionKeys": {}
+}

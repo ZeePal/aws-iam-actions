@@ -1,0 +1,513 @@
+{
+  "name": "Amazon WorkLink",
+  "prefix": "worklink",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworklink.html",
+  "actions": {
+    "AssociateDomain": {
+      "description": "Grants permission to associate a domain with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_AssociateDomain.html"
+    },
+    "AssociateWebsiteAuthorizationProvider": {
+      "description": "Grants permission to associate a website authorization provider with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_AssociateWebsiteAuthorizationProvider.html"
+    },
+    "AssociateWebsiteCertificateAuthority": {
+      "description": "Grants permission to associate a website certificate authority with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_AssociateWebsiteCertificateAuthority.html"
+    },
+    "CreateFleet": {
+      "description": "Grants permission to create an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_CreateFleet.html"
+    },
+    "DeleteFleet": {
+      "description": "Grants permission to delete an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DeleteFleet.html"
+    },
+    "DescribeAuditStreamConfiguration": {
+      "description": "Grants permission to describe the audit stream configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeAuditStreamConfiguration.html"
+    },
+    "DescribeCompanyNetworkConfiguration": {
+      "description": "Grants permission to describe the company network configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeCompanyNetworkConfiguration.html"
+    },
+    "DescribeDevice": {
+      "description": "Grants permission to describe details of a device associated with an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevice.html"
+    },
+    "DescribeDevicePolicyConfiguration": {
+      "description": "Grants permission to describe the device policy configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevicePolicyConfiguration.html"
+    },
+    "DescribeDomain": {
+      "description": "Grants permission to describe details about a domain associated with an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDomain.html"
+    },
+    "DescribeFleetMetadata": {
+      "description": "Grants permission to describe metadata of an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeFleetMetadata.html"
+    },
+    "DescribeIdentityProviderConfiguration": {
+      "description": "Grants permission to describe the identity provider configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeIdentityProviderConfiguration.html"
+    },
+    "DescribeWebsiteCertificateAuthority": {
+      "description": "Grants permission to describe a website certificate authority associated with an Amazon WorkLink fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DescribeWebsiteCertificateAuthority.html"
+    },
+    "DisassociateDomain": {
+      "description": "Grants permission to disassociate a domain from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DisassociateDomain.html"
+    },
+    "DisassociateWebsiteAuthorizationProvider": {
+      "description": "Grants permission to disassociate a website authorization provider from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DisassociateWebsiteAuthorizationProvider.html"
+    },
+    "DisassociateWebsiteCertificateAuthority": {
+      "description": "Grants permission to disassociate a website certificate authority from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_DisassociateWebsiteCertificateAuthority.html"
+    },
+    "ListDevices": {
+      "description": "Grants permission to list the devices associated with an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListDevices.html"
+    },
+    "ListDomains": {
+      "description": "Grants permission to list the associated domains for an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListDomains.html"
+    },
+    "ListFleets": {
+      "description": "Grants permission to list the Amazon WorkLink fleets associated with the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListFleets.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListTagsForResource.html"
+    },
+    "ListWebsiteAuthorizationProviders": {
+      "description": "Grants permission to list the website authorization providers for an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteAuthorizationProviders.html"
+    },
+    "ListWebsiteCertificateAuthorities": {
+      "description": "Grants permission to list the website certificate authorities associated with an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteCertificateAuthorities.html"
+    },
+    "RestoreDomainAccess": {
+      "description": "Grants permission to restore access to a domain associated with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_RestoreDomainAccess.html"
+    },
+    "RevokeDomainAccess": {
+      "description": "Grants permission to revoke access to a domain associated with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_RevokeDomainAccess.html"
+    },
+    "SearchEntity": {
+      "description": "Grants permission to list devices for an Amazon WorkLink fleet",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/ag/manage-devices.html"
+    },
+    "SignOutUser": {
+      "description": "Grants permission to sign out a user from an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_SignOutUser.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove one or more tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UntagResource.html"
+    },
+    "UpdateAuditStreamConfiguration": {
+      "description": "Grants permission to update the audit stream configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateAuditStreamConfiguration.html"
+    },
+    "UpdateCompanyNetworkConfiguration": {
+      "description": "Grants permission to update the company network configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateCompanyNetworkConfiguration.html"
+    },
+    "UpdateDevicePolicyConfiguration": {
+      "description": "Grants permission to update the device policy configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateDevicePolicyConfiguration.html"
+    },
+    "UpdateDomainMetadata": {
+      "description": "Grants permission to update the metadata for a domain associated with an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateDomainMetadata.html"
+    },
+    "UpdateFleetMetadata": {
+      "description": "Grants permission to update the metadata of an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateFleetMetadata.html"
+    },
+    "UpdateIdentityProviderConfiguration": {
+      "description": "Grants permission to update the identity provider configuration for an Amazon WorkLink fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_UpdateIdentityProviderConfiguration.html"
+    }
+  },
+  "resourceTypes": {
+    "fleet": {
+      "arn": "arn:${Partition}:worklink::${Account}:fleet/${FleetName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/worklink/latest/api/API_CreateFleet.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "name": "AWS Trusted Advisor",
+  "prefix": "trustedadvisor",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstrustedadvisor.html",
+  "actions": {
+    "DeleteNotificationConfigurationForDelegatedAdmin": {
+      "description": "Grants permission to the organization management account to delete email notification preferences from a delegated administrator account for Trusted Advisor Priority",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeAccount": {
+      "description": "Grants permission to view the AWS Support plan and various AWS Trusted Advisor preferences",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeAccountAccess": {
+      "description": "Grants permission to view if the AWS account has enabled or disabled AWS Trusted Advisor",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeCheckItems": {
+      "description": "Grants permission to view details for the check items",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeCheckRefreshStatuses": {
+      "description": "Grants permission to view the refresh statuses for AWS Trusted Advisor checks",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeCheckSummaries": {
+      "description": "Grants permission to view AWS Trusted Advisor check summaries",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeChecks": {
+      "description": "Grants permission to view details for AWS Trusted Advisor checks",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeNotificationConfigurations": {
+      "description": "Grants permission to get your email notification preferences for Trusted Advisor Priority",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeNotificationPreferences": {
+      "description": "Grants permission to view the notification preferences for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeOrganization": {
+      "description": "Grants permission to view if the AWS account meets the requirements to enable the organizational view feature",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeOrganizationAccounts": {
+      "description": "Grants permission to view the linked AWS accounts that are in the organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeReports": {
+      "description": "Grants permission to view details for organizational view reports, such as the report name, runtime, date created, status, and format",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeRisk": {
+      "description": "Grants permission to view risk details in AWS Trusted Advisor Priority",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeRiskResources": {
+      "description": "Grants permission to view affected resources for a risk in AWS Trusted Advisor Priority",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeRisks": {
+      "description": "Grants permission to view risks in AWS Trusted Advisor Priority",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DescribeServiceMetadata": {
+      "description": "Grants permission to view information about organizational view reports, such as the AWS Regions, check categories, check names, and resource statuses",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "DownloadRisk": {
+      "description": "Grants permission to download a file that contains details about the risk in AWS Trusted Advisor Priority",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "ExcludeCheckItems": {
+      "description": "Grants permission to exclude recommendations for AWS Trusted Advisor checks",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "GenerateReport": {
+      "description": "Grants permission to create a report for AWS Trusted Advisor checks in your organization",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "IncludeCheckItems": {
+      "description": "Grants permission to include recommendations for AWS Trusted Advisor checks",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "ListAccountsForParent": {
+      "description": "Grants permission to view, in the Trusted Advisor console, all of the accounts in an AWS organization that are contained by a root or organizational unit (OU)",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "ListOrganizationalUnitsForParent": {
+      "description": "Grants permission to view, in the Trusted Advisor console, all of the organizational units (OUs) in a parent organizational unit or root",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "ListRoots": {
+      "description": "Grants permission to view, in the Trusted Advisor console, all of the roots that are defined in an AWS organization",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "RefreshCheck": {
+      "description": "Grants permission to refresh an AWS Trusted Advisor check",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "checks": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "SetAccountAccess": {
+      "description": "Grants permission to enable or disable AWS Trusted Advisor for the account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "SetOrganizationAccess": {
+      "description": "Grants permission to enable the organizational view feature for AWS Trusted Advisor",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "UpdateNotificationConfigurations": {
+      "description": "Grants permission to create or update your email notification preferences for Trusted Advisor Priority",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "UpdateNotificationPreferences": {
+      "description": "Grants permission to update notification preferences for AWS Trusted Advisor",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    },
+    "UpdateRiskStatus": {
+      "description": "Grants permission to update the risk status in AWS Trusted Advisor Priority",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations"
+    }
+  },
+  "resourceTypes": {
+    "checks": {
+      "arn": "arn:${Partition}:trustedadvisor:${Region}:${Account}:checks/${CategoryCode}/${CheckId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/awssupport/latest/APIReference/API_TrustedAdvisorCheckDescription.html"
+    }
+  },
+  "conditionKeys": {}
+}

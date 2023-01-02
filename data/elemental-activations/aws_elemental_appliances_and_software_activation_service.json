@@ -1,0 +1,150 @@
+{
+  "name": "AWS Elemental Appliances and Software Activation Service",
+  "prefix": "elemental-activations",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalappliancesandsoftwareactivationservice.html",
+  "actions": {
+    "CompleteAccountRegistration": {
+      "description": "Grants permission to complete the process of registering customer account for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "CompleteFileUpload": {
+      "description": "Grants permission to complete the process of uploading a Software file for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "DownloadSoftware": {
+      "description": "Grants permission to download the Software files for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "GenerateLicenses": {
+      "description": "Grants permission to generate Software Licenses for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "GetActivation": {
+      "description": "Grants permission to describe an activation",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "activation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for an AWS Elemental Activations resource",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "activation": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "StartAccountRegistration": {
+      "description": "Grants permission to start the process of registering customer account for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "StartFileUpload": {
+      "description": "Grants permission to start the process of uploading a Software file for AWS Elemental Appliances and Software Purchases",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "TagResource": {
+      "description": "Grants permission to add a tag for an AWS Elemental Activations resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "activation": {
+          "required": null,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag from an AWS Elemental Activations resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "activation": {
+          "required": null,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    }
+  },
+  "resourceTypes": {
+    "activation": {
+      "arn": "arn:${Partition}:elemental-activations:${Region}:${Account}:activation/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/elemental-appliances-software/"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

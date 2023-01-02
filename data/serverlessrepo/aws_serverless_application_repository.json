@@ -1,0 +1,228 @@
+{
+  "name": "AWS Serverless Application Repository",
+  "prefix": "serverlessrepo",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsserverlessapplicationrepository.html",
+  "actions": {
+    "CreateApplication": {
+      "description": "Grants permission to create an application, optionally including an AWS SAM file to create the first application version in the same call",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications.html"
+    },
+    "CreateApplicationVersion": {
+      "description": "Grants permission to create an application version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-versions-semanticversion.html"
+    },
+    "CreateCloudFormationChangeSet": {
+      "description": "Grants permission to create an AWS CloudFormation ChangeSet for the given application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-changesets.html"
+    },
+    "CreateCloudFormationTemplate": {
+      "description": "Grants permission to create an AWS CloudFormation template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-templates.html"
+    },
+    "DeleteApplication": {
+      "description": "Grants permission to delete the specified application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid.html"
+    },
+    "GetApplication": {
+      "description": "Grants permission to get the specified application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid.html"
+    },
+    "GetApplicationPolicy": {
+      "description": "Grants permission to get the policy for the specified application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-policy.html"
+    },
+    "GetCloudFormationTemplate": {
+      "description": "Grants permission to get the specified AWS CloudFormation template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-templates-templateid.html"
+    },
+    "ListApplicationDependencies": {
+      "description": "Grants permission to retrieve the list of applications nested in the containing application",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-dependencies.html"
+    },
+    "ListApplicationVersions": {
+      "description": "Grants permission to list versions for the specified application owned by the requester",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-versions.html"
+    },
+    "ListApplications": {
+      "description": "Grants permission to list applications owned by the requester",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications.html"
+    },
+    "PutApplicationPolicy": {
+      "description": "Grants permission to put the policy for the specified application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid-policy.html"
+    },
+    "SearchApplications": {
+      "description": "Grants permission to get all applications authorized for this user",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "serverlessrepo:applicationType"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid.html"
+    },
+    "UnshareApplication": {
+      "description": "Grants permission to unshare the specified application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid.html"
+    },
+    "UpdateApplication": {
+      "description": "Grants permission to update meta-data of the application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "applications": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications-applicationid.html"
+    }
+  },
+  "resourceTypes": {
+    "applications": {
+      "arn": "arn:${Partition}:serverlessrepo:${Region}:${Account}:applications/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applications.html"
+    }
+  },
+  "conditionKeys": {
+    "serverlessrepo:applicationType": {
+      "description": "Filters access by application type",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/applications.html"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "name": "AWS Artifact",
+  "prefix": "artifact",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsartifact.html",
+  "actions": {
+    "AcceptAgreement": {
+      "description": "Grants permission to accept an AWS agreement that has not yet been accepted by the customer account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html"
+    },
+    "DownloadAgreement": {
+      "description": "Grants permission to download an AWS agreement that has not yet been accepted or a customer agreement that has been accepted by the customer account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "customer-agreement": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html"
+    },
+    "Get": {
+      "description": "Grants permission to download an AWS compliance report package",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report-package": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html"
+    },
+    "GetReport": {
+      "description": "Grants permission to download a report",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html"
+    },
+    "GetReportMetadata": {
+      "description": "Grants permission to download metadata associated with a report",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html"
+    },
+    "GetTermForReport": {
+      "description": "Grants permission to download a term associated with a report",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "report": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html"
+    },
+    "ListReports": {
+      "description": "Grants permission to list reports in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html"
+    },
+    "TerminateAgreement": {
+      "description": "Grants permission to terminate a customer agreement that was previously accepted by the customer account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "customer-agreement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html"
+    }
+  },
+  "resourceTypes": {
+    "agreement": {
+      "arn": "arn:${Partition}:artifact:::agreement/*",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html"
+    },
+    "customer-agreement": {
+      "arn": "arn:${Partition}:artifact::${Account}:customer-agreement/*",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/managing-agreements.html"
+    },
+    "report": {
+      "arn": "arn:${Partition}:artifact:${Region}::report/*",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html"
+    },
+    "report-package": {
+      "arn": "arn:${Partition}:artifact:::report-package/*",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html"
+    }
+  },
+  "conditionKeys": {}
+}

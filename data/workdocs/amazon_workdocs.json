@@ -1,0 +1,522 @@
+{
+  "name": "Amazon WorkDocs",
+  "prefix": "workdocs",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkdocs.html",
+  "actions": {
+    "AbortDocumentVersionUpload": {
+      "description": "Grants permission to abort the upload of the specified document version that was previously initiated by InitiateDocumentVersionUpload",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_AbortDocumentVersionUpload.html"
+    },
+    "ActivateUser": {
+      "description": "Grants permission to activate the specified user. Only active users can access Amazon WorkDocs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_ActivateUser.html"
+    },
+    "AddNotificationPermissions": {
+      "description": "Grants permission to add principals that are allowed to call notification subscription APIs for a given WorkDocs site",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage-notifications.html"
+    },
+    "AddResourcePermissions": {
+      "description": "Grants permission to create a set of permissions for the specified folder or document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_AddResourcePermissions.html"
+    },
+    "AddUserToGroup": {
+      "description": "Grants permission to add a user to a group",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage_set_admin.html"
+    },
+    "CheckAlias": {
+      "description": "Grants permission to check an alias",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/cloud_quick_start.html"
+    },
+    "CreateComment": {
+      "description": "Grants permission to add a new comment to the specified document version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateComment.html"
+    },
+    "CreateCustomMetadata": {
+      "description": "Grants permission to add one or more custom properties to the specified resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateCustomMetadata.html"
+    },
+    "CreateFolder": {
+      "description": "Grants permission to create a folder with the specified name and parent folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateFolder.html"
+    },
+    "CreateInstance": {
+      "description": "Grants permission to create an instance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/getting_started.html"
+    },
+    "CreateLabels": {
+      "description": "Grants permission to add labels to the given resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateLabels.html"
+    },
+    "CreateNotificationSubscription": {
+      "description": "Grants permission to configure WorkDocs to use Amazon SNS notifications",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateNotificationSubscription.html"
+    },
+    "CreateUser": {
+      "description": "Grants permission to create a user in a Simple AD or Microsoft AD directory",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_CreateUser.html"
+    },
+    "DeactivateUser": {
+      "description": "Grants permission to deactivate the specified user, which revokes the user's access to Amazon WorkDocs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeactivateUser.html"
+    },
+    "DeleteComment": {
+      "description": "Grants permission to delete the specified comment from the document version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteComment.html"
+    },
+    "DeleteCustomMetadata": {
+      "description": "Grants permission to delete custom metadata from the specified resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteCustomMetadata.html"
+    },
+    "DeleteDocument": {
+      "description": "Grants permission to permanently delete the specified document and its associated metadata",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteDocument.html"
+    },
+    "DeleteDocumentVersion": {
+      "description": "Grants permission to delete versions of a specified document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteDocumentVersion.html"
+    },
+    "DeleteFolder": {
+      "description": "Grants permission to permanently delete the specified folder and its contents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteFolder.html"
+    },
+    "DeleteFolderContents": {
+      "description": "Grants permission to delete the contents of the specified folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteFolderContents.html"
+    },
+    "DeleteInstance": {
+      "description": "Grants permission to delete an instance",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage-sites.html#delete_site"
+    },
+    "DeleteLabels": {
+      "description": "Grants permission to delete one or more labels from a resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteLabels.html"
+    },
+    "DeleteNotificationPermissions": {
+      "description": "Grants permission to delete principals that are allowed to call notification subscription APIs for a given WorkDocs site",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage-notifications.html"
+    },
+    "DeleteNotificationSubscription": {
+      "description": "Grants permission to delete the specified subscription from the specified organization",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteNotificationSubscription.html"
+    },
+    "DeleteUser": {
+      "description": "Grants permission to delete the specified user from a Simple AD or Microsoft AD directory",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DeleteUser.html"
+    },
+    "DeregisterDirectory": {
+      "description": "Grants permission to deregister a directory",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage-sites.html#delete_site"
+    },
+    "DescribeActivities": {
+      "description": "Grants permission to fetch user activities in a specified time period",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeActivities.html"
+    },
+    "DescribeAvailableDirectories": {
+      "description": "Grants permission to describe available directories",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/getting_started.html"
+    },
+    "DescribeComments": {
+      "description": "Grants permission to list all the comments for the specified document version",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeComments.html"
+    },
+    "DescribeDocumentVersions": {
+      "description": "Grants permission to retrieve the document versions for the specified document",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeDocumentVersions.html"
+    },
+    "DescribeFolderContents": {
+      "description": "Grants permission to describe the contents of the specified folder, including its documents and sub-folders",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeFolderContents.html"
+    },
+    "DescribeGroups": {
+      "description": "Grants permission to describe the user groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeGroups.html"
+    },
+    "DescribeInstances": {
+      "description": "Grants permission to describe instances",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/getting_started.html"
+    },
+    "DescribeNotificationPermissions": {
+      "description": "Grants permission to describe principals that are allowed to call notification subscription APIs for a given WorkDocs site",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/manage-notifications.html"
+    },
+    "DescribeNotificationSubscriptions": {
+      "description": "Grants permission to list the specified notification subscriptions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeNotificationSubscriptions.html"
+    },
+    "DescribeResourcePermissions": {
+      "description": "Grants permission to view a description of a specified resource's permissions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeResourcePermissions.html"
+    },
+    "DescribeRootFolders": {
+      "description": "Grants permission to describe the root folders",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeRootFolders.html"
+    },
+    "DescribeUsers": {
+      "description": "Grants permission to view a description of the specified users. You can describe all users or filter the results (for example, by status or organization)",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_DescribeUsers.html"
+    },
+    "DownloadDocumentVersion": {
+      "description": "Grants permission to download a specified document version",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetDocumentVersion.html"
+    },
+    "GetCurrentUser": {
+      "description": "Grants permission to retrieve the details of the current user",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetCurrentUser.html"
+    },
+    "GetDocument": {
+      "description": "Grants permission to retrieve the specified document object",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetDocument.html"
+    },
+    "GetDocumentPath": {
+      "description": "Grants permission to retrieve the path information (the hierarchy from the root folder) for the requested document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetDocumentPath.html"
+    },
+    "GetDocumentVersion": {
+      "description": "Grants permission to retrieve version metadata for the specified document",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetDocumentVersion.html"
+    },
+    "GetFolder": {
+      "description": "Grants permission to retrieve the metadata of the specified folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetFolder.html"
+    },
+    "GetFolderPath": {
+      "description": "Grants permission to retrieve the path information (the hierarchy from the root folder) for the specified folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetFolderPath.html"
+    },
+    "GetGroup": {
+      "description": "Grants permission to retrieve details for the specified group",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_Operations.html"
+    },
+    "GetResources": {
+      "description": "Grants permission to get a collection of resources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_GetResources.html"
+    },
+    "InitiateDocumentVersionUpload": {
+      "description": "Grants permission to create a new document object and version object",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_InitiateDocumentVersionUpload.html"
+    },
+    "RegisterDirectory": {
+      "description": "Grants permission to register a directory",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/existing-dir-setup.html"
+    },
+    "RemoveAllResourcePermissions": {
+      "description": "Grants permission to remove all the permissions from the specified resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_RemoveAllResourcePermissions.html"
+    },
+    "RemoveResourcePermission": {
+      "description": "Grants permission to remove the permission for the specified principal from the specified resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_RemoveResourcePermission.html"
+    },
+    "RestoreDocumentVersions": {
+      "description": "Grants permission to restore versions of a specified document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_RestoreDocumentVersions.html"
+    },
+    "UpdateDocument": {
+      "description": "Grants permission to update the specified attributes of the specified document",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_UpdateDocument.html"
+    },
+    "UpdateDocumentVersion": {
+      "description": "Grants permission to change the status of the document version to ACTIVE",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_UpdateDocumentVersion.html"
+    },
+    "UpdateFolder": {
+      "description": "Grants permission to update the specified attributes of the specified folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_UpdateFolder.html"
+    },
+    "UpdateInstanceAlias": {
+      "description": "Grants permission to update an instance alias",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/adminguide/getting_started.html"
+    },
+    "UpdateUser": {
+      "description": "Grants permission to update the specified attributes of the specified user, and grants or revokes administrative privileges to the Amazon WorkDocs site",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workdocs/latest/APIReference/API_UpdateUser.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

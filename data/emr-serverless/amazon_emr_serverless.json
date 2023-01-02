@@ -1,0 +1,265 @@
+{
+  "name": "Amazon EMR Serverless",
+  "prefix": "emr-serverless",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonemrserverless.html",
+  "actions": {
+    "CancelJobRun": {
+      "description": "Grants permission to cancel a job run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_CancelJobRun.html"
+    },
+    "CreateApplication": {
+      "description": "Grants permission to create an Application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_CreateApplication.html"
+    },
+    "DeleteApplication": {
+      "description": "Grants permission to delete an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_DeleteApplication.html"
+    },
+    "GetApplication": {
+      "description": "Grants permission to get application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetApplication.html"
+    },
+    "GetDashboardForJobRun": {
+      "description": "Grants permission to get job run dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetDashboardForJobRun.html"
+    },
+    "GetJobRun": {
+      "description": "Grants permission to get a job run",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "jobRun": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_GetJobRun.html"
+    },
+    "ListApplications": {
+      "description": "Grants permission to list applications",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ListApplications.html"
+    },
+    "ListJobRuns": {
+      "description": "Grants permission to list job runs associated with an application",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ListJobRuns.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "StartApplication": {
+      "description": "Grants permission to Start an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartApplication.html"
+    },
+    "StartJobRun": {
+      "description": "Grants permission to start a job run",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StartJobRun.html"
+    },
+    "StopApplication": {
+      "description": "Grants permission to Stop an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_StopApplication.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "jobRun": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateApplication": {
+      "description": "Grants permission to Update an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_UpdateApplication.html"
+    }
+  },
+  "resourceTypes": {
+    "application": {
+      "arn": "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html"
+    },
+    "jobRun": {
+      "arn": "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/jobruns/${JobRunId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

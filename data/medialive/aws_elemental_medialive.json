@@ -1,0 +1,923 @@
+{
+  "name": "AWS Elemental MediaLive",
+  "prefix": "medialive",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmedialive.html",
+  "actions": {
+    "AcceptInputDeviceTransfer": {
+      "description": "Grants permission to accept an input device transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "BatchDelete": {
+      "description": "Grants permission to delete channels, inputs, input security groups, and multiplexes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html"
+    },
+    "BatchStart": {
+      "description": "Grants permission to start channels and multiplexes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html"
+    },
+    "BatchStop": {
+      "description": "Grants permission to stop channels and multiplexes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html"
+    },
+    "BatchUpdateSchedule": {
+      "description": "Grants permission to add and remove actions from a channel's schedule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/submitting-batch-command.html"
+    },
+    "CancelInputDeviceTransfer": {
+      "description": "Grants permission to cancel an input device transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "ClaimDevice": {
+      "description": "Grants permission to claim an input device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "CreateChannel": {
+      "description": "Grants permission to create a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/creating-channel-scratch.html"
+    },
+    "CreateInput": {
+      "description": "Grants permission to create an input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "input-security-group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/creating-input.html"
+    },
+    "CreateInputSecurityGroup": {
+      "description": "Grants permission to create an input security group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-security-group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/working-with-input-security-groups.html"
+    },
+    "CreateMultiplex": {
+      "description": "Grants permission to create a multiplex",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/multiplex-create.html"
+    },
+    "CreateMultiplexProgram": {
+      "description": "Grants permission to create a multiplex program",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/multiplex-create.html"
+    },
+    "CreatePartnerInput": {
+      "description": "Grants permission to create a partner input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/input-create-cdi-partners.html"
+    },
+    "CreateTags": {
+      "description": "Grants permission to create tags for channels, inputs, input security groups, multiplexes, and reservations",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input-security-group": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "multiplex": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reservation": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/tagging.html"
+    },
+    "DeleteChannel": {
+      "description": "Grants permission to delete a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html"
+    },
+    "DeleteInput": {
+      "description": "Grants permission to delete an input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/delete-input.html"
+    },
+    "DeleteInputSecurityGroup": {
+      "description": "Grants permission to delete an input security group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-security-group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/delete-input-security-group.html"
+    },
+    "DeleteMultiplex": {
+      "description": "Grants permission to delete a multiplex",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/delete-multiplex-program.html"
+    },
+    "DeleteMultiplexProgram": {
+      "description": "Grants permission to delete a multiplex program",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/delete-multiplex-program.html"
+    },
+    "DeleteReservation": {
+      "description": "Grants permission to delete an expired reservation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reservation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/deleting-reservations.html"
+    },
+    "DeleteSchedule": {
+      "description": "Grants permission to delete all schedule actions for a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/schedule-using-console-delete.html"
+    },
+    "DeleteTags": {
+      "description": "Grants permission to delete tags from channels, inputs, input security groups, multiplexes, and reservations",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input-security-group": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "multiplex": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reservation": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/tagging.html"
+    },
+    "DescribeChannel": {
+      "description": "Grants permission to get details about a channel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/viewing-channel-configuration.html"
+    },
+    "DescribeInput": {
+      "description": "Grants permission to describe an input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input.html"
+    },
+    "DescribeInputDevice": {
+      "description": "Grants permission to describe an input device",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/device-edit.html"
+    },
+    "DescribeInputDeviceThumbnail": {
+      "description": "Grants permission to describe an input device thumbnail",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/device-edit.html"
+    },
+    "DescribeInputSecurityGroup": {
+      "description": "Grants permission to describe an input security group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-security-group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input-security-group.html"
+    },
+    "DescribeMultiplex": {
+      "description": "Grants permission to describe a multiplex",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-program-channel.html"
+    },
+    "DescribeMultiplexProgram": {
+      "description": "Grants permission to describe a multiplex program",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/monitoring-multiplex-console.html"
+    },
+    "DescribeOffering": {
+      "description": "Grants permission to get details about a reservation offering",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "offering": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservations.html"
+    },
+    "DescribeReservation": {
+      "description": "Grants permission to get details about a reservation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reservation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/view-reservations.html"
+    },
+    "DescribeSchedule": {
+      "description": "Grants permission to view a list of actions scheduled on a channel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/schedule-using-console-view.html"
+    },
+    "ListChannels": {
+      "description": "Grants permission to list channels",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/viewing-channel-configuration.html"
+    },
+    "ListInputDeviceTransfers": {
+      "description": "Grants permission to list input device transfers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "ListInputDevices": {
+      "description": "Grants permission to list input devices",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/device-edit.html"
+    },
+    "ListInputSecurityGroups": {
+      "description": "Grants permission to list input security groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input-security-group.html"
+    },
+    "ListInputs": {
+      "description": "Grants permission to list inputs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input.html"
+    },
+    "ListMultiplexPrograms": {
+      "description": "Grants permission to list multiplex programs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/monitoring-multiplex-console.html"
+    },
+    "ListMultiplexes": {
+      "description": "Grants permission to list multiplexes",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-program-channel.html"
+    },
+    "ListOfferings": {
+      "description": "Grants permission to list reservation offerings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservations.html"
+    },
+    "ListReservations": {
+      "description": "Grants permission to list reservations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/view-reservations.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for channels, inputs, input security groups, multiplexes, and reservations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "input-security-group": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "multiplex": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "reservation": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/tagging.html"
+    },
+    "PurchaseOffering": {
+      "description": "Grants permission to purchase a reservation offering",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "offering": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "reservation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservations.html"
+    },
+    "RebootInputDevice": {
+      "description": "Grants permission to reboot an input device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "RejectInputDeviceTransfer": {
+      "description": "Grants permission to reject an input device transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "StartChannel": {
+      "description": "Grants permission to start a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html"
+    },
+    "StartInputDeviceMaintenanceWindow": {
+      "description": "Grants permission to start a maintenance window for an input device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "StartMultiplex": {
+      "description": "Grants permission to start a multiplex",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/start-multiplex.html"
+    },
+    "StopChannel": {
+      "description": "Grants permission to stop a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html"
+    },
+    "StopMultiplex": {
+      "description": "Grants permission to stop a multiplex",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/stop-multiplex.title.html"
+    },
+    "TransferInputDevice": {
+      "description": "Grants permission to transfer an input device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "UpdateChannel": {
+      "description": "Grants permission to update a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html"
+    },
+    "UpdateChannelClass": {
+      "description": "Grants permission to update the class of a channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-channel.html"
+    },
+    "UpdateInput": {
+      "description": "Grants permission to update an input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input.html"
+    },
+    "UpdateInputDevice": {
+      "description": "Grants permission to update an input device",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/device-edit.html"
+    },
+    "UpdateInputSecurityGroup": {
+      "description": "Grants permission to update an input security group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "input-security-group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-input-security-group.html"
+    },
+    "UpdateMultiplex": {
+      "description": "Grants permission to update a multiplex",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-program-channel.html"
+    },
+    "UpdateMultiplexProgram": {
+      "description": "Grants permission to update a multiplex program",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "multiplex": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-program-channel.html"
+    },
+    "UpdateReservation": {
+      "description": "Grants permission to update a reservation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "reservation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/reservations.html"
+    }
+  },
+  "resourceTypes": {
+    "channel": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:channel:${ChannelId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/channels.html"
+    },
+    "input": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:input:${InputId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/inputs.html"
+    },
+    "input-device": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:inputDevice:${DeviceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-devices.html"
+    },
+    "input-security-group": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:inputSecurityGroup:${InputSecurityGroupId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/inputsecuritygroups.html"
+    },
+    "multiplex": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:multiplex:${MultiplexId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/eml-multiplex.html"
+    },
+    "offering": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:offering:${OfferingId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/input-output-reservations.html"
+    },
+    "reservation": {
+      "arn": "arn:${Partition}:medialive:${Region}:${Account}:reservation:${ReservationId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/medialive/latest/ug/reservations.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/medialive/latest/ugtagging.html"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/medialive/latest/ugtagging.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/medialive/latest/ugtagging.html"
+    }
+  }
+}

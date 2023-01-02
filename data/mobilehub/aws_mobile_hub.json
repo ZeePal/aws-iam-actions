@@ -1,0 +1,252 @@
+{
+  "name": "AWS Mobile Hub",
+  "prefix": "mobilehub",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmobilehub.html",
+  "actions": {
+    "CreateProject": {
+      "description": "Create a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "CreateServiceRole": {
+      "description": "Enable AWS Mobile Hub in the account by creating the required service role",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "DeleteProject": {
+      "description": "Delete the specified project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "DeleteProjectSnapshot": {
+      "description": "Delete a saved snapshot of project configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "DeployToStage": {
+      "description": "Deploy changes to the specified stage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "DescribeBundle": {
+      "description": "Describe the download bundle",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ExportBundle": {
+      "description": "Export the download bundle",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ExportProject": {
+      "description": "Export the project configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "GenerateProjectParameters": {
+      "description": "Generate project parameters required for code generation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "GetProject": {
+      "description": "Get project configuration and resources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "GetProjectSnapshot": {
+      "description": "Fetch the previously exported project configuration snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ImportProject": {
+      "description": "Create a new project from the previously exported project configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "InstallBundle": {
+      "description": "Install a bundle in the project deployments S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListAvailableConnectors": {
+      "description": "List the available SaaS (Software as a Service) connectors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListAvailableFeatures": {
+      "description": "List available features",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListAvailableRegions": {
+      "description": "List available regions for projects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListBundles": {
+      "description": "List the available download bundles",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListProjectSnapshots": {
+      "description": "List saved snapshots of project configuration",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ListProjects": {
+      "description": "List projects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "SynchronizeProject": {
+      "description": "Synchronize state of resources into project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "UpdateProject": {
+      "description": "Update project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "ValidateProject": {
+      "description": "Validate a mobile hub project.",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    },
+    "VerifyServiceRole": {
+      "description": "Verify AWS Mobile Hub is enabled in the account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/managed-policies.html"
+    }
+  },
+  "resourceTypes": {
+    "project": {
+      "arn": "arn:${Partition}:mobilehub:${Region}:${Account}:project/${ProjectId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/mobile-hub/latest/developerguide/reference-mobile-hub-iam-managed-policies.html"
+    }
+  },
+  "conditionKeys": {}
+}

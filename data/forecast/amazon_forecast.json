@@ -1,0 +1,1351 @@
+{
+  "name": "Amazon Forecast",
+  "prefix": "forecast",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonforecast.html",
+  "actions": {
+    "CreateAutoPredictor": {
+      "description": "Grants permission to create an auto predictor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateAutoPredictor.html"
+    },
+    "CreateDataset": {
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDataset.html"
+    },
+    "CreateDatasetGroup": {
+      "description": "Grants permission to create a dataset group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDatasetGroup.html"
+    },
+    "CreateDatasetImportJob": {
+      "description": "Grants permission to create a dataset import job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDatasetImportJob.html"
+    },
+    "CreateExplainability": {
+      "description": "Grants permission to create an explainability",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainability.html"
+    },
+    "CreateExplainabilityExport": {
+      "description": "Grants permission to create an explainability export using an explainability resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "explainability": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainabilityExport.html"
+    },
+    "CreateForecast": {
+      "description": "Grants permission to create a forecast",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecast.html"
+    },
+    "CreateForecastEndpoint": {
+      "description": "Grants permission to create an endpoint using a Predictor resource",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "CreateForecastExportJob": {
+      "description": "Grants permission to create a forecast export job using a forecast resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecastExportJob.html"
+    },
+    "CreateMonitor": {
+      "description": "Grants permission to create an monitor using a Predictor resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateMonitor.html"
+    },
+    "CreatePredictor": {
+      "description": "Grants permission to create a predictor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreatePredictor.html"
+    },
+    "CreatePredictorBacktestExportJob": {
+      "description": "Grants permission to create a predictor backtest export job using a predictor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreatePredictorBacktestExportJob.html"
+    },
+    "CreateWhatIfAnalysis": {
+      "description": "Grants permission to create a what-if analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfAnalysis.html"
+    },
+    "CreateWhatIfForecast": {
+      "description": "Grants permission to create a what-if forecast",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfAnalysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfForecast.html"
+    },
+    "CreateWhatIfForecastExport": {
+      "description": "Grants permission to create a what-if forecast export using what-if forecast resources",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfForecastExport.html"
+    },
+    "DeleteDataset": {
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteDataset.html"
+    },
+    "DeleteDatasetGroup": {
+      "description": "Grants permission to delete a dataset group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteDatasetGroup.html"
+    },
+    "DeleteDatasetImportJob": {
+      "description": "Grants permission to delete a dataset import job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteDatasetImportJob.html"
+    },
+    "DeleteExplainability": {
+      "description": "Grants permission to delete an explainability",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "explainability": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteExplainability.html"
+    },
+    "DeleteExplainabilityExport": {
+      "description": "Grants permission to delete an explainability export",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "explainabilityExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteExplainabilityExport.html"
+    },
+    "DeleteForecast": {
+      "description": "Grants permission to delete a forecast",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteForecast.html"
+    },
+    "DeleteForecastEndpoint": {
+      "description": "Grants permission to delete an endpoint resource",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "DeleteForecastExportJob": {
+      "description": "Grants permission to delete a forecast export job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteForecastExportJob.html"
+    },
+    "DeleteMonitor": {
+      "description": "Grants permission to delete a monitor resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteMonitor.html"
+    },
+    "DeletePredictor": {
+      "description": "Grants permission to delete a predictor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeletePredictor.html"
+    },
+    "DeletePredictorBacktestExportJob": {
+      "description": "Grants permission to delete a predictor backtest export job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictorBacktestExportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeletePredictorBacktestExportJob.html"
+    },
+    "DeleteResourceTree": {
+      "description": "Grants permission to delete a resource and its child resources",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "explainability": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "explainabilityExport": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "forecastExport": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "predictorBacktestExportJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfAnalysis": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfForecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteResourceTree.html"
+    },
+    "DeleteWhatIfAnalysis": {
+      "description": "Grants permission to delete a what-if analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfAnalysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteWhatIfAnalysis.html"
+    },
+    "DeleteWhatIfForecast": {
+      "description": "Grants permission to delete a what-if forecast",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteWhatIfForecast.html"
+    },
+    "DeleteWhatIfForecastExport": {
+      "description": "Grants permission to delete a what-if forecast export",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DeleteWhatIfForecastExport.html"
+    },
+    "DescribeAutoPredictor": {
+      "description": "Grants permission to describe an auto predictor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeAutoPredictor.html"
+    },
+    "DescribeDataset": {
+      "description": "Grants permission to describe a dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeDataset.html"
+    },
+    "DescribeDatasetGroup": {
+      "description": "Grants permission to describe a dataset group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeDatasetGroup.html"
+    },
+    "DescribeDatasetImportJob": {
+      "description": "Grants permission to describe a dataset import job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeDatasetImportJob.html"
+    },
+    "DescribeExplainability": {
+      "description": "Grants permission to describe an explainability",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "explainability": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeExplainability.html"
+    },
+    "DescribeExplainabilityExport": {
+      "description": "Grants permission to describe an explainability export",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "explainabilityExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeExplainabilityExport.html"
+    },
+    "DescribeForecast": {
+      "description": "Grants permission to describe a forecast",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeForecast.html"
+    },
+    "DescribeForecastEndpoint": {
+      "description": "Grants permission to describe an endpoint resource",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "DescribeForecastExportJob": {
+      "description": "Grants permission to describe a forecast export job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeForecastExportJob.html"
+    },
+    "DescribeMonitor": {
+      "description": "Grants permission to describe an monitor resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeMonitor.html"
+    },
+    "DescribePredictor": {
+      "description": "Grants permission to describe a predictor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribePredictor.html"
+    },
+    "DescribePredictorBacktestExportJob": {
+      "description": "Grants permission to describe a predictor backtest export job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictorBacktestExportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribePredictorBacktestExportJob.html"
+    },
+    "DescribeWhatIfAnalysis": {
+      "description": "Grants permission to describe a what-if analysis",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfAnalysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeWhatIfAnalysis.html"
+    },
+    "DescribeWhatIfForecast": {
+      "description": "Grants permission to describe a what-if forecast",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeWhatIfForecast.html"
+    },
+    "DescribeWhatIfForecastExport": {
+      "description": "Grants permission to describe a what-if forecast export",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeWhatIfForecastExport.html"
+    },
+    "GetAccuracyMetrics": {
+      "description": "Grants permission to get the Accuracy Metrics for a predictor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_GetAccuracyMetrics.html"
+    },
+    "GetRecentForecastContext": {
+      "description": "Grants permission to get the forecast context of a timeseries for an endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "InvokeForecastEndpoint": {
+      "description": "Grants permission to invoke the endpoint to get forecast for a timeseries",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "ListDatasetGroups": {
+      "description": "Grants permission to list all the dataset groups",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListDatasetGroups.html"
+    },
+    "ListDatasetImportJobs": {
+      "description": "Grants permission to list all the dataset import jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListDatasetImportJobs.html"
+    },
+    "ListDatasets": {
+      "description": "Grants permission to list all the datasets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListDatasets.html"
+    },
+    "ListExplainabilities": {
+      "description": "Grants permission to list all the explainabilities",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListExplainabilities.html"
+    },
+    "ListExplainabilityExports": {
+      "description": "Grants permission to list all the explainability exports",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListExplainabilityExports.html"
+    },
+    "ListForecastExportJobs": {
+      "description": "Grants permission to list all the forecast export jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListForecastExportJobs.html"
+    },
+    "ListForecasts": {
+      "description": "Grants permission to list all the forecasts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListForecasts.html"
+    },
+    "ListMonitorEvaluations": {
+      "description": "Grants permission to list all the monitor evaluation result for a monitor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListMonitorEvaluations.html"
+    },
+    "ListMonitors": {
+      "description": "Grants permission to list all the monitor resources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListMonitors.html"
+    },
+    "ListPredictorBacktestExportJobs": {
+      "description": "Grants permission to list all the predictor backtest export jobs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListPredictorBacktestExportJobs.html"
+    },
+    "ListPredictors": {
+      "description": "Grants permission to list all the predictors",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListPredictors.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags for an Amazon Forecast resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetImportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainability": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainabilityExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecastExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "monitor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictorBacktestExportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfAnalysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecastExport": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListTagsForResource.html"
+    },
+    "ListWhatIfAnalyses": {
+      "description": "Grants permission to list all the what-if analyses",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListWhatIfAnalyses.html"
+    },
+    "ListWhatIfForecastExports": {
+      "description": "Grants permission to list all the what-if forecast exports",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListWhatIfForecastExports.html"
+    },
+    "ListWhatIfForecasts": {
+      "description": "Grants permission to list all the what-if forecasts",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ListWhatIfForecasts.html"
+    },
+    "QueryForecast": {
+      "description": "Grants permission to retrieve a forecast for a single item",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_forecastquery_QueryForecast.html"
+    },
+    "QueryWhatIfForecast": {
+      "description": "Grants permission to retrieve a what-if forecast for a single item",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_forecastquery_QueryWhatIfForecast.html"
+    },
+    "ResumeResource": {
+      "description": "Grants permission to resume Amazon Forecast resource jobs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_ResumeResource.html"
+    },
+    "StopResource": {
+      "description": "Grants permission to stop Amazon Forecast resource jobs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "endpoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "explainability": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "explainabilityExport": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "forecast": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "forecastExport": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "monitor": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "predictor": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "predictorBacktestExportJob": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfAnalysis": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfForecast": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "whatIfForecastExport": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_StopResource.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to associate the specified tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetImportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainability": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainabilityExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecastExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "monitor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictorBacktestExportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfAnalysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecastExport": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to delete the specified tags for a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetGroup": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasetImportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "endpoint": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainability": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "explainabilityExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "forecastExport": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "monitor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictor": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "predictorBacktestExportJob": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfAnalysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecast": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "whatIfForecastExport": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_UntagResource.html"
+    },
+    "UpdateDatasetGroup": {
+      "description": "Grants permission to update a dataset group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_UpdateDatasetGroup.html"
+    }
+  },
+  "resourceTypes": {
+    "algorithm": {
+      "arn": "arn:${Partition}:forecast:::algorithm/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/aws-forecast-choosing-recipes.html"
+    },
+    "dataset": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:dataset/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDataset.html"
+    },
+    "datasetGroup": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:dataset-group/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDatasetGroup.html"
+    },
+    "datasetImportJob": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:dataset-import-job/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDatasetImportJob.html"
+    },
+    "endpoint": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:forecast-endpoint/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html"
+    },
+    "explainability": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:explainability/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainability.html"
+    },
+    "explainabilityExport": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:explainability-export/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateExplainabilityExport.html"
+    },
+    "forecast": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:forecast/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecast.html"
+    },
+    "forecastExport": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:forecast-export-job/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecastExportJob.html"
+    },
+    "monitor": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:monitor/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateMonitor.html"
+    },
+    "predictor": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:predictor/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreatePredictor.html"
+    },
+    "predictorBacktestExportJob": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:predictor-backtest-export-job/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreatePredictorBacktestExportJob.html"
+    },
+    "whatIfAnalysis": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:what-if-analysis/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfAnalysis.html"
+    },
+    "whatIfForecast": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfForecast.html"
+    },
+    "whatIfForecastExport": {
+      "arn": "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast-export/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/forecast/latest/dg/API_CreateWhatIfForecastExport.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

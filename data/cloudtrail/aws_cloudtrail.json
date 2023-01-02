@@ -1,0 +1,499 @@
+{
+  "name": "AWS CloudTrail",
+  "prefix": "cloudtrail",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html",
+  "actions": {
+    "AddTags": {
+      "description": "Grants permission to add one or more tags to a trail, up to a limit of 10",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "trail": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AddTags.html"
+    },
+    "CancelQuery": {
+      "description": "Grants permission to cancel a running query",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CancelQuery.html"
+    },
+    "CreateEventDataStore": {
+      "description": "Grants permission to create an event data store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateEventDataStore.html"
+    },
+    "CreateServiceLinkedChannel": {
+      "description": "Grants permission to create a service-linked channel that specifies the settings for delivery of log data to an AWS service",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/API_CreateServiceLinkedChannel.html"
+    },
+    "CreateTrail": {
+      "description": "Grants permission to create a trail that specifies the settings for delivery of log data to an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_CreateTrail.html"
+    },
+    "DeleteEventDataStore": {
+      "description": "Grants permission to delete an event data store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DeleteEventDataStore.html"
+    },
+    "DeleteServiceLinkedChannel": {
+      "description": "Grants permission to delete a service-linked channel",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/API_DeleteServiceLinkedChannel.html"
+    },
+    "DeleteTrail": {
+      "description": "Grants permission to delete a trail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DeleteTrail.html"
+    },
+    "DeregisterOrganizationDelegatedAdmin": {
+      "description": "Grants permission to deregister an AWS Organizations member account as a delegated administrator",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DeregisterOrganizationDelegatedAdmin.html"
+    },
+    "DescribeQuery": {
+      "description": "Grants permission to list details for the query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DescribeQuery.html"
+    },
+    "DescribeTrails": {
+      "description": "Grants permission to list settings for the trails associated with the current region for your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DescribeTrails.html"
+    },
+    "GetEventDataStore": {
+      "description": "Grants permission to list settings for the event data store",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetEventDataStore.html"
+    },
+    "GetEventSelectors": {
+      "description": "Grants permission to list settings for event selectors configured for a trail",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetEventSelectors.html"
+    },
+    "GetInsightSelectors": {
+      "description": "Grants permission to list CloudTrail Insights selectors that are configured for a trail",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetInsightSelectors.html"
+    },
+    "GetQueryResults": {
+      "description": "Grants permission to fetch results of a complete query",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetQueryResults.html"
+    },
+    "GetServiceLinkedChannel": {
+      "description": "Grants permission to list settings for the service-linked channel",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/API_GetServiceLinkedChannel.html"
+    },
+    "GetTrail": {
+      "description": "Grants permission to list settings for the trail",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetTrail.html"
+    },
+    "GetTrailStatus": {
+      "description": "Grants permission to retrieve a JSON-formatted list of information about the specified trail",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetTrailStatus.html"
+    },
+    "ListEventDataStores": {
+      "description": "Grants permission to list event data stores associated with the current region for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListEventDataStores.html"
+    },
+    "ListPublicKeys": {
+      "description": "Grants permission to list the public keys whose private keys were used to sign trail digest files within a specified time range",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListPublicKeys.html"
+    },
+    "ListQueries": {
+      "description": "Grants permission to list queries associated with an event data store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListQueries.html"
+    },
+    "ListServiceLinkedChannels": {
+      "description": "Grants permission to list service-linked channels associated with the current region for a specified account",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/API_ListServiceLinkedChannels.html"
+    },
+    "ListTags": {
+      "description": "Grants permission to list the tags for trails or event data stores in the current region",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "trail": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListTags.html"
+    },
+    "ListTrails": {
+      "description": "Grants permission to list trails associated with the current region for your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListTrails.html"
+    },
+    "LookupEvents": {
+      "description": "Grants permission to look up API activity events captured by CloudTrail that create, update, or delete resources in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html"
+    },
+    "PutEventSelectors": {
+      "description": "Grants permission to create and update event selectors for a trail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutEventSelectors.html"
+    },
+    "PutInsightSelectors": {
+      "description": "Grants permission to create and update CloudTrail Insights selectors for a trail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_PutInsightSelectors.html"
+    },
+    "RegisterOrganizationDelegatedAdmin": {
+      "description": "Grants permission to register an AWS Organizations member account as a delegated administrator",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RegisterOrganizationDelegatedAdmin.html"
+    },
+    "RemoveTags": {
+      "description": "Grants permission to remove tags from a trail",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "trail": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RemoveTags.html"
+    },
+    "RestoreEventDataStore": {
+      "description": "Grants permission to restore an event data store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RestoreEventDataStore.html"
+    },
+    "StartLogging": {
+      "description": "Grants permission to start the recording of AWS API calls and log file delivery for a trail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartLogging.html"
+    },
+    "StartQuery": {
+      "description": "Grants permission to start a new query on a specified event data store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartQuery.html"
+    },
+    "StopLogging": {
+      "description": "Grants permission to stop the recording of AWS API calls and log file delivery for a trail",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StopLogging.html"
+    },
+    "UpdateEventDataStore": {
+      "description": "Grants permission to update an event data store",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventdatastore": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateEventDataStore.html"
+    },
+    "UpdateServiceLinkedChannel": {
+      "description": "Grants permission to update the settings that specify delivery of log files",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "channel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/API_UpdateServiceLinkedChannel.html"
+    },
+    "UpdateTrail": {
+      "description": "Grants permission to update the settings that specify delivery of log files",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "trail": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html"
+    }
+  },
+  "resourceTypes": {
+    "channel": {
+      "arn": "arn:${Partition}:cloudtrail:${Region}:${Account}:channel/${ChannelId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html"
+    },
+    "eventdatastore": {
+      "arn": "arn:${Partition}:cloudtrail:${Region}:${Account}:eventdatastore/${EventDataStoreId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html"
+    },
+    "trail": {
+      "arn": "arn:${Partition}:cloudtrail:${Region}:${Account}:trail/${TrailName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by value associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by value associated with the resource",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

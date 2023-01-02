@@ -1,0 +1,295 @@
+{
+  "name": "AWS Elemental MediaPackage VOD",
+  "prefix": "mediapackage-vod",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediapackagevod.html",
+  "actions": {
+    "ConfigureLogs": {
+      "description": "Grants permission to configure egress access logs for a PackagingGroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-groups": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups-id-configure_logs.html#packaging_groups-id-configure_logsput"
+    },
+    "CreateAsset": {
+      "description": "Grants permission to create an asset in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/assets.html#assetspost"
+    },
+    "CreatePackagingConfiguration": {
+      "description": "Grants permission to create a packaging configuration in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_configurations.html#packaging_configurationspost"
+    },
+    "CreatePackagingGroup": {
+      "description": "Grants permission to create a packaging group in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups.html#packaging_groupspost"
+    },
+    "DeleteAsset": {
+      "description": "Grants permission to delete an asset in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assets": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/assets-id.html#assets-iddelete"
+    },
+    "DeletePackagingConfiguration": {
+      "description": "Grants permission to delete a packaging configuration in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-configurations": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_configurations-id.html#packaging_configurations-iddelete"
+    },
+    "DeletePackagingGroup": {
+      "description": "Grants permission to delete a packaging group in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-groups": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups-id.html#packaging_groups-iddelete"
+    },
+    "DescribeAsset": {
+      "description": "Grants permission to view the details of an asset in AWS Elemental MediaPackage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assets": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/assets-id.html#assets-idget"
+    },
+    "DescribePackagingConfiguration": {
+      "description": "Grants permission to view the details of a packaging configuration in AWS Elemental MediaPackage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-configurations": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_configurations-id.html#packaging_configurations-idget"
+    },
+    "DescribePackagingGroup": {
+      "description": "Grants permission to view the details of a packaging group in AWS Elemental MediaPackage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-groups": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups-id.html#packaging_groups-idget"
+    },
+    "ListAssets": {
+      "description": "Grants permission to view a list of assets in AWS Elemental MediaPackage",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/assets.html#assetsget"
+    },
+    "ListPackagingConfigurations": {
+      "description": "Grants permission to view a list of packaging configurations in AWS Elemental MediaPackage",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_configurations.html#packaging_configurationsget"
+    },
+    "ListPackagingGroups": {
+      "description": "Grants permission to view a list of packaging groups in AWS Elemental MediaPackage",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups.html#packaging_groupsget"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags assigned to a PackagingGroup, PackagingConfiguration, or Asset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assets": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-configurations": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-groups": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/tags-resource-arn.html#tags-resource-arnget"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign tags to a PackagingGroup, PackagingConfiguration, or Asset",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assets": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-configurations": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-groups": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/tags-resource-arn.html#tags-resource-arnpost"
+    },
+    "UntagResource": {
+      "description": "Grants permission to delete tags from a PackagingGroup, PackagingConfiguration, or Asset",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assets": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-configurations": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "packaging-groups": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/tags-resource-arn.html#tags-resource-arndelete"
+    },
+    "UpdatePackagingGroup": {
+      "description": "Grants permission to update a packaging group in AWS Elemental MediaPackage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "packaging-groups": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/packaging_groups-id.html#packaging_groups-idput"
+    }
+  },
+  "resourceTypes": {
+    "assets": {
+      "arn": "arn:${Partition}:mediapackage-vod:${Region}:${Account}:assets/${AssetIdentifier}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mediapackage/latest/ug/asset.html"
+    },
+    "packaging-configurations": {
+      "arn": "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-configurations/${PackagingConfigurationIdentifier}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig.html"
+    },
+    "packaging-groups": {
+      "arn": "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-groups/${PackagingGroupIdentifier}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-group.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

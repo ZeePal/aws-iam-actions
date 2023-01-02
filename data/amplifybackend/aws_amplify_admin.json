@@ -1,0 +1,623 @@
+{
+  "name": "AWS Amplify Admin",
+  "prefix": "amplifybackend",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsamplifyadmin.html",
+  "actions": {
+    "CloneBackend": {
+      "description": "Grants permission to clone an existing Amplify Admin backend environment into a new Amplify Admin backend enviroment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-environments-backendenvironmentname-clone.html#CloneBackend"
+    },
+    "CreateBackend": {
+      "description": "Grants permission to create a new Amplify Admin backend environment by Amplify appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend.html#CreateBackend"
+    },
+    "CreateBackendAPI": {
+      "description": "Grants permission to create an API for an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api.html#CreateBackendAPI"
+    },
+    "CreateBackendAuth": {
+      "description": "Grants permission to create an auth resource for an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "auth": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth.html#CreateBackendAuth"
+    },
+    "CreateBackendConfig": {
+      "description": "Grants permission to create a new Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-config.html#CreateBackendConfig"
+    },
+    "CreateBackendStorage": {
+      "description": "Grants permission to create a backend storage resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#CreateBackendStorage"
+    },
+    "CreateToken": {
+      "description": "Grants permission to create an Amplify Admin challenge token by appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-challenge.html#CreateToken"
+    },
+    "DeleteBackend": {
+      "description": "Grants permission to delete an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-environments-backendenvironmentname-remove.html#DeleteBackend"
+    },
+    "DeleteBackendAPI": {
+      "description": "Grants permission to delete an API of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname-remove.html#DeleteBackendAPI"
+    },
+    "DeleteBackendAuth": {
+      "description": "Grants permission to delete an auth resource of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "auth": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth-backendenvironmentname-remove.html#DeleteBackendAuth"
+    },
+    "DeleteBackendStorage": {
+      "description": "Grants permission to delete a backend storage resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "storage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#DeleteBackendStorage"
+    },
+    "DeleteToken": {
+      "description": "Grants permission to delete an Amplify Admin challenge token by appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-challenge-sessionid-remove.html#DeleteToken"
+    },
+    "GenerateBackendAPIModels": {
+      "description": "Grants permission to generate models for an API of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname-generatemodels.html#GenerateBackendAPIModels"
+    },
+    "GetBackend": {
+      "description": "Grants permission to retrieve an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-details.html#GetBackend"
+    },
+    "GetBackendAPI": {
+      "description": "Grants permission to retrieve an API of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname-details.html#GetBackendAPI"
+    },
+    "GetBackendAPIModels": {
+      "description": "Grants permission to retrieve models for an API of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname-getmodels.html#GetBackendAPIModels"
+    },
+    "GetBackendAuth": {
+      "description": "Grants permission to retrieve an auth resource of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "auth": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth-backendenvironmentname-details.html#GetBackendAuth"
+    },
+    "GetBackendJob": {
+      "description": "Grants permission to retrieve a job of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname-jobid.html#GetBackendJob"
+    },
+    "GetBackendStorage": {
+      "description": "Grants permission to retrieve an existing backend storage resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#GetBackendStorage"
+    },
+    "GetToken": {
+      "description": "Grants permission to retrieve an Amplify Admin challenge token by appId",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-challenge-sessionid.html#GetToken"
+    },
+    "ImportBackendAuth": {
+      "description": "Grants permission to import an existing auth resource of an Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "auth": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth-backendenvironmentname.html#ImportBackendAuth"
+    },
+    "ImportBackendStorage": {
+      "description": "Grants permission to import an existing backend storage resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "storage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#ImportBackendStorage"
+    },
+    "ListBackendJobs": {
+      "description": "Grants permission to retrieve the jobs of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html#ListBackendJobs"
+    },
+    "ListS3Buckets": {
+      "description": "Grants permission to retrieve s3 buckets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#ListS3Buckets"
+    },
+    "RemoveAllBackends": {
+      "description": "Grants permission to delete all existing Amplify Admin backend environments by appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-remove.html#RemoveAllBackends"
+    },
+    "RemoveBackendConfig": {
+      "description": "Grants permission to delete an Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-config-remove.html#RemoveBackendConfig"
+    },
+    "UpdateBackendAPI": {
+      "description": "Grants permission to update an API of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "api": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname.html#UpdateBackendAPI"
+    },
+    "UpdateBackendAuth": {
+      "description": "Grants permission to update an auth resource of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "auth": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth-backendenvironmentname.html#UpdateBackendAuth"
+    },
+    "UpdateBackendConfig": {
+      "description": "Grants permission to update an Amplify Admin backend config by Amplify appId",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-config-update.html#UpdateBackendConfig"
+    },
+    "UpdateBackendJob": {
+      "description": "Grants permission to update a job of an existing Amplify Admin backend environment by appId and backendEnvironmentName",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "job": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname-jobid.html#UpdateBackendJob"
+    },
+    "UpdateBackendStorage": {
+      "description": "Grants permission to update a backend storage resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "backend": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "environment": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "storage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html#UpdateBackendStorage"
+    }
+  },
+  "resourceTypes": {
+    "api": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/api",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api.html"
+    },
+    "auth": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/auth",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-auth.html"
+    },
+    "backend": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend.html"
+    },
+    "config": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/config",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-config.html"
+    },
+    "environment": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/environments",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-api-backendenvironmentname-details.html"
+    },
+    "job": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/job",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html"
+    },
+    "storage": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/storage",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-storage.html"
+    },
+    "token": {
+      "arn": "arn:${Partition}:amplifybackend:${Region}:${Account}:backend/${AppId}/token",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-token.html"
+    }
+  },
+  "conditionKeys": {}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Amazon WorkMail Message Flow",
+  "prefix": "workmailmessageflow",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkmailmessageflow.html",
+  "actions": {
+    "GetRawMessageContent": {
+      "description": "Grants permission to read the content of email messages with the specified message ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RawMessage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_messageflow_GetRawMessageContent.html"
+    },
+    "PutRawMessageContent": {
+      "description": "Grants permission to update the content of email messages with the specified message ID",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "RawMessage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/APIReference/API_messageflow_PutRawMessageContent.html"
+    }
+  },
+  "resourceTypes": {
+    "RawMessage": {
+      "arn": "arn:${Partition}:workmailmessageflow:${Region}:${Account}:message/${OrganizationId}/${Context}/${MessageId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/workmail/latest/adminguide/lambda-content.html"
+    }
+  },
+  "conditionKeys": {}
+}

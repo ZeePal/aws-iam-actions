@@ -1,0 +1,36 @@
+{
+  "name": "AWS Price List",
+  "prefix": "pricing",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspricelist.html",
+  "actions": {
+    "DescribeServices": {
+      "description": "Grants permission to retrieve service details for all (paginated) services (if serviceCode is not set) or service detail for a particular service (if given serviceCode)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html"
+    },
+    "GetAttributeValues": {
+      "description": "Grants permission to retrieve all (paginated) possible values for a given attribute",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetAttributeValues.html"
+    },
+    "GetProducts": {
+      "description": "Grants permission to retrieve all matching products with given search criteria",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetProducts.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

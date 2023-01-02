@@ -1,0 +1,191 @@
+{
+  "name": "AWS OpsWorks Configuration Management",
+  "prefix": "opsworks-cm",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsopsworksconfigurationmanagement.html",
+  "actions": {
+    "AssociateNode": {
+      "description": "Grants permission to associate a node to a configuration management server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_AssociateNode.html"
+    },
+    "CreateBackup": {
+      "description": "Grants permission to create a backup for the specified server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_CreateBackup.html"
+    },
+    "CreateServer": {
+      "description": "Grants permission to create a new server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_CreateServer.html"
+    },
+    "DeleteBackup": {
+      "description": "Grants permission to delete the specified backup and possibly its S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DeleteBackup.html"
+    },
+    "DeleteServer": {
+      "description": "Grants permission to delete the specified server with its corresponding CloudFormation stack and possibly the S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DeleteServer.html"
+    },
+    "DescribeAccountAttributes": {
+      "description": "Grants permission to describe the service limits for the user's account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeAccountAttributes.html"
+    },
+    "DescribeBackups": {
+      "description": "Grants permission to describe a single backup, all backups of a specified server or all backups of the user's account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeBackups.html"
+    },
+    "DescribeEvents": {
+      "description": "Grants permission to describe all events of the specified server",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeEvents.html"
+    },
+    "DescribeNodeAssociationStatus": {
+      "description": "Grants permission to describe the association status for the specified node token and the specified server",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeNodeAssociationStatus.html"
+    },
+    "DescribeServers": {
+      "description": "Grants permission to describe the specified server or all servers of the user's account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeServers.html"
+    },
+    "DisassociateNode": {
+      "description": "Grants permission to disassociate a specified node from a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DisassociateNode.html"
+    },
+    "ExportServerEngineAttribute": {
+      "description": "Grants permission to export an engine attribute from a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_ExportServerEngineAttribute.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags that are applied to the specified server or backup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "RestoreServer": {
+      "description": "Grants permission to apply a backup to specified server. Possibly swaps out the ec2-instance if specified",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_RestoreServer.html"
+    },
+    "StartMaintenance": {
+      "description": "Grants permission to start the server maintenance immediately",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_StartMaintenance.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to apply tags to the specified server or backup",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from the specified server or backup",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateServer": {
+      "description": "Grants permission to update general server settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_UpdateServer.html"
+    },
+    "UpdateServerEngineAttributes": {
+      "description": "Grants permission to update server settings specific to the configuration management type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_UpdateServerEngineAttributes.html"
+    }
+  },
+  "resourceTypes": {
+    "backup": {
+      "arn": "arn:${Partition}:opsworks-cm::${Account}:backup/${ServerName}-{Date-and-Time-Stamp-of-Backup}",
+      "conditionKeys": [],
+      "url": null
+    },
+    "server": {
+      "arn": "arn:${Partition}:opsworks-cm::${Account}:server/${ServerName}/${UniqueId}",
+      "conditionKeys": [],
+      "url": null
+    }
+  },
+  "conditionKeys": {}
+}

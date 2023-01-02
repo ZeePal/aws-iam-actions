@@ -1,0 +1,1250 @@
+{
+  "name": "Amazon Lex V2",
+  "prefix": "lex",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlexv2.html",
+  "actions": {
+    "BatchCreateCustomVocabularyItem": {
+      "description": "Grants permission to create new items in an existing custom vocabulary",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_BatchCreateCustomVocabularyItem.html"
+    },
+    "BatchDeleteCustomVocabularyItem": {
+      "description": "Grants permission to delete existing items in an existing custom vocabulary",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_BatchDeleteCustomVocabularyItem.html"
+    },
+    "BatchUpdateCustomVocabularyItem": {
+      "description": "Grants permission to update existing items in an existing custom vocabulary",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_BatchUpdateCustomVocabularyItem.html"
+    },
+    "BuildBotLocale": {
+      "description": "Grants permission to build an existing bot locale in a bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_BuildBotLocale.html"
+    },
+    "CreateBot": {
+      "description": "Grants permission to create a new bot and a test bot alias pointing to the DRAFT bot version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateBot.html"
+    },
+    "CreateBotAlias": {
+      "description": "Grants permission to create a new bot alias in a bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateBotAlias.html"
+    },
+    "CreateBotChannel": {
+      "description": "Grants permission to create a bot channel in an existing bot",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html"
+    },
+    "CreateBotLocale": {
+      "description": "Grants permission to create a new bot locale in an existing bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateBotLocale.html"
+    },
+    "CreateBotVersion": {
+      "description": "Grants permission to create a new version of an existing bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateBotVersion.html"
+    },
+    "CreateCustomVocabulary": {
+      "description": "Grants permission to create a new custom vocabulary in an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/vocab.html"
+    },
+    "CreateExport": {
+      "description": "Grants permission to create an export for an existing resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateExport.html"
+    },
+    "CreateIntent": {
+      "description": "Grants permission to create a new intent in an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateIntent.html"
+    },
+    "CreateResourcePolicy": {
+      "description": "Grants permission to create a new resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateResourcePolicy.html"
+    },
+    "CreateSlot": {
+      "description": "Grants permission to create a new slot in an intent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateSlot.html"
+    },
+    "CreateSlotType": {
+      "description": "Grants permission to create a new slot type in an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateSlotType.html"
+    },
+    "CreateUploadUrl": {
+      "description": "Grants permission to create an upload url for import file",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateUploadUrl.html"
+    },
+    "DeleteBot": {
+      "description": "Grants permission to delete an existing bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "lex:DeleteBotAlias",
+        "lex:DeleteBotChannel",
+        "lex:DeleteBotLocale",
+        "lex:DeleteBotVersion",
+        "lex:DeleteIntent",
+        "lex:DeleteSlot",
+        "lex:DeleteSlotType"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBot.html"
+    },
+    "DeleteBotAlias": {
+      "description": "Grants permission to delete an existing bot alias in a bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBotAlias.html"
+    },
+    "DeleteBotChannel": {
+      "description": "Grants permission to delete an existing bot channel",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html"
+    },
+    "DeleteBotLocale": {
+      "description": "Grants permission to delete an existing bot locale in a bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "lex:DeleteIntent",
+        "lex:DeleteSlot",
+        "lex:DeleteSlotType"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBotLocale.html"
+    },
+    "DeleteBotVersion": {
+      "description": "Grants permission to delete an existing bot version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBotVersion.html"
+    },
+    "DeleteCustomVocabulary": {
+      "description": "Grants permission to delete an existing custom vocabulary in a bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteCustomVocabulary.html"
+    },
+    "DeleteExport": {
+      "description": "Grants permission to delete an existing export",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteExport.html"
+    },
+    "DeleteImport": {
+      "description": "Grants permission to delete an existing import",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteImport.html"
+    },
+    "DeleteIntent": {
+      "description": "Grants permission to delete an existing intent in a bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteIntent.html"
+    },
+    "DeleteResourcePolicy": {
+      "description": "Grants permission to delete an existing resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteResourcePolicy.html"
+    },
+    "DeleteSession": {
+      "description": "Grants permission to delete session information for a bot alias and user ID",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DeleteSession.html"
+    },
+    "DeleteSlot": {
+      "description": "Grants permission to delete an existing slot in an intent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteSlot.html"
+    },
+    "DeleteSlotType": {
+      "description": "Grants permission to delete an existing slot type in a bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteSlotType.html"
+    },
+    "DeleteUtterances": {
+      "description": "Grants permission to delete utterance data for a bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteUtterances.html"
+    },
+    "DescribeBot": {
+      "description": "Grants permission to retrieve an existing bot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeBot.html"
+    },
+    "DescribeBotAlias": {
+      "description": "Grants permission to retrieve an existing bot alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeBotAlias.html"
+    },
+    "DescribeBotChannel": {
+      "description": "Grants permission to retrieve an existing bot channel",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html"
+    },
+    "DescribeBotLocale": {
+      "description": "Grants permission to retrieve an existing bot locale",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeBotLocale.html"
+    },
+    "DescribeBotRecommendation": {
+      "description": "Grants permission to retrieve metadata information about a bot recommendation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeBotRecommendation.html"
+    },
+    "DescribeBotVersion": {
+      "description": "Grants permission to retrieve an existing bot version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeBotVersion.html"
+    },
+    "DescribeCustomVocabulary": {
+      "description": "Grants permission to retrieve an existing custom vocabulary",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/vocab.html"
+    },
+    "DescribeCustomVocabularyMetadata": {
+      "description": "Grants permission to retrieve metadata of an existing custom vocabulary",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeCustomVocabularyMetadata.html"
+    },
+    "DescribeExport": {
+      "description": "Grants permission to retrieve an existing export",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "lex:DescribeBot",
+        "lex:DescribeBotLocale",
+        "lex:DescribeIntent",
+        "lex:DescribeSlot",
+        "lex:DescribeSlotType",
+        "lex:ListBotLocales",
+        "lex:ListIntents",
+        "lex:ListSlotTypes",
+        "lex:ListSlots"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeExport.html"
+    },
+    "DescribeImport": {
+      "description": "Grants permission to retrieve an existing import",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeImport.html"
+    },
+    "DescribeIntent": {
+      "description": "Grants permission to retrieve an existing intent",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeIntent.html"
+    },
+    "DescribeResourcePolicy": {
+      "description": "Grants permission to retrieve an existing resource policy for a Lex resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeResourcePolicy.html"
+    },
+    "DescribeSlot": {
+      "description": "Grants permission to retrieve an existing slot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeSlot.html"
+    },
+    "DescribeSlotType": {
+      "description": "Grants permission to retrieve an existing slot type",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_DescribeSlotType.html"
+    },
+    "GetSession": {
+      "description": "Grants permission to retrieve session information for a bot alias and user ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_GetSession.html"
+    },
+    "ListAggregatedUtterances": {
+      "description": "Grants permission to list utterances and statistics for a bot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListAggregatedUtterances.html"
+    },
+    "ListBotAliases": {
+      "description": "Grants permission to list bot aliases in an bot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBotAliases.html"
+    },
+    "ListBotChannels": {
+      "description": "Grants permission to list bot channels",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html"
+    },
+    "ListBotLocales": {
+      "description": "Grants permission to list bot locales in a bot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBotLocales.html"
+    },
+    "ListBotRecommendations": {
+      "description": "Grants permission to get a list of bot recommendations that meet the specified criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBotRecommendations.html"
+    },
+    "ListBotVersions": {
+      "description": "Grants permission to list existing bot versions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBotVersions.html"
+    },
+    "ListBots": {
+      "description": "Grants permission to list existing bots",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBots.html"
+    },
+    "ListBuiltInIntents": {
+      "description": "Grants permission to list built-in intents",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBuiltInIntents.html"
+    },
+    "ListBuiltInSlotTypes": {
+      "description": "Grants permission to list built-in slot types",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListBuiltInSlotTypes.html"
+    },
+    "ListCustomVocabularyItems": {
+      "description": "Grants permission to list items of an existing custom vocabulary",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListCustomVocabularyItems.html"
+    },
+    "ListExports": {
+      "description": "Grants permission to list existing exports",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListExports.html"
+    },
+    "ListImports": {
+      "description": "Grants permission to list existing imports",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListImports.html"
+    },
+    "ListIntents": {
+      "description": "Grants permission to list intents in a bot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListIntents.html"
+    },
+    "ListRecommendedIntents": {
+      "description": "Grants permission to get a list of recommended intents provided by the bot recommendation",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListRecommendedIntents.html"
+    },
+    "ListSlotTypes": {
+      "description": "Grants permission to list slot types in a bot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListSlotTypes.html"
+    },
+    "ListSlots": {
+      "description": "Grants permission to list slots in an intent",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListSlots.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to lists tags for a Lex resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_ListTagsForResource.html"
+    },
+    "PutSession": {
+      "description": "Grants permission to create a new session or modify an existing session for a bot alias and user ID",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html"
+    },
+    "RecognizeText": {
+      "description": "Grants permission to send user input (text-only) to an bot alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_RecognizeText.html"
+    },
+    "RecognizeUtterance": {
+      "description": "Grants permission to send user input (text or speech) to an bot alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_RecognizeUtterance.html"
+    },
+    "SearchAssociatedTranscripts": {
+      "description": "Grants permission to search for associated transcripts that meet the specified criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_SearchAssociatedTranscripts.html"
+    },
+    "StartBotRecommendation": {
+      "description": "Grants permission to start a bot recommendation for an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_StartBotRecommendation.html"
+    },
+    "StartConversation": {
+      "description": "Grants permission to stream user input (speech/text/DTMF) to a bot alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html"
+    },
+    "StartImport": {
+      "description": "Grants permission to start a new import with the uploaded import file",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "lex:CreateBot",
+        "lex:CreateBotLocale",
+        "lex:CreateIntent",
+        "lex:CreateSlot",
+        "lex:CreateSlotType",
+        "lex:DeleteBotLocale",
+        "lex:DeleteIntent",
+        "lex:DeleteSlot",
+        "lex:DeleteSlotType",
+        "lex:UpdateBot",
+        "lex:UpdateBotLocale",
+        "lex:UpdateIntent",
+        "lex:UpdateSlot",
+        "lex:UpdateSlotType"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_StartImport.html"
+    },
+    "StopBotRecommendation": {
+      "description": "Grants permission to stop a bot recommendation for an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_StopBotRecommendation.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add or overwrite tags of a Lex resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a Lex resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UntagResource.html"
+    },
+    "UpdateBot": {
+      "description": "Grants permission to update an existing bot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateBot.html"
+    },
+    "UpdateBotAlias": {
+      "description": "Grants permission to update an existing bot alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot alias": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateBotAlias.html"
+    },
+    "UpdateBotLocale": {
+      "description": "Grants permission to update an existing bot locale",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateBotLocale.html"
+    },
+    "UpdateBotRecommendation": {
+      "description": "Grants permission to update an existing bot recommendation request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateBotRecommendation.html"
+    },
+    "UpdateCustomVocabulary": {
+      "description": "Grants permission to update an existing custom vocabulary",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/vocab.html"
+    },
+    "UpdateExport": {
+      "description": "Grants permission to update an existing export",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateExport.html"
+    },
+    "UpdateIntent": {
+      "description": "Grants permission to update an existing intent",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateIntent.html"
+    },
+    "UpdateResourcePolicy": {
+      "description": "Grants permission to update an existing resource policy for a Lex resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "bot alias": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateResourcePolicy.html"
+    },
+    "UpdateSlot": {
+      "description": "Grants permission to update an existing slot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateSlot.html"
+    },
+    "UpdateSlotType": {
+      "description": "Grants permission to update an existing slot type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "bot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/API_UpdateSlotType.html"
+    }
+  },
+  "resourceTypes": {
+    "bot": {
+      "arn": "arn:${Partition}:lex:${Region}:${Account}:bot/${BotId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html"
+    },
+    "bot alias": {
+      "arn": "arn:${Partition}:lex:${Region}:${Account}:bot-alias/${BotId}/${BotAliasId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags attached to a Lex resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the set of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

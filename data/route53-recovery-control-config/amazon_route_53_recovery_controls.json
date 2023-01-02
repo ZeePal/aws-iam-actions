@@ -1,0 +1,394 @@
+{
+  "name": "Amazon Route 53 Recovery Controls",
+  "prefix": "route53-recovery-control-config",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoverycontrols.html",
+  "actions": {
+    "CreateCluster": {
+      "description": "Grants permission to create a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster.html"
+    },
+    "CreateControlPanel": {
+      "description": "Grants permission to create a control panel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "controlpanel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel.html"
+    },
+    "CreateRoutingControl": {
+      "description": "Grants permission to create a routing control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol.html"
+    },
+    "CreateSafetyRule": {
+      "description": "Grants permission to create a safety rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "safetyrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html"
+    },
+    "DeleteCluster": {
+      "description": "Grants permission to delete a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster-clusterarn.html"
+    },
+    "DeleteControlPanel": {
+      "description": "Grants permission to delete a control panel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "controlpanel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn.html"
+    },
+    "DeleteRoutingControl": {
+      "description": "Grants permission to delete a routing control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol-routingcontrolarn.html"
+    },
+    "DeleteSafetyRule": {
+      "description": "Grants permission to delete a safety rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "safetyrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule-safetyrulearn.html"
+    },
+    "DescribeCluster": {
+      "description": "Grants permission to describe a cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster-clusterarn.html"
+    },
+    "DescribeControlPanel": {
+      "description": "Grants permission to describe a control panel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "controlpanel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn.html"
+    },
+    "DescribeRoutingControl": {
+      "description": "Grants permission to describe a routing control",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol-routingcontrolarn.html"
+    },
+    "DescribeRoutingControlByName": {
+      "description": "Grants permission to describe a routing control",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol-routingcontrolarn.html"
+    },
+    "DescribeSafetyRule": {
+      "description": "Grants permission to describe a safety rule",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "safetyrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule-safetyrulearn.html"
+    },
+    "ListAssociatedRoute53HealthChecks": {
+      "description": "Grants permission to list associated Route 53 health checks",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol-routingcontrolarn-associatedroute53healthchecks.html"
+    },
+    "ListClusters": {
+      "description": "Grants permission to list clusters",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster.html"
+    },
+    "ListControlPanels": {
+      "description": "Grants permission to list control panels",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanels.html"
+    },
+    "ListRoutingControls": {
+      "description": "Grants permission to list routing controls",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn-routingcontrols.html"
+    },
+    "ListSafetyRules": {
+      "description": "Grants permission to list safety rules",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "controlpanel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn-safetyrules.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/tags-resource-arn.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "controlpanel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "safetyrule": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/tags-resource-arn.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "controlpanel": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "safetyrule": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/tags-resource-arn.html"
+    },
+    "UpdateControlPanel": {
+      "description": "Grants permission to update a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "controlpanel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel.html"
+    },
+    "UpdateRoutingControl": {
+      "description": "Grants permission to update a routing control",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "routingcontrol": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel-controlpanelarn-routingcontrols.html"
+    },
+    "UpdateSafetyRule": {
+      "description": "Grants permission to update a safety rule",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "safetyrule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html"
+    }
+  },
+  "resourceTypes": {
+    "cluster": {
+      "arn": "arn:${Partition}:route53-recovery-control::${Account}:cluster/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster.html"
+    },
+    "controlpanel": {
+      "arn": "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel.html"
+    },
+    "routingcontrol": {
+      "arn": "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontrol.html"
+    },
+    "safetyrule": {
+      "arn": "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/safetyrule/${SafetyRuleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag's key and value in a request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access based on the presence of tag keys in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

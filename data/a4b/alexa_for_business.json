@@ -1,0 +1,1350 @@
+{
+  "name": "Alexa for Business",
+  "prefix": "a4b",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_alexaforbusiness.html",
+  "actions": {
+    "ApproveSkill": {
+      "description": "Grants permission to associate a skill with the organization under the customer's AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ApproveSkill.html"
+    },
+    "AssociateContactWithAddressBook": {
+      "description": "Grants permission to associate a contact with a given address book",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addressbook": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateContactWithAddressBook.html"
+    },
+    "AssociateDeviceWithNetworkProfile": {
+      "description": "Grants permission to associate a device with the specified network profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "networkprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateDeviceWithNetworkProfile.html"
+    },
+    "AssociateDeviceWithRoom": {
+      "description": "Grants permission to associate device with given room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateDeviceWithRoom.html"
+    },
+    "AssociateSkillGroupWithRoom": {
+      "description": "Grants permission to associate the skill group with given room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateSkillGroupWithRoom.html"
+    },
+    "AssociateSkillWithSkillGroup": {
+      "description": "Grants permission to associate a skill with a skill group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateSkillWithSkillGroup.html"
+    },
+    "AssociateSkillWithUsers": {
+      "description": "Grants permission to make a private skill available for enrolled users to enable on their devices",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AssociateSkillWithUsers.html"
+    },
+    "CompleteRegistration": {
+      "description": "Grants permission to complete the operation of registering an Alexa device",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/ag/manage-devices.html"
+    },
+    "CreateAddressBook": {
+      "description": "Grants permission to create an address book with the specified details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateAddressBook.html"
+    },
+    "CreateBusinessReportSchedule": {
+      "description": "Grants permission to create a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateBusinessReportSchedule.html"
+    },
+    "CreateConferenceProvider": {
+      "description": "Grants permission to add a new conference provider under the user's AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateConferenceProvider.html"
+    },
+    "CreateContact": {
+      "description": "Grants permission to create a contact with the specified details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateContact.html"
+    },
+    "CreateGatewayGroup": {
+      "description": "Grants permission to create a gateway group with the specified details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateGatewayGroup.html"
+    },
+    "CreateNetworkProfile": {
+      "description": "Grants permission to create a network profile with the specified details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateNetworkProfile.html"
+    },
+    "CreateProfile": {
+      "description": "Grants permission to create a new profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateProfile.html"
+    },
+    "CreateRoom": {
+      "description": "Grants permission to create room with the specified details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateRoom.html"
+    },
+    "CreateSkillGroup": {
+      "description": "Grants permission to create a skill group with given name and description",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateSkillGroup.html"
+    },
+    "CreateUser": {
+      "description": "Grants permission to create a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_CreateUser.html"
+    },
+    "DeleteAddressBook": {
+      "description": "Grants permission to delete an address book by the address book ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addressbook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteAddressBook.html"
+    },
+    "DeleteBusinessReportSchedule": {
+      "description": "Grants permission to delete the recurring report delivery schedule with the specified schedule ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "schedule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteBusinessReportSchedule.html"
+    },
+    "DeleteConferenceProvider": {
+      "description": "Grants permission to delete a conference provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "conferenceprovider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteConferenceProvider.html"
+    },
+    "DeleteContact": {
+      "description": "Grants permission to delete a contact by the contact ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteContact.html"
+    },
+    "DeleteDevice": {
+      "description": "Grants permission to remove a device from Alexa For Business",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteDevice.html"
+    },
+    "DeleteDeviceUsageData": {
+      "description": "Grants permission to delete the device's entire previous history of voice input data and associated response data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteDeviceUsageData.html"
+    },
+    "DeleteGatewayGroup": {
+      "description": "Grants permission to delete a gateway group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gatewaygroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteGatewayGroup.html"
+    },
+    "DeleteNetworkProfile": {
+      "description": "Grants permission to delete a network profile by the network profile ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "networkprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteNetworkProfile.html"
+    },
+    "DeleteProfile": {
+      "description": "Grants permission to delete profile by profile ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteProfile.html"
+    },
+    "DeleteRoom": {
+      "description": "Grants permission to delete room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteRoom.html"
+    },
+    "DeleteRoomSkillParameter": {
+      "description": "Grants permission to delete a parameter from a skill and room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteRoomSkillParameter.html"
+    },
+    "DeleteSkillAuthorization": {
+      "description": "Grants permission to unlink a third-party account from a skill",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteSkillAuthorization.html"
+    },
+    "DeleteSkillGroup": {
+      "description": "Grants permission to delete skill group with skill group ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteSkillGroup.html"
+    },
+    "DeleteUser": {
+      "description": "Grants permission to delete a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DeleteUser.html"
+    },
+    "DisassociateContactFromAddressBook": {
+      "description": "Grants permission to disassociate a contact from a given address book",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addressbook": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DisassociateContactFromAddressBook.html"
+    },
+    "DisassociateDeviceFromRoom": {
+      "description": "Grants permission to disassociate device from its current room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DisassociateDeviceFromRoom.html"
+    },
+    "DisassociateSkillFromSkillGroup": {
+      "description": "Grants permission to disassociate a skill from a skill group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DisassociateSkillFromSkillGroup.html"
+    },
+    "DisassociateSkillFromUsers": {
+      "description": "Grants permission to make a private skill unavailable for enrolled users and prevent them from enabling it on their devices",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DisassociateSkillFromUsers.html"
+    },
+    "DisassociateSkillGroupFromRoom": {
+      "description": "Grants permission to disassociate the skill group from given room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_DisassociateSkillGroupFromRoom.html"
+    },
+    "ForgetSmartHomeAppliances": {
+      "description": "Grants permission to forget smart home appliances associated to a room",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ForgetSmartHomeAppliances.html"
+    },
+    "GetAddressBook": {
+      "description": "Grants permission to get the address book details by the address book ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addressbook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetAddressBook.html"
+    },
+    "GetConferencePreference": {
+      "description": "Grants permission to retrieve the existing conference preferences",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetConferencePreference.html"
+    },
+    "GetConferenceProvider": {
+      "description": "Grants permission to get details about a specific conference provider",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "conferenceprovider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetConferenceProvider.html"
+    },
+    "GetContact": {
+      "description": "Grants permission to get the contact details by the contact ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetContact.html"
+    },
+    "GetDevice": {
+      "description": "Grants permission to get device details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetDevice.html"
+    },
+    "GetGateway": {
+      "description": "Grants permission to retrieve the details of a gateway",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetGateway.html"
+    },
+    "GetGatewayGroup": {
+      "description": "Grants permission to retrieve the details of a gateway group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gatewaygroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetGatewayGroup.html"
+    },
+    "GetInvitationConfiguration": {
+      "description": "Grants permission to retrieve the configured values for the user enrollment invitation email template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetInvitationConfiguration.html"
+    },
+    "GetNetworkProfile": {
+      "description": "Grants permission to get the network profile details by the network profile ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "networkprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetNetworkProfile.html"
+    },
+    "GetProfile": {
+      "description": "Grants permission to get profile when provided with Profile ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetProfile.html"
+    },
+    "GetRoom": {
+      "description": "Grants permission to get room details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetRoom.html"
+    },
+    "GetRoomSkillParameter": {
+      "description": "Grants permission to get an existing parameter that has been set for a skill and room",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetRoomSkillParameter.html"
+    },
+    "GetSkillGroup": {
+      "description": "Grants permission to get skill group details with skill group ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetSkillGroup.html"
+    },
+    "ListBusinessReportSchedules": {
+      "description": "Grants permission to list the details of the schedules that a user configured",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListBusinessReportSchedules.html"
+    },
+    "ListConferenceProviders": {
+      "description": "Grants permission to list conference providers under a specific AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListConferenceProviders.html"
+    },
+    "ListDeviceEvents": {
+      "description": "Grants permission to list the device event history, including device connection status, for up to 30 days",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListDeviceEvents.html"
+    },
+    "ListGatewayGroups": {
+      "description": "Grants permission to list gateway group summaries",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListGatewayGroups.html"
+    },
+    "ListGateways": {
+      "description": "Grants permission to list gateway summaries",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gatewaygroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListGateways.html"
+    },
+    "ListSkills": {
+      "description": "Grants permission to list skills",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListSkills.html"
+    },
+    "ListSkillsStoreCategories": {
+      "description": "Grants permission to list all categories in the Alexa skill store",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListSkillsStoreCategories.html"
+    },
+    "ListSkillsStoreSkillsByCategory": {
+      "description": "Grants permission to list all skills in the Alexa skill store by category",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListSkillsStoreSkillsByCategory.html"
+    },
+    "ListSmartHomeAppliances": {
+      "description": "Grants permission to list all of the smart home appliances associated with a room",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListSmartHomeAppliances.html"
+    },
+    "ListTags": {
+      "description": "Grants permission to list all tags on a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "room": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ListTags.html"
+    },
+    "PutConferencePreference": {
+      "description": "Grants permission to set the conference preferences on a specific conference provider at the account level",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_PutConferencePreference.html"
+    },
+    "PutDeviceSetupEvents": {
+      "description": "Grants permission to publish Alexa device setup events",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/ag/manage-devices.html"
+    },
+    "PutInvitationConfiguration": {
+      "description": "Grants permission to configure the email template for the user enrollment invitation with the specified attributes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_PutInvitationConfiguration.html"
+    },
+    "PutRoomSkillParameter": {
+      "description": "Grants permission to put a room specific parameter for a skill",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_PutRoomSkillParameter.html"
+    },
+    "PutSkillAuthorization": {
+      "description": "Grants permission to link a user's account to a third-party skill provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_PutSkillAuthorization.html"
+    },
+    "RegisterAVSDevice": {
+      "description": "Grants permission to register an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_RegisterAVSDevice.html"
+    },
+    "RegisterDevice": {
+      "description": "Grants permission to register an Alexa device",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/ag/manage-devices.html"
+    },
+    "RejectSkill": {
+      "description": "Grants permission to disassociate a skill from the organization under a user's AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_RejectSkill.html"
+    },
+    "ResolveRoom": {
+      "description": "Grants permission to resolve room information",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ResolveRoom.html"
+    },
+    "RevokeInvitation": {
+      "description": "Grants permission to revoke an invitation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_RevokeInvitation.html"
+    },
+    "SearchAddressBooks": {
+      "description": "Grants permission to search address books and list the ones that meet a set of filter and sort criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchAddressBooks.html"
+    },
+    "SearchContacts": {
+      "description": "Grants permission to search contacts and list the ones that meet a set of filter and sort criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchContacts.html"
+    },
+    "SearchDevices": {
+      "description": "Grants permission to search for devices",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchDevices.html"
+    },
+    "SearchNetworkProfiles": {
+      "description": "Grants permission to search network profiles and list the ones that meet a set of filter and sort criteria",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchNetworkProfiles.html"
+    },
+    "SearchProfiles": {
+      "description": "Grants permission to search for profiles",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchProfiles.html"
+    },
+    "SearchRooms": {
+      "description": "Grants permission to search for rooms",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchRooms.html"
+    },
+    "SearchSkillGroups": {
+      "description": "Grants permission to search for skill groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchSkillGroups.html"
+    },
+    "SearchUsers": {
+      "description": "Grants permission to search for users",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchUsers.html"
+    },
+    "SendAnnouncement": {
+      "description": "Grants permission to trigger an asynchronous flow to send text, SSML, or audio announcements to rooms that are identified by a search or filter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SendAnnouncement.html"
+    },
+    "SendInvitation": {
+      "description": "Grants permission to send an invitation to a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SendInvitation.html"
+    },
+    "StartDeviceSync": {
+      "description": "Grants permission to restore the device and its account to its known, default settings by clearing all information and settings set by its previous users",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_StartDeviceSync.html"
+    },
+    "StartSmartHomeApplianceDiscovery": {
+      "description": "Grants permission to initiate the discovery of any smart home appliances associated with the room",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_StartSmartHomeApplianceDiscovery.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add metadata tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "room": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove metadata tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "room": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAddressBook": {
+      "description": "Grants permission to update address book details by the address book ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "addressbook": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateAddressBook.html"
+    },
+    "UpdateBusinessReportSchedule": {
+      "description": "Grants permission to update the configuration of the report delivery schedule with the specified schedule ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "schedule": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateBusinessReportSchedule.html"
+    },
+    "UpdateConferenceProvider": {
+      "description": "Grants permission to update an existing conference provider's settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "conferenceprovider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateConferenceProvider.html"
+    },
+    "UpdateContact": {
+      "description": "Grants permission to update the contact details by the contact ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateContact.html"
+    },
+    "UpdateDevice": {
+      "description": "Grants permission to update device name",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "device": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateDevice.html"
+    },
+    "UpdateGateway": {
+      "description": "Grants permission to update the details of a gateway",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gateway": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateGateway.html"
+    },
+    "UpdateGatewayGroup": {
+      "description": "Grants permission to update the details of a gateway group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "gatewaygroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateGatewayGroup.html"
+    },
+    "UpdateNetworkProfile": {
+      "description": "Grants permission to update a network profile by the network profile ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "networkprofile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateNetworkProfile.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to update an existing profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateProfile.html"
+    },
+    "UpdateRoom": {
+      "description": "Grants permission to update room details",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "room": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateRoom.html"
+    },
+    "UpdateSkillGroup": {
+      "description": "Grants permission to update skill group details with skill group ARN",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "skillgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UpdateSkillGroup.html"
+    }
+  },
+  "resourceTypes": {
+    "addressbook": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:address-book/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_AddressBook.html"
+    },
+    "conferenceprovider": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:conference-provider/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_ConferenceProvider.html"
+    },
+    "contact": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:contact/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_Contact.html"
+    },
+    "device": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:device/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_Device.html"
+    },
+    "gateway": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:gateway/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_Gateway.html"
+    },
+    "gatewaygroup": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:gateway-group/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_GatewayGroup.html"
+    },
+    "networkprofile": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:network-profile/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_NetworkProfile.html"
+    },
+    "profile": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:profile/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_Profile.html"
+    },
+    "room": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:room/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_Room.html"
+    },
+    "schedule": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:schedule/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_BusinessReportSchedule.html"
+    },
+    "skillgroup": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:skill-group/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SkillGroup.html"
+    },
+    "user": {
+      "arn": "arn:${Partition}:a4b:${Region}:${Account}:user/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_UserData.html"
+    }
+  },
+  "conditionKeys": {
+    "a4b:amazonId": {
+      "description": "Filters actions based on the Amazon Id in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_RegisterAVSDevice.html"
+    },
+    "a4b:filters_deviceType": {
+      "description": "Filters actions based on the device type in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchDevices.html"
+    },
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the allowed set of values for each of the tags",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag-value assoicated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

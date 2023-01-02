@@ -1,0 +1,185 @@
+{
+  "name": "Amazon CloudWatch Internet Monitor",
+  "prefix": "internetmonitor",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatchinternetmonitor.html",
+  "actions": {
+    "CreateMonitor": {
+      "description": "Creates a monitor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteMonitor": {
+      "description": "Deletes a monitor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetHealthEvent": {
+      "description": "Gets information about a health event for a specified monitor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "HealthEvents": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetMonitor": {
+      "description": "Gets information about a monitor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "ListHealthEvents": {
+      "description": "Lists all health events for a monitor",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "ListMonitors": {
+      "description": "Lists all monitors in an account and their statuses",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "ListTagsForResource": {
+      "description": "Lists the tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "TagResource": {
+      "description": "Adds a tag to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": null
+    },
+    "UntagResource": {
+      "description": "Removes a tag from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": null
+    },
+    "UpdateMonitor": {
+      "description": "Updates a monitor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Monitor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {
+    "HealthEvents": {
+      "arn": "arn:${Partition}:internetmonitor:${Region}:${Account}:Monitor/${MonitorName}/HealthEvents/${EventId}",
+      "conditionKeys": [],
+      "url": null
+    },
+    "Monitor": {
+      "arn": "arn:${Partition}:internetmonitor:${Region}:${Account}:Monitors/${MonitorName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": null
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

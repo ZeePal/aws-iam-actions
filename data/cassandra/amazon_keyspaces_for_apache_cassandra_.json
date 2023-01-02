@@ -1,0 +1,201 @@
+{
+  "name": "Amazon Keyspaces (for Apache Cassandra)",
+  "prefix": "cassandra",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkeyspacesforapachecassandra.html",
+  "actions": {
+    "Alter": {
+      "description": "Grants permission to alter a keyspace or table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "keyspace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "Create": {
+      "description": "Grants permission to create a keyspace or table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "keyspace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "Drop": {
+      "description": "Grants permission to drop a keyspace or table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "keyspace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "Modify": {
+      "description": "Grants permission to INSERT, UPDATE or DELETE data in a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "Restore": {
+      "description": "Grants permission to restore table from a backup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "Select": {
+      "description": "Grants permission to SELECT data from a table",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a keyspace or table",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "keyspace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a keyspace or table",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "keyspace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    },
+    "UpdatePartitioner": {
+      "description": "Grants permission to UPDATE the partitioner in a system table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/"
+    }
+  },
+  "resourceTypes": {
+    "keyspace": {
+      "arn": "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is.html"
+    },
+    "table": {
+      "arn": "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/keyspaces/latest/devguide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

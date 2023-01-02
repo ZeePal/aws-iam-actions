@@ -1,0 +1,442 @@
+{
+  "name": "AWS Systems Manager Incident Manager Contacts",
+  "prefix": "ssm-contacts",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerincidentmanagercontacts.html",
+  "actions": {
+    "AcceptPage": {
+      "description": "Grants permission to accept a page",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "page": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_AcceptPage.html"
+    },
+    "ActivateContactChannel": {
+      "description": "Grants permission to activate a contact's contact channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ActivateContactChannel.html"
+    },
+    "AssociateContact": {
+      "description": "Grants permission to use a contact in an escalation plan",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_AssociateContact.html"
+    },
+    "CreateContact": {
+      "description": "Grants permission to create a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ssm-contacts:AssociateContact"
+      ],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_CreateContact.html"
+    },
+    "CreateContactChannel": {
+      "description": "Grants permission to create a contact channel for a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_CreateContactChannel.html"
+    },
+    "DeactivateContactChannel": {
+      "description": "Grants permission to deactivate a contact's contact channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_DeactivateContactChannel.html"
+    },
+    "DeleteContact": {
+      "description": "Grants permission to delete a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_DeleteContact.html"
+    },
+    "DeleteContactChannel": {
+      "description": "Grants permission to delete a contact's contact channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_DeleteContactChannel.html"
+    },
+    "DescribeEngagement": {
+      "description": "Grants permission to describe an engagement",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "engagement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_DescribeEngagement.html"
+    },
+    "DescribePage": {
+      "description": "Grants permission to describe a page",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "page": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_DescribePage.html"
+    },
+    "GetContact": {
+      "description": "Grants permission to get a contact",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_GetContact.html"
+    },
+    "GetContactChannel": {
+      "description": "Grants permission to get a contact's contact channel",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_GetContactChannel.html"
+    },
+    "GetContactPolicy": {
+      "description": "Grants permission to get a contact's resource policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_GetContactPolicy.html"
+    },
+    "ListContactChannels": {
+      "description": "Grants permission to list all of a contact's contact channels",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListContactChannels.html"
+    },
+    "ListContacts": {
+      "description": "Grants permission to list all contacts",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListContacts.html"
+    },
+    "ListEngagements": {
+      "description": "Grants permission to list all engagements",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListEngagements.html"
+    },
+    "ListPageReceipts": {
+      "description": "Grants permission to list all receipts of a page",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "page": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListPageReceipts.html"
+    },
+    "ListPagesByContact": {
+      "description": "Grants permission to list all pages sent to a contact",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListPagesByContact.html"
+    },
+    "ListPagesByEngagement": {
+      "description": "Grants permission to list all pages created in an engagement",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "engagement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListPagesByEngagement.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to view a list of resource tags for a specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListTagsForResource.html"
+    },
+    "PutContactPolicy": {
+      "description": "Grants permission to add a resource policy to a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_PutContactPolicy.html"
+    },
+    "SendActivationCode": {
+      "description": "Grants permission to send the activation code of a contact's contact channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_SendActivationCode.html"
+    },
+    "StartEngagement": {
+      "description": "Grants permission to start an engagement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_StartEngagement.html"
+    },
+    "StopEngagement": {
+      "description": "Grants permission to stop an engagement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "engagement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_StopEngagement.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a response plan",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a response plan",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_UntagResource.html"
+    },
+    "UpdateContact": {
+      "description": "Grants permission to update a contact",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contact": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ssm-contacts:AssociateContact"
+      ],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_UpdateContact.html"
+    },
+    "UpdateContactChannel": {
+      "description": "Grants permission to update a contact's contact channel",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "contactchannel": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_UpdateContactChannel.html"
+    }
+  },
+  "resourceTypes": {
+    "contact": {
+      "arn": "arn:${Partition}:ssm-contacts:${Region}:${Account}:contact/${ContactAlias}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/contacts.html"
+    },
+    "contactchannel": {
+      "arn": "arn:${Partition}:ssm-contacts:${Region}:${Account}:contactchannel/${ContactAlias}/${ContactChannelId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/contacts.html"
+    },
+    "engagement": {
+      "arn": "arn:${Partition}:ssm-contacts:${Region}:${Account}:engagement/${ContactAlias}/${EngagementId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/escalation.html"
+    },
+    "page": {
+      "arn": "arn:${Partition}:ssm-contacts:${Region}:${Account}:page/${ContactAlias}/${PageId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/escalation.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

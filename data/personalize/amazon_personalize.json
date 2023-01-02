@@ -1,0 +1,905 @@
+{
+  "name": "Amazon Personalize",
+  "prefix": "personalize",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpersonalize.html",
+  "actions": {
+    "CreateBatchInferenceJob": {
+      "description": "Grants permission to create a batch inference job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchInferenceJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateBatchInferenceJob.html"
+    },
+    "CreateBatchSegmentJob": {
+      "description": "Grants permission to create a batch segment job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchSegmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateBatchSegmentJob.html"
+    },
+    "CreateCampaign": {
+      "description": "Grants permission to create a campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateCampaign.html"
+    },
+    "CreateDataset": {
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDataset.html"
+    },
+    "CreateDatasetExportJob": {
+      "description": "Grants permission to create a dataset export job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetExportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html"
+    },
+    "CreateDatasetGroup": {
+      "description": "Grants permission to create a dataset group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetGroup.html"
+    },
+    "CreateDatasetImportJob": {
+      "description": "Grants permission to create a dataset import job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetImportJob.html"
+    },
+    "CreateEventTracker": {
+      "description": "Grants permission to create an event tracker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventTracker": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateEventTracker.html"
+    },
+    "CreateFilter": {
+      "description": "Grants permission to create a filter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateFilter.html"
+    },
+    "CreateRecommender": {
+      "description": "Grants permission to create a recommender",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateRecommender.html"
+    },
+    "CreateSchema": {
+      "description": "Grants permission to create a schema",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "schema": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateSchema.html"
+    },
+    "CreateSolution": {
+      "description": "Grants permission to create a solution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateSolution.html"
+    },
+    "CreateSolutionVersion": {
+      "description": "Grants permission to create a solution version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_CreateSolutionVersion.html"
+    },
+    "DeleteCampaign": {
+      "description": "Grants permission to delete a campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteCampaign.html"
+    },
+    "DeleteDataset": {
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteDataset.html"
+    },
+    "DeleteDatasetGroup": {
+      "description": "Grants permission to delete a dataset group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteDatasetGroup.html"
+    },
+    "DeleteEventTracker": {
+      "description": "Grants permission to delete an event tracker",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventTracker": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteEventTracker.html"
+    },
+    "DeleteFilter": {
+      "description": "Grants permission to delete a filter",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteFilter.html"
+    },
+    "DeleteRecommender": {
+      "description": "Grants permission to delete a recommender",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteRecommender.html"
+    },
+    "DeleteSchema": {
+      "description": "Grants permission to delete a schema",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "schema": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteSchema.html"
+    },
+    "DeleteSolution": {
+      "description": "Grants permission to delete a solution including all versions of the solution",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DeleteSolution.html"
+    },
+    "DescribeAlgorithm": {
+      "description": "Grants permission to describe an algorithm",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "algorithm": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeAlgorithm.html"
+    },
+    "DescribeBatchInferenceJob": {
+      "description": "Grants permission to describe a batch inference job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchInferenceJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeBatchInferenceJob.html"
+    },
+    "DescribeBatchSegmentJob": {
+      "description": "Grants permission to describe a batch segment job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "batchSegmentJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeBatchSegmentJob.html"
+    },
+    "DescribeCampaign": {
+      "description": "Grants permission to describe a campaign",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeCampaign.html"
+    },
+    "DescribeDataset": {
+      "description": "Grants permission to describe a dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDataset.html"
+    },
+    "DescribeDatasetExportJob": {
+      "description": "Grants permission to describe a dataset export job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetExportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDatasetExportJob.html"
+    },
+    "DescribeDatasetGroup": {
+      "description": "Grants permission to describe a dataset group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDatasetGroup.html"
+    },
+    "DescribeDatasetImportJob": {
+      "description": "Grants permission to describe a dataset import job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasetImportJob": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDatasetImportJob.html"
+    },
+    "DescribeEventTracker": {
+      "description": "Grants permission to describe an event tracker",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "eventTracker": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeEventTracker.html"
+    },
+    "DescribeFeatureTransformation": {
+      "description": "Grants permission to describe a feature transformation",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "featureTransformation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeFeatureTransformation.html"
+    },
+    "DescribeFilter": {
+      "description": "Grants permission to describe a filter",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "filter": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeFilter.html"
+    },
+    "DescribeRecipe": {
+      "description": "Grants permission to describe a recipe",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecipe.html"
+    },
+    "DescribeRecommender": {
+      "description": "Grants permission to describe a recommender",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecommender.html"
+    },
+    "DescribeSchema": {
+      "description": "Grants permission to describe a schema",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "schema": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSchema.html"
+    },
+    "DescribeSolution": {
+      "description": "Grants permission to describe a solution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSolution.html"
+    },
+    "DescribeSolutionVersion": {
+      "description": "Grants permission to describe a version of a solution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSolutionVersion.html"
+    },
+    "GetPersonalizedRanking": {
+      "description": "Grants permission to get a re-ranked list of recommendations",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_RS_GetPersonalizedRanking.html"
+    },
+    "GetRecommendations": {
+      "description": "Grants permission to get a list of recommendations from a campaign",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_RS_GetRecommendations.html"
+    },
+    "GetSolutionMetrics": {
+      "description": "Grants permission to get metrics for a solution version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_GetSolutionMetrics.html"
+    },
+    "ListBatchInferenceJobs": {
+      "description": "Grants permission to list batch inference jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListBatchInferenceJobs.html"
+    },
+    "ListBatchSegmentJobs": {
+      "description": "Grants permission to list batch segment jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListBatchSegmentJobs.html"
+    },
+    "ListCampaigns": {
+      "description": "Grants permission to list campaigns",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListCampaigns.html"
+    },
+    "ListDatasetExportJobs": {
+      "description": "Grants permission to list dataset export jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasetExportJobs.html"
+    },
+    "ListDatasetGroups": {
+      "description": "Grants permission to list dataset groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasetGroups.html"
+    },
+    "ListDatasetImportJobs": {
+      "description": "Grants permission to list dataset import jobs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasetImportJobs.html"
+    },
+    "ListDatasets": {
+      "description": "Grants permission to list datasets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasets.html"
+    },
+    "ListEventTrackers": {
+      "description": "Grants permission to list event trackers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListEventTrackers.html"
+    },
+    "ListFilters": {
+      "description": "Grants permission to list filters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListFilters.html"
+    },
+    "ListRecipes": {
+      "description": "Grants permission to list recipes",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListRecipes.html"
+    },
+    "ListRecommenders": {
+      "description": "Grants permission to list recommenders",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListRecommenders.html"
+    },
+    "ListSchemas": {
+      "description": "Grants permission to list schemas",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListSchemas.html"
+    },
+    "ListSolutionVersions": {
+      "description": "Grants permission to list versions of a solution",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListSolutionVersions.html"
+    },
+    "ListSolutions": {
+      "description": "Grants permission to list solutions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListSolutions.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_ListTagsForResource.html"
+    },
+    "PutEvents": {
+      "description": "Grants permission to put real time event data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html"
+    },
+    "PutItems": {
+      "description": "Grants permission to ingest Items data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutItems.html"
+    },
+    "PutUsers": {
+      "description": "Grants permission to ingest Users data",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutUsers.html"
+    },
+    "StartRecommender": {
+      "description": "Grants permission to start a recommender",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_StartRecommender.html"
+    },
+    "StopRecommender": {
+      "description": "Grants permission to stop a recommender",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_StopRecommender.html"
+    },
+    "StopSolutionVersionCreation": {
+      "description": "Grants permission to stop a solution version creation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "solution": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_StopSolutionVersionCreation.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UntagResource.html"
+    },
+    "UpdateCampaign": {
+      "description": "Grants permission to update a campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UpdateCampaign.html"
+    },
+    "UpdateRecommender": {
+      "description": "Grants permission to update a recommender",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recommender": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_UpdateRecommender.html"
+    }
+  },
+  "resourceTypes": {
+    "algorithm": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:algorithm/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Algorithm.html"
+    },
+    "batchInferenceJob": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:batch-inference-job/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_BatchInferenceJob.html"
+    },
+    "batchSegmentJob": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:batch-segment-job/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_BatchSegmentJob.html"
+    },
+    "campaign": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:campaign/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Campaign.html"
+    },
+    "dataset": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:dataset/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Dataset.html"
+    },
+    "datasetExportJob": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:dataset-export-job/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetExportJob.html"
+    },
+    "datasetGroup": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:dataset-group/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetGroup.html"
+    },
+    "datasetImportJob": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:dataset-import-job/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetImportJob.html"
+    },
+    "eventTracker": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:event-tracker/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_EventTracker.html"
+    },
+    "featureTransformation": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:feature-transformation/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_FeatureTransformation.html"
+    },
+    "filter": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:filter/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Filter.html"
+    },
+    "recipe": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:recipe/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Recipe.html"
+    },
+    "recommender": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:recommender/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Recommender.html"
+    },
+    "schema": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:schema/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/how-it-works-dataset-schema.html#schema-examples"
+    },
+    "solution": {
+      "arn": "arn:${Partition}:personalize:${Region}:${Account}:solution/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/personalize/latest/dg/API_Solution.html"
+    }
+  },
+  "conditionKeys": {}
+}

@@ -1,0 +1,578 @@
+{
+  "name": "Amazon Redshift Serverless",
+  "prefix": "redshift-serverless",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonredshiftserverless.html",
+  "actions": {
+    "ConvertRecoveryPointToSnapshot": {
+      "description": "Grants permission to convert a recovery point to a snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ConvertRecoveryPointToSnapshot.html"
+    },
+    "CreateEndpointAccess": {
+      "description": "Grants permission to create an Amazon Redshift Serverless managed VPC endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "endpointAccess": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_CreateEndpointAccess.html"
+    },
+    "CreateNamespace": {
+      "description": "Grants permission to create an Amazon Redshift Serverless namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_CreateNamespace.html"
+    },
+    "CreateSnapshot": {
+      "description": "Grants permission to create a snapshot of all databases in a namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_CreateSnapshot.html"
+    },
+    "CreateUsageLimit": {
+      "description": "Grants permission to create a usage limit for a specified Amazon Redshift Serverless usage type",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_CreateUsageLimit.html"
+    },
+    "CreateWorkgroup": {
+      "description": "Grants permission to create a workgroup in Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_CreateWorkgroup.html"
+    },
+    "DeleteEndpointAccess": {
+      "description": "Grants permission to delete an Amazon Redshift Serverless managed VPC endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "endpointAccess": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteEndpointAccess.html"
+    },
+    "DeleteNamespace": {
+      "description": "Grants permission to delete a namespace from Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteNamespace.html"
+    },
+    "DeleteResourcePolicy": {
+      "description": "Grants permission to delete the specified resource policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteResourcePolicy.html"
+    },
+    "DeleteSnapshot": {
+      "description": "Grants permission to delete a snapshot from Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteSnapshot.html"
+    },
+    "DeleteUsageLimit": {
+      "description": "Grants permission to delete a usage limit from Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteUsageLimit.html"
+    },
+    "DeleteWorkgroup": {
+      "description": "Grants permission to delete a workgroup",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteWorkgroup.html"
+    },
+    "GetCredentials": {
+      "description": "Grants permission to get a database user name and temporary password with temporary authorization to log on to Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetCredentials.html"
+    },
+    "GetEndpointAccess": {
+      "description": "Grants permission to create an Amazon Redshift Serverless managed VPC endpoint",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "endpointAccess": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetEndpointAccess.html"
+    },
+    "GetNamespace": {
+      "description": "Grants permission to get information about a namespace in Amazon Redshift Serverless",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetNamespace.html"
+    },
+    "GetRecoveryPoint": {
+      "description": "Grants permission to get information about a recovery point",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetRecoveryPoint.html"
+    },
+    "GetResourcePolicy": {
+      "description": "Grants permission to get a resource policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetResourcePolicy.html"
+    },
+    "GetSnapshot": {
+      "description": "Grants permission to get information about a specific snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetSnapshot.html"
+    },
+    "GetUsageLimit": {
+      "description": "Grants permission to get information about a usage limit in Amazon Redshift Serverless",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetUsageLimit.html"
+    },
+    "GetWorkgroup": {
+      "description": "Grants permission to get information about a specific workgroup",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetWorkgroup.html"
+    },
+    "ListEndpointAccess": {
+      "description": "Grants permission to list EndpointAccess objects and relevant information",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "endpointAccess": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListEndpointAccess.html"
+    },
+    "ListNamespaces": {
+      "description": "Grants permission to list namespaces in Amazon Redshift Serverless",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListNamespaces.html"
+    },
+    "ListRecoveryPoints": {
+      "description": "Grants permission to list an array of recovery points",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListRecoveryPoints.html"
+    },
+    "ListSnapshots": {
+      "description": "Grants permission to list snapshots",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListSnapshots.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags assigned to a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListUsageLimits": {
+      "description": "Grants permission to list all usage limits within Amazon Redshift Serverless",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListUsageLimits.html"
+    },
+    "ListWorkgroups": {
+      "description": "Grants permission to list workgroups in Amazon Redshift Serverless",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListWorkgroups.html"
+    },
+    "PutResourcePolicy": {
+      "description": "Grants permission to create or update a resource policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_PutResourcePolicy.html"
+    },
+    "RestoreFromRecoveryPoint": {
+      "description": "Grants permission to restore the data from a recovery point",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "recoveryPoint": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_RestoreFromRecoveryPoint.html"
+    },
+    "RestoreFromSnapshot": {
+      "description": "Grants permission to restore a namespace from a snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_RestoreFromSnapshot.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove a tag or set of tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workgroup": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateEndpointAccess": {
+      "description": "Grants permission to update an Amazon Redshift Serverless managed VPC endpoint",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "endpointAccess": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UpdateEndpointAccess.html"
+    },
+    "UpdateNamespace": {
+      "description": "Grants permission to update a namespace with the specified configuration settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UpdateNamespace.html"
+    },
+    "UpdateSnapshot": {
+      "description": "Grants permission to update a snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "snapshot": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UpdateSnapshot.html"
+    },
+    "UpdateUsageLimit": {
+      "description": "Grants permission to update a usage limit in Amazon Redshift Serverless",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UpdateUsageLimit.html"
+    },
+    "UpdateWorkgroup": {
+      "description": "Grants permission to update an Amazon Redshift Serverless workgroup with the specified configuration settings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workgroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_UpdateWorkgroup.html"
+    }
+  },
+  "resourceTypes": {
+    "endpointAccess": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:managedvpcendpoint/${EndpointAccessId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-connecting.html"
+    },
+    "namespace": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:namespace/${NamespaceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-workgroup-namespace.html"
+    },
+    "recoveryPoint": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:recovery-point/${RecoveryPointId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-snapshots-recovery.html"
+    },
+    "snapshot": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:snapshot/${SnapshotId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-snapshots-recovery.html"
+    },
+    "workgroup": {
+      "arn": "arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-workgroup-namespace.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "redshift-serverless:endpointAccessId": {
+      "description": "Filters access by the endpoint access identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "redshift-serverless:namespaceId": {
+      "description": "Filters access by the namespace identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "redshift-serverless:recoveryPointId": {
+      "description": "Filters access by the recovery point identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "redshift-serverless:snapshotId": {
+      "description": "Filters access by the snapshot identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    },
+    "redshift-serverless:workgroupId": {
+      "description": "Filters access by the workgroup identifier",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html"
+    }
+  }
+}

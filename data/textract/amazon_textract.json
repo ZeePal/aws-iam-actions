@@ -1,0 +1,142 @@
+{
+  "name": "Amazon Textract",
+  "prefix": "textract",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazontextract.html",
+  "actions": {
+    "AnalyzeDocument": {
+      "description": "Grants permission to detect instances of real-world document entities within an image provided as input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_AnalyzeDocument.html"
+    },
+    "AnalyzeExpense": {
+      "description": "Grants permission to detect instances of real-world document entities within an image provided as input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_AnalyzeExpense.html"
+    },
+    "AnalyzeID": {
+      "description": "Grants permission to detect relevant information from identity documents provided as input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_AnalyzeID.html"
+    },
+    "DetectDocumentText": {
+      "description": "Grants permission to detect text in document images",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_DetectDocumentText.html"
+    },
+    "GetDocumentAnalysis": {
+      "description": "Grants permission to return information about a document analysis job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_GetDocumentAnalysis.html"
+    },
+    "GetDocumentTextDetection": {
+      "description": "Grants permission to return information about a document text detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_GetDocumentTextDetection.html"
+    },
+    "GetExpenseAnalysis": {
+      "description": "Grants permission to return information about an expense analysis job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_GetExpenseAnalysis.html"
+    },
+    "GetLendingAnalysis": {
+      "description": "Grants permission to retrieve page-level information regarding a lending analysis job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_GetLendingAnalysis.html"
+    },
+    "GetLendingAnalysisSummary": {
+      "description": "Grants permission to retrieve summarized information regarding a lending analysis job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_GetLendingAnalysisSummary.html"
+    },
+    "StartDocumentAnalysis": {
+      "description": "Grants permission to start an asynchronous job to detect instances of real-world document entities within an image or pdf provided as input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_StartDocumentAnalysis.html"
+    },
+    "StartDocumentTextDetection": {
+      "description": "Grants permission to start an asynchronous job to detect text in document images or pdfs",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_StartDocumentTextDetection.html"
+    },
+    "StartExpenseAnalysis": {
+      "description": "Grants permission to start an asynchronous job to detect instances of invoices or receipts within an image or pdf provided as input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_StartExpenseAnalysis.html"
+    },
+    "StartLendingAnalysis": {
+      "description": "Grants permission to start an asynchronous job for detection of entities in a lending document, takes a provided image or PDF as input",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "s3:GetObject"
+      ],
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/API_StartLendingAnalysis.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

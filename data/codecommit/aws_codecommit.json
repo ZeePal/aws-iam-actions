@@ -1,0 +1,1262 @@
+{
+  "name": "AWS CodeCommit",
+  "prefix": "codecommit",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodecommit.html",
+  "actions": {
+    "AssociateApprovalRuleTemplateWithRepository": {
+      "description": "Grants permission to associate an approval rule template with a repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_AssociateApprovalRuleTemplateWithRepository.html"
+    },
+    "BatchAssociateApprovalRuleTemplateWithRepositories": {
+      "description": "Grants permission to associate an approval rule template with multiple repositories in a single operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchAssociateApprovalRuleTemplateWithRepositories.html"
+    },
+    "BatchDescribeMergeConflicts": {
+      "description": "Grants permission to get information about multiple merge conflicts when attempting to merge two commits using either the three-way merge or the squash merge option",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchDescribeMergeConflicts.html"
+    },
+    "BatchDisassociateApprovalRuleTemplateFromRepositories": {
+      "description": "Grants permission to remove the association between an approval rule template and multiple repositories in a single operation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchDisassociateApprovalRuleTemplateFromRepositories.html"
+    },
+    "BatchGetCommits": {
+      "description": "Grants permission to get return information about one or more commits in an AWS CodeCommit repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchGetCommits.html"
+    },
+    "BatchGetPullRequests": {
+      "description": "Grants permission to return information about one or more pull requests in an AWS CodeCommit repository",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-pr"
+    },
+    "BatchGetRepositories": {
+      "description": "Grants permission to get information about multiple repositories",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchGetRepositories.html"
+    },
+    "CancelUploadArchive": {
+      "description": "Grants permission to cancel the uploading of an archive to a pipeline in AWS CodePipeline",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-acp"
+    },
+    "CreateApprovalRuleTemplate": {
+      "description": "Grants permission to create an approval rule template that will automatically create approval rules in pull requests that match the conditions defined in the template; does not grant permission to create approval rules for individual pull requests",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateApprovalRuleTemplate.html"
+    },
+    "CreateBranch": {
+      "description": "Grants permission to create a branch in an AWS CodeCommit repository with this API; does not control Git create branch actions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateBranch.html"
+    },
+    "CreateCommit": {
+      "description": "Grants permission to add, copy, move or update single or multiple files in a branch in an AWS CodeCommit repository, and generate a commit for the changes in the specified branch",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateCommit.html"
+    },
+    "CreatePullRequest": {
+      "description": "Grants permission to create a pull request in the specified repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreatePullRequest.html"
+    },
+    "CreatePullRequestApprovalRule": {
+      "description": "Grants permission to create an approval rule specific to an individual pull request; does not grant permission to create approval rule templates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreatePullRequestApprovalRule.html"
+    },
+    "CreateRepository": {
+      "description": "Grants permission to create an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateRepository.html"
+    },
+    "CreateUnreferencedMergeCommit": {
+      "description": "Grants permission to create an unreferenced commit that contains the result of merging two commits using either the three-way or the squash merge option; does not control Git merge actions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateUnreferencedMergeCommit.html"
+    },
+    "DeleteApprovalRuleTemplate": {
+      "description": "Grants permission to delete an approval rule template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeleteApprovalRuleTemplate.html"
+    },
+    "DeleteBranch": {
+      "description": "Grants permission to delete a branch in an AWS CodeCommit repository with this API; does not control Git delete branch actions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeleteBranch.html"
+    },
+    "DeleteCommentContent": {
+      "description": "Grants permission to delete the content of a comment made on a change, file, or commit in a repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeleteCommentContent.html"
+    },
+    "DeleteFile": {
+      "description": "Grants permission to delete a specified file from a specified branch",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeleteFile.html"
+    },
+    "DeletePullRequestApprovalRule": {
+      "description": "Grants permission to delete approval rule created for a pull request if the rule was not created by an approval rule template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeletePullRequestApprovalRule.html"
+    },
+    "DeleteRepository": {
+      "description": "Grants permission to delete an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DeleteRepository.html"
+    },
+    "DescribeMergeConflicts": {
+      "description": "Grants permission to get information about specific merge conflicts when attempting to merge two commits using either the three-way or the squash merge option",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DescribeMergeConflicts.html"
+    },
+    "DescribePullRequestEvents": {
+      "description": "Grants permission to return information about one or more pull request events",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DescribePullRequestEvents.html"
+    },
+    "DisassociateApprovalRuleTemplateFromRepository": {
+      "description": "Grants permission to remove the association between an approval rule template and a repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DisassociateApprovalRuleTemplateFromRepository.html"
+    },
+    "EvaluatePullRequestApprovalRules": {
+      "description": "Grants permission to evaluate whether a pull request is mergable based on its current approval state and approval rule requirements",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_EvaluatePullRequestApprovalRules.html"
+    },
+    "GetApprovalRuleTemplate": {
+      "description": "Grants permission to return information about an approval rule template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetApprovalRuleTemplate.html"
+    },
+    "GetBlob": {
+      "description": "Grants permission to view the encoded content of an individual file in an AWS CodeCommit repository from the AWS CodeCommit console",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBlob.html"
+    },
+    "GetBranch": {
+      "description": "Grants permission to get details about a branch in an AWS CodeCommit repository with this API; does not control Git branch actions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBranch.html"
+    },
+    "GetComment": {
+      "description": "Grants permission to get the content of a comment made on a change, file, or commit in a repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetComment.html"
+    },
+    "GetCommentReactions": {
+      "description": "Grants permission to get the reactions on a comment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCommentReactions.html"
+    },
+    "GetCommentsForComparedCommit": {
+      "description": "Grants permission to get information about comments made on the comparison between two commits",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCommentsForComparedCommit.html"
+    },
+    "GetCommentsForPullRequest": {
+      "description": "Grants permission to get comments made on a pull request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCommentsForPullRequest.html"
+    },
+    "GetCommit": {
+      "description": "Grants permission to return information about a commit, including commit message and committer information, with this API; does not control Git log actions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCommit.html"
+    },
+    "GetCommitHistory": {
+      "description": "Grants permission to get information about the history of commits in a repository",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-code"
+    },
+    "GetCommitsFromMergeBase": {
+      "description": "Grants permission to get information about the difference between commits in the context of a potential merge",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-pr"
+    },
+    "GetDifferences": {
+      "description": "Grants permission to view information about the differences between valid commit specifiers such as a branch, tag, HEAD, commit ID, or other fully qualified reference",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetDifferences.html"
+    },
+    "GetFile": {
+      "description": "Grants permission to return the base-64 encoded contents of a specified file and its metadata",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetFile.html"
+    },
+    "GetFolder": {
+      "description": "Grants permission to return the contents of a specified folder in a repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetFolder.html"
+    },
+    "GetMergeCommit": {
+      "description": "Grants permission to get information about a merge commit created by one of the merge options for pull requests that creates merge commits. Not all merge options create merge commits. This permission does not control Git merge actions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetMergeCommit.html"
+    },
+    "GetMergeConflicts": {
+      "description": "Grants permission to get information about merge conflicts between the before and after commit IDs for a pull request in a repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetMergeConflicts.html"
+    },
+    "GetMergeOptions": {
+      "description": "Grants permission to get information about merge options for pull requests that can be used to merge two commits; does not control Git merge actions",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetMergeOptions.html"
+    },
+    "GetObjectIdentifier": {
+      "description": "Grants permission to resolve blobs, trees, and commits to their identifier",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-code"
+    },
+    "GetPullRequest": {
+      "description": "Grants permission to get information about a pull request in a specified repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetPullRequest.html"
+    },
+    "GetPullRequestApprovalStates": {
+      "description": "Grants permission to retrieve the current approvals on an inputted pull request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetPullRequestApprovalStates.html"
+    },
+    "GetPullRequestOverrideState": {
+      "description": "Grants permission to retrieve the current override state of a given pull request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetPullRequestOverrideState.html"
+    },
+    "GetReferences": {
+      "description": "Grants permission to get details about references in an AWS CodeCommit repository; does not control Git reference actions",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-code"
+    },
+    "GetRepository": {
+      "description": "Grants permission to get information about an AWS CodeCommit repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetRepository.html"
+    },
+    "GetRepositoryTriggers": {
+      "description": "Grants permission to get information about triggers configured for a repository",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetRepositoryTriggers.html"
+    },
+    "GetTree": {
+      "description": "Grants permission to view the contents of a specified tree in an AWS CodeCommit repository from the AWS CodeCommit console",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-code"
+    },
+    "GetUploadArchiveStatus": {
+      "description": "Grants permission to get status information about an archive upload to a pipeline in AWS CodePipeline",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-acp"
+    },
+    "GitPull": {
+      "description": "Grants permission to pull information from an AWS CodeCommit repository to a local repo",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-git"
+    },
+    "GitPush": {
+      "description": "Grants permission to push information from a local repo to an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-git"
+    },
+    "ListApprovalRuleTemplates": {
+      "description": "Grants permission to list all approval rule templates in an AWS Region for the AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListApprovalRuleTemplates.html"
+    },
+    "ListAssociatedApprovalRuleTemplatesForRepository": {
+      "description": "Grants permission to list approval rule templates that are associated with a repository",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListAssociatedApprovalRuleTemplatesForRepository.html"
+    },
+    "ListBranches": {
+      "description": "Grants permission to list branches for an AWS CodeCommit repository with this API; does not control Git branch actions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListBranches.html"
+    },
+    "ListPullRequests": {
+      "description": "Grants permission to list pull requests for a specified repository",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListPullRequests.html"
+    },
+    "ListRepositories": {
+      "description": "Grants permission to list information about AWS CodeCommit repositories in the current Region for your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListRepositories.html"
+    },
+    "ListRepositoriesForApprovalRuleTemplate": {
+      "description": "Grants permission to list repositories that are associated with an approval rule template",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListRepositoriesForApprovalRuleTemplate.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the resource attached to a CodeCommit resource ARN",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "MergeBranchesByFastForward": {
+      "description": "Grants permission to merge two commits into the specified destination branch using the fast-forward merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergeBranchesByFastForward.html"
+    },
+    "MergeBranchesBySquash": {
+      "description": "Grants permission to merge two commits into the specified destination branch using the squash merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergeBranchesBySquash.html"
+    },
+    "MergeBranchesByThreeWay": {
+      "description": "Grants permission to merge two commits into the specified destination branch using the three-way merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergeBranchesByThreeWay.html"
+    },
+    "MergePullRequestByFastForward": {
+      "description": "Grants permission to close a pull request and attempt to merge it into the specified destination branch for that pull request at the specified commit using the fast-forward merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergePullRequestByFastForward.html"
+    },
+    "MergePullRequestBySquash": {
+      "description": "Grants permission to close a pull request and attempt to merge it into the specified destination branch for that pull request at the specified commit using the squash merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergePullRequestBySquash.html"
+    },
+    "MergePullRequestByThreeWay": {
+      "description": "Grants permission to close a pull request and attempt to merge it into the specified destination branch for that pull request at the specified commit using the three-way merge option",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_MergePullRequestByThreeWay.html"
+    },
+    "OverridePullRequestApprovalRules": {
+      "description": "Grants permission to override all approval rules for a pull request, including approval rules created by a template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_OverridePullRequestApprovalRules.html"
+    },
+    "PostCommentForComparedCommit": {
+      "description": "Grants permission to post a comment on the comparison between two commits",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostCommentForComparedCommit.html"
+    },
+    "PostCommentForPullRequest": {
+      "description": "Grants permission to post a comment on a pull request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostCommentForPullRequest.html"
+    },
+    "PostCommentReply": {
+      "description": "Grants permission to post a comment in reply to a comment on a comparison between commits or a pull request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostCommentReply.html"
+    },
+    "PutCommentReaction": {
+      "description": "Grants permission to post a reaction on a comment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutCommentReaction.html"
+    },
+    "PutFile": {
+      "description": "Grants permission to add or update a file in a branch in an AWS CodeCommit repository, and generate a commit for the addition in the specified branch",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "codecommit:References"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutFile.html"
+    },
+    "PutRepositoryTriggers": {
+      "description": "Grants permission to create, update, or delete triggers for a repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutRepositoryTriggers.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to attach resource tags to a CodeCommit resource ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_TagResource.html"
+    },
+    "TestRepositoryTriggers": {
+      "description": "Grants permission to test the functionality of repository triggers by sending information to the trigger target",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_TestRepositoryTriggers.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to disassociate resource tags from a CodeCommit resource ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateApprovalRuleTemplateContent": {
+      "description": "Grants permission to update the content of approval rule templates; does not grant permission to update content of approval rules created specifically for pull requests",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateApprovalRuleTemplateContent.html"
+    },
+    "UpdateApprovalRuleTemplateDescription": {
+      "description": "Grants permission to update the description of approval rule templates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateApprovalRuleTemplateDescription.html"
+    },
+    "UpdateApprovalRuleTemplateName": {
+      "description": "Grants permission to update the name of approval rule templates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateApprovalRuleTemplateName.html"
+    },
+    "UpdateComment": {
+      "description": "Grants permission to update the contents of a comment if the identity matches the identity used to create the comment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateComment.html"
+    },
+    "UpdateDefaultBranch": {
+      "description": "Grants permission to change the default branch in an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateDefaultBranch.html"
+    },
+    "UpdatePullRequestApprovalRuleContent": {
+      "description": "Grants permission to update the content for approval rules created for a specific pull requests; does not grant permission to update approval rule content for rules created with an approval rule template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdatePullRequestApprovalRuleContent.html"
+    },
+    "UpdatePullRequestApprovalState": {
+      "description": "Grants permission to update the approval state for pull requests",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdatePullRequestApprovalState.html"
+    },
+    "UpdatePullRequestDescription": {
+      "description": "Grants permission to update the description of a pull request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdatePullRequestDescription.html"
+    },
+    "UpdatePullRequestStatus": {
+      "description": "Grants permission to update the status of a pull request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdatePullRequestStatus.html"
+    },
+    "UpdatePullRequestTitle": {
+      "description": "Grants permission to update the title of a pull request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdatePullRequestTitle.html"
+    },
+    "UpdateRepositoryDescription": {
+      "description": "Grants permission to change the description of an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateRepositoryDescription.html"
+    },
+    "UpdateRepositoryName": {
+      "description": "Grants permission to change the name of an AWS CodeCommit repository",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UpdateRepositoryName.html"
+    },
+    "UploadArchive": {
+      "description": "Grants permission to the service role for AWS CodePipeline to upload repository changes into a pipeline",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "repository": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-acp"
+    }
+  },
+  "resourceTypes": {
+    "repository": {
+      "arn": "arn:${Partition}:codecommit:${Region}:${Account}:${RepositoryName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "codecommit:References": {
+      "description": "Filters access by Git reference to specified AWS CodeCommit actions",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html"
+    }
+  }
+}

@@ -1,0 +1,990 @@
+{
+  "name": "Amazon Elastic Container Service",
+  "prefix": "ecs",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticcontainerservice.html",
+  "actions": {
+    "CreateCapacityProvider": {
+      "description": "Grants permission to create a new capacity provider. Capacity providers are associated with an Amazon ECS cluster and are used in capacity provider strategies to facilitate cluster auto scaling",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCapacityProvider.html"
+    },
+    "CreateCluster": {
+      "description": "Grants permission to create a new Amazon ECS cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ecs:capacity-provider"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCluster.html"
+    },
+    "CreateService": {
+      "description": "Grants permission to run and maintain a desired number of tasks from a specified task definition via service creation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ecs:capacity-provider",
+        "ecs:cluster",
+        "ecs:enable-execute-command",
+        "ecs:enable-service-connect",
+        "ecs:namespace",
+        "ecs:task-definition"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html"
+    },
+    "CreateTaskSet": {
+      "description": "Grants permission to create a new Amazon ECS task set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ecs:capacity-provider",
+        "ecs:cluster",
+        "ecs:service",
+        "ecs:task-definition"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateTaskSet.html"
+    },
+    "DeleteAccountSetting": {
+      "description": "Grants permission to modify the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are disabled for new resources that are created",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteAccountSetting.html"
+    },
+    "DeleteAttributes": {
+      "description": "Grants permission to delete one or more custom attributes from an Amazon ECS resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteAttributes.html"
+    },
+    "DeleteCapacityProvider": {
+      "description": "Grants permission to delete the specified capacity provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "capacity-provider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteCapacityProvider.html"
+    },
+    "DeleteCluster": {
+      "description": "Grants permission to delete the specified cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteCluster.html"
+    },
+    "DeleteService": {
+      "description": "Grants permission to delete a specified service within a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteService.html"
+    },
+    "DeleteTaskSet": {
+      "description": "Grants permission to delete the specified task set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task-set": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster",
+        "ecs:service"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteTaskSet.html"
+    },
+    "DeregisterContainerInstance": {
+      "description": "Grants permission to deregister an Amazon ECS container instance from the specified cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeregisterContainerInstance.html"
+    },
+    "DeregisterTaskDefinition": {
+      "description": "Grants permission to deregister the specified task definition by family and revision",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeregisterTaskDefinition.html"
+    },
+    "DescribeCapacityProviders": {
+      "description": "Grants permission to describe one or more Amazon ECS capacity providers",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "capacity-provider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeCapacityProviders.html"
+    },
+    "DescribeClusters": {
+      "description": "Grants permission to describes one or more of your clusters",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeClusters.html"
+    },
+    "DescribeContainerInstances": {
+      "description": "Grants permission to describes Amazon ECS container instances",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeContainerInstances.html"
+    },
+    "DescribeServices": {
+      "description": "Grants permission to describe the specified services running in your cluster",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServices.html"
+    },
+    "DescribeTaskDefinition": {
+      "description": "Grants permission to describe a task definition. You can specify a family and revision to find information about a specific task definition, or you can simply specify the family to find the latest ACTIVE revision in that family",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTaskDefinition.html"
+    },
+    "DescribeTaskSets": {
+      "description": "Grants permission to describe Amazon ECS task sets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task-set": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster",
+        "ecs:service"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTaskSets.html"
+    },
+    "DescribeTasks": {
+      "description": "Grants permission to describe a specified task or tasks",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html"
+    },
+    "DiscoverPollEndpoint": {
+      "description": "Grants permission to get an endpoint for the Amazon ECS agent to poll for updates",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DiscoverPollEndpoint.html"
+    },
+    "ExecuteCommand": {
+      "description": "Grants permission to run a command remotely on an Amazon ECS container",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster",
+        "ecs:container-name",
+        "ecs:task"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ExecuteCommand.html"
+    },
+    "ListAccountSettings": {
+      "description": "Grants permission to list the account settings for an Amazon ECS resource for a specified principal",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAccountSettings.html"
+    },
+    "ListAttributes": {
+      "description": "Grants permission to lists the attributes for Amazon ECS resources within a specified target type and cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAttributes.html"
+    },
+    "ListClusters": {
+      "description": "Grants permission to get a list of existing clusters",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html"
+    },
+    "ListContainerInstances": {
+      "description": "Grants permission to get a list of container instances in a specified cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListContainerInstances.html"
+    },
+    "ListServices": {
+      "description": "Grants permission to get a list of services that are running in a specified cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html"
+    },
+    "ListServicesByNamespace": {
+      "description": "Grants permission to get a list of services that are running in a specified AWS Cloud Map Namespace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ecs:namespace"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServicesByNamespace.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to get a list of tags for the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "container-instance": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task-definition": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTaskDefinitionFamilies": {
+      "description": "Grants permission to get a list of task definition families that are registered to your account (which may include task definition families that no longer have any ACTIVE task definitions)",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html"
+    },
+    "ListTaskDefinitions": {
+      "description": "Grants permission to get a list of task definitions that are registered to your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTaskDefinitions.html"
+    },
+    "ListTasks": {
+      "description": "Grants permission to get a list of tasks for a specified cluster",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTasks.html"
+    },
+    "Poll": {
+      "description": "Grants permission to an agent to connect with the Amazon ECS service to report status and get commands",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html"
+    },
+    "PutAccountSetting": {
+      "description": "Grants permission to modify the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are enabled for new resources that are created. Enabling this setting is required to use new Amazon ECS features such as resource tagging",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAccountSetting.html"
+    },
+    "PutAccountSettingDefault": {
+      "description": "Grants permission to modify the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAccountSettingDefault.html"
+    },
+    "PutAttributes": {
+      "description": "Grants permission to create or update an attribute on an Amazon ECS resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAttributes.html"
+    },
+    "PutClusterCapacityProviders": {
+      "description": "Grants permission to modify the available capacity providers and the default capacity provider strategy for a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:capacity-provider"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutClusterCapacityProviders.html"
+    },
+    "RegisterContainerInstance": {
+      "description": "Grants permission to register an EC2 instance into the specified cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RegisterContainerInstance.html"
+    },
+    "RegisterTaskDefinition": {
+      "description": "Grants permission to register a new task definition from the supplied family and containerDefinitions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RegisterTaskDefinition.html"
+    },
+    "RunTask": {
+      "description": "Grants permission to start a task using random placement and the default Amazon ECS scheduler",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task-definition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ecs:capacity-provider",
+        "ecs:cluster",
+        "ecs:enable-execute-command"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html"
+    },
+    "StartTask": {
+      "description": "Grants permission to start a new task from the specified task definition on the specified container instance or instances",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task-definition": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ecs:cluster",
+        "ecs:container-instances",
+        "ecs:enable-execute-command"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_StartTask.html"
+    },
+    "StartTelemetrySession": {
+      "description": "Grants permission to start a telemetry session",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-metrics.html#enable_cloudwatch"
+    },
+    "StopTask": {
+      "description": "Grants permission to stop a running task",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_StopTask.html"
+    },
+    "SubmitAttachmentStateChanges": {
+      "description": "Grants permission to send an acknowledgement that attachments changed states",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_SubmitAttachmentStateChanges.html"
+    },
+    "SubmitContainerStateChange": {
+      "description": "Grants permission to send an acknowledgement that a container changed states",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_SubmitContainerStateChange.html"
+    },
+    "SubmitTaskStateChange": {
+      "description": "Grants permission to send an acknowledgement that a task changed states",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_SubmitTaskStateChange.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "capacity-provider": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "container-instance": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task-definition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task-set": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "capacity-provider": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "cluster": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "container-instance": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "service": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task-definition": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "task-set": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateCapacityProvider": {
+      "description": "Grants permission to update the specified capacity provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "capacity-provider": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateCapacityProvider.html"
+    },
+    "UpdateCluster": {
+      "description": "Grants permission to modify the configuration or settings to use for a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateCluster.html"
+    },
+    "UpdateClusterSettings": {
+      "description": "Grants permission to modify the settings to use for a cluster",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "cluster": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateClusterSettings.html"
+    },
+    "UpdateContainerAgent": {
+      "description": "Grants permission to update the Amazon ECS container agent on a specified container instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateContainerAgent.html"
+    },
+    "UpdateContainerInstancesState": {
+      "description": "Grants permission to the user to modify the status of an Amazon ECS container instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "container-instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateContainerInstancesState.html"
+    },
+    "UpdateService": {
+      "description": "Grants permission to modify the parameters of a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:capacity-provider",
+        "ecs:cluster",
+        "ecs:enable-execute-command",
+        "ecs:enable-service-connect",
+        "ecs:namespace",
+        "ecs:task-definition"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html"
+    },
+    "UpdateServicePrimaryTaskSet": {
+      "description": "Grants permission to modify the primary task set used in a service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "service": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateServicePrimaryTaskSet.html"
+    },
+    "UpdateTaskSet": {
+      "description": "Grants permission to update the specified task set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "task-set": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "ecs:cluster",
+        "ecs:service"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateTaskSet.html"
+    }
+  },
+  "resourceTypes": {
+    "capacity-provider": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:capacity-provider/${CapacityProviderName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html"
+    },
+    "cluster": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:cluster/${ClusterName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html"
+    },
+    "container-instance": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:container-instance/${ClusterName}/${ContainerInstanceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html"
+    },
+    "service": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:service/${ClusterName}/${ServiceName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html"
+    },
+    "task": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:task/${ClusterName}/${TaskId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduling_tasks.html"
+    },
+    "task-definition": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:task-definition/${TaskDefinitionFamilyName}:${TaskDefinitionRevisionNumber}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html"
+    },
+    "task-set": {
+      "arn": "arn:${Partition}:ecs:${Region}:${Account}:task-set/${ClusterName}/${ServiceName}/${TaskSetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ecs:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "ecs:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies"
+    },
+    "ecs:capacity-provider": {
+      "description": "Filters access by the ARN of an Amazon ECS capacity provider",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:cluster": {
+      "description": "Filters access by the ARN of an Amazon ECS cluster",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:container-instances": {
+      "description": "Filters access by the ARN of an Amazon ECS container instance",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:container-name": {
+      "description": "Filters access by the name of an Amazon ECS container which is defined in the ECS task definition",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:enable-execute-command": {
+      "description": "Filters access by the execute-command capability of your Amazon ECS task or Amazon ECS service",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:enable-service-connect": {
+      "description": "Filters access by the enable field value in the Service Connect configuration",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:namespace": {
+      "description": "Filters access by the ARN of AWS Cloud Map namespace which is defined in the Service Connect Configuration",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:service": {
+      "description": "Filters access by the ARN of an Amazon ECS service",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:task": {
+      "description": "Filters access by the ARN of an Amazon ECS task",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    },
+    "ecs:task-definition": {
+      "description": "Filters access by the ARN of an Amazon ECS task definition",
+      "type": "ARN",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-conditionkeys"
+    }
+  }
+}

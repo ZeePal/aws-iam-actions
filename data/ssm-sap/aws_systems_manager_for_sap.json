@@ -1,0 +1,246 @@
+{
+  "name": "AWS Systems Manager for SAP",
+  "prefix": "ssm-sap",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerforsap.html",
+  "actions": {
+    "BackupDatabase": {
+      "description": "Grants permission to perform backup operation on a specified database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "DeleteResourcePermission": {
+      "description": "Grants permission to delete the SSM for SAP level resource permissions associated with a SSM for SAP database resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "DeregisterApplication": {
+      "description": "Grants permission to deregister an SAP application with SSM for SAP",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "GetApplication": {
+      "description": "Grants permission to access information about an application registered with SSM for SAP by providing the application ID or application ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "GetComponent": {
+      "description": "Grants permission to access information about a component registered with SSM for SAP by providing the application ID and component ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "GetDatabase": {
+      "description": "Grants permission to access information about a database registered with SSM for SAP by providing the application ID, component ID, and database ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "GetOperation": {
+      "description": "Grants permission to access information about an operation by providing its operation ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "GetResourcePermission": {
+      "description": "Grants permission to get the SSM for SAP level resource permissions associated with a SSM for SAP database resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "ListApplications": {
+      "description": "Grants permission to retrieve a list of all applications registered with SSM for SAP under the customer AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "ListComponents": {
+      "description": "Grants permission to retrieve a list of all components in the account of customer, or a specific application",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "ListDatabases": {
+      "description": "Grants permission to retrieve a list of all databases in the account of customer, or a specific application",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "ListOperations": {
+      "description": "Grants permission to retrieve a list of all operations in the account of customer, additional filters can be applied",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags on a specified resource ARN",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "PutResourcePermission": {
+      "description": "Grants permission to add the SSM for SAP level resource permissions associated with a SSM for SAP database resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "RegisterApplication": {
+      "description": "Grants permission to registers an SAP application with SSM for SAP",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "RestoreDatabase": {
+      "description": "Grants permission to restore a database from another database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a specified resource ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "database": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a specified resource ARN",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "database": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "UpdateApplicationSettings": {
+      "description": "Grants permission to update settings of a registered SSM for SAP application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "UpdateHANABackupSettings": {
+      "description": "Grants permission to update the HANA backup settings of a specified database",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    }
+  },
+  "resourceTypes": {
+    "application": {
+      "arn": "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "database": {
+      "arn": "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/DB/${DatabaseId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/systems-manager/index.html"
+    }
+  }
+}

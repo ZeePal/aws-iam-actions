@@ -1,0 +1,18 @@
+{
+  "name": "AWS IQ Permissions",
+  "prefix": "iq-permission",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiqpermissions.html",
+  "actions": {
+    "ApproveAccessGrant": {
+      "description": "Grants permission to approve an access grant",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://aws.amazon.com/iq/"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

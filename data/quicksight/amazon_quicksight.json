@@ -1,0 +1,2332 @@
+{
+  "name": "Amazon QuickSight",
+  "prefix": "quicksight",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonquicksight.html",
+  "actions": {
+    "AccountConfigurations": {
+      "description": "Grants permission to enable setting default access to AWS resources",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/accessing-data-sources.html"
+    },
+    "CancelIngestion": {
+      "description": "Grants permission to cancel a SPICE ingestions on a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ingestion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CancelIngestion.html"
+    },
+    "CreateAccountCustomization": {
+      "description": "Grants permission to create an account customization for QuickSight account or namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateAccountCustomization.html"
+    },
+    "CreateAccountSubscription": {
+      "description": "Grants permission to subscribe to QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateAccountSubscription.html"
+    },
+    "CreateAdmin": {
+      "description": "Grants permission to provision Amazon QuickSight administrators, authors, and readers",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "CreateAnalysis": {
+      "description": "Grants permission to create an analysis from a template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateAnalysis.html"
+    },
+    "CreateCustomPermissions": {
+      "description": "Grants permission to create a custom permissions resource for restricting user access",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "CreateDashboard": {
+      "description": "Grants permission to create a QuickSight Dashboard",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDashboard.html"
+    },
+    "CreateDataSet": {
+      "description": "Grants permission to create a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "quicksight:PassDataSource"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDataSet.html"
+    },
+    "CreateDataSource": {
+      "description": "Grants permission to create a data source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateDataSource.html"
+    },
+    "CreateEmailCustomizationTemplate": {
+      "description": "Grants permission to create a QuickSight email customization template",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "emailCustomizationTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html"
+    },
+    "CreateFolder": {
+      "description": "Grants permission to create a QuickSight folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateFolder.html"
+    },
+    "CreateFolderMembership": {
+      "description": "Grants permission to add a QuickSight Dashboard, Analysis or Dataset to a QuickSight Folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateFolderMembership.html"
+    },
+    "CreateGroup": {
+      "description": "Grants permission to create a QuickSight group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateGroup.html"
+    },
+    "CreateGroupMembership": {
+      "description": "Grants permission to add a QuickSight user to a QuickSight group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": [
+            "quicksight:UserName"
+          ]
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateGroupMembership.html"
+    },
+    "CreateIAMPolicyAssignment": {
+      "description": "Grants permission to create an assignment with one specified IAM Policy ARN that will be assigned to specified groups or users of QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateIAMPolicyAssignment.html"
+    },
+    "CreateIngestion": {
+      "description": "Grants permission to start a SPICE ingestion on a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ingestion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateIngestion.html"
+    },
+    "CreateNamespace": {
+      "description": "Grants permission to create an QuickSight namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:CreateIdentityPoolDirectory"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateNamespace.html"
+    },
+    "CreateReader": {
+      "description": "Grants permission to provision Amazon QuickSight readers",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "CreateTemplate": {
+      "description": "Grants permission to create a template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateTemplate.html"
+    },
+    "CreateTemplateAlias": {
+      "description": "Grants permission to create a template alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateTemplateAlias.html"
+    },
+    "CreateTheme": {
+      "description": "Grants permission to create a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateTheme.html"
+    },
+    "CreateThemeAlias": {
+      "description": "Grants permission to create an alias for a theme version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateThemeAlias.html"
+    },
+    "CreateUser": {
+      "description": "Grants permission to provision Amazon QuickSight authors and readers",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "CreateVPCConnection": {
+      "description": "Grants permission to create a VPC connection",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/vpc-creating-a-connection-in-quicksight.html"
+    },
+    "DeleteAccountCustomization": {
+      "description": "Grants permission to delete an account customization for QuickSight account or namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "customization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteAccountCustomization.html"
+    },
+    "DeleteAccountSubscription": {
+      "description": "Grants permission to delete a QuickSight account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteAccountSubscription.html"
+    },
+    "DeleteAnalysis": {
+      "description": "Grants permission to delete an analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteAnalysis.html"
+    },
+    "DeleteCustomPermissions": {
+      "description": "Grants permission to delete a custom permissions resource",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "DeleteDashboard": {
+      "description": "Grants permission to delete a QuickSight Dashboard",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDashboard.html"
+    },
+    "DeleteDataSet": {
+      "description": "Grants permission to delete a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDataSet.html"
+    },
+    "DeleteDataSource": {
+      "description": "Grants permission to delete a data source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteDataSource.html"
+    },
+    "DeleteEmailCustomizationTemplate": {
+      "description": "Grants permission to delete a QuickSight email customization template",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "emailCustomizationTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html"
+    },
+    "DeleteFolder": {
+      "description": "Grants permission to delete a QuickSight Folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteFolder.html"
+    },
+    "DeleteFolderMembership": {
+      "description": "Grants permission to remove a QuickSight Dashboard, Analysis or Dataset from a QuickSight Folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteFolderMembership.html"
+    },
+    "DeleteGroup": {
+      "description": "Grants permission to remove a user group from QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteGroup.html"
+    },
+    "DeleteGroupMembership": {
+      "description": "Grants permission to remove a user from a group so that he/she is no longer a member of the group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": [
+            "quicksight:UserName"
+          ]
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteGroupMembership.html"
+    },
+    "DeleteIAMPolicyAssignment": {
+      "description": "Grants permission to update an existing assignment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteIAMPolicyAssignment.html"
+    },
+    "DeleteNamespace": {
+      "description": "Grants permission to delete a QuickSight namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:DeleteDirectory"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteNamespace.html"
+    },
+    "DeleteTemplate": {
+      "description": "Grants permission to delete a template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteTemplate.html"
+    },
+    "DeleteTemplateAlias": {
+      "description": "Grants permission to delete a template alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteTemplateAlias.html"
+    },
+    "DeleteTheme": {
+      "description": "Grants permission to delete a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteTheme.html"
+    },
+    "DeleteThemeAlias": {
+      "description": "Grants permission to delete the alias of a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteThemeAlias.html"
+    },
+    "DeleteUser": {
+      "description": "Grants permission to delete a QuickSight user, given the user name",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteUser.html"
+    },
+    "DeleteUserByPrincipalId": {
+      "description": "Grants permission to deletes a user identified by its principal ID",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DeleteUserByPrincipalId.html"
+    },
+    "DeleteVPCConnection": {
+      "description": "Grants permission to delete a VPC connection",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/vpc-creating-a-connection-in-quicksight.html"
+    },
+    "DescribeAccountCustomization": {
+      "description": "Grants permission to describe an account customization for QuickSight account or namespace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "customization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAccountCustomization.html"
+    },
+    "DescribeAccountSettings": {
+      "description": "Grants permission to describe the administrative account settings for QuickSight account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAccountSettings.html"
+    },
+    "DescribeAccountSubscription": {
+      "description": "Grants permission to describe a QuickSight account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "account": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAccountSubscription.html"
+    },
+    "DescribeAnalysis": {
+      "description": "Grants permission to describe an analysis",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysis.html"
+    },
+    "DescribeAnalysisPermissions": {
+      "description": "Grants permission to describe permissions for an analysis",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysisPermissions.html"
+    },
+    "DescribeCustomPermissions": {
+      "description": "Grants permission to describe a custom permissions resource in a QuickSight account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "DescribeDashboard": {
+      "description": "Grants permission to describe a QuickSight Dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboard.html"
+    },
+    "DescribeDashboardPermissions": {
+      "description": "Grants permission to describe permissions for a QuickSight Dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboardPermissions.html"
+    },
+    "DescribeDataSet": {
+      "description": "Grants permission to describe a dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSet.html"
+    },
+    "DescribeDataSetPermissions": {
+      "description": "Grants permission to describe the resource policy of a dataset",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSetPermissions.html"
+    },
+    "DescribeDataSource": {
+      "description": "Grants permission to describe a data source",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSource.html"
+    },
+    "DescribeDataSourcePermissions": {
+      "description": "Grants permission to describe the resource policy of a data source",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSourcePermissions.html"
+    },
+    "DescribeEmailCustomizationTemplate": {
+      "description": "Grants permission to describe a QuickSight email customization template",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "emailCustomizationTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html"
+    },
+    "DescribeFolder": {
+      "description": "Grants permission to describe a QuickSight Folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFolder.html"
+    },
+    "DescribeFolderPermissions": {
+      "description": "Grants permission to describe permissions for a QuickSight Folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFolderPermissions.html"
+    },
+    "DescribeFolderResolvedPermissions": {
+      "description": "Grants permission to describe resolved permissions for a QuickSight Folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeFolderResolvedPermissions.html"
+    },
+    "DescribeGroup": {
+      "description": "Grants permission to describe a QuickSight group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeGroup.html"
+    },
+    "DescribeGroupMembership": {
+      "description": "Grants permission to describe a QuickSight group member",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": [
+            "quicksight:UserName"
+          ]
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeGroupMembership.html"
+    },
+    "DescribeIAMPolicyAssignment": {
+      "description": "Grants permission to describe an existing assignment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeIAMPolicyAssignment.html"
+    },
+    "DescribeIngestion": {
+      "description": "Grants permission to describe a SPICE ingestion on a dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ingestion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeIngestion.html"
+    },
+    "DescribeIpRestriction": {
+      "description": "Grants permission to describe the IP restrictions for QuickSight account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeIpRestriction.html"
+    },
+    "DescribeNamespace": {
+      "description": "Grants permission to describe a QuickSight namespace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeNamespace.html"
+    },
+    "DescribeTemplate": {
+      "description": "Grants permission to describe a template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplate.html"
+    },
+    "DescribeTemplateAlias": {
+      "description": "Grants permission to describe a template alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplateAlias.html"
+    },
+    "DescribeTemplatePermissions": {
+      "description": "Grants permission to describe permissions for a template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplatePermissions.html"
+    },
+    "DescribeTheme": {
+      "description": "Grants permission to describe a theme",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTheme.html"
+    },
+    "DescribeThemeAlias": {
+      "description": "Grants permission to describe a theme alias",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeThemeAlias.html"
+    },
+    "DescribeThemePermissions": {
+      "description": "Grants permission to describe permissions for a theme",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeThemePermissions.html"
+    },
+    "DescribeUser": {
+      "description": "Grants permission to describe a QuickSight user given the user name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeUser.html"
+    },
+    "GenerateEmbedUrlForAnonymousUser": {
+      "description": "Grants permission to generate a URL used to embed a QuickSight Dashboard or Q Topic for a user not registered with QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "namespace": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "topic": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "quicksight:AllowedEmbeddingDomains"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html"
+    },
+    "GenerateEmbedUrlForRegisteredUser": {
+      "description": "Grants permission to generate a URL used to embed a QuickSight Dashboard for a user registered with QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "quicksight:AllowedEmbeddingDomains"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html"
+    },
+    "GetAnonymousUserEmbedUrl": {
+      "description": "Grants permission to get a URL used to embed a QuickSight Dashboard for a user not registered with QuickSight",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "GetAuthCode": {
+      "description": "Grants permission to get an auth code representing a QuickSight user",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "GetDashboardEmbedUrl": {
+      "description": "Grants permission to get a URL used to embed a QuickSight Dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetDashboardEmbedUrl.html"
+    },
+    "GetGroupMapping": {
+      "description": "Grants permission to use Amazon QuickSight, in Enterprise edition, to identify and display the Microsoft Active Directory (Microsoft Active Directory) directory groups that are mapped to roles in Amazon QuickSight",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "GetSessionEmbedUrl": {
+      "description": "Grants permission to get a URL to embed QuickSight console experience",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetSessionEmbedUrl.html"
+    },
+    "ListAnalyses": {
+      "description": "Grants permission to list all analyses in an account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAnalyses.html"
+    },
+    "ListCustomPermissions": {
+      "description": "Grants permission to list custom permissions resources in QuickSight account",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "ListDashboardVersions": {
+      "description": "Grants permission to list all versions of a QuickSight Dashboard",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDashboardVersions.html"
+    },
+    "ListDashboards": {
+      "description": "Grants permission to list all Dashboards in a QuickSight Account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDashboards.html"
+    },
+    "ListDataSets": {
+      "description": "Grants permission to list all datasets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDataSets.html"
+    },
+    "ListDataSources": {
+      "description": "Grants permission to list all data sources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDataSources.html"
+    },
+    "ListFolderMembers": {
+      "description": "Grants permission to list all members in a folder",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFolderMembers.html"
+    },
+    "ListFolders": {
+      "description": "Grants permission to list all Folders in a QuickSight Account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListFolders.html"
+    },
+    "ListGroupMemberships": {
+      "description": "Grants permission to list member users in a group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListGroupMemberships.html"
+    },
+    "ListGroups": {
+      "description": "Grants permission to list all user groups in QuickSight",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListGroups.html"
+    },
+    "ListIAMPolicyAssignments": {
+      "description": "Grants permission to list all assignments in the current Amazon QuickSight account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListIAMPolicyAssignments.html"
+    },
+    "ListIAMPolicyAssignmentsForUser": {
+      "description": "Grants permission to list all assignments assigned to a user and the groups it belongs",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListIAMPolicyAssignmentsForUser.html"
+    },
+    "ListIngestions": {
+      "description": "Grants permission to list all SPICE ingestions on a dataset",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListIngestions.html"
+    },
+    "ListNamespaces": {
+      "description": "Grants permission to lists all namespaces in a QuickSight account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListNamespaces.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags of a QuickSight resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "customization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "folder": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "theme": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTemplateAliases": {
+      "description": "Grants permission to list all aliases for a template",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTemplateAliases.html"
+    },
+    "ListTemplateVersions": {
+      "description": "Grants permission to list all versions of a template",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTemplateVersions.html"
+    },
+    "ListTemplates": {
+      "description": "Grants permission to list all templates in a QuickSight account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListTemplates.html"
+    },
+    "ListThemeAliases": {
+      "description": "Grants permission to list all aliases of a theme",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListThemeAliases.html"
+    },
+    "ListThemeVersions": {
+      "description": "Grants permission to list all versions of a theme",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListThemeVersions.html"
+    },
+    "ListThemes": {
+      "description": "Grants permission to list all themes in an account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListThemes.html"
+    },
+    "ListUserGroups": {
+      "description": "Grants permission to list groups that a given user is a member of",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListUserGroups.html"
+    },
+    "ListUsers": {
+      "description": "Grants permission to list all of the QuickSight users belonging to this account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListUsers.html"
+    },
+    "PassDataSet": {
+      "description": "Grants permission to use a dataset for a template",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-api-overview.html"
+    },
+    "PassDataSource": {
+      "description": "Grants permission to use a data source for a data set",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-api-overview.html"
+    },
+    "RegisterUser": {
+      "description": "Grants permission to create a QuickSight user, whose identity is associated with the IAM identity/role specified in the request",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": [
+            "quicksight:IamArn",
+            "quicksight:SessionName"
+          ]
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RegisterUser.html"
+    },
+    "RestoreAnalysis": {
+      "description": "Grants permission to restore a deleted analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RestoreAnalysis.html"
+    },
+    "ScopeDownPolicy": {
+      "description": "Grants permission to manage scoping policies for permissions to AWS resources",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/accessing-data-sources.html"
+    },
+    "SearchAnalyses": {
+      "description": "Grants permission to search for a sub-set of analyses",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchAnalyses.html"
+    },
+    "SearchDashboards": {
+      "description": "Grants permission to search for a sub-set of QuickSight Dashboards",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDashboards.html"
+    },
+    "SearchDataSets": {
+      "description": "Grants permission to search for a sub-set of QuickSight DatSets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDataSets.html"
+    },
+    "SearchDataSources": {
+      "description": "Grants permission to search for a sub-set of QuickSight Data Sources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDataSources.html"
+    },
+    "SearchDirectoryGroups": {
+      "description": "Grants permission to use Amazon QuickSight, in Enterprise edition, to display your Microsoft Active Directory directory groups so that you can choose which ones to map to roles in Amazon QuickSight",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "SearchFolders": {
+      "description": "Grants permission to search for a sub-set of QuickSight Folders",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchFolders.html"
+    },
+    "SearchGroups": {
+      "description": "Grants permission to search for a sub-set of QuickSight groups",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchGroups.html"
+    },
+    "SetGroupMapping": {
+      "description": "Grants permission to use Amazon QuickSight, in Enterprise edition, to display your Microsoft Active Directory directory groups so that you can choose which ones to map to roles in Amazon QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "Subscribe": {
+      "description": "Grants permission to subscribe to Amazon QuickSight, and also to allow the user to upgrade the subscription to Enterprise edition",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "quicksight:DirectoryType",
+        "quicksight:Edition"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a QuickSight resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "customization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "folder": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ingestion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "theme": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TagResource.html"
+    },
+    "Unsubscribe": {
+      "description": "Grants permission to unsubscribe from Amazon QuickSight, which permanently deletes all users and their resources from Amazon QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a QuickSight resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "customization": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dashboard": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "dataset": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "folder": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ingestion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "theme": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateAccountCustomization": {
+      "description": "Grants permission to update an account customization for QuickSight account or namespace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "customization": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAccountCustomization.html"
+    },
+    "UpdateAccountSettings": {
+      "description": "Grants permission to update the administrative account settings for QuickSight account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAccountSettings.html"
+    },
+    "UpdateAnalysis": {
+      "description": "Grants permission to update an analysis",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAnalysis.html"
+    },
+    "UpdateAnalysisPermissions": {
+      "description": "Grants permission to update permissions for an analysis",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "analysis": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAnalysisPermissions.html"
+    },
+    "UpdateCustomPermissions": {
+      "description": "Grants permission to update a custom permissions resource",
+      "accessLevel": "Permissions management",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "UpdateDashboard": {
+      "description": "Grants permission to update a QuickSight Dashboard",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboard.html"
+    },
+    "UpdateDashboardPermissions": {
+      "description": "Grants permission to update permissions for a QuickSight Dashboard",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html"
+    },
+    "UpdateDashboardPublishedVersion": {
+      "description": "Grants permission to update a QuickSight Dashboard\u00e2\u0080\u0099s Published Version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPublishedVersion.html"
+    },
+    "UpdateDataSet": {
+      "description": "Grants permission to update a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "datasource": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "quicksight:PassDataSource"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSet.html"
+    },
+    "UpdateDataSetPermissions": {
+      "description": "Grants permission to update the resource policy of a dataset",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSetPermissions.html"
+    },
+    "UpdateDataSource": {
+      "description": "Grants permission to update a data source",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSource.html"
+    },
+    "UpdateDataSourcePermissions": {
+      "description": "Grants permission to update the resource policy of a data source",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "datasource": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSourcePermissions.html"
+    },
+    "UpdateEmailCustomizationTemplate": {
+      "description": "Grants permission to update a QuickSight email customization template",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "emailCustomizationTemplate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html"
+    },
+    "UpdateFolder": {
+      "description": "Grants permission to update a QuickSight Folder",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFolder.html"
+    },
+    "UpdateFolderPermissions": {
+      "description": "Grants permission to update permissions for a QuickSight Folder",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "folder": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFolderPermissions.html"
+    },
+    "UpdateGroup": {
+      "description": "Grants permission to change group description",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "group": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateGroup.html"
+    },
+    "UpdateIAMPolicyAssignment": {
+      "description": "Grants permission to update an existing assignment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "assignment": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateIAMPolicyAssignment.html"
+    },
+    "UpdateIpRestriction": {
+      "description": "Grants permission to update the IP restrictions for QuickSight account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateIpRestriction.html"
+    },
+    "UpdatePublicSharingSettings": {
+      "description": "Grants permission to enable or disable public sharing on an account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdatePublicSharingSettings.html"
+    },
+    "UpdateResourcePermissions": {
+      "description": "Grants permission to update resource-level permissions in QuickSight",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/security_iam_service-with-iam.html"
+    },
+    "UpdateTemplate": {
+      "description": "Grants permission to update a template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateTemplate.html"
+    },
+    "UpdateTemplateAlias": {
+      "description": "Grants permission to update a template alias",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateTemplateAlias.html"
+    },
+    "UpdateTemplatePermissions": {
+      "description": "Grants permission to update permissions for a template",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "template": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateTemplatePermissions.html"
+    },
+    "UpdateTheme": {
+      "description": "Grants permission to update a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateTheme.html"
+    },
+    "UpdateThemeAlias": {
+      "description": "Grants permission to update the alias of a theme",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateThemeAlias.html"
+    },
+    "UpdateThemePermissions": {
+      "description": "Grants permission to update permissions for a theme",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "theme": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateThemePermissions.html"
+    },
+    "UpdateUser": {
+      "description": "Grants permission to update an Amazon QuickSight user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateUser.html"
+    }
+  },
+  "resourceTypes": {
+    "account": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:account/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AccountInfo.html"
+    },
+    "analysis": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:analysis/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analysis.html"
+    },
+    "assignment": {
+      "arn": "arn:${Partition}:quicksight::${Account}:assignment/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_IAMPolicyAssignment.html"
+    },
+    "customization": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:customization/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AccountCustomization.html"
+    },
+    "dashboard": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashboard.html"
+    },
+    "dataset": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:dataset/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSet.html"
+    },
+    "datasource": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:datasource/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataSource.html"
+    },
+    "emailCustomizationTemplate": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:email-customization-template/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight-email-templates.html"
+    },
+    "folder": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:folder/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folder.html"
+    },
+    "group": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:group/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Group.html"
+    },
+    "ingestion": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:dataset/${DatasetId}/ingestion/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Ingestion.html"
+    },
+    "namespace": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:namespace/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_NamespaceInfoV2.html"
+    },
+    "template": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:template/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Template.html"
+    },
+    "theme": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:theme/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Theme.html"
+    },
+    "topic": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:topic/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic.html"
+    },
+    "user": {
+      "arn": "arn:${Partition}:quicksight:${Region}:${Account}:user/${ResourceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/quicksight/latest/APIReference/API_User.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "quicksight:AllowedEmbeddingDomains": {
+      "description": "Filters access by the allowed embedding domains",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/embedded-dashboards-for-authenticated-users-step-1.html"
+    },
+    "quicksight:DirectoryType": {
+      "description": "Filters access by the user management options",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/security-scp.html"
+    },
+    "quicksight:Edition": {
+      "description": "Filters access by the edition of QuickSight",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/security-scp.html"
+    },
+    "quicksight:IamArn": {
+      "description": "Filters access by IAM user or role ARN",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "quicksight:SessionName": {
+      "description": "Filters access by session name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    },
+    "quicksight:UserName": {
+      "description": "Filters access by user name",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html"
+    }
+  }
+}

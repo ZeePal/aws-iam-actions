@@ -1,0 +1,272 @@
+{
+  "name": "Amazon Managed Grafana",
+  "prefix": "grafana",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedgrafana.html",
+  "actions": {
+    "AssociateLicense": {
+      "description": "Grants permission to upgrade a workspace with a license",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "aws-marketplace:ViewSubscriptions"
+      ],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "CreateWorkspace": {
+      "description": "Grants permission to create a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "iam:CreateServiceLinkedRole",
+        "organizations:DescribeOrganization",
+        "sso:CreateManagedApplicationInstance",
+        "sso:DescribeRegisteredRegions",
+        "sso:GetSharedSsoConfiguration"
+      ],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "CreateWorkspaceApiKey": {
+      "description": "Grants permission to create API keys for a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "DeleteWorkspace": {
+      "description": "Grants permission to delete a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:DeleteManagedApplicationInstance"
+      ],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "DeleteWorkspaceApiKey": {
+      "description": "Grants permission to delete API keys from a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "DescribeWorkspace": {
+      "description": "Grants permission to describe a workspace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "DescribeWorkspaceAuthentication": {
+      "description": "Grants permission to describe authentication providers on a workspace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "DisassociateLicense": {
+      "description": "Grants permission to remove a license from a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "ListPermissions": {
+      "description": "Grants permission to list the permissions on a wokspace",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags associated with a workspace",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListWorkspaces": {
+      "description": "Grants permission to list workspaces",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to, or update tag values of, a workspace",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a workspace",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdatePermissions": {
+      "description": "Grants permission to modify the permissions on a workspace",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "UpdateWorkspace": {
+      "description": "Grants permission to modify a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    },
+    "UpdateWorkspaceAuthentication": {
+      "description": "Grants permission to modify authentication providers on a workspace",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workspace": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html"
+    }
+  },
+  "resourceTypes": {
+    "workspace": {
+      "arn": "arn:${Partition}:grafana:${Region}:${Account}:/workspaces/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/security-iam.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by actions based on the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by actions based on tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by actions based on the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-tags"
+    }
+  }
+}

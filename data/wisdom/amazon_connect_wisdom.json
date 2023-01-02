@@ -1,0 +1,508 @@
+{
+  "name": "Amazon Connect Wisdom",
+  "prefix": "wisdom",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectwisdom.html",
+  "actions": {
+    "CreateAssistant": {
+      "description": "Grants permission to create an assistant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAssistant.html"
+    },
+    "CreateAssistantAssociation": {
+      "description": "Grants permission to create an association between an assistant and another resource",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateAssistantAssociation.html"
+    },
+    "CreateContent": {
+      "description": "Grants permission to create content",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateContent.html"
+    },
+    "CreateKnowledgeBase": {
+      "description": "Grants permission to create a knowledge base",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateKnowledgeBase.html"
+    },
+    "CreateSession": {
+      "description": "Grants permission to create a session",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_CreateSession.html"
+    },
+    "DeleteAssistant": {
+      "description": "Grants permission to delete an assistant",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAssistant.html"
+    },
+    "DeleteAssistantAssociation": {
+      "description": "Grants permission to delete an assistant association",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "AssistantAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteAssistantAssociation.html"
+    },
+    "DeleteContent": {
+      "description": "Grants permission to delete content",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Content": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteContent.html"
+    },
+    "DeleteKnowledgeBase": {
+      "description": "Grants permission to delete a knowledge base",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_DeleteKnowledgeBase.html"
+    },
+    "GetAssistant": {
+      "description": "Grants permission to retrieve information about an assistant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAssistant.html"
+    },
+    "GetAssistantAssociation": {
+      "description": "Grants permission to retrieve information about an assistant association",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "AssistantAssociation": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAssistantAssociation.html"
+    },
+    "GetContent": {
+      "description": "Grants permission to retrieve content, including a pre-signed URL to download the content",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Content": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetContent.html"
+    },
+    "GetContentSummary": {
+      "description": "Grants permission to retrieve summary information about the content",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Content": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetContentSummary.html"
+    },
+    "GetKnowledgeBase": {
+      "description": "Grants permission to retrieve information about the knowledge base",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetKnowledgeBase.html"
+    },
+    "GetRecommendations": {
+      "description": "Grants permission to retrieve recommendations for the specified session",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetRecommendations.html"
+    },
+    "GetSession": {
+      "description": "Grants permission to retrieve information for a specified session",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Session": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetSession.html"
+    },
+    "ListAssistantAssociations": {
+      "description": "Grants permission to list information about assistant associations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAssistantAssociations.html"
+    },
+    "ListAssistants": {
+      "description": "Grants permission to list information about assistants",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListAssistants.html"
+    },
+    "ListContents": {
+      "description": "Grants permission to list the content with a knowledge base",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListContents.html"
+    },
+    "ListKnowledgeBases": {
+      "description": "Grants permission to list information about knowledge bases",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListKnowledgeBases.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags for the specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "NotifyRecommendationsReceived": {
+      "description": "Grants permission to remove the specified recommendations from the specified assistant's queue of newly available recommendations",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_NotifyRecommendationsReceived.html"
+    },
+    "QueryAssistant": {
+      "description": "Grants permission to perform a manual search against the specified assistant",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_QueryAssistant.html"
+    },
+    "RemoveKnowledgeBaseTemplateUri": {
+      "description": "Grants permission to remove a URI template from a knowledge base",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_RemoveKnowledgeBaseTemplateUri.html"
+    },
+    "SearchContent": {
+      "description": "Grants permission to search for content referencing a specified knowledge base. Can be used to get a specific content resource by its name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SearchContent.html"
+    },
+    "SearchSessions": {
+      "description": "Grants permission to search for sessions referencing a specified assistant. Can be used to et a specific session resource by its name",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Assistant": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SearchSessions.html"
+    },
+    "StartContentUpload": {
+      "description": "Grants permission to get a URL to upload content to a knowledge base",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_StartContentUpload.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add the specified tags to the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove the specified tags from the specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateContent": {
+      "description": "Grants permission to update information about the content",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Content": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateContent.html"
+    },
+    "UpdateKnowledgeBaseTemplateUri": {
+      "description": "Grants permission to update the template URI of a knowledge base",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "KnowledgeBase": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_UpdateKnowledgeBaseTemplateUri.html"
+    }
+  },
+  "resourceTypes": {
+    "Assistant": {
+      "arn": "arn:${Partition}:wisdom:${Region}:${Account}:assistant/${AssistantId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_AssistantData.html"
+    },
+    "AssistantAssociation": {
+      "arn": "arn:${Partition}:wisdom:${Region}:${Account}:association/${AssistantId}/${AssistantAssociationId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_AssistantAssociationData.html"
+    },
+    "Content": {
+      "arn": "arn:${Partition}:wisdom:${Region}:${Account}:content/${KnowledgeBaseId}/${ContentId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_ContentData.html"
+    },
+    "KnowledgeBase": {
+      "arn": "arn:${Partition}:wisdom:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_KnowledgeBaseData.html"
+    },
+    "Session": {
+      "arn": "arn:${Partition}:wisdom:${Region}:${Account}:session/${AssistantId}/${SessionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/wisdom/latest/APIReference/API_SessionData.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the tag keys that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

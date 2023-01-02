@@ -1,0 +1,962 @@
+{
+  "name": "AWS Transfer Family",
+  "prefix": "transfer",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstransferfamily.html",
+  "actions": {
+    "CreateAccess": {
+      "description": "Grants permission to add an access associated with a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateAccess.html"
+    },
+    "CreateAgreement": {
+      "description": "Grants permission to add an agreement associated with a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateAgreement.html"
+    },
+    "CreateConnector": {
+      "description": "Grants permission to create a connector",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateConnector.html"
+    },
+    "CreateProfile": {
+      "description": "Grants permission to create a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateProfile.html"
+    },
+    "CreateServer": {
+      "description": "Grants permission to create a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateServer.html"
+    },
+    "CreateUser": {
+      "description": "Grants permission to add a user associated with a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateUser.html"
+    },
+    "CreateWorkflow": {
+      "description": "Grants permission to create a workflow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateWorkflow.html"
+    },
+    "DeleteAccess": {
+      "description": "Grants permission to delete access",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteAccess.html"
+    },
+    "DeleteAgreement": {
+      "description": "Grants permission to delete agreement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteAgreement.html"
+    },
+    "DeleteCertificate": {
+      "description": "Grants permission to delete certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteCertificate.html"
+    },
+    "DeleteConnector": {
+      "description": "Grants permission to delete connector",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "connector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteConnector.html"
+    },
+    "DeleteHostKey": {
+      "description": "Grants permission to delete a host key associated with a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "host-key": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteHostKey.html"
+    },
+    "DeleteProfile": {
+      "description": "Grants permission to delete profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteProfile.html"
+    },
+    "DeleteServer": {
+      "description": "Grants permission to delete a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteServer.html"
+    },
+    "DeleteSshPublicKey": {
+      "description": "Grants permission to delete an SSH public key from a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteSshPublicKey.html"
+    },
+    "DeleteUser": {
+      "description": "Grants permission to delete a user associated with a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteUser.html"
+    },
+    "DeleteWorkflow": {
+      "description": "Grants permission to delete a workflow",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DeleteWorkflow.html"
+    },
+    "DescribeAccess": {
+      "description": "Grants permission to describe an access assigned to a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeAccess.html"
+    },
+    "DescribeAgreement": {
+      "description": "Grants permission to describe an agreement assigned to a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeAgreement.html"
+    },
+    "DescribeCertificate": {
+      "description": "Grants permission to describe a certificate",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeCertificate.html"
+    },
+    "DescribeConnector": {
+      "description": "Grants permission to describe a connector",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "connector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeConnector.html"
+    },
+    "DescribeExecution": {
+      "description": "Grants permission to describe an execution associated with a workflow",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeExecution.html"
+    },
+    "DescribeHostKey": {
+      "description": "Grants permission to describe a host key associated with a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "host-key": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeHostKey.html"
+    },
+    "DescribeProfile": {
+      "description": "Grants permission to describe a profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeProfile.html"
+    },
+    "DescribeSecurityPolicy": {
+      "description": "Grants permission to describe a security policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeSecurityPolicy.html"
+    },
+    "DescribeServer": {
+      "description": "Grants permission to describe a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeServer.html"
+    },
+    "DescribeUser": {
+      "description": "Grants permission to describe a user associated with a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeUser.html"
+    },
+    "DescribeWorkflow": {
+      "description": "Grants permission to describe a workflow",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeWorkflow.html"
+    },
+    "ImportCertificate": {
+      "description": "Grants permission to add a certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ImportCertificate.html"
+    },
+    "ImportHostKey": {
+      "description": "Grants permission to add a host key to a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ImportHostKey.html"
+    },
+    "ImportSshPublicKey": {
+      "description": "Grants permission to add an SSH public key to a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ImportSshPublicKey.html"
+    },
+    "ListAccesses": {
+      "description": "Grants permission to list accesses",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListAccesses.html"
+    },
+    "ListAgreements": {
+      "description": "Grants permission to list agreements",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListAgreements.html"
+    },
+    "ListCertificates": {
+      "description": "Grants permission to list certificates",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListCertificates.html"
+    },
+    "ListConnectors": {
+      "description": "Grants permission to list connectors",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListConnectors.html"
+    },
+    "ListExecutions": {
+      "description": "Grants permission to list executions associated with a workflow",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListExecutions.html"
+    },
+    "ListHostKeys": {
+      "description": "Grants permission to list host keys associated with a server",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListHostKeys.html"
+    },
+    "ListProfiles": {
+      "description": "Grants permission to list profiles",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListProfiles.html"
+    },
+    "ListSecurityPolicies": {
+      "description": "Grants permission to list security policies",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListSecurityPolicies.html"
+    },
+    "ListServers": {
+      "description": "Grants permission to list servers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListServers.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for an AWS Transfer Family resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "certificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "host-key": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "profile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "server": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workflow": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListTagsForResource.html"
+    },
+    "ListUsers": {
+      "description": "Grants permission to list users associated with a server",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListUsers.html"
+    },
+    "ListWorkflows": {
+      "description": "Grants permission to list workflows",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_ListWorkflows.html"
+    },
+    "SendWorkflowStepState": {
+      "description": "Grants permission to send a callback for asynchronous custom steps",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "workflow": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_SendWorkflowStepState.html"
+    },
+    "StartFileTransfer": {
+      "description": "Grants permission to initiate a connector file transfer",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "connector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_StartFileTransfer.html"
+    },
+    "StartServer": {
+      "description": "Grants permission to start a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_StartServer.html"
+    },
+    "StopServer": {
+      "description": "Grants permission to stop a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_StopServer.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an AWS Transfer Family resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "certificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "host-key": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "profile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "server": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workflow": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_TagResource.html"
+    },
+    "TestIdentityProvider": {
+      "description": "Grants permission to test a server's custom identity provider",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_TestIdentityProvider.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an AWS Transfer Family resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "certificate": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "connector": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "host-key": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "profile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "server": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "user": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "workflow": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UntagResource.html"
+    },
+    "UpdateAccess": {
+      "description": "Grants permission to update access",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateAccess.html"
+    },
+    "UpdateAgreement": {
+      "description": "Grants permission to update an agreement",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "agreement": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateAgreement.html"
+    },
+    "UpdateCertificate": {
+      "description": "Grants permission to update a certificate",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "certificate": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateCertificate.html"
+    },
+    "UpdateConnector": {
+      "description": "Grants permission to update a connector",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "connector": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateConnector.html"
+    },
+    "UpdateHostKey": {
+      "description": "Grants permission to update a host key",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "host-key": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateHostKey.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to update a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "profile": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateProfile.html"
+    },
+    "UpdateServer": {
+      "description": "Grants permission to update the configuration of a server",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "server": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateServer.html"
+    },
+    "UpdateUser": {
+      "description": "Grants permission to update the configuration of a user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/API_UpdateUser.html"
+    }
+  },
+  "resourceTypes": {
+    "agreement": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:agreement/${AgreementId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html"
+    },
+    "certificate": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:certificate/${CertificateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html"
+    },
+    "connector": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:connector/${ConnectorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html"
+    },
+    "host-key": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:host-key/${ServerId}/${HostKeyId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/edit-server-config.html"
+    },
+    "profile": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:profile/${ProfileId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html"
+    },
+    "server": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:server/${ServerId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/configuring-servers.html"
+    },
+    "user": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:user/${ServerId}/${UserName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/create-user.html"
+    },
+    "workflow": {
+      "arn": "arn:${Partition}:transfer:${Region}:${Account}:workflow/${WorkflowId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/transfer/latest/userguide/transfer-workflows.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

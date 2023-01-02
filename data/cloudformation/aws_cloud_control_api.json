@@ -1,0 +1,81 @@
+{
+  "name": "AWS Cloud Control API",
+  "prefix": "cloudformation",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudcontrolapi.html",
+  "actions": {
+    "CancelResourceRequest": {
+      "description": "Grants permission to cancel resource requests in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CancelResourceRequest.html"
+    },
+    "CreateResource": {
+      "description": "Grants permission to create resources in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CreateResource.html"
+    },
+    "DeleteResource": {
+      "description": "Grants permission to delete resources in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_DeleteResource.html"
+    },
+    "GetResource": {
+      "description": "Grants permission to get resources in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResource.html"
+    },
+    "GetResourceRequestStatus": {
+      "description": "Grants permission to get resource requests in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResourceRequestStatus.html"
+    },
+    "ListResourceRequests": {
+      "description": "Grants permission to list resource requests in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResourceRequests.html"
+    },
+    "ListResources": {
+      "description": "Grants permission to list resources in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResources.html"
+    },
+    "UpdateResource": {
+      "description": "Grants permission to update resources in your account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_UpdateResource.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

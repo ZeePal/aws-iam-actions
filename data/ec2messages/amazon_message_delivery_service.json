@@ -1,0 +1,73 @@
+{
+  "name": "Amazon Message Delivery Service",
+  "prefix": "ec2messages",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmessagedeliveryservice.html",
+  "actions": {
+    "AcknowledgeMessage": {
+      "description": "Grants permission to acknowledge a message, ensuring it will not be delivered again",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    },
+    "DeleteMessage": {
+      "description": "Grants permission to delete a message",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    },
+    "FailMessage": {
+      "description": "Grants permission to fail a message, signifying the message could not be processed successfully, ensuring it cannot be replied to or delivered again",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    },
+    "GetEndpoint": {
+      "description": "Grants permission to route traffic to the correct endpoint based on the given destination for the messages",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    },
+    "GetMessages": {
+      "description": "Grants permission to deliver messages to clients/instances using long polling",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ssm:SourceInstanceARN"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    },
+    "SendReply": {
+      "description": "Grants permission to send replies from clients/instances to upstream service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "ssm:SourceInstanceARN"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {
+    "ssm:SourceInstanceARN": {
+      "description": "Filters access by verifying the Amazon Resource Name (ARN) of the AWS Systems Manager's managed instance from which the request is made. This key is not present when the request comes from the managed instance authenticated with an IAM role associated with EC2 instance profile",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanager.html#awssystemsmanager-policy-keys"
+    }
+  }
+}

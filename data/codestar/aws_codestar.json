@@ -1,0 +1,336 @@
+{
+  "name": "AWS CodeStar",
+  "prefix": "codestar",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestar.html",
+  "actions": {
+    "AssociateTeamMember": {
+      "description": "Grants permission to add a user to the team for an AWS CodeStar project",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_AssociateTeamMember.html"
+    },
+    "CreateProject": {
+      "description": "Grants permission to create a project with minimal structure, customer policies, and no resources",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_CreateProject.html"
+    },
+    "CreateUserProfile": {
+      "description": "Grants permission to create a profile for a user that includes user preferences, display name, and email",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_CreateUserProfile.html"
+    },
+    "DeleteExtendedAccess": {
+      "description": "Grants permission to extended delete APIs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "DeleteProject": {
+      "description": "Grants permission to delete a project, including project resources. Does not delete users associated with the project, but does delete the IAM roles that allowed access to the project",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_DeleteProject.html"
+    },
+    "DeleteUserProfile": {
+      "description": "Grants permission to delete a user profile in AWS CodeStar, including all personal preference data associated with that profile, such as display name and email address. It does not delete the history of that user, for example the history of commits made by that user",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_DeleteUserProfile.html"
+    },
+    "DescribeProject": {
+      "description": "Grants permission to describe a project and its resources",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_DescribeProject.html"
+    },
+    "DescribeUserProfile": {
+      "description": "Grants permission to describe a user in AWS CodeStar and the user attributes across all projects",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_DescribeUserProfile.html"
+    },
+    "DisassociateTeamMember": {
+      "description": "Grants permission to remove a user from a project. Removing a user from a project also removes the IAM policies from that user that allowed access to the project and its resources",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_DisassociateTeamMember.html"
+    },
+    "GetExtendedAccess": {
+      "description": "Grants permission to extended read APIs",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "ListProjects": {
+      "description": "Grants permission to list all projects in CodeStar associated with your AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_ListProjects.html"
+    },
+    "ListResources": {
+      "description": "Grants permission to list all resources associated with a project in CodeStar",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_ListResources.html"
+    },
+    "ListTagsForProject": {
+      "description": "Grants permission to list the tags associated with a project in CodeStar",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_ListTagsForProject.html"
+    },
+    "ListTeamMembers": {
+      "description": "Grants permission to list all team members associated with a project",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_ListTeamMembers.html"
+    },
+    "ListUserProfiles": {
+      "description": "Grants permission to list user profiles in AWS CodeStar",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_ListUserProfiles.html"
+    },
+    "PutExtendedAccess": {
+      "description": "Grants permission to extended write APIs",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "TagProject": {
+      "description": "Grants permission to add tags to a project in CodeStar",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_TagProject.html"
+    },
+    "UntagProject": {
+      "description": "Grants permission to remove tags from a project in CodeStar",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_UntagProject.html"
+    },
+    "UpdateProject": {
+      "description": "Grants permission to update a project in CodeStar",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_UpdateProject.html"
+    },
+    "UpdateTeamMember": {
+      "description": "Grants permission to update team member attributes within a CodeStar project",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_UpdateTeamMember.html"
+    },
+    "UpdateUserProfile": {
+      "description": "Grants permission to update a profile for a user that includes user preferences, display name, and email",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "user": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codestar/latest/APIReference/API_UpdateUserProfile.html"
+    },
+    "VerifyServiceRole": {
+      "description": "Grants permission to verify whether the AWS CodeStar service role exists in the customer's account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    }
+  },
+  "resourceTypes": {
+    "project": {
+      "arn": "arn:${Partition}:codestar:${Region}:${Account}:project/${ProjectId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/codestar/latest/userguide/working-with-projects.html"
+    },
+    "user": {
+      "arn": "arn:${Partition}:iam::${Account}:user/${AwsUserName}",
+      "conditionKeys": [
+        "iam:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/codestar/latest/userguide/working-with-user-info.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by requests based on the allowed set of values for each of the tags",
+      "type": "String",
+      "url": null
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by actions based on tag-value associated with the resource",
+      "type": "String",
+      "url": null
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by requests based on the presence of mandatory tags in the request",
+      "type": "ArrayOfString",
+      "url": null
+    },
+    "iam:ResourceTag/${TagKey}": {
+      "description": "Filters access by actions based on tag-value associated with the resource",
+      "type": "String",
+      "url": null
+    }
+  }
+}

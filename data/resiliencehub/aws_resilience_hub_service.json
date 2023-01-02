@@ -1,0 +1,647 @@
+{
+  "name": "AWS Resilience Hub Service",
+  "prefix": "resiliencehub",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresiliencehubservice.html",
+  "actions": {
+    "AddDraftAppVersionResourceMappings": {
+      "description": "Grants permission to add draft application version resource mappings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "cloudformation:DescribeStacks",
+        "cloudformation:ListStackResources",
+        "resource-groups:GetGroup",
+        "resource-groups:ListGroupResources",
+        "servicecatalog:GetApplication",
+        "servicecatalog:ListAssociatedResources"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_AddDraftAppVersionResourceMappings.html"
+    },
+    "CreateApp": {
+      "description": "Grants permission to create application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateApp.html"
+    },
+    "CreateRecommendationTemplate": {
+      "description": "Grants permission to create recommendation template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:PutObject"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateRecommendationTemplate.html"
+    },
+    "CreateResiliencyPolicy": {
+      "description": "Grants permission to create resiliency policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_CreateResiliencyPolicy.html"
+    },
+    "DeleteApp": {
+      "description": "Grants permission to batch delete application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteApp.html"
+    },
+    "DeleteAppAssessment": {
+      "description": "Grants permission to batch delete application assessment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteAppAssessment.html"
+    },
+    "DeleteRecommendationTemplate": {
+      "description": "Grants permission to batch delete recommendation template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteRecommendationTemplate.html"
+    },
+    "DeleteResiliencyPolicy": {
+      "description": "Grants permission to batch delete resiliency policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "resiliency-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DeleteResiliencyPolicy.html"
+    },
+    "DescribeApp": {
+      "description": "Grants permission to describe application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeApp.html"
+    },
+    "DescribeAppAssessment": {
+      "description": "Grants permission to describe application assessment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeAppAssessment.html"
+    },
+    "DescribeAppVersionResourcesResolutionStatus": {
+      "description": "Grants permission to describe application resolution",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeAppVersionResourcesResolutionStatus.html"
+    },
+    "DescribeAppVersionTemplate": {
+      "description": "Grants permission to describe application version template",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeAppVersionTemplate.html"
+    },
+    "DescribeDraftAppVersionResourcesImportStatus": {
+      "description": "Grants permission to describe draft application version resources import status",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeDraftAppVersionResourcesImportStatus.html"
+    },
+    "DescribeResiliencyPolicy": {
+      "description": "Grants permission to describe resiliency policy",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "resiliency-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeResiliencyPolicy.html"
+    },
+    "ImportResourcesToDraftAppVersion": {
+      "description": "Grants permission to import resources to draft application version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "cloudformation:DescribeStacks",
+        "cloudformation:ListStackResources",
+        "resource-groups:GetGroup",
+        "resource-groups:ListGroupResources",
+        "servicecatalog:GetApplication",
+        "servicecatalog:ListAssociatedResources"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ImportResourcesToDraftAppVersion.html"
+    },
+    "ListAlarmRecommendations": {
+      "description": "Grants permission to list alarm recommendation",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAlarmRecommendations.html"
+    },
+    "ListAppAssessments": {
+      "description": "Grants permission to list application assessment",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppAssessments.html"
+    },
+    "ListAppComponentCompliances": {
+      "description": "Grants permission to list app component compliances",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppComponentCompliances.html"
+    },
+    "ListAppComponentRecommendations": {
+      "description": "Grants permission to list app component recommendations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppComponentRecommendations.html"
+    },
+    "ListAppVersionResourceMappings": {
+      "description": "Grants permission to application version resource mappings",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppVersionResourceMappings.html"
+    },
+    "ListAppVersionResources": {
+      "description": "Grants permission to list application resources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppVersionResources.html"
+    },
+    "ListAppVersions": {
+      "description": "Grants permission to list application version",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppVersions.html"
+    },
+    "ListApps": {
+      "description": "Grants permission to list applications",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListApps.html"
+    },
+    "ListRecommendationTemplates": {
+      "description": "Grants permission to list recommendation templates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListRecommendationTemplates.html"
+    },
+    "ListResiliencyPolicies": {
+      "description": "Grants permission to list resiliency policies",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListResiliencyPolicies.html"
+    },
+    "ListSopRecommendations": {
+      "description": "Grants permission to list SOP recommendations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListSopRecommendations.html"
+    },
+    "ListSuggestedResiliencyPolicies": {
+      "description": "Grants permission to list suggested resiliency policies",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListSuggestedResiliencyPolicies.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTestRecommendations": {
+      "description": "Grants permission to list test recommendations",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListTestRecommendations.html"
+    },
+    "ListUnsupportedAppVersionResources": {
+      "description": "Grants permission to list unsupported application version resources",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListUnsupportedAppVersionResources.html"
+    },
+    "PublishAppVersion": {
+      "description": "Grants permission to publish application version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_PublishAppVersion.html"
+    },
+    "PutDraftAppVersionTemplate": {
+      "description": "Grants permission to put draft application version template",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_PutDraftAppVersionTemplate.html"
+    },
+    "RemoveDraftAppVersionResourceMappings": {
+      "description": "Grants permission to remove draft application version mappings",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_RemoveDraftAppVersionResourceMappings.html"
+    },
+    "ResolveAppVersionResources": {
+      "description": "Grants permission to resolve application version resources",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "cloudformation:DescribeStacks",
+        "cloudformation:ListStackResources",
+        "resource-groups:GetGroup",
+        "resource-groups:ListGroupResources",
+        "servicecatalog:GetApplication",
+        "servicecatalog:ListAssociatedResources"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ResolveAppVersionResources.html"
+    },
+    "StartAppAssessment": {
+      "description": "Grants permission to create application assessment",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "cloudformation:DescribeStacks",
+        "cloudformation:ListStackResources",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:PutMetricData",
+        "ec2:DescribeRegions",
+        "fis:GetExperimentTemplate",
+        "fis:ListExperimentTemplates",
+        "fis:ListExperiments",
+        "resource-groups:GetGroup",
+        "resource-groups:ListGroupResources",
+        "servicecatalog:GetApplication",
+        "servicecatalog:ListAssociatedResources",
+        "ssm:GetParametersByPath"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_StartAppAssessment.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to assign a resource tag",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "app-assessment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "recommendation-template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "resiliency-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "app-assessment": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "application": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "recommendation-template": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "resiliency-policy": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateApp": {
+      "description": "Grants permission to update application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "application": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateApp.html"
+    },
+    "UpdateResiliencyPolicy": {
+      "description": "Grants permission to update resiliency policy",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "resiliency-policy": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_UpdateResiliencyPolicy.html"
+    }
+  },
+  "resourceTypes": {
+    "app-assessment": {
+      "arn": "arn:${Partition}:resiliencehub:${Region}:${Account}:app-assessment/${AppAssessmentId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_AppAssessment.html"
+    },
+    "application": {
+      "arn": "arn:${Partition}:resiliencehub:${Region}:${Account}:app/${AppId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_App.html"
+    },
+    "recommendation-template": {
+      "arn": "arn:${Partition}:resiliencehub:${Region}:${Account}:recommendation-template/${RecommendationTemplateId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_RecommendationTemplate.html"
+    },
+    "resiliency-policy": {
+      "arn": "arn:${Partition}:resiliencehub:${Region}:${Account}:resiliency-policy/${ResiliencyPolicyId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ResiliencyPolicy.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

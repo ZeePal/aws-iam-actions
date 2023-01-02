@@ -1,0 +1,343 @@
+{
+  "name": "AWS Identity and Access Management Roles Anywhere",
+  "prefix": "rolesanywhere",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementrolesanywhere.html",
+  "actions": {
+    "CreateProfile": {
+      "description": "Grants permission to create a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_CreateProfile.html"
+    },
+    "CreateTrustAnchor": {
+      "description": "Grants permission to create a trust anchor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_CreateTrustAnchor.html"
+    },
+    "DeleteCrl": {
+      "description": "Grants permission to delete a certificate revocation list (crl)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DeleteCrl.html"
+    },
+    "DeleteProfile": {
+      "description": "Grants permission to delete a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DeleteProfile.html"
+    },
+    "DeleteTrustAnchor": {
+      "description": "Grants permission to delete a trust anchor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DeleteTrustAnchor.html"
+    },
+    "DisableCrl": {
+      "description": "Grants permission to disable a certificate revocation list (crl)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DisableCrl.html"
+    },
+    "DisableProfile": {
+      "description": "Grants permission to disable a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DisableProfile.html"
+    },
+    "DisableTrustAnchor": {
+      "description": "Grants permission to disable a trust anchor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_DisableTrustAnchor.html"
+    },
+    "EnableCrl": {
+      "description": "Grants permission to enable a certificate revocation list (crl)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_EnableCrl.html"
+    },
+    "EnableProfile": {
+      "description": "Grants permission to enable a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_EnableProfile.html"
+    },
+    "EnableTrustAnchor": {
+      "description": "Grants permission to enable a trust anchor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_EnableTrustAnchor.html"
+    },
+    "GetCrl": {
+      "description": "Grants permission to get a certificate revocation list (crl)",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_GetCrl.html"
+    },
+    "GetProfile": {
+      "description": "Grants permission to get a profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_GetProfile.html"
+    },
+    "GetSubject": {
+      "description": "Grants permission to get a subject",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_GetSubject.html"
+    },
+    "GetTrustAnchor": {
+      "description": "Grants permission to get a trust anchor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_GetTrustAnchor.html"
+    },
+    "ImportCrl": {
+      "description": "Grants permission to import a certificate revocation list (crl)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ImportCrl.html"
+    },
+    "ListCrls": {
+      "description": "Grants permission to list certificate revocation lists (crls)",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListCrls.html"
+    },
+    "ListProfiles": {
+      "description": "Grants permission to list profiles",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListProfiles.html"
+    },
+    "ListSubjects": {
+      "description": "Grants permission to list subjects",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListSubjects.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListTrustAnchors": {
+      "description": "Grants permission to list trust anchors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListTrustAnchors.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "crl": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "profile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "subject": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "trust-anchor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "crl": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "profile": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "subject": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "trust-anchor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateCrl": {
+      "description": "Grants permission to update a certificate revocation list (crl)",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_UpdateCrl.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to update a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_UpdateProfile.html"
+    },
+    "UpdateTrustAnchor": {
+      "description": "Grants permission to update a trust anchor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_UpdateTrustAnchor.html"
+    }
+  },
+  "resourceTypes": {
+    "crl": {
+      "arn": "arn:${Partition}:rolesanywhere:${Region}:${Account}:crl/${CrlId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html#first-time-user"
+    },
+    "profile": {
+      "arn": "arn:${Partition}:rolesanywhere:${Region}:${Account}:profile/${ProfileId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html#first-time-user"
+    },
+    "subject": {
+      "arn": "arn:${Partition}:rolesanywhere:${Region}:${Account}:subject/${SubjectId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html#first-time-user"
+    },
+    "trust-anchor": {
+      "arn": "arn:${Partition}:rolesanywhere:${Region}:${Account}:trust-anchor/${TrustAnchorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html#first-time-user"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

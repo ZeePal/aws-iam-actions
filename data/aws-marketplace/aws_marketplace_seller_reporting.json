@@ -1,0 +1,29 @@
+{
+  "name": "AWS Marketplace Seller Reporting",
+  "prefix": "aws-marketplace",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplacesellerreporting.html",
+  "actions": {
+    "GetSellerDashboard": {
+      "description": "Grants permission to view a seller dashboard",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "SellerDashboard": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing"
+    }
+  },
+  "resourceTypes": {
+    "SellerDashboard": {
+      "arn": "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/SellerDashboard/${DashboardName}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing"
+    }
+  },
+  "conditionKeys": {}
+}

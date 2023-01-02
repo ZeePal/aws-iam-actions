@@ -1,0 +1,349 @@
+{
+  "name": "Amazon CodeGuru Profiler",
+  "prefix": "codeguru-profiler",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncodeguruprofiler.html",
+  "actions": {
+    "AddNotificationChannels": {
+      "description": "Grants permission to add up to 2 topic ARNs of existing AWS SNS topics to publish notifications",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AddNotificationChannels.html"
+    },
+    "BatchGetFrameMetricData": {
+      "description": "Grants permission to get the frame metric data for a Profiling Group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_BatchGetFrameMetricData.html"
+    },
+    "ConfigureAgent": {
+      "description": "Grants permission to register with the orchestration service and retrieve profiling configuration information, used by agents",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html"
+    },
+    "CreateProfilingGroup": {
+      "description": "Grants permission to create a profiling group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_CreateProfilingGroup.html"
+    },
+    "DeleteProfilingGroup": {
+      "description": "Grants permission to delete a profiling group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DeleteProfilingGroup.html"
+    },
+    "DescribeProfilingGroup": {
+      "description": "Grants permission to describe a profiling group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_DescribeProfilingGroup.html"
+    },
+    "GetFindingsReportAccountSummary": {
+      "description": "Grants permission to get a summary of recent recommendations for each profiling group in the account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetFindingsReportAccountSummary.html"
+    },
+    "GetNotificationConfiguration": {
+      "description": "Grants permission to get the notification configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetNotificationConfiguration.html"
+    },
+    "GetPolicy": {
+      "description": "Grants permission to get the resource policy associated with the specified Profiling Group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetPolicy.html"
+    },
+    "GetProfile": {
+      "description": "Grants permission to get aggregated profiles for a specific profiling group",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html"
+    },
+    "GetRecommendations": {
+      "description": "Grants permission to get recommendations",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetRecommendations.html"
+    },
+    "ListFindingsReports": {
+      "description": "Grants permission to list the available recommendations reports for a specific profiling group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListFindingsReports.html"
+    },
+    "ListProfileTimes": {
+      "description": "Grants permission to list the start times of the available aggregated profiles for a specific profiling group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfileTimes.html"
+    },
+    "ListProfilingGroups": {
+      "description": "Grants permission to list profiling groups in the account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListProfilingGroups.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a Profiling Group",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListTagsForResource.html"
+    },
+    "PostAgentProfile": {
+      "description": "Grants permission to submit a profile collected by an agent belonging to a specific profiling group for aggregation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html"
+    },
+    "PutPermission": {
+      "description": "Grants permission to update the list of principals allowed for an action group in the resource policy associated with the specified Profiling Group",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PutPermission.html"
+    },
+    "RemoveNotificationChannel": {
+      "description": "Grants permission to delete an already configured SNStopic arn from the notification configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_RemoveNotificationChannel.html"
+    },
+    "RemovePermission": {
+      "description": "Grants permission to remove the permission of specified Action Group from the resource policy associated with the specified Profiling Group",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_RemovePermission.html"
+    },
+    "SubmitFeedback": {
+      "description": "Grants permission to submit user feedback for useful or non useful anomaly",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_SubmitFeedback.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add or overwrite tags to a Profiling Group",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a Profiling Group",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_UntagResource.html"
+    },
+    "UpdateProfilingGroup": {
+      "description": "Grants permission to update a specific profiling group",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ProfilingGroup": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_UpdateProfilingGroup.html"
+    }
+  },
+  "resourceTypes": {
+    "ProfilingGroup": {
+      "arn": "arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${ProfilingGroupName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with-profiling-groups.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

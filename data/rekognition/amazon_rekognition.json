@@ -1,0 +1,851 @@
+{
+  "name": "Amazon Rekognition",
+  "prefix": "rekognition",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrekognition.html",
+  "actions": {
+    "CompareFaces": {
+      "description": "Grants permission to compare faces in the source input image with each face detected in the target input image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CompareFaces.html"
+    },
+    "CopyProjectVersion": {
+      "description": "Grants permission to copy an existing model version to a new model version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CopyProjectVersion.html"
+    },
+    "CreateCollection": {
+      "description": "Grants permission to create a collection in an AWS Region",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateCollection.html"
+    },
+    "CreateDataset": {
+      "description": "Grants permission to create a new Amazon Rekognition Custom Labels dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateDataset.html"
+    },
+    "CreateProject": {
+      "description": "Grants permission to create an Amazon Rekognition Custom Labels project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProject.html"
+    },
+    "CreateProjectVersion": {
+      "description": "Grants permission to begin training a new version of a model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProjectVersion.html"
+    },
+    "CreateStreamProcessor": {
+      "description": "Grants permission to create an Amazon Rekognition stream processor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor.html"
+    },
+    "DeleteCollection": {
+      "description": "Grants permission to delete the specified collection",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteCollection.html"
+    },
+    "DeleteDataset": {
+      "description": "Grants permission to delete an existing Amazon Rekognition Custom Labels dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteDataset.html"
+    },
+    "DeleteFaces": {
+      "description": "Grants permission to delete faces from a collection",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteFaces.html"
+    },
+    "DeleteProject": {
+      "description": "Grants permission to delete a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProject.html"
+    },
+    "DeleteProjectPolicy": {
+      "description": "Grants permission to delete a resource policy attached to a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectPolicy.html"
+    },
+    "DeleteProjectVersion": {
+      "description": "Grants permission to delete a model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectVersion.html"
+    },
+    "DeleteStreamProcessor": {
+      "description": "Grants permission to delete the specified stream processor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteStreamProcessor.html"
+    },
+    "DescribeCollection": {
+      "description": "Grants permission to read details about a collection",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeCollection.html"
+    },
+    "DescribeDataset": {
+      "description": "Grants permission to describe an Amazon Rekognition Custom Labels dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeDataset.html"
+    },
+    "DescribeProjectVersions": {
+      "description": "Grants permission to list the versions of a model in an Amazon Rekognition Custom Labels project",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions.html"
+    },
+    "DescribeProjects": {
+      "description": "Grants permission to list Amazon Rekognition Custom Labels projects",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjects.html"
+    },
+    "DescribeStreamProcessor": {
+      "description": "Grants permission to get information about the specified stream processor",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeStreamProcessor.html"
+    },
+    "DetectCustomLabels": {
+      "description": "Grants permission to detect custom labels in a supplied image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels.html"
+    },
+    "DetectFaces": {
+      "description": "Grants permission to detect human faces within an image provided as input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html"
+    },
+    "DetectLabels": {
+      "description": "Grants permission to detect instances of real-world labels within an image provided as input",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectLabels.html"
+    },
+    "DetectModerationLabels": {
+      "description": "Grants permission to detect moderation labels within the input image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectModerationLabels.html"
+    },
+    "DetectProtectiveEquipment": {
+      "description": "Grants permission to detect Personal Protective Equipment in the input image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectProtectiveEquipment.html"
+    },
+    "DetectText": {
+      "description": "Grants permission to detect text in the input image and convert it into machine-readable text",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectText.html"
+    },
+    "DistributeDatasetEntries": {
+      "description": "Grants permission to distribute the entries in a training dataset across the training dataset and the test dataset for a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DistributeDatasetEntries.html"
+    },
+    "GetCelebrityInfo": {
+      "description": "Grants permission to read the name, and additional information, of a celebrity",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityInfo.html"
+    },
+    "GetCelebrityRecognition": {
+      "description": "Grants permission to read the celebrity recognition results found in a stored video by an asynchronous celebrity recognition job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityRecognition.html"
+    },
+    "GetContentModeration": {
+      "description": "Grants permission to read the content moderation analysis results found in a stored video by an asynchronous content moderation job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetContentModeration.html"
+    },
+    "GetFaceDetection": {
+      "description": "Grants permission to read the faces detection results found in a stored video by an asynchronous face detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceDetection.html"
+    },
+    "GetFaceSearch": {
+      "description": "Grants permission to read the matching collection faces found in a stored video by an asynchronous face search job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceSearch.html"
+    },
+    "GetLabelDetection": {
+      "description": "Grants permission to read the label detected resuls found in a stored video by an asynchronous label detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetLabelDetection.html"
+    },
+    "GetPersonTracking": {
+      "description": "Grants permission to read the list of persons detected in a stored video by an asynchronous person tracking job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetPersonTracking.html"
+    },
+    "GetSegmentDetection": {
+      "description": "Grants permission to get the vdeo segments found in a stored video by an asynchronous segment detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetSegmentDetection.html"
+    },
+    "GetTextDetection": {
+      "description": "Grants permission to get the text found in a stored video by an asynchronous text detection job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html"
+    },
+    "IndexFaces": {
+      "description": "Grants permission to update an existing collection with faces detected in the input image",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_IndexFaces.html"
+    },
+    "ListCollections": {
+      "description": "Grants permission to read the collection Id's in your account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListCollections.html"
+    },
+    "ListDatasetEntries": {
+      "description": "Grants permission to list the dataset entries in an existing Amazon Rekognition Custom Labels dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetEntries.html"
+    },
+    "ListDatasetLabels": {
+      "description": "Grants permission to list the labels in a dataset",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetLabels.html"
+    },
+    "ListFaces": {
+      "description": "Grants permission to read metadata for faces in the specificed collection",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html"
+    },
+    "ListProjectPolicies": {
+      "description": "Grants permission to list the resource policies attached to a project",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListProjectPolicies.html"
+    },
+    "ListStreamProcessors": {
+      "description": "Grants permission to get a list of your stream processors",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListStreamProcessors.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to return a list of tags associated with a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "PutProjectPolicy": {
+      "description": "Grants permission to attach a resource policy to a project",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "project": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_PutProjectPolicy.html"
+    },
+    "RecognizeCelebrities": {
+      "description": "Grants permission to detect celebrities in the input image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RecognizeCelebrities.html"
+    },
+    "SearchFaces": {
+      "description": "Grants permission to search the specificed collection for the supplied face ID",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFaces.html"
+    },
+    "SearchFacesByImage": {
+      "description": "Grants permission to search the specificed collection for the largest face in the input image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFacesByImage.html"
+    },
+    "StartCelebrityRecognition": {
+      "description": "Grants permission to start the asynchronous recognition of celebrities in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartCelebrityRecognition.html"
+    },
+    "StartContentModeration": {
+      "description": "Grants permission to start asynchronous detection of explicit or suggestive adult content in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartContentModeration.html"
+    },
+    "StartFaceDetection": {
+      "description": "Grants permission to start asynchronous detection of faces in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceDetection.html"
+    },
+    "StartFaceSearch": {
+      "description": "Grants permission to start an asynchronous search for faces in a collection that match the faces of persons detected in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceSearch.html"
+    },
+    "StartLabelDetection": {
+      "description": "Grants permission to start asynchronous detection of labels in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartLabelDetection.html"
+    },
+    "StartPersonTracking": {
+      "description": "Grants permission to start the asynchronous tracking of persons in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartPersonTracking.html"
+    },
+    "StartProjectVersion": {
+      "description": "Grants permission to start running a model version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartProjectVersion.html"
+    },
+    "StartSegmentDetection": {
+      "description": "Grants permission to start the asynchronous detection of segments in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartSegmentDetection.html"
+    },
+    "StartStreamProcessor": {
+      "description": "Grants permission to start running a stream processor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartStreamProcessor.html"
+    },
+    "StartTextDetection": {
+      "description": "Grants permission to start the asynchronous detection of text in a stored video",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html"
+    },
+    "StopProjectVersion": {
+      "description": "Grants permission to stop a running model version",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "projectversion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopProjectVersion.html"
+    },
+    "StopStreamProcessor": {
+      "description": "Grants permission to stop  a running stream processor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopStreamProcessor.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "projectversion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "streamprocessor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove one or more tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "collection": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "projectversion": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "streamprocessor": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDatasetEntries": {
+      "description": "Grants permission to add or update one or more JSON Lines (entries) in a dataset",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "dataset": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateDatasetEntries.html"
+    },
+    "UpdateStreamProcessor": {
+      "description": "Grants permission to modify properties for a stream processor",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "streamprocessor": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateStreamProcessor.html"
+    }
+  },
+  "resourceTypes": {
+    "collection": {
+      "arn": "arn:${Partition}:rekognition:${Region}:${Account}:collection/${CollectionId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/dg/collections.html"
+    },
+    "dataset": {
+      "arn": "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/dataset/${DatasetType}/${CreationTimestamp}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/creating-datasets.html"
+    },
+    "project": {
+      "arn": "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/${CreationTimestamp}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/mp-create-project.html"
+    },
+    "projectversion": {
+      "arn": "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/version/${VersionName}/${CreationTimestamp}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/training-model.html"
+    },
+    "streamprocessor": {
+      "arn": "arn:${Partition}:rekognition:${Region}:${Account}:streamprocessor/${StreamprocessorId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    }
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "name": "Amazon GameSparks",
+  "prefix": "gamesparks",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongamesparks.html",
+  "actions": {
+    "CreateGame": {
+      "description": "Grants permission to create a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_CreateGame.html"
+    },
+    "CreateSnapshot": {
+      "description": "Grants permission to create a snapshot of a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_CreateSnapshot.html"
+    },
+    "CreateStage": {
+      "description": "Grants permission to create a stage in a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_CreateStage.html"
+    },
+    "DeleteGame": {
+      "description": "Grants permission to delete a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_DeleteGame.html"
+    },
+    "DeleteStage": {
+      "description": "Grants permission to delete a stage from a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_DeleteStage.html"
+    },
+    "DisconnectPlayer": {
+      "description": "Grants permission to disconnect a player from the game runtime",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_DisconnectPlayer.html"
+    },
+    "ExportSnapshot": {
+      "description": "Grants permission to export a snapshot of the game configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ExportSnapshot.html"
+    },
+    "GetExtension": {
+      "description": "Grants permission to get details about an extension",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetExtension.html"
+    },
+    "GetExtensionVersion": {
+      "description": "Grants permission to get details about an extension version",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetExtensionVersion.html"
+    },
+    "GetGame": {
+      "description": "Grants permission to get details about a game",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetGame.html"
+    },
+    "GetGameConfiguration": {
+      "description": "Grants permission to get the configuration for the game",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetGameConfiguration.html"
+    },
+    "GetGeneratedCodeJob": {
+      "description": "Grants permission to get details about a job that is generating code for a snapshot",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetGeneratedCodeJob.html"
+    },
+    "GetPlayerConnectionStatus": {
+      "description": "Grants permission to get the status of a player connection",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetPlayerConnectionStatus.html"
+    },
+    "GetSnapshot": {
+      "description": "Grants permission to get a snapshot of the game",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetSnapshot.html"
+    },
+    "GetStage": {
+      "description": "Grants permission to gets information about a stage",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetStage.html"
+    },
+    "GetStageDeployment": {
+      "description": "Grants permission to get information about a stage deployment",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_GetStageDeployment.html"
+    },
+    "ImportGameConfiguration": {
+      "description": "Grants permission to import a snapshot of a game configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ImportGameConfiguration.html"
+    },
+    "InvokeBackend": {
+      "description": "Grants permission to invoke backend services for a specific game",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-stage-roles.html"
+    },
+    "ListExtensionVersions": {
+      "description": "Grants permission to list the extension versions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListExtensionVersions.html"
+    },
+    "ListExtensions": {
+      "description": "Grants permission to list the extensions",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListExtensions.html"
+    },
+    "ListGames": {
+      "description": "Grants permission to list the games",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListGames.html"
+    },
+    "ListGeneratedCodeJobs": {
+      "description": "Grants permission to get a list of code generation jobs for a snapshot",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListGeneratedCodeJobs.html"
+    },
+    "ListSnapshots": {
+      "description": "Grants permission to get a list of snapshot summaries for a game",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListSnapshots.html"
+    },
+    "ListStageDeployments": {
+      "description": "Grants permission to get a list of stage deployment summaries for a game",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListStageDeployments.html"
+    },
+    "ListStages": {
+      "description": "Grants permission to get a list of stage summaries for a game",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListStages.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags associated with a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_ListTagsForResource.html"
+    },
+    "StartGeneratedCodeJob": {
+      "description": "Grants permission to start an asynchronous process that generates client code for system-defined and custom messages",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_StartGeneratedCodeJob.html"
+    },
+    "StartStageDeployment": {
+      "description": "Grants permission to deploy a snapshot to a stage and creates a new game runtime",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_StartStageDeployment.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to adds tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_UntagResource.html"
+    },
+    "UpdateGame": {
+      "description": "Grants permission to change the metadata of a game",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_UpdateGame.html"
+    },
+    "UpdateGameConfiguration": {
+      "description": "Grants permission to change the working copy of the game configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_UpdateGameConfiguration.html"
+    },
+    "UpdateSnapshot": {
+      "description": "Grants permission to update the metadata of a snapshot",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_UpdateSnapshot.html"
+    },
+    "UpdateStage": {
+      "description": "Grants permission to update the metadata of a stage",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "game": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "stage": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/api/svc/API_UpdateStage.html"
+    }
+  },
+  "resourceTypes": {
+    "game": {
+      "arn": "arn:${Partition}:gamesparks:${Region}:${Account}:game/${GameId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-service.html#policy-resources"
+    },
+    "stage": {
+      "arn": "arn:${Partition}:gamesparks:${Region}:${Account}:game/${GameId}/stage/${StageName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-service.html#policy-resources"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters actions based on the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-service.html#policy-condition-keys"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters actions based on the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-service.html#policy-condition-keys"
+    },
+    "aws:TagKeys": {
+      "description": "Filters actions based on the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/gamesparks/latest/dg/security-iam-service.html#policy-condition-keys"
+    }
+  }
+}

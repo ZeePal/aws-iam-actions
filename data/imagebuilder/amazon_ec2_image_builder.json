@@ -1,0 +1,964 @@
+{
+  "name": "Amazon EC2 Image Builder",
+  "prefix": "imagebuilder",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2imagebuilder.html",
+  "actions": {
+    "CancelImageCreation": {
+      "description": "Grants permission to cancel an image creation",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CancelImageCreation.html"
+    },
+    "CreateComponent": {
+      "description": "Grants permission to create a new component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "kmsKey": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:TagResource",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateComponent.html"
+    },
+    "CreateContainerRecipe": {
+      "description": "Grants permission to create a new Container Recipe",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "containerRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ecr:DescribeImages",
+        "ecr:DescribeRepositories",
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:GetComponent",
+        "imagebuilder:GetImage",
+        "imagebuilder:TagResource",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateContainerRecipe.html"
+    },
+    "CreateDistributionConfiguration": {
+      "description": "Grants permission to create a new distribution configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distributionConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:TagResource"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateDistributionConfiguration.html"
+    },
+    "CreateImage": {
+      "description": "Grants permission to create a new image",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:GetContainerRecipe",
+        "imagebuilder:GetDistributionConfiguration",
+        "imagebuilder:GetImageRecipe",
+        "imagebuilder:GetInfrastructureConfiguration",
+        "imagebuilder:TagResource"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateImage.html"
+    },
+    "CreateImagePipeline": {
+      "description": "Grants permission to create a new image pipeline",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:GetContainerRecipe",
+        "imagebuilder:GetImageRecipe",
+        "imagebuilder:TagResource"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateImagePipeline.html"
+    },
+    "CreateImageRecipe": {
+      "description": "Grants permission to create a new Image Recipe",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:DescribeImages",
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:GetComponent",
+        "imagebuilder:GetImage",
+        "imagebuilder:TagResource"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateImageRecipe.html"
+    },
+    "CreateInfrastructureConfiguration": {
+      "description": "Grants permission to create a new infrastructure configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "infrastructureConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "imagebuilder:CreatedResourceTag/<key>",
+        "imagebuilder:CreatedResourceTagKeys",
+        "imagebuilder:Ec2MetadataHttpTokens",
+        "imagebuilder:StatusTopicArn"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "iam:PassRole",
+        "imagebuilder:TagResource",
+        "sns:Publish"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateInfrastructureConfiguration.html"
+    },
+    "DeleteComponent": {
+      "description": "Grants permission to delete a component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteComponent.html"
+    },
+    "DeleteContainerRecipe": {
+      "description": "Grants permission to delete a container recipe",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "containerRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteContainerRecipe.html"
+    },
+    "DeleteDistributionConfiguration": {
+      "description": "Grants permission to delete a distribution configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distributionConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteDistributionConfiguration.html"
+    },
+    "DeleteImage": {
+      "description": "Grants permission to delete an image",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteImage.html"
+    },
+    "DeleteImagePipeline": {
+      "description": "Grants permission to delete an image pipeline",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteImagePipeline.html"
+    },
+    "DeleteImageRecipe": {
+      "description": "Grants permission to delete an image recipe",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteImageRecipe.html"
+    },
+    "DeleteInfrastructureConfiguration": {
+      "description": "Grants permission to delete an infrastructure configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "infrastructureConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DeleteInfrastructureConfiguration.html"
+    },
+    "GetComponent": {
+      "description": "Grants permission to view details about a component",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "kms:Decrypt"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetComponent.html"
+    },
+    "GetComponentPolicy": {
+      "description": "Grants permission to view the resource policy associated with a component",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetComponentPolicy.html"
+    },
+    "GetContainerRecipe": {
+      "description": "Grants permission to view details about a container recipe",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "containerRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetContainerRecipe.html"
+    },
+    "GetContainerRecipePolicy": {
+      "description": "Grants permission to view the resource policy associated with a container recipe",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "containerRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetContainerRecipePolicy.html"
+    },
+    "GetDistributionConfiguration": {
+      "description": "Grants permission to view details about a distribution configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distributionConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetDistributionConfiguration.html"
+    },
+    "GetImage": {
+      "description": "Grants permission to view details about an image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetImage.html"
+    },
+    "GetImagePipeline": {
+      "description": "Grants permission to view details about an image pipeline",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetImagePipeline.html"
+    },
+    "GetImagePolicy": {
+      "description": "Grants permission to view the resource policy associated with an image",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetImagePolicy.html"
+    },
+    "GetImageRecipe": {
+      "description": "Grants permission to view details about an image recipe",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetImageRecipe.html"
+    },
+    "GetImageRecipePolicy": {
+      "description": "Grants permission to view the resource policy associated with an image recipe",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetImageRecipePolicy.html"
+    },
+    "GetInfrastructureConfiguration": {
+      "description": "Grants permission to view details about an infrastructure configuration",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "infrastructureConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetInfrastructureConfiguration.html"
+    },
+    "ImportComponent": {
+      "description": "Grants permission to import a new component",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "kmsKey": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:TagResource",
+        "kms:Encrypt",
+        "kms:GenerateDataKey",
+        "kms:GenerateDataKeyWithoutPlaintext"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImportComponent.html"
+    },
+    "ImportVmImage": {
+      "description": "Grants permission to import an image",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "ec2:DescribeImportImageTasks",
+        "iam:CreateServiceLinkedRole"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImportVmImage.html"
+    },
+    "ListComponentBuildVersions": {
+      "description": "Grants permission to list the component build versions in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "componentVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListComponentBuildVersions.html"
+    },
+    "ListComponents": {
+      "description": "Grants permission to list the component versions owned by or shared with your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListComponents.html"
+    },
+    "ListContainerRecipes": {
+      "description": "Grants permission to list the container recipes owned by or shared with your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListContainerRecipes.html"
+    },
+    "ListDistributionConfigurations": {
+      "description": "Grants permission to list the distribution configurations in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListDistributionConfigurations.html"
+    },
+    "ListImageBuildVersions": {
+      "description": "Grants permission to list the image build versions in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageVersion": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImageBuildVersions.html"
+    },
+    "ListImagePackages": {
+      "description": "Grants permission to returns a list of packages installed on the specified image",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImagePackages.html"
+    },
+    "ListImagePipelineImages": {
+      "description": "Grants permission to returns a list of images created by the specified pipeline",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImagePipelineImages.html"
+    },
+    "ListImagePipelines": {
+      "description": "Grants permission to list the image pipelines in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImagePipelines.html"
+    },
+    "ListImageRecipes": {
+      "description": "Grants permission to list the image recipes owned by or shared with your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImageRecipes.html"
+    },
+    "ListImages": {
+      "description": "Grants permission to list the image versions owned by or shared with your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListImages.html"
+    },
+    "ListInfrastructureConfigurations": {
+      "description": "Grants permission to list the infrastructure configurations in your account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListInfrastructureConfigurations.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tag for an Image Builder resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "distributionConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "image": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imagePipeline": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imageRecipe": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "infrastructureConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "PutComponentPolicy": {
+      "description": "Grants permission to set the resource policy associated with a component",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutComponentPolicy.html"
+    },
+    "PutContainerRecipePolicy": {
+      "description": "Grants permission to set the resource policy associated with a container recipe",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "containerRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutContainerRecipePolicy.html"
+    },
+    "PutImagePolicy": {
+      "description": "Grants permission to set the resource policy associated with an image",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "image": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutImagePolicy.html"
+    },
+    "PutImageRecipePolicy": {
+      "description": "Grants permission to set the resource policy associated with an image recipe",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imageRecipe": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutImageRecipePolicy.html"
+    },
+    "StartImagePipelineExecution": {
+      "description": "Grants permission to create a new image from a pipeline",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:CreateServiceLinkedRole",
+        "imagebuilder:GetImagePipeline"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_StartImagePipelineExecution.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to tag an Image Builder resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "containerRecipe": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "distributionConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "image": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imagePipeline": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imageRecipe": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "infrastructureConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to untag an Image Builder resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "component": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "containerRecipe": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "distributionConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "image": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imagePipeline": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "imageRecipe": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "infrastructureConfiguration": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateDistributionConfiguration": {
+      "description": "Grants permission to update an existing distribution configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "distributionConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_UpdateDistributionConfiguration.html"
+    },
+    "UpdateImagePipeline": {
+      "description": "Grants permission to update an existing image pipeline",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "imagePipeline": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_UpdateImagePipeline.html"
+    },
+    "UpdateInfrastructureConfiguration": {
+      "description": "Grants permission to update an existing infrastructure configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "infrastructureConfiguration": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "imagebuilder:CreatedResourceTag/<key>",
+        "imagebuilder:CreatedResourceTagKeys",
+        "imagebuilder:Ec2MetadataHttpTokens",
+        "imagebuilder:StatusTopicArn"
+      ],
+      "dependentActions": [
+        "iam:PassRole",
+        "sns:Publish"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_UpdateInfrastructureConfiguration.html"
+    }
+  },
+  "resourceTypes": {
+    "component": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}/${ComponentBuildVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Component.html"
+    },
+    "componentVersion": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ComponentVersion"
+    },
+    "containerRecipe": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:container-recipe/${ContainerRecipeName}/${ContainerRecipeVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ContainerRecipe.html"
+    },
+    "distributionConfiguration": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:distribution-configuration/${DistributionConfigurationName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_DistributionConfiguration.html"
+    },
+    "image": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}/${ImageBuildVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Image.html"
+    },
+    "imagePipeline": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:image-pipeline/${ImagePipelineName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImagePipeline.html"
+    },
+    "imageRecipe": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:image-recipe/${ImageRecipeName}/${ImageRecipeVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImageRecipe.html"
+    },
+    "imageVersion": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ImageVersion.html"
+    },
+    "infrastructureConfiguration": {
+      "arn": "arn:${Partition}:imagebuilder:${Region}:${Account}:infrastructure-configuration/${ResourceId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_InfrastructureConfiguration.html"
+    },
+    "kmsKey": {
+      "arn": "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "imagebuilder:CreatedResourceTag/<key>": {
+      "description": "Filters access by the tag key-value pairs attached to the resource created by Image Builder",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-createdresourcetag"
+    },
+    "imagebuilder:CreatedResourceTagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-createdresourcetagkeys"
+    },
+    "imagebuilder:Ec2MetadataHttpTokens": {
+      "description": "Filters access by the EC2 Instance Metadata HTTP Token Requirement specified in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-ec2metadatahttptokens"
+    },
+    "imagebuilder:StatusTopicArn": {
+      "description": "Filters access by the SNS Topic Arn in the request to which terminal state notifications will be published",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-statustopicarn"
+    }
+  }
+}

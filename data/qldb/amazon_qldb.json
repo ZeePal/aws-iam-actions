@@ -1,0 +1,598 @@
+{
+  "name": "Amazon QLDB",
+  "prefix": "qldb",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqldb.html",
+  "actions": {
+    "CancelJournalKinesisStream": {
+      "description": "Grants permission to cancel a journal kinesis stream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_CancelJournalKinesisStream.html"
+    },
+    "CreateLedger": {
+      "description": "Grants permission to create a ledger",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_CreateLedger.html"
+    },
+    "DeleteLedger": {
+      "description": "Grants permission to delete a ledger",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_DeleteLedger.html"
+    },
+    "DescribeJournalKinesisStream": {
+      "description": "Grants permission to describe information about a journal kinesis stream",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_DescribeJournalKinesisStream.html"
+    },
+    "DescribeJournalS3Export": {
+      "description": "Grants permission to describe information about a journal export job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_DescribeJournalS3Export.html"
+    },
+    "DescribeLedger": {
+      "description": "Grants permission to describe a ledger",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_DescribeLedger.html"
+    },
+    "ExecuteStatement": {
+      "description": "Grants permission to send commands to a ledger via the console",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/console_QLDB.html"
+    },
+    "ExportJournalToS3": {
+      "description": "Grants permission to export journal contents to an Amazon S3 bucket",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ExportJournalToS3.html"
+    },
+    "GetBlock": {
+      "description": "Grants permission to retrieve a block from a ledger for a given BlockAddress",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_GetBlock.html"
+    },
+    "GetDigest": {
+      "description": "Grants permission to retrieve a digest from a ledger for a given BlockAddress",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_GetDigest.html"
+    },
+    "GetRevision": {
+      "description": "Grants permission to retrieve a revision for a given document ID and a given BlockAddress",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_GetRevision.html"
+    },
+    "InsertSampleData": {
+      "description": "Grants permission to insert sample application data via the console",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/console_QLDB.html"
+    },
+    "ListJournalKinesisStreamsForLedger": {
+      "description": "Grants permission to list journal kinesis streams for a specified ledger",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListJournalKinesisStreamsForLedger.html"
+    },
+    "ListJournalS3Exports": {
+      "description": "Grants permission to list journal export jobs for all ledgers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListJournalS3Exports.html"
+    },
+    "ListJournalS3ExportsForLedger": {
+      "description": "Grants permission to list journal export jobs for a specified ledger",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListJournalS3ExportsForLedger.html"
+    },
+    "ListLedgers": {
+      "description": "Grants permission to list existing ledgers",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListLedgers.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "catalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ledger": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_ListTagsForResource.html"
+    },
+    "PartiQLCreateIndex": {
+      "description": "Grants permission to create an index on a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.create-index.html"
+    },
+    "PartiQLCreateTable": {
+      "description": "Grants permission to create a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.create-table.html"
+    },
+    "PartiQLDelete": {
+      "description": "Grants permission to delete documents from a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.delete.html"
+    },
+    "PartiQLDropIndex": {
+      "description": "Grants permission to drop an index from a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "qldb:Purge"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.drop-index.html"
+    },
+    "PartiQLDropTable": {
+      "description": "Grants permission to drop a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "qldb:Purge"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.drop-table.html"
+    },
+    "PartiQLHistoryFunction": {
+      "description": "Grants permission to use the history function on a table",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/working.history.html"
+    },
+    "PartiQLInsert": {
+      "description": "Grants permission to insert documents into a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.insert.html"
+    },
+    "PartiQLRedact": {
+      "description": "Grants permission to redact historic revisions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-stored-procedures.redact_revision.html"
+    },
+    "PartiQLSelect": {
+      "description": "Grants permission to select documents from a table",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "catalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.select.html"
+    },
+    "PartiQLUndropTable": {
+      "description": "Grants permission to undrop a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.undrop-table.html"
+    },
+    "PartiQLUpdate": {
+      "description": "Grants permission to update existing documents in a table",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "table": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ql-reference.update.html"
+    },
+    "SendCommand": {
+      "description": "Grants permission to send commands to a ledger",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_QLDB-Session_SendCommand.html"
+    },
+    "ShowCatalog": {
+      "description": "Grants permission to view a ledger's catalog via the console",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/console_QLDB.html"
+    },
+    "StreamJournalToKinesis": {
+      "description": "Grants permission to stream journal contents to a Kinesis Data Stream",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "stream": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_StreamJournalToKinesis.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add one or more tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "catalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ledger": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove one or more tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "catalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "ledger": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "stream": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "table": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_UntagResource.html"
+    },
+    "UpdateLedger": {
+      "description": "Grants permission to update properties on a ledger",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_UpdateLedger.html"
+    },
+    "UpdateLedgerPermissionsMode": {
+      "description": "Grants permission to update the permissions mode on a ledger",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "ledger": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/API_UpdateLedgerPermissionsMode.html"
+    }
+  },
+  "resourceTypes": {
+    "catalog": {
+      "arn": "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/information_schema/user_tables",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/working.catalog.html"
+    },
+    "ledger": {
+      "arn": "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/ledger-structure.html"
+    },
+    "stream": {
+      "arn": "arn:${Partition}:qldb:${Region}:${Account}:stream/${LedgerName}/${StreamId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/streams.html"
+    },
+    "table": {
+      "arn": "arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/table/${TableId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/qldb/latest/developerguide/working.manage-tables.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair that is allowed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by a tag key and value pair of a resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by a list of tag keys that are allowed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "qldb:Purge": {
+      "description": "Filters access by the value of purge that is specified in a PartiQL DROP statement",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-purge"
+    }
+  }
+}

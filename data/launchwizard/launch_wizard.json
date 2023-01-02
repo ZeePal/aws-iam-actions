@@ -1,0 +1,81 @@
+{
+  "name": "Launch Wizard",
+  "prefix": "launchwizard",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_launchwizard.html",
+  "actions": {
+    "DeleteApp": {
+      "description": "Delete an application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "DescribeProvisionedApp": {
+      "description": "Describe provisioning applications",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "DescribeProvisioningEvents": {
+      "description": "Describe provisioning events",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "GetInfrastructureSuggestion": {
+      "description": "Get infrastructure suggestion",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "GetIpAddress": {
+      "description": "Get customer's ip address",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "GetResourceCostEstimate": {
+      "description": "Get resource cost estimate",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "ListProvisionedApps": {
+      "description": "List provisioning applications",
+      "accessLevel": "List",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    },
+    "StartProvisioning": {
+      "description": "Start a provisioning",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/launchwizard/"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

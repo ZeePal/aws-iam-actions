@@ -1,0 +1,812 @@
+{
+  "name": "AWS IoT FleetWise",
+  "prefix": "iotfleetwise",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html",
+  "actions": {
+    "AssociateVehicleFleet": {
+      "description": "Grants permission to associate the given vehicle to a fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_AssociateVehicleFleet.html"
+    },
+    "CreateCampaign": {
+      "description": "Grants permission to create a campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateCampaign.html"
+    },
+    "CreateDecoderManifest": {
+      "description": "Grants permission to create a decoder manifest for an existing model",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateDecoderManifest.html"
+    },
+    "CreateFleet": {
+      "description": "Grants permission to create a fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateFleet.html"
+    },
+    "CreateModelManifest": {
+      "description": "Grants permission to create a model manifest definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateModelManifest.html"
+    },
+    "CreateSignalCatalog": {
+      "description": "Grants permission to create a signal catalog",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateSignalCatalog.html"
+    },
+    "CreateVehicle": {
+      "description": "Grants permission to create a vehicle",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [
+        "iot:CreateThing",
+        "iot:DescribeThing"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateVehicle.html"
+    },
+    "DeleteCampaign": {
+      "description": "Grants permission to delete a campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteCampaign.html"
+    },
+    "DeleteDecoderManifest": {
+      "description": "Grants permission to delete the given decoder manifest",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteDecoderManifest.html"
+    },
+    "DeleteFleet": {
+      "description": "Grants permission to delete a fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteFleet.html"
+    },
+    "DeleteModelManifest": {
+      "description": "Grants permission to delete the given model manifest",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteModelManifest.html"
+    },
+    "DeleteSignalCatalog": {
+      "description": "Grants permission to delete a specific signal catalog",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteSignalCatalog.html"
+    },
+    "DeleteVehicle": {
+      "description": "Grants permission to delete a vehicle",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteVehicle.html"
+    },
+    "DisassociateVehicleFleet": {
+      "description": "Grants permission to disassociate a vehicle from an existing fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DisassociateVehicleFleet.html"
+    },
+    "GetCampaign": {
+      "description": "Grants permission to get summary information for a given campaign",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetCampaign.html"
+    },
+    "GetDecoderManifest": {
+      "description": "Grants permission to get summary information for a given decoder manifest definition",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetDecoderManifest.html"
+    },
+    "GetFleet": {
+      "description": "Grants permission to get summary information for a fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetFleet.html"
+    },
+    "GetLoggingOptions": {
+      "description": "Grants permission to get the logging options for the AWS account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetLoggingOptions.html"
+    },
+    "GetModelManifest": {
+      "description": "Grants permission to get summary information for a given model manifest definition",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetModelManifest.html"
+    },
+    "GetRegisterAccountStatus": {
+      "description": "Grants permission to get the account registration status with IoT FleetWise",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetRegisterAccountStatus.html"
+    },
+    "GetSignalCatalog": {
+      "description": "Grants permission to get summary information for a specific signal catalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetSignalCatalog.html"
+    },
+    "GetVehicle": {
+      "description": "Grants permission to get summary information for a vehicle",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetVehicle.html"
+    },
+    "GetVehicleStatus": {
+      "description": "Grants permission to get the status of the campaigns running on a specific vehicle",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetVehicleStatus.html"
+    },
+    "ImportDecoderManifest": {
+      "description": "Grants permission to import an existing decoder manifest",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ImportDecoderManifest.html"
+    },
+    "ImportSignalCatalog": {
+      "description": "Grants permission to create a signal catalog by importing existing definitions",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ImportSignalCatalog.html"
+    },
+    "ListCampaigns": {
+      "description": "Grants permission to list campaigns",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListCampaigns.html"
+    },
+    "ListDecoderManifestNetworkInterfaces": {
+      "description": "Grants permission to list network interfaces associated to the existing decoder manifest",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListDecoderManifestNetworkInterfaces.html"
+    },
+    "ListDecoderManifestSignals": {
+      "description": "Grants permission to list decoder manifest signals",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListDecoderManifestSignals.html"
+    },
+    "ListDecoderManifests": {
+      "description": "Grants permission to list all decoder manifests, with an optional filter on model manifest",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListDecoderManifests.html"
+    },
+    "ListFleets": {
+      "description": "Grants permission to list all fleets",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListFleets.html"
+    },
+    "ListFleetsForVehicle": {
+      "description": "Grants permission to list all the fleets that the given vehicle is associated with",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListFleetsForVehicle.html"
+    },
+    "ListModelManifestNodes": {
+      "description": "Grants permission to list all nodes for the given model manifest",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListModelManifestNodes.html"
+    },
+    "ListModelManifests": {
+      "description": "Grants permission to list all model manifests, with an optional filter on signal catalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListModelManifests.html"
+    },
+    "ListSignalCatalogNodes": {
+      "description": "Grants permission to list all nodes for a given signal catalog",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListSignalCatalogNodes.html"
+    },
+    "ListSignalCatalogs": {
+      "description": "Grants permission to list all signal catalogs",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListSignalCatalogs.html"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list tags for a resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "decodermanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "modelmanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "signalcatalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ListVehicles": {
+      "description": "Grants permission to list all vehicles, with an optional filter on model manifest",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListVehicles.html"
+    },
+    "ListVehiclesInFleet": {
+      "description": "Grants permission to list vehicles in the given fleet",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ListVehiclesInFleet.html"
+    },
+    "PutLoggingOptions": {
+      "description": "Grants permission to put the logging options for the AWS account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_PutLoggingOptions.html"
+    },
+    "RegisterAccount": {
+      "description": "Grants permission to register an AWS account to IoT FleetWise",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:PassRole"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_RegisterAccount.html"
+    },
+    "TagResource": {
+      "description": "Grants permission to add tags to a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "decodermanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "modelmanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "signalcatalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to remove tags from a resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "decodermanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "fleet": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "modelmanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "signalcatalog": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": false,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateCampaign": {
+      "description": "Grants permission to update the given campaign",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "campaign": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateCampaign.html"
+    },
+    "UpdateDecoderManifest": {
+      "description": "Grants permission to update a decoder manifest defnition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateDecoderManifest.html"
+    },
+    "UpdateFleet": {
+      "description": "Grants permission to update the fleet",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "fleet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateFleet.html"
+    },
+    "UpdateModelManifest": {
+      "description": "Grants permission to update the given model manifest definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "modelmanifest": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateModelManifest.html"
+    },
+    "UpdateSignalCatalog": {
+      "description": "Grants permission to update a specific signal catalog definition",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "signalcatalog": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateSignalCatalog.html"
+    },
+    "UpdateVehicle": {
+      "description": "Grants permission to update the vehicle",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "decodermanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "modelmanifest": {
+          "required": false,
+          "conditionKeys": []
+        },
+        "vehicle": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "iotfleetwise:UpdateToDecoderManifestArn",
+        "iotfleetwise:UpdateToModelManifestArn"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateVehicle.html"
+    }
+  },
+  "resourceTypes": {
+    "campaign": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:campaign/${CampaignName}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/campaigns.html"
+    },
+    "decodermanifest": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:decoder-manifest/${Name}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/decoder-manifests.html"
+    },
+    "fleet": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:fleet/${FleetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/fleets.html"
+    },
+    "modelmanifest": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:model-manifest/${Name}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/vehicle-models.html"
+    },
+    "signalcatalog": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:signal-catalog/${Name}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/signal-catalogs.html"
+    },
+    "vehicle": {
+      "arn": "arn:${Partition}:iotfleetwise:${Region}:${Account}:vehicle/${VehicleId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/vehicles.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the presence of tag key-value pairs in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by tag key-value pairs attached to the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the presence of tag keys in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys"
+    },
+    "iotfleetwise:UpdateToDecoderManifestArn": {
+      "description": "Filters access by a list of IoT FleetWise Decoder Manifest ARNs",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html"
+    },
+    "iotfleetwise:UpdateToModelManifestArn": {
+      "description": "Filters access by a list of IoT FleetWise Model Manifest ARNs",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html"
+    }
+  }
+}

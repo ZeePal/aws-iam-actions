@@ -1,0 +1,342 @@
+{
+  "name": "AWS Server Migration Service",
+  "prefix": "sms",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsservermigrationservice.html",
+  "actions": {
+    "CreateApp": {
+      "description": "Grants permission to create an application configuration to migrate on-premise application onto AWS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_CreateApp.html"
+    },
+    "CreateReplicationJob": {
+      "description": "Grants permission to create a job to migrate on-premise server onto AWS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_CreateReplicationJob.html"
+    },
+    "DeleteApp": {
+      "description": "Grants permission to delete an existing application configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteApp.html"
+    },
+    "DeleteAppLaunchConfiguration": {
+      "description": "Grants permission to delete launch configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteAppLaunchConfiguration.html"
+    },
+    "DeleteAppReplicationConfiguration": {
+      "description": "Grants permission to delete replication configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteAppReplicationConfiguration.html"
+    },
+    "DeleteAppValidationConfiguration": {
+      "description": "Grants permission to delete validation configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteAppValidationConfiguration.html"
+    },
+    "DeleteReplicationJob": {
+      "description": "Grants permission to delete an existing job to migrate on-premise server onto AWS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteReplicationJob.html"
+    },
+    "DeleteServerCatalog": {
+      "description": "Grants permission to delete the complete list of on-premise servers gathered into AWS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DeleteServerCatalog.html"
+    },
+    "DisassociateConnector": {
+      "description": "Grants permission to disassociate a connector that has been associated",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_DisassociateConnector.html"
+    },
+    "GenerateChangeSet": {
+      "description": "Grants permission to generate a changeSet for the CloudFormation stack of an application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GenerateChangeSet.html"
+    },
+    "GenerateTemplate": {
+      "description": "Grants permission to generate a CloudFormation template for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GenerateTemplate.html"
+    },
+    "GetApp": {
+      "description": "Grants permission to get the configuration and statuses for an existing application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetApp.html"
+    },
+    "GetAppLaunchConfiguration": {
+      "description": "Grants permission to get launch configuration for an existing application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetAppLaunchConfiguration.html"
+    },
+    "GetAppReplicationConfiguration": {
+      "description": "Grants permission to get replication configuration for an existing application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetAppReplicationConfiguration.html"
+    },
+    "GetAppValidationConfiguration": {
+      "description": "Grants permission to get validation configuration for an existing application",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetAppValidationConfiguration.html"
+    },
+    "GetAppValidationOutput": {
+      "description": "Grants permission to get notification sent from application validation script.",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetAppValidationOutput.html"
+    },
+    "GetConnectors": {
+      "description": "Grants permission to get all connectors that have been associated",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetConnectors.html"
+    },
+    "GetMessages": {
+      "description": "Grants permission to gets messages from AWS Server Migration Service to Server Migration Connector",
+      "accessLevel": "Read",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "GetReplicationJobs": {
+      "description": "Grants permission to get all existing jobs to migrate on-premise servers onto AWS",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetReplicationJobs.html"
+    },
+    "GetReplicationRuns": {
+      "description": "Grants permission to get all runs for an existing job",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetReplicationRuns.html"
+    },
+    "GetServers": {
+      "description": "Grants permission to get all servers that have been imported",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetServers.html"
+    },
+    "ImportAppCatalog": {
+      "description": "Grants permission to import application catalog from AWS Application Discovery Service",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_ImportAppCatalog.html"
+    },
+    "ImportServerCatalog": {
+      "description": "Grants permission to gather a complete list of on-premise servers",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_ImportServerCatalog.html"
+    },
+    "LaunchApp": {
+      "description": "Grants permission to create and launch a CloudFormation stack for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_LaunchApp.html"
+    },
+    "ListApps": {
+      "description": "Grants permission to get a list of summaries for existing applications",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_ListAppss.html"
+    },
+    "NotifyAppValidationOutput": {
+      "description": "Grants permission to send notification for application validation script",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_NotifyAppValidationOutput.html"
+    },
+    "PutAppLaunchConfiguration": {
+      "description": "Grants permission to create or update launch configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_PutAppLaunchConfiguration.html"
+    },
+    "PutAppReplicationConfiguration": {
+      "description": "Grants permission to create or update replication configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_PutAppReplicationConfiguration.html"
+    },
+    "PutAppValidationConfiguration": {
+      "description": "Grants permission to put validation configuration for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_PutAppValidationConfiguration.html"
+    },
+    "SendMessage": {
+      "description": "Grants permission to send message from Server Migration Connector to AWS Server Migration Service",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": null
+    },
+    "StartAppReplication": {
+      "description": "Grants permission to create and start replication jobs for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_StartAppReplication.html"
+    },
+    "StartOnDemandAppReplication": {
+      "description": "Grants permission to start a replication run for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_StartOnDemandAppReplication.html"
+    },
+    "StartOnDemandReplicationRun": {
+      "description": "Grants permission to start a replication run for an existing replication job",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_StartOnDemandReplicationRun.html"
+    },
+    "StopAppReplication": {
+      "description": "Grants permission to stop and delete replication jobs for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_StopAppReplication.html"
+    },
+    "TerminateApp": {
+      "description": "Grants permission to terminate the CloudFormation stack for an existing application",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_TerminateApp.html"
+    },
+    "UpdateApp": {
+      "description": "Grants permission to update an existing application configuration",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_UpdateApp.html"
+    },
+    "UpdateReplicationJob": {
+      "description": "Grants permission to update an existing job to migrate on-premise server onto AWS",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_UpdateReplicationJob.html"
+    }
+  },
+  "resourceTypes": {},
+  "conditionKeys": {}
+}

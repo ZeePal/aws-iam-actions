@@ -1,0 +1,1184 @@
+{
+  "name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+  "prefix": "sso",
+  "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycentersuccessortoawssinglesign-on.html",
+  "actions": {
+    "AssociateDirectory": {
+      "description": "Grants permission to connect a directory to be used by AWS IAM Identity Center",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:AuthorizeApplication"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "AssociateProfile": {
+      "description": "Grants permission to create an association between a directory user or group and a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "AttachCustomerManagedPolicyReferenceToPermissionSet": {
+      "description": "Grants permission to attach a customer managed policy reference to a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachCustomerManagedPolicyReferenceToPermissionSet.html"
+    },
+    "AttachManagedPolicyToPermissionSet": {
+      "description": "Grants permission to attach an AWS managed policy to a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachManagedPolicyToPermissionSet.html"
+    },
+    "CreateAccountAssignment": {
+      "description": "Grants permission to assign access to a Principal for a specified AWS account using a specified permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateAccountAssignment.html"
+    },
+    "CreateApplicationInstance": {
+      "description": "Grants permission to add an application instance to AWS IAM Identity Center",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "CreateApplicationInstanceCertificate": {
+      "description": "Grants permission to add a new certificate for an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "CreateInstanceAccessControlAttributeConfiguration": {
+      "description": "Grants permission to enable the instance for ABAC and specify the attributes",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [
+        "iam:AttachRolePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:GetRole",
+        "iam:ListAttachedRolePolicies",
+        "iam:ListRolePolicies",
+        "iam:PutRolePolicy",
+        "iam:UpdateAssumeRolePolicy"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreateInstanceAccessControlAttributeConfiguration.html"
+    },
+    "CreateManagedApplicationInstance": {
+      "description": "Grants permission to add a managed application instance to AWS IAM Identity Center",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "CreatePermissionSet": {
+      "description": "Grants permission to create a permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_CreatePermissionSet.html"
+    },
+    "CreateProfile": {
+      "description": "Grants permission to create a profile for an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "CreateTrust": {
+      "description": "Grants permission to create a federation trust in a target account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DeleteAccountAssignment": {
+      "description": "Grants permission to delete a Principal's access from a specified AWS account using a specified permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteAccountAssignment.html"
+    },
+    "DeleteApplicationInstance": {
+      "description": "Grants permission to delete the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DeleteApplicationInstanceCertificate": {
+      "description": "Grants permission to delete an inactive or expired certificate from the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DeleteInlinePolicyFromPermissionSet": {
+      "description": "Grants permission to delete the inline policy from a specified permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteInlinePolicyFromPermissionSet.html"
+    },
+    "DeleteInstanceAccessControlAttributeConfiguration": {
+      "description": "Grants permission to disable ABAC and remove the attributes list for the instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeleteInstanceAccessControlAttributeConfiguration.html"
+    },
+    "DeleteManagedApplicationInstance": {
+      "description": "Grants permission to delete the managed application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DeletePermissionSet": {
+      "description": "Grants permission to delete a permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/{DocHomeURL}singlesignon/latest/APIReference/API_DeletePermissionSet.html"
+    },
+    "DeletePermissionsBoundaryFromPermissionSet": {
+      "description": "Grants permission to remove permissions boundary from a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DeletePermissionsBoundaryFromPermissionSet.html"
+    },
+    "DeletePermissionsPolicy": {
+      "description": "Grants permission to delete the permission policy associated with a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DeleteProfile": {
+      "description": "Grants permission to delete the profile for an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DescribeAccountAssignmentCreationStatus": {
+      "description": "Grants permission to describe the status of the assignment creation request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DescribeAccountAssignmentCreationStatus.html"
+    },
+    "DescribeAccountAssignmentDeletionStatus": {
+      "description": "Grants permission to describe the status of an assignment deletion request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DescribeAccountAssignmentDeletionStatus.html"
+    },
+    "DescribeInstanceAccessControlAttributeConfiguration": {
+      "description": "Grants permission to get the list of attributes used by the instance for ABAC",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DescribeInstanceAccessControlAttributeConfiguration.html"
+    },
+    "DescribePermissionSet": {
+      "description": "Grants permission to describe a permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DescribePermissionSet.html"
+    },
+    "DescribePermissionSetProvisioningStatus": {
+      "description": "Grants permission to describe the status for the given Permission Set Provisioning request",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DescribePermissionSetProvisioningStatus.html"
+    },
+    "DescribePermissionsPolicies": {
+      "description": "Grants permission to retrieve all the permissions policies associated with a permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DescribeRegisteredRegions": {
+      "description": "Grants permission to obtain the regions where your organization has enabled AWS IAM Identity Center",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DetachCustomerManagedPolicyReferenceFromPermissionSet": {
+      "description": "Grants permission to detach a customer managed policy reference from a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DetachCustomerManagedPolicyReferenceFromPermissionSet.html"
+    },
+    "DetachManagedPolicyFromPermissionSet": {
+      "description": "Grants permission to detach the attached AWS managed policy from the specified permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DetachManagedPolicyFromPermissionSet.html"
+    },
+    "DisassociateDirectory": {
+      "description": "Grants permission to disassociate a directory to be used by AWS IAM Identity Center",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:UnauthorizeApplication"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "DisassociateProfile": {
+      "description": "Grants permission to disassociate a directory user or group from a profile",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetApplicationInstance": {
+      "description": "Grants permission to retrieve details for an application instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetApplicationTemplate": {
+      "description": "Grants permission to retrieve application template details",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetInlinePolicyForPermissionSet": {
+      "description": "Grants permission to obtain the inline policy assigned to the permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_GetInlinePolicyForPermissionSet.html"
+    },
+    "GetManagedApplicationInstance": {
+      "description": "Grants permission to retrieve details for an application instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetMfaDeviceManagementForDirectory": {
+      "description": "Grants permission to retrieve Mfa Device Management settings for the directory",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetPermissionSet": {
+      "description": "Grants permission to retrieve details of a permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetPermissionsBoundaryForPermissionSet": {
+      "description": "Grants permission to get permissions boundary for a permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_GetPermissionsBoundaryForPermissionSet.html"
+    },
+    "GetPermissionsPolicy": {
+      "description": "Grants permission to retrieve all permission policies associated with a permission set",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:DescribePermissionsPolicies"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetProfile": {
+      "description": "Grants permission to retrieve a profile for an application instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetSSOStatus": {
+      "description": "Grants permission to check if AWS IAM Identity Center is enabled",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetSharedSsoConfiguration": {
+      "description": "Grants permission to retrieve shared configuration for the current SSO instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetSsoConfiguration": {
+      "description": "Grants permission to retrieve configuration for the current SSO instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "GetTrust": {
+      "description": "Grants permission to retrieve the federation trust in a target account",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ImportApplicationInstanceServiceProviderMetadata": {
+      "description": "Grants permission to update the application instance by uploading an application SAML metadata file provided by the service provider",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListAccountAssignmentCreationStatus": {
+      "description": "Grants permission to list the status of the AWS account assignment creation requests for a specified SSO instance",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListAccountAssignmentCreationStatus.html"
+    },
+    "ListAccountAssignmentDeletionStatus": {
+      "description": "Grants permission to list the status of the AWS account assignment deletion requests for a specified SSO instance",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListAccountAssignmentDeletionStatus.html"
+    },
+    "ListAccountAssignments": {
+      "description": "Grants permission to list the assignee of the specified AWS account with the specified permission set",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListAccountAssignments.html"
+    },
+    "ListAccountsForProvisionedPermissionSet": {
+      "description": "Grants permission to list all the AWS accounts where the specified permission set is provisioned",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListAccountsForProvisionedPermissionSet.html"
+    },
+    "ListApplicationInstanceCertificates": {
+      "description": "Grants permission to retrieve all of the certificates for a given application instance",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListApplicationInstances": {
+      "description": "Grants permission to retrieve all application instances",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:GetApplicationInstance"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListApplicationTemplates": {
+      "description": "Grants permission to retrieve all supported application templates",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:GetApplicationTemplate"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListApplications": {
+      "description": "Grants permission to retrieve all supported applications",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListCustomerManagedPolicyReferencesInPermissionSet": {
+      "description": "Grants permission to list the customer managed policy references that are attached to a permission set",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListCustomerManagedPolicyReferencesInPermissionSet.html"
+    },
+    "ListDirectoryAssociations": {
+      "description": "Grants permission to retrieve details about the directory connected to AWS IAM Identity Center",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListInstances": {
+      "description": "Grants permission to list the SSO Instances that the caller has access to",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListInstances.html"
+    },
+    "ListManagedPoliciesInPermissionSet": {
+      "description": "Grants permission to list the AWS managed policies that are attached to a specified permission set",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListManagedPoliciesInPermissionSet.html"
+    },
+    "ListPermissionSetProvisioningStatus": {
+      "description": "Grants permission to list the status of the Permission Set Provisioning requests for a specified SSO instance",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListPermissionSetProvisioningStatus.html"
+    },
+    "ListPermissionSets": {
+      "description": "Grants permission to retrieve all permission sets",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/{DocHomeURL}singlesignon/latest/APIReference/API_ListPermissionSets.html"
+    },
+    "ListPermissionSetsProvisionedToAccount": {
+      "description": "Grants permission to list all the permission sets that are provisioned to a specified AWS account",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListPermissionSetsProvisionedToAccount.html"
+    },
+    "ListProfileAssociations": {
+      "description": "Grants permission to retrieve the directory user or group associated with the profile",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListProfiles": {
+      "description": "Grants permission to retrieve all profiles for an application instance",
+      "accessLevel": "List",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "sso:GetProfile"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "ListTagsForResource": {
+      "description": "Grants permission to list the tags that are attached to a specified resource",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ListTagsForResource.html"
+    },
+    "ProvisionPermissionSet": {
+      "description": "Grants permission to provision a specified permission set to the specified target",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Account": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_ProvisionPermissionSet.html"
+    },
+    "PutApplicationAssignmentConfiguration": {
+      "description": "Grants permission to add assignment configurations to an application",
+      "accessLevel": "Write",
+      "permissionOnly": true,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "PutInlinePolicyToPermissionSet": {
+      "description": "Grants permission to attach an IAM inline policy to a permission set",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_PutInlinePolicyToPermissionSet.html"
+    },
+    "PutMfaDeviceManagementForDirectory": {
+      "description": "Grants permission to put Mfa Device Management settings for the directory",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "PutPermissionsBoundaryToPermissionSet": {
+      "description": "Grants permission to add permissions boundary to a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_PutPermissionsBoundaryToPermissionSet.html"
+    },
+    "PutPermissionsPolicy": {
+      "description": "Grants permission to add a policy to a permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "SearchGroups": {
+      "description": "Grants permission to search for groups within the associated directory",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:DescribeDirectories"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "SearchUsers": {
+      "description": "Grants permission to search for users within the associated directory",
+      "accessLevel": "Read",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "ds:DescribeDirectories"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "StartSSO": {
+      "description": "Grants permission to initialize AWS IAM Identity Center",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [
+        "organizations:DescribeOrganization",
+        "organizations:EnableAWSServiceAccess"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "TagResource": {
+      "description": "Grants permission to associate a set of tags with a specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_TagResource.html"
+    },
+    "UntagResource": {
+      "description": "Grants permission to disassociate a set of tags from a specified resource",
+      "accessLevel": "Tagging",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_UntagResource.html"
+    },
+    "UpdateApplicationInstanceActiveCertificate": {
+      "description": "Grants permission to set a certificate as the active one for this application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceDisplayData": {
+      "description": "Grants permission to update display data of an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceResponseConfiguration": {
+      "description": "Grants permission to update federation response configuration for the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceResponseSchemaConfiguration": {
+      "description": "Grants permission to update federation response schema configuration for the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceSecurityConfiguration": {
+      "description": "Grants permission to update security details for the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceServiceProviderConfiguration": {
+      "description": "Grants permission to update service provider related configuration for the application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateApplicationInstanceStatus": {
+      "description": "Grants permission to update the status of an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateDirectoryAssociation": {
+      "description": "Grants permission to update the user attribute mappings for your connected directory",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateInstanceAccessControlAttributeConfiguration": {
+      "description": "Grants permission to update the attributes to use with the instance for ABAC",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_UpdateInstanceAccessControlAttributeConfiguration.html"
+    },
+    "UpdateManagedApplicationInstanceStatus": {
+      "description": "Grants permission to update the status of a managed application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdatePermissionSet": {
+      "description": "Grants permission to update the permission set",
+      "accessLevel": "Permissions management",
+      "permissionOnly": false,
+      "resourceTypes": {
+        "Instance": {
+          "required": true,
+          "conditionKeys": []
+        },
+        "PermissionSet": {
+          "required": true,
+          "conditionKeys": []
+        }
+      },
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/service-authorization/latest/reference/{DocHomeURL}singlesignon/latest/APIReference/API_UpdatePermissionSet.html"
+    },
+    "UpdateProfile": {
+      "description": "Grants permission to update the profile for an application instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateSSOConfiguration": {
+      "description": "Grants permission to update the configuration for the current SSO instance",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    },
+    "UpdateTrust": {
+      "description": "Grants permission to update the federation trust in a target account",
+      "accessLevel": "Write",
+      "permissionOnly": false,
+      "resourceTypes": {},
+      "conditionKeys": [],
+      "dependentActions": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample"
+    }
+  },
+  "resourceTypes": {
+    "Account": {
+      "arn": "arn:${Partition}:sso:::account/${AccountId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-accounts.html"
+    },
+    "Instance": {
+      "arn": "arn:${Partition}:sso:::instance/${InstanceId}",
+      "conditionKeys": [],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/step1.html"
+    },
+    "PermissionSet": {
+      "arn": "arn:${Partition}:sso:::permissionSet/${InstanceId}/${PermissionSetId}",
+      "conditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html"
+    }
+  },
+  "conditionKeys": {
+    "aws:RequestTag/${TagKey}": {
+      "description": "Filters access by the tags that are passed in the request",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/tagging.html"
+    },
+    "aws:ResourceTag/${TagKey}": {
+      "description": "Filters access by the tags associated with the resource",
+      "type": "String",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/tagging.html"
+    },
+    "aws:TagKeys": {
+      "description": "Filters access by the tag keys that are passed in the request",
+      "type": "ArrayOfString",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/tagging.html"
+    }
+  }
+}
