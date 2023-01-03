@@ -114,17 +114,15 @@
               "description": "The Dependent actions column includes any additional permissions that you must have,",
               "type": "array",
               "uniqueItems": true,
-              "items": [
-                {
-                  "description": "A Dependent action.",
-                  "type": "string",
-                  "pattern": "^[a-z0-9-]{2,40}:[A-Za-z0-9]{3,50}$",
-                  "examples": [
-                    "iam:PassRole",
-                    "s3:GetObject"
-                  ]
-                }
-              ]
+              "items": {
+                "description": "A Dependent action.",
+                "type": "string",
+                "pattern": "^[a-z0-9-]{2,40}:[A-Za-z0-9]{3,50}$",
+                "examples": [
+                  "iam:PassRole",
+                  "s3:GetObject"
+                ]
+              }
             },
             "url": {
               "$ref": "#/$defs/documentUrl"
@@ -233,19 +231,17 @@
       "description": "The Condition keys column includes keys that you can specify in a policy statement's Condition element.",
       "type": "array",
       "uniqueItems": true,
-      "items": [
-        {
-          "description": "A Condition key.",
-          "type": "string",
-          "pattern": "^[a-z0-9-.]{2,40}:[A-Za-z0-9-/${}_.<>:]{2,50}$",
-          "examples": [
-            "iam:PermissionsBoundary",
-            "sts:ExternalId",
-            "aws:ResourceTag/${TagKey}",
-            "s3:x-amz-acl"
-          ]
-        }
-      ]
+      "items": {
+        "description": "A Condition key.",
+        "type": "string",
+        "pattern": "^[a-z0-9-.]{2,40}:[A-Za-z0-9-/${}_.<>:]{2,50}$",
+        "examples": [
+          "iam:PermissionsBoundary",
+          "sts:ExternalId",
+          "aws:ResourceTag/${TagKey}",
+          "s3:x-amz-acl"
+        ]
+      }
     }
   }
 }
